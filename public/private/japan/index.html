@@ -630,9 +630,15 @@
       <span class="row-label">Mode</span>
       <button class="pill active" data-mode="default" aria-pressed="true">Default</button>
       <button class="pill" data-mode="work" title="Work Trip — government meetings, team dinners, signed menus">Work</button>
-      <button class="pill" data-mode="spiritual" disabled title="Spiritual Journey mode — coming">Spiritual <span class="badge">Soon</span></button>
-      <button class="pill" data-mode="comedy" disabled title="Wandering Comedy mode — coming">Comedy <span class="badge">Soon</span></button>
-      <button class="pill" data-mode="cultural" disabled title="Cultural Immersion mode — coming">Cultural <span class="badge">Soon</span></button>
+      <button class="pill" data-mode="spiritual" title="Spiritual Journey — shrines, prayer, sunrise temple">Spiritual</button>
+      <button class="pill" data-mode="cultural" title="Cultural Immersion — traditional Japan moments">Cultural</button>
+      <button class="pill" data-mode="comedy" title="Wandering Comedy — funny mishaps and improbable rooms">Comedy</button>
+    </div>
+
+    <div class="row" id="with-row" role="group" aria-label="Filter by companion">
+      <span class="row-label">With</span>
+      <button class="pill active" data-with="all" aria-pressed="true">All</button>
+      <!-- Companion pills injected by JS from days.json people -->
     </div>
 
     <div class="row" role="group" aria-label="Filter by type" id="type-filters">
@@ -783,6 +789,7 @@
     mode: 'default',
     routeOn: false,
     view: 'map',
+    with: 'all',
   };
   let daysData = null;
 
@@ -882,26 +889,48 @@
     if (state.view === 'gallery') renderGallery();
   }
 
-  // Mode filters layer ON TOP of type/day filters. Default = pass-through.
+  // Mode filters layer ON TOP of type/day/companion filters. Default = pass-through.
+  // Modes are driven by day themes (from days.json) — each mode shows pins visited
+  // on at least one day tagged with that theme. Falls back to tag matching when
+  // days.json isn't loaded yet.
+  function pinHasTheme(pin, theme) {
+    if (!daysData) return false;
+    const days = pinDays(pin);
+    if (!days.length) return false;
+    return days.some((d) => {
+      const day = daysData.days.find((x) => x.day === d);
+      return day && (day.themes || []).includes(theme);
+    });
+  }
   const WORK_TAGS = new Set(['work', 'government', 'client-dinner', 'team', 'team-dinner', 'kaiseki']);
   const MODE_FILTERS = {
     default: () => true,
-    work: (pin) => {
-      const days = pinDays(pin);
-      const onWorkDay = days.some((d) => d >= 3 && d <= 7);
-      const hasWorkTag = (pin.tags || []).some((t) => WORK_TAGS.has(t));
-      return onWorkDay || hasWorkTag;
-    },
+    work: (pin) => pinHasTheme(pin, 'work') || (pin.tags || []).some((t) => WORK_TAGS.has(t)),
+    spiritual: (pin) => pinHasTheme(pin, 'spiritual') || pin.type === 'shrine',
+    cultural: (pin) => pinHasTheme(pin, 'cultural'),
+    comedy: (pin) => pinHasTheme(pin, 'comedy'),
   };
+
+  // Companion filter — which days did this person overlap with Bryan?
+  function personDays(name) {
+    if (!daysData || !daysData.people) return [];
+    const p = daysData.people.find((x) => x.name === name);
+    return p ? p.days : [];
+  }
 
   function filteredPins() {
     const modeFn = MODE_FILTERS[state.mode] || MODE_FILTERS.default;
+    const withDays = state.with === 'all' ? null : new Set(personDays(state.with));
     return state.pins.filter((pin) => {
       if (!modeFn(pin)) return false;
       if (state.filter !== 'all' && pin.type !== state.filter) return false;
       if (state.day !== 'all') {
         const days = pinDays(pin);
         if (!days.includes(parseInt(state.day, 10))) return false;
+      }
+      if (withDays) {
+        const days = pinDays(pin);
+        if (!days.some((d) => withDays.has(d))) return false;
       }
       return true;
     });
@@ -1301,6 +1330,33 @@
     });
   }
 
+  function buildCompanionPills() {
+    if (!daysData || !daysData.people || !daysData.people.length) return;
+    const row = document.getElementById('with-row');
+    if (!row) return;
+    daysData.people.forEach((p) => {
+      const btn = document.createElement('button');
+      btn.className = 'pill';
+      btn.dataset.with = p.name;
+      btn.setAttribute('aria-pressed', 'false');
+      btn.title = `${p.role} · days ${p.days.join(', ')}`;
+      btn.textContent = p.name;
+      row.appendChild(btn);
+    });
+
+    row.querySelectorAll('button[data-with]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.with = btn.dataset.with;
+        row.querySelectorAll('button[data-with]').forEach((b) => {
+          const on = b === btn;
+          b.classList.toggle('active', on);
+          b.setAttribute('aria-pressed', on);
+        });
+        buildMarkers();
+      });
+    });
+  }
+
   function bindStatsChips() {
     document.querySelectorAll('button.stat-chip[data-pin]').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -1371,6 +1427,17 @@
       bindViewToggle();
       bindStatsChips();
       bindModes();
+      // Companion pills can only render once days.json is loaded. Poll briefly.
+      if (daysData) {
+        buildCompanionPills();
+      } else {
+        let tries = 0;
+        const poll = setInterval(() => {
+          tries++;
+          if (daysData) { clearInterval(poll); buildCompanionPills(); }
+          else if (tries > 30) clearInterval(poll);
+        }, 100);
+      }
       refreshUI();
       buildMarkers();
 
