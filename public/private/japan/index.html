@@ -629,7 +629,7 @@
     <div class="row" role="group" aria-label="Narrative mode">
       <span class="row-label">Mode</span>
       <button class="pill active" data-mode="default" aria-pressed="true">Default</button>
-      <button class="pill" data-mode="work" disabled title="Work Trip mode — coming">Work <span class="badge">Soon</span></button>
+      <button class="pill" data-mode="work" title="Work Trip — government meetings, team dinners, signed menus">Work</button>
       <button class="pill" data-mode="spiritual" disabled title="Spiritual Journey mode — coming">Spiritual <span class="badge">Soon</span></button>
       <button class="pill" data-mode="comedy" disabled title="Wandering Comedy mode — coming">Comedy <span class="badge">Soon</span></button>
       <button class="pill" data-mode="cultural" disabled title="Cultural Immersion mode — coming">Cultural <span class="badge">Soon</span></button>
@@ -882,8 +882,22 @@
     if (state.view === 'gallery') renderGallery();
   }
 
+  // Mode filters layer ON TOP of type/day filters. Default = pass-through.
+  const WORK_TAGS = new Set(['work', 'government', 'client-dinner', 'team', 'team-dinner', 'kaiseki']);
+  const MODE_FILTERS = {
+    default: () => true,
+    work: (pin) => {
+      const days = pinDays(pin);
+      const onWorkDay = days.some((d) => d >= 3 && d <= 7);
+      const hasWorkTag = (pin.tags || []).some((t) => WORK_TAGS.has(t));
+      return onWorkDay || hasWorkTag;
+    },
+  };
+
   function filteredPins() {
+    const modeFn = MODE_FILTERS[state.mode] || MODE_FILTERS.default;
     return state.pins.filter((pin) => {
+      if (!modeFn(pin)) return false;
       if (state.filter !== 'all' && pin.type !== state.filter) return false;
       if (state.day !== 'all') {
         const days = pinDays(pin);
@@ -1270,6 +1284,23 @@
     });
   }
 
+  function bindModes() {
+    document.querySelectorAll('button[data-mode]').forEach((btn) => {
+      if (btn.disabled) return;
+      btn.addEventListener('click', () => {
+        const mode = btn.dataset.mode;
+        if (!MODE_FILTERS[mode]) return;
+        state.mode = mode;
+        document.querySelectorAll('button[data-mode]').forEach((b) => {
+          const on = b.dataset.mode === mode;
+          b.classList.toggle('active', on);
+          b.setAttribute('aria-pressed', on);
+        });
+        buildMarkers();
+      });
+    });
+  }
+
   function bindStatsChips() {
     document.querySelectorAll('button.stat-chip[data-pin]').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -1339,6 +1370,7 @@
       bindFilters();
       bindViewToggle();
       bindStatsChips();
+      bindModes();
       refreshUI();
       buildMarkers();
 
