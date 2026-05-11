@@ -30,6 +30,13 @@ Ordered list of story sections. Each entry: `slug`, `title`, `layers[]` (DOC/TRA
 ### `data/products.json`
 Product catalog. Each item: `slug`, `name`, `category`, `summary`, `status`, `tagline`. Status one of: `In development` / `Coming` / `Available`. Moves to Supabase when storefront activates.
 
+### `public/private/japan/pins.json`
+Self-contained Japan recap pins. Beyond the core fields (`id`, `type`, `title`, `coords`, `visited`, `photos`, `hero`, `facts`, `tags`, `wiki`), each pin can optionally carry:
+- `menu` — array of `{ name, note?, fact? }`. Renders as a "Menu" list in the detail panel. Use when you have the actual menu / can confirm what was eaten.
+- `extra_cards` — array of `{ title, body, source? }`. Renders as bordered context cards below facts. Use for historical / contextual blurbs that don't fit the existing fact keys.
+
+The recap is self-contained at `public/private/japan/`; it does not share schema with the React app's `data/`.
+
 ---
 
 ## Routes (v1)
@@ -121,3 +128,6 @@ No other top-level deps without flagging the addition in the session.
 | 2026-05-11 | Public surface = only `/`. No public nav links. | Bryan: site is Lockhart story; Japan/games are not for public |
 | 2026-05-11 | `/private` password gate (client-side, "2026" hardcoded) | Velvet rope acceptable for v1; family/friend access not requiring real auth |
 | 2026-05-11 | Japan static drops at `public/private/japan/`, not `public/japan/` | Path under `/private/` keeps URL out of public discovery and aligns with gate model |
+| 2026-05-11 | DOC / TRAD / LEG layers stay as a writing discipline, not a UI chip | Chips added visual noise without serving the story. Layers still govern voice in copy |
+| 2026-05-11 | Japan map default tile = CartoDB Voyager (Japanese labels, clean water) | Raw OSM rendered dashed maritime borders that looked noisy |
+| 2026-05-11 | Drop the companion filter on the Japan map | Filtering by who Bryan was with isn't a search pattern anyone uses; UI clutter |

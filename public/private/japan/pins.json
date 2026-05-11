@@ -879,6 +879,12 @@
                                    "wow":  "\u0027Shabu-shabu\u0027 is onomatopoeia - the SOUND of beef swishing in broth.",
                                    "local":  "Wagyu shabu at this tier runs Y15-30K/person. A signed menu makes it a milestone meal in Tokyo."
                                },
+                     "menu":  [
+                                  { "name": "Wagyu shabu-shabu", "note": "Thin slices swished in dashi at the table; dipped in goma (sesame) or ponzu" }
+                              ],
+                     "extra_cards":  [
+                                         { "title": "Origins of shabu-shabu", "body": "Introduced in Osaka in 1952 at a restaurant called Suehiro, adapted from a Mongolian instant-boiled mutton hot pot. The name imitates the swish-swish sound of meat moving through broth." }
+                                     ],
                      "tags":  [
                                   "food",
                                   "tokyo",

@@ -216,6 +216,12 @@
   .leaflet-popup-content { margin: 10px 12px; font-size: 13px; line-height: 1.4; }
   .leaflet-popup-content b { color: var(--accent-dark); }
 
+  /* Language toggle (Leaflet custom control) */
+  .lang-toggle { display: flex; background: #fff; border-radius: 4px; box-shadow: 0 1px 5px rgba(0,0,0,0.4); overflow: hidden; }
+  .lang-toggle button { border: 0; background: transparent; padding: 4px 8px; font: 11px/1 inherit; color: #555; cursor: pointer; }
+  .lang-toggle button.active { background: var(--accent, #d8533b); color: #fff; }
+  .lang-toggle button + button { border-left: 1px solid rgba(0,0,0,0.1); }
+
   /* Custom pin markers */
   .pin-dot {
     width: 18px; height: 18px;
@@ -353,6 +359,39 @@
     color: #6a3a14;
   }
   .narrative .tip strong { color: var(--accent-dark); }
+
+  /* Menu list — what was eaten / ordered. Optional pin.menu array. */
+  .narrative .menu { display: flex; flex-direction: column; gap: 8px; }
+  .narrative .menu-item { font-size: 13px; line-height: 1.5; }
+  .narrative .menu-item .dish { font-weight: 600; color: var(--ink); }
+  .narrative .menu-item .note { color: var(--ink-soft); }
+  .narrative .menu-item .fact { color: var(--ink-soft); font-style: italic; display: block; margin-top: 2px; }
+
+  /* Extra context cards — optional pin.extra_cards array. */
+  .narrative .context-card {
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .narrative .context-card h4 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ink-soft);
+    margin: 0 0 6px;
+  }
+  .narrative .context-card p { font-size: 13px; line-height: 1.55; }
+  .narrative .context-card + .context-card { margin-top: 8px; }
+  .narrative .context-card .source {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--accent-dark);
+    text-decoration: underline;
+  }
+
   .tags-row { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 5px; }
   .tag {
     font-size: 10px;
@@ -635,12 +674,6 @@
       <button class="pill" data-mode="comedy" title="Wandering Comedy — funny mishaps and improbable rooms">Comedy</button>
     </div>
 
-    <div class="row" id="with-row" role="group" aria-label="Filter by companion">
-      <span class="row-label">With</span>
-      <button class="pill active" data-with="all" aria-pressed="true">All</button>
-      <!-- Companion pills injected by JS from days.json people -->
-    </div>
-
     <div class="row" role="group" aria-label="Filter by type" id="type-filters">
       <span class="row-label">Type</span>
       <button class="pill active" data-filter="all"><span class="dot" style="background:var(--t-default);"></span>All <span class="count" id="ct-all">0</span></button>
@@ -776,7 +809,6 @@
     if (state.filter && state.filter !== 'all') parts.push('filter=' + state.filter);
     if (state.day && state.day !== 'all') parts.push('day=' + state.day);
     if (state.mode && state.mode !== 'default') parts.push('mode=' + state.mode);
-    if (state.with && state.with !== 'all') parts.push('with=' + encodeURIComponent(state.with));
     if (state.pin) parts.push('pin=' + state.pin);
     const next = parts.length ? '#' + parts.join('&') : '';
     if (next !== location.hash) history.replaceState(null, '', location.pathname + next);
@@ -791,7 +823,6 @@
     mode: 'default',
     routeOn: false,
     view: 'map',
-    with: 'all',
   };
   let daysData = null;
 
@@ -825,10 +856,63 @@
     worldCopyJump: false,
   });
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
+  // Voyager (JP): Japanese labels in Japan, clean water (no dashed maritime borders).
+  // Positron (EN): Latin-script labels.
+  // Off: tiles hidden — pins float on the cream map-wrap background.
+  const TILE_SOURCES = {
+    jp: {
+      url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+      opts: { maxZoom: 19, subdomains: 'abcd', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>' },
+    },
+    en: {
+      url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+      opts: { maxZoom: 19, subdomains: 'abcd', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>' },
+    },
+    off: null,
+  };
+  const LANG_KEY = 'jp-map-lang';
+  let mapLang = localStorage.getItem(LANG_KEY) || 'jp';
+  if (!(mapLang in TILE_SOURCES)) mapLang = 'jp';
+  let tileLayer = null;
+
+  function applyTileLayer() {
+    if (tileLayer) { map.removeLayer(tileLayer); tileLayer = null; }
+    const src = TILE_SOURCES[mapLang];
+    if (src) tileLayer = L.tileLayer(src.url, src.opts).addTo(map);
+  }
+  applyTileLayer();
+
+  function setMapLang(lang) {
+    if (!(lang in TILE_SOURCES) || lang === mapLang) return;
+    mapLang = lang;
+    localStorage.setItem(LANG_KEY, lang);
+    applyTileLayer();
+    document.querySelectorAll('.lang-toggle button').forEach((b) => {
+      const on = b.dataset.lang === lang;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on);
+    });
+  }
+
+  const LangControl = L.Control.extend({
+    options: { position: 'topright' },
+    onAdd: function () {
+      const div = L.DomUtil.create('div', 'lang-toggle');
+      const mk = (lang, label, title) =>
+        `<button type="button" data-lang="${lang}" aria-pressed="${mapLang === lang}" class="${mapLang === lang ? 'active' : ''}" aria-label="${title}" title="${title}">${label}</button>`;
+      div.innerHTML =
+        mk('jp', '日本語', 'Japanese labels') +
+        mk('en', 'EN', 'English labels') +
+        mk('off', 'Off', 'Hide map, show pins only');
+      L.DomEvent.disableClickPropagation(div);
+      div.addEventListener('click', (e) => {
+        const btn = e.target.closest('button[data-lang]');
+        if (btn) setMapLang(btn.dataset.lang);
+      });
+      return div;
+    },
+  });
+  map.addControl(new LangControl());
 
   const clusterGroup = L.markerClusterGroup({
     showCoverageOnHover: false,
@@ -891,7 +975,7 @@
     if (state.view === 'gallery') renderGallery();
   }
 
-  // Mode filters layer ON TOP of type/day/companion filters. Default = pass-through.
+  // Mode filters layer ON TOP of type/day filters. Default = pass-through.
   // Modes are driven by day themes (from days.json) — each mode shows pins visited
   // on at least one day tagged with that theme. Falls back to tag matching when
   // days.json isn't loaded yet.
@@ -913,26 +997,14 @@
     comedy: (pin) => pinHasTheme(pin, 'comedy'),
   };
 
-  // Companion filter — which days did this person overlap with Bryan?
-  function personDays(name) {
-    if (!daysData || !daysData.people) return [];
-    const p = daysData.people.find((x) => x.name === name);
-    return p ? p.days : [];
-  }
-
   function filteredPins() {
     const modeFn = MODE_FILTERS[state.mode] || MODE_FILTERS.default;
-    const withDays = state.with === 'all' ? null : new Set(personDays(state.with));
     return state.pins.filter((pin) => {
       if (!modeFn(pin)) return false;
       if (state.filter !== 'all' && pin.type !== state.filter) return false;
       if (state.day !== 'all') {
         const days = pinDays(pin);
         if (!days.includes(parseInt(state.day, 10))) return false;
-      }
-      if (withDays) {
-        const days = pinDays(pin);
-        if (!days.some((d) => withDays.has(d))) return false;
       }
       return true;
     });
@@ -1023,6 +1095,8 @@
 
         <div class="narrative">
           ${factsHtml(pin.facts || {})}
+          ${menuHtml(pin.menu)}
+          ${extraCardsHtml(pin.extra_cards)}
           ${pin.wiki ? `<a class="wiki-link" href="${escapeAttr(pin.wiki)}" target="_blank" rel="noreferrer">Read on Wikipedia ↗</a>` : ''}
           ${(pin.tags || []).length ? `
             <div class="tags-row">${pin.tags.map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join('')}</div>
@@ -1063,6 +1137,29 @@
       }
     });
     return items.join('');
+  }
+
+  // Menu items: optional pin.menu = [{ name, note?, fact? }, ...]
+  function menuHtml(menu) {
+    if (!Array.isArray(menu) || !menu.length) return '';
+    const items = menu.map((m) => {
+      const note = m.note ? ` — ${escapeHtml(m.note)}` : '';
+      const fact = m.fact ? `<span class="fact">${escapeHtml(m.fact)}</span>` : '';
+      return `<div class="menu-item"><span class="dish">${escapeHtml(m.name || '')}</span><span class="note">${note}</span>${fact}</div>`;
+    }).join('');
+    return `<div><h3>Menu</h3><div class="menu">${items}</div></div>`;
+  }
+
+  // Extra context cards: optional pin.extra_cards = [{ title, body, source? }, ...]
+  function extraCardsHtml(cards) {
+    if (!Array.isArray(cards) || !cards.length) return '';
+    return cards.map((c) => `
+      <div class="context-card">
+        ${c.title ? `<h4>${escapeHtml(c.title)}</h4>` : ''}
+        ${c.body ? `<p>${escapeHtml(c.body)}</p>` : ''}
+        ${c.source ? `<a class="source" href="${escapeAttr(c.source)}" target="_blank" rel="noreferrer">Source ↗</a>` : ''}
+      </div>
+    `).join('');
   }
 
   function bindDetailEvents(pin) {
@@ -1332,42 +1429,6 @@
     });
   }
 
-  function applyHashWith(name) {
-    state.with = name;
-    document.querySelectorAll('#with-row button[data-with]').forEach((b) => {
-      const on = b.dataset.with === name;
-      b.classList.toggle('active', on);
-      b.setAttribute('aria-pressed', on);
-    });
-  }
-
-  function buildCompanionPills() {
-    if (!daysData || !daysData.people || !daysData.people.length) return;
-    const row = document.getElementById('with-row');
-    if (!row) return;
-    daysData.people.forEach((p) => {
-      const btn = document.createElement('button');
-      btn.className = 'pill';
-      btn.dataset.with = p.name;
-      btn.setAttribute('aria-pressed', 'false');
-      btn.title = `${p.role} · days ${p.days.join(', ')}`;
-      btn.textContent = p.name;
-      row.appendChild(btn);
-    });
-
-    row.querySelectorAll('button[data-with]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        applyHashWith(btn.dataset.with);
-        writeHash(state);
-        buildMarkers();
-      });
-    });
-
-    // If a `with=` was in the URL hash on load, apply it now that pills exist
-    const h = parseHash();
-    if (h.with) { applyHashWith(decodeURIComponent(h.with)); buildMarkers(); }
-  }
-
   function bindStatsChips() {
     document.querySelectorAll('button.stat-chip[data-pin]').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -1439,25 +1500,12 @@
           b.setAttribute('aria-pressed', on);
         });
       }
-      // `with` is applied inside buildCompanionPills once daysData arrives
-
       updateCounts();
       buildTimeline();
       bindFilters();
       bindViewToggle();
       bindStatsChips();
       bindModes();
-      // Companion pills can only render once days.json is loaded. Poll briefly.
-      if (daysData) {
-        buildCompanionPills();
-      } else {
-        let tries = 0;
-        const poll = setInterval(() => {
-          tries++;
-          if (daysData) { clearInterval(poll); buildCompanionPills(); }
-          else if (tries > 30) clearInterval(poll);
-        }, 100);
-      }
       refreshUI();
       buildMarkers();
 
