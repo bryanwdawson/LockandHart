@@ -1,0 +1,788 @@
+﻿[
+    {
+        "pin_id":  "ginza",
+        "title":  "Ginza / Hotel base",
+        "type":  "neighborhood",
+        "tags":  [
+                     "neighborhood",
+                     "tokyo",
+                     "home-base"
+                 ],
+        "fact_summary":  "Tokyo\u0027s fanciest district â€” land here costs $1 million per square meter!",
+        "photo_count":  9,
+        "current_hero":  "20260420_211230.jpg",
+        "candidates":  [
+                           "20260418_172505.jpg",
+                           "20260420_210634.jpg",
+                           "20260420_211230.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "kabuki-za",
+        "title":  "Kabuki-za Theatre",
+        "type":  "landmark",
+        "tags":  [
+                     "landmark",
+                     "tokyo",
+                     "traditional",
+                     "iconic"
+                 ],
+        "fact_summary":  "Tokyo\u0027s most famous KABUKI theater â€” traditional Japanese drama with elaborate costumes \u0026 makeup, in a beautiful century-old building.",
+        "photo_count":  2,
+        "current_hero":  "20260418_221644.jpg",
+        "candidates":  [
+                           "20260418_221644.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "tokyo-station",
+        "title":  "Tokyo Station",
+        "type":  "transit",
+        "tags":  [
+                     "transit",
+                     "tokyo",
+                     "shinkansen"
+                 ],
+        "fact_summary":  "A giant red-brick station that\u0027s 100+ years old. Where Bryan\u0027s shinkansen to Kyoto and back arrived/departed.",
+        "photo_count":  69,
+        "current_hero":  "20260426_171244.jpg",
+        "candidates":  [
+                           "20260426_171244.jpg",
+                           "20260426_172508.jpg",
+                           "20260426_173157.jpg",
+                           "20260426_174248.jpg",
+                           "20260426_181127.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "marunouchi",
+        "title":  "Marunouchi",
+        "type":  "neighborhood",
+        "tags":  [
+                     "neighborhood",
+                     "tokyo",
+                     "business"
+                 ],
+        "fact_summary":  "Tokyo\u0027s Wall Street â€” giant office buildings + MUJI mega-store + Imperial Palace next door.",
+        "photo_count":  39,
+        "current_hero":  "20260422_165306.jpg",
+        "candidates":  [
+                           "20260420_134908.jpg",
+                           "20260421_183929.jpg",
+                           "20260422_163042.jpg",
+                           "20260422_165306.jpg",
+                           "20260422_165313.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "imperial-palace",
+        "title":  "Imperial Palace + Outer Moat",
+        "type":  "landmark",
+        "tags":  [
+                     "landmark",
+                     "garden",
+                     "tokyo",
+                     "free"
+                 ],
+        "fact_summary":  "Where the Emperor of Japan lives! Garden was the inner part of a giant samurai castle.",
+        "photo_count":  14,
+        "current_hero":  "20260419_142545.jpg",
+        "candidates":  [
+                           "20260419_142545.jpg",
+                           "20260419_143048.jpg",
+                           "20260419_143051.jpg",
+                           "20260419_153741.jpg",
+                           "20260419_162124.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "hamarikyu",
+        "title":  "Hamarikyu Gardens",
+        "type":  "landmark",
+        "tags":  [
+                     "landmark",
+                     "garden",
+                     "tokyo"
+                 ],
+        "fact_summary":  "An old Edo-era garden right on Tokyo Bay! Has a teahouse on a tiny island in a saltwater pond.",
+        "photo_count":  11,
+        "current_hero":  "20260419_142327.jpg",
+        "candidates":  [
+                           "20260419_141356.jpg",
+                           "20260419_142139.jpg",
+                           "20260419_142327.jpg",
+                           "20260419_142334.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "tsukiji-outer",
+        "title":  "Tsukiji Outer Market",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "market",
+                     "tokyo"
+                 ],
+        "fact_summary":  "Used to be the BIGGEST fish market in the world. Sushi for breakfast!",
+        "photo_count":  24,
+        "current_hero":  "20260419_055201.jpg",
+        "candidates":  [
+                           "20260419_055201.jpg",
+                           "20260419_055202.jpg",
+                           "20260419_063435.jpg",
+                           "20260419_063733.jpg",
+                           "20260419_080257.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "senso-ji",
+        "title":  "Senso-ji Temple",
+        "type":  "shrine",
+        "tags":  [
+                     "shrine",
+                     "buddhist",
+                     "tokyo",
+                     "asakusa",
+                     "must-see",
+                     "visited-twice"
+                 ],
+        "fact_summary":  "Tokyo\u0027s OLDEST temple â€” built in 645 AD! Bryan visited TWICE: Apr 19 daylight \u0026 Apr 27 sunrise. The whole trip was bookended by Senso-ji.",
+        "photo_count":  18,
+        "current_hero":  "20260419_113116.jpg",
+        "candidates":  [
+                           "20260419_113116.jpg",
+                           "20260419_114535.jpg",
+                           "20260427_084506.jpg",
+                           "20260427_092502.jpg",
+                           "20260427_115503.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "nakamise",
+        "title":  "Nakamise-dori",
+        "type":  "neighborhood",
+        "tags":  [
+                     "food",
+                     "shopping",
+                     "tokyo",
+                     "asakusa"
+                 ],
+        "fact_summary":  "Old shopping street with snacks, fans, toys. 250+ years old, ~90 little shops.",
+        "photo_count":  50,
+        "current_hero":  "20260419_111002.jpg",
+        "candidates":  [
+                           "20260419_095444.jpg",
+                           "20260419_101010.jpg",
+                           "20260419_102623.jpg",
+                           "20260419_111002.jpg",
+                           "20260419_111539.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "denpoin-dori",
+        "title":  "Denpoin-dori",
+        "type":  "neighborhood",
+        "tags":  [
+                     "neighborhood",
+                     "tokyo",
+                     "hidden-gem"
+                 ],
+        "fact_summary":  "A hidden Edo-era side street near Senso-ji that most tourists skip. You found it Apr 19 11:31 â€” kanji photo confirmed (ä¼æ³•é™¢é€š)",
+        "photo_count":  1,
+        "current_hero":  "20260419_113116.jpg",
+        "candidates":  [
+                           "20260419_113116.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "sumida-river",
+        "title":  "Sumida River walk",
+        "type":  "landmark",
+        "tags":  [
+                     "landmark",
+                     "tokyo",
+                     "river"
+                 ],
+        "fact_summary":  "Tokyo\u0027s iconic river that runs through Asakusa â€” the river the Senso-ji statue legend started in!",
+        "photo_count":  3,
+        "current_hero":  "20260419_113945.jpg",
+        "candidates":  [
+                           "20260419_113940.jpg",
+                           "20260419_113945.jpg",
+                           "20260419_113948.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "zojoji-tokyo-tower",
+        "title":  "Zojoji Temple + Tokyo Tower",
+        "type":  "shrine",
+        "tags":  [
+                     "shrine",
+                     "buddhist",
+                     "tokyo",
+                     "iconic",
+                     "tokyo-tower"
+                 ],
+        "fact_summary":  "An ancient Buddhist temple right next to TOKYO TOWER. The view of the temple\u0027s curved black roof with the red-and-white Tokyo Tower behind is one of Tokyo\u0027s most iconic photos.",
+        "photo_count":  78,
+        "current_hero":  "20260424_111156.jpg",
+        "candidates":  [
+                           "20260424_103452.jpg",
+                           "20260424_110622.jpg",
+                           "20260424_111156.jpg",
+                           "20260424_125321.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "shibuya",
+        "title":  "Shibuya Crossing area",
+        "type":  "landmark",
+        "tags":  [
+                     "landmark",
+                     "tokyo"
+                 ],
+        "fact_summary":  "Busiest crosswalk in the world! Up to 3,000 people cross at once.",
+        "photo_count":  21,
+        "current_hero":  "20260422_185322.jpg",
+        "candidates":  [
+                           "20260422_183808.jpg",
+                           "20260422_185005.jpg",
+                           "20260422_185322.jpg",
+                           "20260422_193015.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "meiji-shrine",
+        "title":  "Meiji Jingu",
+        "type":  "shrine",
+        "tags":  [
+                     "shrine",
+                     "shinto",
+                     "tokyo"
+                 ],
+        "fact_summary":  "A huge forest shrine with 100,000 trees in Tokyo!",
+        "photo_count":  14,
+        "current_hero":  "20260419_133839.jpg",
+        "candidates":  [
+                           "20260419_131019.jpg",
+                           "20260419_131228.jpg",
+                           "20260419_132810(0).jpg",
+                           "20260419_133835.jpg",
+                           "20260419_133839.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "akihabara-kanda",
+        "title":  "Akihabara / Kanda-Sakumacho",
+        "type":  "neighborhood",
+        "tags":  [
+                     "neighborhood",
+                     "tokyo"
+                 ],
+        "fact_summary":  "Tokyo\u0027s electronics + anime + manga district! Tons of stores stacked vertically.",
+        "photo_count":  1,
+        "current_hero":  "20260421_213342.jpg",
+        "candidates":  [
+                           "20260421_213342.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "ichigaya-mod",
+        "title":  "Ministry of Defense (Ichigaya) â€” DIH Meeting",
+        "type":  "landmark",
+        "tags":  [
+                     "work",
+                     "tokyo",
+                     "government"
+                 ],
+        "fact_summary":  "Japan\u0027s Ministry of Defense â€” like the Pentagon. Bryan met with the Defense Innovation Hub team here.",
+        "photo_count":  12,
+        "current_hero":  "20260424_154347.jpg",
+        "candidates":  [
+                           "20260421_160034.jpg",
+                           "20260421_161125.jpg",
+                           "20260421_161147.jpg",
+                           "20260424_154347.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "kasumigaseki",
+        "title":  "Cabinet Office â€” Kasumigaseki",
+        "type":  "landmark",
+        "tags":  [
+                     "work",
+                     "tokyo",
+                     "government"
+                 ],
+        "fact_summary":  "Tokyo\u0027s government district â€” like Washington DC\u0027s federal buildings.",
+        "photo_count":  8,
+        "current_hero":  "20260422_143314.jpg",
+        "candidates":  [
+                           "20260422_143314.jpg",
+                           "20260422_143418.jpg",
+                           "20260422_144426.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "iyoshi-cola-izakaya",
+        "title":  "First-night izakaya (Iyoshi Cola)",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "tokyo",
+                     "first-night"
+                 ],
+        "fact_summary":  "Your first dinner in Japan â€” a tablet-order Tokyo izakaya. You had Iyoshi Cola (Japan\u0027s craft cola).",
+        "photo_count":  15,
+        "current_hero":  "20260418_215030.jpg",
+        "candidates":  [
+                           "20260418_205206.jpg",
+                           "20260418_210036.jpg",
+                           "20260418_215030.jpg",
+                           "20260418_215404.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "ibren-akihabara",
+        "title":  "IBREN restaurant (Akihabara)",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "tokyo",
+                     "team-dinner"
+                 ],
+        "fact_summary":  "A pub-style restaurant in Akihabara where Bryan had jasmine tea while co-workers had drinks.",
+        "photo_count":  6,
+        "current_hero":  "20260421_213342.jpg",
+        "candidates":  [
+                           "20260421_213342.jpg",
+                           "20260421_214859.jpg",
+                           "20260421_214901.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "yakitori-tokyo",
+        "title":  "Specialty yakitori dinner",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "tokyo",
+                     "yakitori"
+                 ],
+        "fact_summary":  "A traditional Japanese grilled-chicken-skewer place. Bryan saw exotic cuts on the menu â€” quail eggs, knee cartilage, the bit between heart and liver!",
+        "photo_count":  15,
+        "current_hero":  "20260422_200712.jpg",
+        "candidates":  [
+                           "20260420_185620.jpg",
+                           "20260420_195523.jpg",
+                           "20260422_200712.jpg",
+                           "20260422_203849.jpg",
+                           "20260422_215855.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "nssol-kaiseki",
+        "title":  "NSSOL kaiseki dinner",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "tokyo",
+                     "kaiseki",
+                     "client-dinner"
+                 ],
+        "fact_summary":  "A traditional multi-course Japanese dinner â€” sashimi, grilled fish, tiny artistic dishes â€” with the NSSOL business team.",
+        "photo_count":  37,
+        "current_hero":  "20260423_202434.jpg",
+        "candidates":  [
+                           "20260423_175954.jpg",
+                           "20260423_180235.jpg",
+                           "20260423_182124.jpg",
+                           "20260423_202434.jpg",
+                           "20260423_221235.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "suimei-shabu",
+        "title":  "Suimei (æ°´æ˜Ž) â€” Shabu-Shabu",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "tokyo",
+                     "shabu",
+                     "best-dinner-ever"
+                 ],
+        "fact_summary":  "Where you had your \u0027best dinner ever\u0027 (your handwritten words!). Wagyu shabu-shabu â€” thinly sliced beef cooked in dashi broth at the table.",
+        "photo_count":  16,
+        "current_hero":  "20260424_222334.jpg",
+        "candidates":  [
+                           "20260424_184807.jpg",
+                           "20260424_193831.jpg",
+                           "20260424_222334.jpg",
+                           "20260424_224059.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "wagyu-restaurant",
+        "title":  "5th-gen Wagyu Restaurant",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "tokyo",
+                     "wagyu",
+                     "last-night"
+                 ],
+        "fact_summary":  "A wagyu beef restaurant from a 5-generation family â€” the meat-merchant tradition started in 1962.",
+        "photo_count":  6,
+        "current_hero":  "20260426_220813.jpg",
+        "candidates":  [
+                           "20260426_220813.jpg",
+                           "20260426_224013.jpg",
+                           "20260426_224018.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "tonkatsu-team-lunch",
+        "title":  "Tonkatsu team lunch",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "tokyo",
+                     "team",
+                     "tonkatsu"
+                 ],
+        "fact_summary":  "A traditional fried-pork-cutlet lunch with shredded cabbage. Your first meal with the team.",
+        "photo_count":  4,
+        "current_hero":  "20260420_125441.jpg",
+        "candidates":  [
+                           "20260420_125421.jpg",
+                           "20260420_125439.jpg",
+                           "20260420_125441.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "matsukiyo",
+        "title":  "Matsumoto Kiyoshi Drugstore",
+        "type":  "shop",
+        "tags":  [
+                     "shop",
+                     "tokyo"
+                 ],
+        "fact_summary":  "Japan\u0027s most famous yellow-and-black drugstore chain. Tourists come for skincare and snacks.",
+        "photo_count":  4,
+        "current_hero":  "20260420_184828.jpg",
+        "candidates":  [
+                           "20260420_184828.jpg",
+                           "20260420_185129.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "donki",
+        "title":  "Donki / Drugstore haul",
+        "type":  "shop",
+        "tags":  [
+                     "shop",
+                     "tokyo"
+                 ],
+        "fact_summary":  "Don Quijote â€” chaotic Japanese discount store with EVERYTHING.",
+        "photo_count":  3,
+        "current_hero":  "20260419_201708.jpg",
+        "candidates":  [
+                           "20260419_182000.jpg",
+                           "20260419_183847.jpg",
+                           "20260419_201708.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "pokemon-center",
+        "title":  "Pokemon Center Tokyo",
+        "type":  "shop",
+        "tags":  [
+                     "shop",
+                     "pokemon",
+                     "tokyo",
+                     "for-the-kids"
+                 ],
+        "fact_summary":  "ðŸŽ® A WHOLE STORE of nothing but Pokemon stuff â€” cards, plushies, T-shirts, even snacks!",
+        "photo_count":  25,
+        "current_hero":  "20260426_204138.jpg",
+        "candidates":  [
+                           "20260426_194329.jpg",
+                           "20260426_195543.jpg",
+                           "20260426_203850.jpg",
+                           "20260426_204138.jpg",
+                           "20260426_205034.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "tokyo-cafe-coworking",
+        "title":  "Tokyo cafÃ© / co-working",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "tokyo",
+                     "work"
+                 ],
+        "fact_summary":  "A modern cafÃ© with free WiFi where Bryan worked on his MacBook before the CAO meeting.",
+        "photo_count":  7,
+        "current_hero":  "20260422_092252.jpg",
+        "candidates":  [
+                           "20260422_092252.jpg",
+                           "20260422_115423.jpg",
+                           "20260422_125751.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "hipster-breakfast",
+        "title":  "Hipster breakfast bowl spot",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "tokyo",
+                     "breakfast"
+                 ],
+        "fact_summary":  "A modern Tokyo cafÃ© with healthy grain bowls. Pink radish + tuna + herbs + coffee.",
+        "photo_count":  8,
+        "current_hero":  "20260420_071751.jpg",
+        "candidates":  [
+                           "20260420_071751.jpg",
+                           "20260420_072322.jpg",
+                           "20260420_100151.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "kyoto-station",
+        "title":  "Kyoto Station",
+        "type":  "transit",
+        "tags":  [
+                     "transit",
+                     "kyoto"
+                 ],
+        "fact_summary":  "A futuristic metal-and-glass mega-station that looks like a spaceship â€” surprising in old Kyoto!",
+        "photo_count":  18,
+        "current_hero":  "20260426_145124.jpg",
+        "candidates":  [
+                           "20260426_140654.jpg",
+                           "20260426_140659.jpg",
+                           "20260426_145124.jpg",
+                           "20260426_145507.jpg",
+                           "20260426_150401.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "fushimi-inari",
+        "title":  "Fushimi Inari Taisha",
+        "type":  "shrine",
+        "tags":  [
+                     "shrine",
+                     "shinto",
+                     "kyoto",
+                     "must-see"
+                 ],
+        "fact_summary":  "10,000 bright orange torii gates climbing a mountain! Each donated by a family or business. You hiked deep into Mt. Inari with companions.",
+        "photo_count":  213,
+        "current_hero":  "20260425_165022.jpg",
+        "candidates":  [
+                           "20260425_150125.jpg",
+                           "20260425_155447.jpg",
+                           "20260425_161101.jpg",
+                           "20260425_165022.jpg",
+                           "20260425_171442.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "himukai-daijingu",
+        "title":  "Himukai Daijingu (Kyoto\u0027s Ise)",
+        "type":  "shrine",
+        "tags":  [
+                     "shrine",
+                     "shinto",
+                     "kyoto",
+                     "hidden-gem"
+                 ],
+        "fact_summary":  "A small but historic Shinto shrine called \u0027Kyoto\u0027s Ise\u0027 because it\u0027s modeled after the famous Ise Grand Shrine. It has a sacred cave and a small spring.",
+        "photo_count":  21,
+        "current_hero":  "20260426_122551.jpg",
+        "candidates":  [
+                           "20260426_115722.jpg",
+                           "20260426_115726.jpg",
+                           "20260426_120058.jpg",
+                           "20260426_122551.jpg",
+                           "20260426_123129.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "kyoto-trail-higashiyama",
+        "title":  "Kyoto Trail Â· Higashiyama",
+        "type":  "hike",
+        "tags":  [
+                     "hike",
+                     "nature",
+                     "kyoto",
+                     "accomplishment"
+                 ],
+        "fact_summary":  "An 80+ KM official hiking trail that loops the mountains around Kyoto. You hiked the Higashiyama section â€” marker #37 photo proves it!",
+        "photo_count":  144,
+        "current_hero":  "20260426_114318.jpg",
+        "candidates":  [
+                           "20260426_101913.jpg",
+                           "20260426_102636(1).jpg",
+                           "20260426_105121.jpg",
+                           "20260426_114318.jpg",
+                           "20260426_114320.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "gion",
+        "title":  "Gion (Geisha District)",
+        "type":  "neighborhood",
+        "tags":  [
+                     "neighborhood",
+                     "kyoto",
+                     "traditional"
+                 ],
+        "fact_summary":  "Old neighborhood where you might still see GEISHA walking to work! Wooden machiya houses, lanterns, stone streets.",
+        "photo_count":  28,
+        "current_hero":  "20260425_190027.jpg",
+        "candidates":  [
+                           "20260425_185014.jpg",
+                           "20260425_185520.jpg",
+                           "20260425_185857.jpg",
+                           "20260425_190027.jpg",
+                           "20260425_191014.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "kamogawa-river",
+        "title":  "Kamogawa River",
+        "type":  "landmark",
+        "tags":  [
+                     "landmark",
+                     "kyoto",
+                     "river"
+                 ],
+        "fact_summary":  "Kyoto\u0027s main river with stone embankments. At night, traditional restaurants light up along the banks.",
+        "photo_count":  25,
+        "current_hero":  "20260425_193200.jpg",
+        "candidates":  [
+                           "20260425_193200.jpg",
+                           "20260425_193327.jpg",
+                           "20260425_200252.jpg",
+                           "20260425_202949.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "komeda-pokemon",
+        "title":  "Komeda Coffee (Pokemon promo)",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "kyoto",
+                     "pokemon",
+                     "coffee"
+                 ],
+        "fact_summary":  "A Japanese coffee chain (Komeda\u0027s) with a Pokemon-themed promotion! You had the Kuro-neige baumkuchen dessert.",
+        "photo_count":  9,
+        "current_hero":  "20260425_174148.jpg",
+        "candidates":  [
+                           "20260425_172537.jpg",
+                           "20260425_174148.jpg",
+                           "20260425_174758.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "cacao-market",
+        "title":  "Cacao Market (chocolate)",
+        "type":  "food",
+        "tags":  [
+                     "food",
+                     "chocolate",
+                     "kyoto"
+                 ],
+        "fact_summary":  "Kyoto chocolate shop in a European-style building with a big clock.",
+        "photo_count":  9,
+        "current_hero":  "20260426_124704.jpg",
+        "candidates":  [
+                           "20260426_124701.jpg",
+                           "20260426_124704.jpg",
+                           "20260426_130311.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "kyoto-hotel",
+        "title":  "Kyoto hotel (yukata-ryokan style)",
+        "type":  "transit",
+        "tags":  [
+                     "transit",
+                     "kyoto",
+                     "hotel",
+                     "yukata"
+                 ],
+        "fact_summary":  "A traditional-style hotel that gave Bryan a yukata (cotton kimono robe) to wear in the room.",
+        "photo_count":  15,
+        "current_hero":  "20260425_222046.jpg",
+        "candidates":  [
+                           "20260425_182946.jpg",
+                           "20260425_210927.jpg",
+                           "20260425_214839.jpg",
+                           "20260425_222046.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "jni-office",
+        "title":  "JNI Office (Kagurazaka)",
+        "type":  "landmark",
+        "tags":  [
+                     "work",
+                     "tokyo",
+                     "government"
+                 ],
+        "fact_summary":  "",
+        "photo_count":  5,
+        "current_hero":  "20260421_072949.jpg",
+        "candidates":  [
+                           "20260421_072949.jpg",
+                           "20260421_091200.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "nssol-hq",
+        "title":  "NSSOL HQ — Tokyo Highrise",
+        "type":  "landmark",
+        "tags":  [
+                     "work",
+                     "tokyo",
+                     "client",
+                     "highrise"
+                 ],
+        "fact_summary":  "",
+        "photo_count":  17,
+        "current_hero":  "20260423_075037.jpg",
+        "candidates":  [
+                           "20260423_075037.jpg",
+                           "20260423_093109.jpg",
+                           "20260423_093722.jpg",
+                           "20260423_095346.jpg",
+                           "20260423_131933.jpg"
+                       ]
+    },
+    {
+        "pin_id":  "hnd-haneda",
+        "title":  "Haneda Airport (HND)",
+        "type":  "transit",
+        "tags":  [
+                     "transit",
+                     "tokyo",
+                     "airport",
+                     "return"
+                 ],
+        "fact_summary":  "",
+        "photo_count":  10,
+        "current_hero":  "20260427_121514.jpg",
+        "candidates":  [
+                           "20260427_121514.jpg",
+                           "20260427_122940.jpg",
+                           "20260427_150328.jpg",
+                           "20260427_150806.jpg"
+                       ]
+    }
+]
