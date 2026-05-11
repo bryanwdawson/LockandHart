@@ -1,5 +1,5 @@
 {
-  "_doc": "Day-by-day narrative + companions for the Japan trip. Pulled from Notion daily logs. Day 1 = 2026-04-18 (land day). Day 10 = 2026-04-27 (return).",
+  "_doc": "Day-by-day narrative + companions for the Japan trip. Day 1 = 2026-04-18 (land day). Day 10 = 2026-04-27 (return). Team members are pseudonymized for privacy.",
   "days": [
     {
       "day": 0,
@@ -50,13 +50,13 @@
       "date": "2026-04-20",
       "title": "Team arrives + Tonkatsu",
       "opening_quote": null,
-      "summary": "Team arrives in Tokyo; Bryan joins a tonkatsu group lunch (4 people), wanders Marunouchi, then closes with a traditional izakaya dinner near Mitsui Garden Hotel.",
+      "summary": "Team arrives in Tokyo; Bryan joins a tonkatsu group lunch, wanders Marunouchi, then closes with a traditional izakaya dinner near Mitsui Garden Hotel.",
       "moments": [
         "Convenience store coffee bar 05:44",
         "Hipster breakfast bowl",
         "Tonkatsu team lunch group photo",
         "Marunouchi brick high-rise walk",
-        "Matsumoto Kiyoshi run with coworker",
+        "Matsumoto Kiyoshi run with a coworker",
         "Traditional izakaya team dinner, fried mushrooms"
       ],
       "themes": ["work", "food"]
@@ -66,13 +66,13 @@
       "date": "2026-04-21",
       "title": "JNI day + IBREN",
       "opening_quote": null,
-      "summary": "First view of Skytree from the hotel; JNI deep-dive in Kagurazaka with a formal visitor badge, then a sober jasmine-tea dinner at IBREN in Akihabara while the team drinks.",
+      "summary": "First view of Skytree from the hotel; deep-dive meeting at JNI in Kagurazaka with a formal visitor badge, then a sober jasmine-tea dinner at IBREN in Akihabara while the team drinks.",
       "moments": [
         "Tokyo Skytree from hotel window 07:30",
         "Lexus dashboard commute",
         "External Visitor Temporary Pass at Ichigaya",
         "Twilight Marunouchi skyline",
-        "IBREN Akihabara dinner, ¥8,514, jasmine tea sober"
+        "IBREN Akihabara dinner, jasmine tea sober"
       ],
       "themes": ["work", "food"]
     },
@@ -83,7 +83,7 @@
       "opening_quote": null,
       "summary": "Daily 5 AM gym + onsen routine, hotel-coworking morning, then the trip's biggest government engagement at the Cabinet Office in Kasumigaseki, capped by a deep-cut yakitori dinner.",
       "moments": [
-        "5 AM hotel gym + nude public spa daily",
+        "5 AM hotel gym + public spa daily",
         "MacBook open at hotel coworking 09:22",
         "Cabinet Office meeting in Kasumigaseki",
         "Marunouchi MUJI + tower post-CAO",
@@ -97,30 +97,28 @@
       "date": "2026-04-23",
       "title": "NSSOL day + Kaiseki",
       "opening_quote": "I felt so humbled. I never thought I would conduct business in a Tokyo highrise.",
-      "summary": "Bryan suits up for an NSSOL deep-dive in a Tokyo highrise, meets counterpart researcher Moroboshi, and ends with a kaiseki group dinner at a zen-style restaurant.",
+      "summary": "Bryan suits up for an NSSOL deep-dive in a Tokyo highrise and ends with a kaiseki group dinner at a zen-style restaurant.",
       "moments": [
         "Dark business suit hotel mirror selfie",
         "NSSOL deep-dive in Tokyo highrise",
-        "Met Moroboshi, NSSOL's top researcher",
-        "Alessandro + Moroboshi back-to-back goofing",
         "Kaiseki sashimi + iced tea courses",
         "NSSOL group photo at zen restaurant"
       ],
-      "themes": ["work", "food", "comedy"]
+      "themes": ["work", "food"]
     },
     {
       "day": 7,
       "date": "2026-04-24",
-      "title": "Zojoji + DIH MoD + Suimei",
+      "title": "Zojoji + Ministry of Defense + Suimei",
       "opening_quote": null,
-      "summary": "Stood on Zojoji's Buddha's Footprints stone and prayed for guidance, captured the iconic Zojoji + Tokyo Tower frame, met at DIH/MoD Ichigaya, then closed with Darren's send-off shabu-shabu at Suimei where all six nationalities signed the menu.",
+      "summary": "Stood on Zojoji's Buddha's Footprints stone and prayed for guidance, captured the iconic Zojoji + Tokyo Tower frame, attended the DIH meeting at the Ministry of Defense in Ichigaya, then closed with a send-off shabu-shabu at Suimei where all six nationalities signed the menu.",
       "moments": [
         "Prayed on Zojoji's Bussokuseki (Buddha's Footprints) stone",
         "Iconic Zojoji + Tokyo Tower 11:11 frame",
         "DIH meeting at Ministry of Defense, Ichigaya",
         "Samurai poster at MoD",
-        "Suimei wagyu shabu-shabu, Darren's send-off",
-        "Signed menu with 6 nationalities, Clarice's bald-Bryan doodle"
+        "Suimei wagyu shabu-shabu, Doug's send-off",
+        "Signed menu with six nationalities, Clair's bald-Bryan doodle"
       ],
       "themes": ["spiritual", "work", "food", "comedy"]
     },
@@ -129,11 +127,11 @@
       "date": "2026-04-25",
       "title": "Tokyo to Kyoto: Fushimi Inari + Gion",
       "opening_quote": null,
-      "summary": "Shinkansen straight to Fushimi Inari, hiked deep into Mt. Inari, rescued two lost Singaporean women and walked them to the train station, then Kamogawa River dusk and yukata at the Kyoto hotel.",
+      "summary": "Shinkansen straight to Fushimi Inari, hiked deep into Mt. Inari, helped two lost Singaporean strangers find their way down to the train, then Kamogawa River dusk and yukata at the Kyoto hotel.",
       "moments": [
         "Shinkansen Tokyo to Kyoto",
         "Vermilion torii corridor + sub-shrines on Mt. Inari",
-        "Rescued two lost Singaporean women, walked them down to the station",
+        "Walked two lost Singaporean strangers down to the station",
         "Komeda Coffee Pokemon promo, kuro-neige baumkuchen",
         "Gion machiya district at dusk",
         "Kamogawa River first Kyoto night walk",
@@ -144,17 +142,16 @@
     {
       "day": 9,
       "date": "2026-04-26",
-      "title": "Kyoto Trail + Himukai + Pokemon",
+      "title": "Kyoto Trail + Himukai",
       "opening_quote": null,
-      "summary": "Hiked the Kyoto Round Trail Higashiyama marker #37 to Himukai Daijingu ('Kyoto's Ise'), shinkansen back to Tokyo, then a 22-item ¥35,213 Pokemon Center haul and late wagyu dinner.",
+      "summary": "Hiked the Kyoto Round Trail Higashiyama marker #37 to Himukai Daijingu ('Kyoto's Ise'), shinkansen back to Tokyo, and a late wagyu dinner.",
       "moments": [
         "Kyoto Trail Higashiyama marker #37",
         "Mossy mountain trail + sacred spring walkway",
         "Himukai Daijingu, 'Kyoto's Ise'",
         "Cacao Market chocolate stop",
-        "Nozomi 28 Kyoto to Tokyo, ¥14,170",
-        "Pokemon Center haul: 22 items, ¥35,213",
-        "Late wagyu dinner at 5th-gen 1962 merchant restaurant"
+        "Nozomi 28 Kyoto to Tokyo",
+        "Late wagyu dinner at a 5th-gen merchant restaurant"
       ],
       "themes": ["spiritual", "cultural", "food"]
     },
@@ -167,7 +164,6 @@
       "moments": [
         "Hotel mirror selfie 05:41",
         "Senso-ji #2 at sunrise",
-        "Charizard Pokemon coin purse reveal",
         "Rainy Tokyo shopping arcade",
         "1877 Meiji-era plate from Philadelphia Centennial Exposition",
         "HND airport ramen",
@@ -177,16 +173,10 @@
     }
   ],
   "people": [
-    { "name": "Darren Tebbitt", "role": "Bryan's boss (Wales)", "days": [3, 4, 5, 6, 7], "notes": "In Japan Apr 16-24; Suimei send-off, drew the inappropriate doodle" },
-    { "name": "Clarice Tan", "role": "Director of Product (Singapore)", "days": [3, 4, 5, 6, 7, 8], "notes": "Apr 19-25; pink-purple nails, trip food guide, drew bald-Bryan doodle" },
-    { "name": "David Oostrom", "role": "CSM (Netherlands)", "days": [4, 5, 6, 7, 8, 9], "notes": "Apr 21 AM - Apr 26 then Taipei; wrote 'best dinner ever!' on Suimei menu" },
-    { "name": "Alessandro Zadro", "role": "Chief Researcher (Italy)", "days": [2, 3, 4, 5, 6, 7, 8], "notes": "Apr 19-25; back-to-back goofing with Moroboshi, got in trouble laughing" },
-    { "name": "Vette", "role": "Darren's wife", "days": [7], "notes": "At Suimei send-off; drew the wagyu burger doodle" },
-    { "name": "Moroboshi", "role": "NSSOL top researcher", "days": [6], "notes": "Bryan's NSSOL counterpart; back-to-back photo with Alessandro" },
-    { "name": "Nick Okuyama", "role": "Likely NSSOL or DIH counterpart", "days": [6, 7], "notes": "Signed Suimei menu" },
-    { "name": "M Park", "role": "Likely NSSOL or DIH counterpart", "days": [7], "notes": "Signed Suimei menu" },
-    { "name": "MAS", "role": "Likely NSSOL or DIH counterpart", "days": [7], "notes": "Signed Suimei menu" },
-    { "name": "Ben", "role": "Likely NSSOL or DIH counterpart", "days": [7], "notes": "Signed Suimei menu" },
-    { "name": "Lost Singaporean women (2)", "role": "Strangers helped on Mt. Inari", "days": [8], "notes": "Bryan walked them down the mountain to the train station" }
+    { "name": "Doug", "role": "Bryan's manager", "days": [3, 4, 5, 6, 7], "notes": "Suimei send-off dinner" },
+    { "name": "Clair", "role": "Director of Product", "days": [3, 4, 5, 6, 7, 8], "notes": "Trip food guide; drew the bald-Bryan doodle on the Suimei menu" },
+    { "name": "Saul", "role": "Customer Success Manager", "days": [4, 5, 6, 7, 8, 9], "notes": "Wrote 'best dinner ever!' on the Suimei menu" },
+    { "name": "Alex", "role": "Chief Researcher", "days": [2, 3, 4, 5, 6, 7, 8], "notes": "Back-to-back goofing at the NSSOL dinner" },
+    { "name": "Vicky", "role": "Doug's wife", "days": [7], "notes": "At Suimei send-off; drew the wagyu burger doodle" }
   ]
 }
