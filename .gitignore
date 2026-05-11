@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# One-shot bat helpers (contain personal info, regenerated as needed)
+*.bat
+

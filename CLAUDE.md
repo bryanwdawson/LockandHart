@@ -76,6 +76,7 @@ In MDX, render the chip with `<StoryTag t="DOC" />`. The chip is a label, not a 
 | Content | MDX 3 via `@mdx-js/rollup` |
 | Host | Netlify (free tier) |
 | Domain | lockandhart.com (registrar: Shopify, plan: transfer to Cloudflare post-launch) |
+| Repo | https://github.com/bryanwdawson/LockandHart (private) |
 | Checkout | Stripe Checkout via Netlify Function (deferred until products ship) |
 | DB | None for v1. Add Supabase when storefront or gated subdomains activate. |
 
