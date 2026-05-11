@@ -45,7 +45,7 @@ Product catalog. Each item: `slug`, `name`, `category`, `summary`, `status`, `ta
 |---|---|---|---|
 | `/private` | `Private.jsx` | hardcoded password | Scaffolded |
 | `/private/hub` | `PrivateHub.jsx` (gated) | `data/private.json` | Scaffolded |
-| `/private/japan/` | static folder | drop-in from Japan Trip Cowork project | Pending drop |
+| `/private/japan/` | static folder | drop-in from Japan Trip Cowork project | Live |
 
 ### Deferred (architected to slot in)
 - `/products/[slug]` and `/shop` — when storefront activates
@@ -60,12 +60,13 @@ Product catalog. Each item: `slug`, `name`, `category`, `summary`, `status`, `ta
 ### v1 — Storytelling site (current)
 - [x] Repo scaffolded, dev server clean
 - [x] Brand tokens locked in Tailwind theme
-- [ ] Home page narrative pass (fill the home.mdx TODO sections)
-- [ ] Logo SVGs in place
-- [ ] Japan static folder dropped in
+- [x] Home page narrative pass (DOC/TRAD layers + coda)
+- [x] Logo SVGs in place
+- [x] Japan static folder dropped in (528 photos, all upright)
+- [x] Code-level Lighthouse pre-flight (canonical, OG/Twitter image, theme-color, contrast fix)
 - [ ] DNS cutover Shopify → Netlify
 - [ ] Cancel Shopify subscription
-- [ ] Lighthouse pass
+- [ ] Lighthouse pass on real Netlify build
 
 ### v2 — Storefront
 - Stripe Checkout via Netlify Function

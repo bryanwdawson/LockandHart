@@ -41,7 +41,7 @@ export default function PrivateHub() {
       <p className="text-center mt-16">
         <button
           onClick={handleLock}
-          className="font-ui text-xs uppercase tracking-widest text-ink/50 hover:text-ink underline underline-offset-4"
+          className="font-ui text-xs uppercase tracking-widest text-ink/60 hover:text-ink underline underline-offset-4"
         >
           Sign out
         </button>

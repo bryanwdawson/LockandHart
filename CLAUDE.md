@@ -135,12 +135,12 @@ public/           static assets, /japan drop-in
 - [ ] Cancel Shopify subscription after DNS cutover confirmed
 - [ ] Transfer registrar Shopify → Cloudflare (60-day post-purchase lock from Feb 13, 2026 has lifted)
 - [ ] Decide Google Workspace: cancel / keep / forward `bryan@lockandhart.com` → Gmail
-- [ ] Drop final logo SVGs into `public/logos/`
-- [ ] Drop Japan static folder into `public/private/japan/`
-- [ ] Add `robots.txt` disallowing `/private` so search engines skip it
+- [x] Drop final logo SVGs into `public/logos/`
+- [x] Drop Japan static folder into `public/private/japan/`
+- [x] Add `robots.txt` disallowing `/private` so search engines skip it
+- [x] Verify all copy passes the banned-words check (no exclamation, no "Heart")
 - [ ] Confirm DNS records: apex + www → Netlify
 - [ ] Run Lighthouse — target 95+ on all four scores
-- [ ] Verify all copy passes the banned-words check (no exclamation, no "Heart")
 
 ---
 
