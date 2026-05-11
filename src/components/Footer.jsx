@@ -8,7 +8,7 @@ export default function Footer() {
         <p className="font-display text-lg">Lock &amp; Hart</p>
         <Link
           to="/private"
-          className="font-ui text-[10px] uppercase tracking-widest text-ink/55 hover:text-ink transition md:justify-self-center"
+          className="font-ui text-[10px] uppercase tracking-widest text-ink/70 hover:text-ink transition md:justify-self-center"
           aria-label="Private section"
         >
           Private

@@ -1,7 +1,7 @@
 const styles = {
   DOC: 'bg-ink/10 text-ink',
-  TRAD: 'bg-oxblood/15 text-oxblood',
-  LEG: 'bg-garnet/10 text-garnet',
+  TRAD: 'bg-oxblood/20 text-ink',
+  LEG: 'bg-garnet/15 text-ink',
 }
 
 const labels = {
