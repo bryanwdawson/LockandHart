@@ -1,0 +1,14 @@
+{
+  "$comment": "Personal sections behind the gate. Add a new entry, drop its content at the href.",
+  "items": [
+    {
+      "slug": "japan-2026",
+      "title": "Japan — 2026",
+      "category": "Travelogue",
+      "summary": "A self-contained recap of the trip.",
+      "href": "/private/japan/",
+      "external": false,
+      "status": "pending"
+    }
+  ]
+}

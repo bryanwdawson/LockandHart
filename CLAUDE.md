@@ -85,8 +85,23 @@ In MDX, render the chip with `<StoryTag t="DOC" />`. The chip is a label, not a 
 ## Architecture
 
 - **Single Netlify site, single repo, apex only.** play. / hunt. / family. / trip. are deferred. When activated, each becomes its own repo + Netlify site, not a folder here.
-- Japan recap = drop-in static folder at `public/japan/`. Route `/japan` redirects into it.
+- **Public surface is intentionally small.** Only `/` is public. No public nav links — the logo is the only public navigation. No /japan, no /shop on public.
+- **Private content sits behind `/private`** (password gate, see below). Personal recaps and games land at `/private/*`.
 - `data/*.json` are canonical. MDX + JSX derive from them.
+
+## Gate / Private section
+
+The site has a small private area for family-and-friends content (trip recaps, future games). Public visitors never see it in nav.
+
+- **Entry:** `/private` — a password form. Linked discreetly from the footer ("Private" in small grey type).
+- **Password:** hardcoded in `src/pages/Private.jsx`. Current value: `2026`. To rotate: edit that one line and push.
+- **Persistence:** localStorage key `lh_gate_v1`. Persists until the user clicks "Sign out" on the hub.
+- **Hub:** `/private/hub` — gated by `<RequireGate>`. Lists personal sections from `data/private.json`.
+- **Static drop-ins** (e.g., Japan recap) go under `public/private/<name>/`. They are accessed by URL only after the visitor unlocks the gate via the React hub link.
+
+**Velvet rope, not a vault.** The password lives in client-side JS — anyone with browser dev tools can read it. Static URLs under `/private/<name>/` are not server-side protected; they're shielded by URL obscurity only. Search engines: a `robots.txt` Disallow on `/private` prevents indexing.
+
+When real protection is needed: upgrade to a Netlify Edge Function that intercepts `/private/*` requests and checks a signed cookie. The cookie gets set by a small `/api/unlock` Function that verifies the password server-side against an env var. ~50 lines total.
 
 ### Repo layout
 ```
@@ -121,7 +136,8 @@ public/           static assets, /japan drop-in
 - [ ] Transfer registrar Shopify → Cloudflare (60-day post-purchase lock from Feb 13, 2026 has lifted)
 - [ ] Decide Google Workspace: cancel / keep / forward `bryan@lockandhart.com` → Gmail
 - [ ] Drop final logo SVGs into `public/logos/`
-- [ ] Drop Japan static folder into `public/japan/`
+- [ ] Drop Japan static folder into `public/private/japan/`
+- [ ] Add `robots.txt` disallowing `/private` so search engines skip it
 - [ ] Confirm DNS records: apex + www → Netlify
 - [ ] Run Lighthouse — target 95+ on all four scores
 - [ ] Verify all copy passes the banned-words check (no exclamation, no "Heart")

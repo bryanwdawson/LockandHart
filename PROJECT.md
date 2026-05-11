@@ -34,15 +34,22 @@ Product catalog. Each item: `slug`, `name`, `category`, `summary`, `status`, `ta
 
 ## Routes (v1)
 
+### Public
 | Route | Component | Source | Status |
 |---|---|---|---|
 | `/` | `Home.jsx` | `content/home.mdx` + site/story JSON | Scaffolded |
-| `/japan` | `Japan.jsx` | static drop-in at `public/japan/` | Placeholder until folder dropped |
-| `/shop` | `Shop.jsx` | `data/products.json` | Coming-soon state |
 | `*` | `NotFound.jsx` | — | Scaffolded |
 
+### Private (behind password gate)
+| Route | Component | Source | Status |
+|---|---|---|---|
+| `/private` | `Private.jsx` | hardcoded password | Scaffolded |
+| `/private/hub` | `PrivateHub.jsx` (gated) | `data/private.json` | Scaffolded |
+| `/private/japan/` | static folder | drop-in from Japan Trip Cowork project | Pending drop |
+
 ### Deferred (architected to slot in)
-- `/products/[slug]` — individual product pages
+- `/products/[slug]` and `/shop` — when storefront activates
+- `/private/games/*` — for future game deploys (e.g., Family Feud)
 - `/the-name`, `/simon`, `/lee-penny` — if story grows beyond a single-page narrative
 - `/about`, `/journal`, `/contact`
 
@@ -110,3 +117,6 @@ No other top-level deps without flagging the addition in the session.
 | 2026-05-11 | Stripe direct, not Shopify Lite | Full ownership; no $9/mo to stay tethered to platform we're leaving |
 | 2026-05-11 | Tailwind v4 | Current major; theme tokens in CSS, no separate config file |
 | 2026-05-11 | Fonts: Cormorant Garamond + Source Serif 4 + Inter | Heirloom feel; free via Google Fonts |
+| 2026-05-11 | Public surface = only `/`. No public nav links. | Bryan: site is Lockhart story; Japan/games are not for public |
+| 2026-05-11 | `/private` password gate (client-side, "2026" hardcoded) | Velvet rope acceptable for v1; family/friend access not requiring real auth |
+| 2026-05-11 | Japan static drops at `public/private/japan/`, not `public/japan/` | Path under `/private/` keeps URL out of public discovery and aligns with gate model |

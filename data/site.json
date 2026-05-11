@@ -4,8 +4,6 @@
   "tagline": "Legacy, Carried.",
   "jewelry_tagline": "Sacred. Worn. Kept.",
   "core_statement": "The under-told story was not hidden. It was unassembled.",
-  "nav": [
-    { "to": "/japan", "label": "Japan" },
-    { "to": "/shop", "label": "Shop" }
-  ]
+  "nav": [],
+  "$comment_nav": "Public nav intentionally empty. Logo is the only public navigation. Private content sits behind the /private gate (see data/private.json)."
 }
