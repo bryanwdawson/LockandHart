@@ -26,3 +26,6 @@ dist-ssr
 # One-shot bat helpers (contain personal info, regenerated as needed)
 *.bat
 
+
+# Intermediate processing artifacts for Japan media pass
+public/private/japan/_*.json
