@@ -775,6 +775,8 @@
     const parts = [];
     if (state.filter && state.filter !== 'all') parts.push('filter=' + state.filter);
     if (state.day && state.day !== 'all') parts.push('day=' + state.day);
+    if (state.mode && state.mode !== 'default') parts.push('mode=' + state.mode);
+    if (state.with && state.with !== 'all') parts.push('with=' + encodeURIComponent(state.with));
     if (state.pin) parts.push('pin=' + state.pin);
     const next = parts.length ? '#' + parts.join('&') : '';
     if (next !== location.hash) history.replaceState(null, '', location.pathname + next);
@@ -1330,6 +1332,15 @@
     });
   }
 
+  function applyHashWith(name) {
+    state.with = name;
+    document.querySelectorAll('#with-row button[data-with]').forEach((b) => {
+      const on = b.dataset.with === name;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on);
+    });
+  }
+
   function buildCompanionPills() {
     if (!daysData || !daysData.people || !daysData.people.length) return;
     const row = document.getElementById('with-row');
@@ -1346,15 +1357,15 @@
 
     row.querySelectorAll('button[data-with]').forEach((btn) => {
       btn.addEventListener('click', () => {
-        state.with = btn.dataset.with;
-        row.querySelectorAll('button[data-with]').forEach((b) => {
-          const on = b === btn;
-          b.classList.toggle('active', on);
-          b.setAttribute('aria-pressed', on);
-        });
+        applyHashWith(btn.dataset.with);
+        writeHash(state);
         buildMarkers();
       });
     });
+
+    // If a `with=` was in the URL hash on load, apply it now that pills exist
+    const h = parseHash();
+    if (h.with) { applyHashWith(decodeURIComponent(h.with)); buildMarkers(); }
   }
 
   function bindStatsChips() {
@@ -1420,6 +1431,15 @@
       const h = parseHash();
       if (h.filter) state.filter = h.filter;
       if (h.day) state.day = h.day;
+      if (h.mode && MODE_FILTERS[h.mode]) {
+        state.mode = h.mode;
+        document.querySelectorAll('button[data-mode]').forEach((b) => {
+          const on = b.dataset.mode === h.mode;
+          b.classList.toggle('active', on);
+          b.setAttribute('aria-pressed', on);
+        });
+      }
+      // `with` is applied inside buildCompanionPills once daysData arrives
 
       updateCounts();
       buildTimeline();
