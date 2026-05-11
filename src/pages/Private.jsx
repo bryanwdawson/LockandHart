@@ -30,7 +30,7 @@ export default function Private() {
 
   return (
     <section className="max-w-md mx-auto px-6 py-32">
-      <p className="font-ui text-xs uppercase tracking-widest text-ink/60 mb-6 text-center">
+      <p className="font-ui text-xs uppercase tracking-widest text-ink/70 mb-6 text-center">
         Private
       </p>
       <h1 className="font-display text-4xl mb-10 text-center">Enter</h1>

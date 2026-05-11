@@ -8,12 +8,12 @@ export default function Footer() {
         <p className="font-display text-lg">Lock &amp; Hart</p>
         <Link
           to="/private"
-          className="font-ui text-[10px] uppercase tracking-widest text-ink/30 hover:text-ink/70 transition md:justify-self-center"
+          className="font-ui text-[10px] uppercase tracking-widest text-ink/55 hover:text-ink transition md:justify-self-center"
           aria-label="Private section"
         >
           Private
         </Link>
-        <p className="font-ui text-xs uppercase tracking-widest text-ink/50 md:justify-self-end">
+        <p className="font-ui text-xs uppercase tracking-widest text-ink/70 md:justify-self-end">
           Legacy, Carried. &middot; &copy; {year}
         </p>
       </div>

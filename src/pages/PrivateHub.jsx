@@ -12,7 +12,7 @@ export default function PrivateHub() {
 
   return (
     <section className="max-w-4xl mx-auto px-6 py-24">
-      <p className="font-ui text-xs uppercase tracking-widest text-ink/60 mb-3 text-center">
+      <p className="font-ui text-xs uppercase tracking-widest text-ink/70 mb-3 text-center">
         Private
       </p>
       <h1 className="font-display text-5xl mb-12 text-center">Inside</h1>
@@ -26,7 +26,7 @@ export default function PrivateHub() {
             target={s.external ? '_blank' : undefined}
             rel={s.external ? 'noreferrer' : undefined}
           >
-            <p className="font-ui text-xs uppercase tracking-widest text-ink/60 mb-3">
+            <p className="font-ui text-xs uppercase tracking-widest text-ink/70 mb-3">
               {s.category}
             </p>
             <h3 className="font-display text-2xl mb-2">{s.title}</h3>

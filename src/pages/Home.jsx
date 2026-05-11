@@ -10,7 +10,7 @@ export default function Home() {
           alt=""
           className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-8"
         />
-        <p className="font-ui text-xs uppercase tracking-widest text-ink/60 mb-6">
+        <p className="font-ui text-xs uppercase tracking-widest text-ink/70 mb-6">
           Legacy, Carried.
         </p>
         <h1 className="font-display text-5xl md:text-7xl leading-tight mb-8">

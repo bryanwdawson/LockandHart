@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function NotFound() {
   return (
     <section className="max-w-xl mx-auto px-6 py-32 text-center">
-      <p className="font-ui text-xs uppercase tracking-widest text-ink/60 mb-6">
+      <p className="font-ui text-xs uppercase tracking-widest text-ink/70 mb-6">
         Off the path
       </p>
       <h1 className="font-display text-5xl mb-6">Not found.</h1>
