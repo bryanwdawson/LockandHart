@@ -6,9 +6,17 @@ export default function Nav() {
       <nav className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-center">
         <Link
           to="/"
-          className="font-display text-2xl tracking-wide hover:opacity-70 transition"
+          className="flex items-center gap-3 hover:opacity-70 transition"
+          aria-label="Lock & Hart — home"
         >
-          Lock &amp; Hart
+          <img
+            src="/logos/lock_hart_logo_FINAL.svg"
+            alt=""
+            className="w-7 h-7"
+          />
+          <span className="font-display text-2xl tracking-wide">
+            Lock &amp; Hart
+          </span>
         </Link>
       </nav>
     </header>

@@ -4,7 +4,12 @@ import StoryTag from '../components/StoryTag.jsx'
 export default function Home() {
   return (
     <>
-      <section className="max-w-4xl mx-auto px-6 pt-24 pb-20 text-center">
+      <section className="max-w-4xl mx-auto px-6 pt-20 pb-20 text-center">
+        <img
+          src="/logos/lock_hart_logo_FINAL.svg"
+          alt=""
+          className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-8"
+        />
         <p className="font-ui text-xs uppercase tracking-widest text-ink/60 mb-6">
           Legacy, Carried.
         </p>
