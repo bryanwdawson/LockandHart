@@ -420,7 +420,22 @@
                      "photos":  [
                                     "20260419_113116.jpg",
                                     "20260419_112509.jpg",
-                                    "20260419_114535.jpg"
+                                    "20260419_114535.jpg",
+                                    "20260427_054107.jpg",
+                                    "20260427_054116.jpg",
+                                    "20260427_084505.jpg",
+                                    "20260427_084506.jpg",
+                                    "20260427_085227.jpg",
+                                    "20260427_092034.jpg",
+                                    "20260427_092037.jpg",
+                                    "20260427_092150.jpg",
+                                    "20260427_092500.jpg",
+                                    "20260427_092502.jpg",
+                                    "20260427_100452.jpg",
+                                    "20260427_101454.jpg",
+                                    "20260427_101456.jpg",
+                                    "20260427_113415.jpg",
+                                    "20260427_115503.jpg"
                                 ]
                  },
                  {
@@ -2214,6 +2229,124 @@
                                   "buddhist",
                                   "kyoto"
                               ]
+                 },
+                 {
+                     "id":  "jni-office",
+                     "type":  "landmark",
+                     "title":  "JNI Office (Kagurazaka)",
+                     "city":  "Tokyo",
+                     "neighborhood":  "Kagurazaka",
+                     "coords":  [
+                                    35.7019,
+                                    139.7406
+                                ],
+                     "wiki":  "https://en.wikipedia.org/wiki/Kagurazaka",
+                     "visited":  "2026-04-21",
+                     "status":  "confirmed",
+                     "facts":  {
+                                   "local":  "The shrine at the bottom of the main slope (Bishamonten Zenkokuji) is where Kagurazaka geisha have prayed for centuries.",
+                                   "history":  "JNI deep-dive meeting day in Kagurazaka — formal Visitor Temporary Pass at Ichigaya, then JNI office.",
+                                   "wow":  "Kagurazaka is a historic geisha district; today it\u0027s a quietly upscale neighborhood with French expats and traditional restaurants on cobblestone streets.",
+                                   "tip":  "Apr 21 morning. Lexus dashboard commute, External Visitor Temporary Pass photo."
+                               },
+                     "tags":  [
+                                  "work",
+                                  "tokyo",
+                                  "government"
+                              ],
+                     "hero":  "20260421_072949.jpg",
+                     "photos":  [
+                                    "20260421_072949.jpg",
+                                    "20260421_073000.jpg",
+                                    "20260421_090202.jpg",
+                                    "20260421_091129.jpg",
+                                    "20260421_091200.jpg"
+                                ]
+                 },
+                 {
+                     "id":  "nssol-hq",
+                     "type":  "landmark",
+                     "title":  "NSSOL HQ — Tokyo Highrise",
+                     "city":  "Tokyo",
+                     "neighborhood":  "Toyosu / Tokyo Bay area",
+                     "coords":  [
+                                    35.6557,
+                                    139.796
+                                ],
+                     "wiki":  "https://en.wikipedia.org/wiki/Nippon_Steel_Solutions",
+                     "visited":  "2026-04-23",
+                     "status":  "confirmed",
+                     "facts":  {
+                                   "local":  "The Tokyo Bay business district (Toyosu / Shibaura) is where most Japanese conglomerate headquarters relocated when central Tokyo got too expensive.",
+                                   "history":  "Bryan\u0027s \u0027never thought I\u0027d conduct business in a Tokyo highrise\u0027 day. Full NSSOL deep-dive.",
+                                   "wow":  "Nippon Steel Solutions (NSSOL) is the IT arm of Nippon Steel — they run major systems for Japanese banking, government, and steel manufacturing.",
+                                   "tip":  "Apr 23. Dark suit hotel mirror selfie at 7:50 AM, NSSOL deep-dive ran 10:00 AM – 3:30 PM."
+                               },
+                     "tags":  [
+                                  "work",
+                                  "tokyo",
+                                  "client",
+                                  "highrise"
+                              ],
+                     "hero":  "20260423_075037.jpg",
+                     "photos":  [
+                                    "20260423_075037.jpg",
+                                    "20260423_082811.jpg",
+                                    "20260423_093107.jpg",
+                                    "20260423_093109.jpg",
+                                    "20260423_093117.jpg",
+                                    "20260423_093716.jpg",
+                                    "20260423_093722.jpg",
+                                    "20260423_095320.jpg",
+                                    "20260423_095321.jpg",
+                                    "20260423_095342.jpg",
+                                    "20260423_095343.jpg",
+                                    "20260423_095346.jpg",
+                                    "20260423_095350.jpg",
+                                    "20260423_131904.jpg",
+                                    "20260423_131908.jpg",
+                                    "20260423_131932.jpg",
+                                    "20260423_131933.jpg"
+                                ]
+                 },
+                 {
+                     "id":  "hnd-haneda",
+                     "type":  "transit",
+                     "title":  "Haneda Airport (HND)",
+                     "city":  "Tokyo",
+                     "neighborhood":  "Ota",
+                     "coords":  [
+                                    35.5494,
+                                    139.7798
+                                ],
+                     "wiki":  "https://en.wikipedia.org/wiki/Haneda_Airport",
+                     "visited":  "2026-04-27",
+                     "status":  "confirmed",
+                     "facts":  {
+                                   "local":  "Locals always pick HND over NRT when they can — HND is 30 minutes from central Tokyo by train, NRT is 90+.",
+                                   "history":  "Return flight: UA804 HND -\u003e IAD, 15:45 departure. Bryan\u0027s last hours in Japan.",
+                                   "wow":  "Haneda was the world\u0027s busiest airport by passenger traffic for most of the 1980s — overtaken only when Narita opened the second Tokyo gateway.",
+                                   "tip":  "Apr 27. HND ramen for lunch before boarding."
+                               },
+                     "tags":  [
+                                  "transit",
+                                  "tokyo",
+                                  "airport",
+                                  "return"
+                              ],
+                     "hero":  "20260427_121514.jpg",
+                     "photos":  [
+                                    "20260427_121514.jpg",
+                                    "20260427_121516.jpg",
+                                    "20260427_122937.jpg",
+                                    "20260427_122940.jpg",
+                                    "20260427_150323(0).jpg",
+                                    "20260427_150323.jpg",
+                                    "20260427_150324.jpg",
+                                    "20260427_150328.jpg",
+                                    "20260427_150804.jpg",
+                                    "20260427_150806.jpg"
+                                ]
                  }
              ]
 }
