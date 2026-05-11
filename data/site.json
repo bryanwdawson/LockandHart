@@ -1,0 +1,11 @@
+{
+  "name": "Lock & Hart",
+  "domain": "lockandhart.com",
+  "tagline": "Legacy, Carried.",
+  "jewelry_tagline": "Sacred. Worn. Kept.",
+  "core_statement": "The under-told story was not hidden. It was unassembled.",
+  "nav": [
+    { "to": "/japan", "label": "Japan" },
+    { "to": "/shop", "label": "Shop" }
+  ]
+}

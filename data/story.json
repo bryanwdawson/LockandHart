@@ -1,0 +1,23 @@
+{
+  "$comment": "Canonical story metadata. Add a section here, write its MDX, render it from Home.jsx. Prose lives in src/content/*.mdx.",
+  "sections": [
+    {
+      "slug": "before-seals",
+      "title": "Before Seals. Before Legend.",
+      "layers": ["DOC"],
+      "summary": "Locard, Lockhart. Upper Clydesdale. Annandale. Service and settlement."
+    },
+    {
+      "slug": "simon",
+      "title": "The First Bearing of the Key",
+      "layers": ["DOC", "TRAD"],
+      "summary": "Sir Simon Locard, Lord of Lee. Charter witness, 1323. Carried Bruce's heart."
+    },
+    {
+      "slug": "lee-penny",
+      "title": "The Lee Penny",
+      "layers": ["DOC", "TRAD"],
+      "summary": "Garnet in silver. Brought from the Holy Land. The Talisman."
+    }
+  ]
+}

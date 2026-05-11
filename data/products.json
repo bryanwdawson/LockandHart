@@ -1,0 +1,29 @@
+{
+  "$comment": "Product catalog. Status: 'In development' / 'Coming' / 'Available'. Move to Supabase when storefront activates.",
+  "items": [
+    {
+      "slug": "heart-lock-pendant-v1",
+      "name": "Heart-Lock Pendant — V1",
+      "category": "Jewelry",
+      "summary": "Sterling silver. Heart integrated with lock shackle. Monoline mark. 25-unit learning run.",
+      "status": "In development",
+      "tagline": "Sacred. Worn. Kept."
+    },
+    {
+      "slug": "lee-penny-commemorative",
+      "name": "Lee Penny — Commemorative",
+      "category": "Object",
+      "summary": "Coin set with garnet. Modeled on the family object held at Lee Castle.",
+      "status": "In development",
+      "tagline": "Sacred. Worn. Kept."
+    },
+    {
+      "slug": "hoya-kerrii-pot",
+      "name": "Heart-Leaf Hoya — Branded Pot",
+      "category": "Living",
+      "summary": "Hoya kerrii in a ceramic pot, mark laser-etched. A living gift.",
+      "status": "In development",
+      "tagline": "Legacy, Carried."
+    }
+  ]
+}

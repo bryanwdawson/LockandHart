@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a0908;
+  --color-ivory: #f8f3eb;
+  --color-parchment: #efe7d8;
+  --color-silver: #b8b3aa;
+  --color-oxblood: #5a1414;
+  --color-garnet: #8b1a1a;
+
+  --font-display: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+  --font-body: 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
+  --font-ui: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --tracking-widest: 0.25em;
+}
+
+html {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+}
+
+.font-display { font-family: var(--font-display); }
+.font-body { font-family: var(--font-body); }
+.font-ui { font-family: var(--font-ui); }
+
+/* MDX prose defaults — keeps story copy readable without per-page styling */
+.prose p { margin: 0 0 1.25em; }
+.prose h2 { font-size: 2rem; margin: 2.5em 0 0.5em; }
+.prose h3 { font-size: 1.5rem; margin: 2em 0 0.5em; }
