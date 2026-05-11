@@ -1,5 +1,4 @@
 import HomeStory from '../content/home.mdx'
-import StoryTag from '../components/StoryTag.jsx'
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
       </section>
 
       <article className="prose max-w-2xl mx-auto px-6 pb-24">
-        <HomeStory components={{ StoryTag }} />
+        <HomeStory />
       </article>
     </>
   )

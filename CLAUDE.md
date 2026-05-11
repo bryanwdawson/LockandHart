@@ -52,7 +52,7 @@ Every claim about Lockhart history belongs to one of three layers. The tag contr
 | `TRAD` | Family story | *"The story passed down is..." / "Family tradition holds..."* |
 | `LEG` | Legend | *"The legend says..."* |
 
-In MDX, render the chip with `<StoryTag t="DOC" />`. The chip is a label, not a license to mix layers — the prose itself must use the right register.
+The layers are a **writing discipline**, not a UI element — we don't render chips on the public page. Every line of brand copy should be classifiable as one of the three, and use the matching voice (DOC = tell directly; TRAD = "the story passed down"; LEG = "the legend says"). If you can't classify it, rewrite it.
 
 ---
 
@@ -106,7 +106,7 @@ When real protection is needed: upgrade to a Netlify Edge Function that intercep
 ### Repo layout
 ```
 src/
-  components/     reusable UI (Layout, Nav, Footer, StoryTag)
+  components/     reusable UI (Layout, Nav, Footer)
   pages/          route components
   content/        MDX prose
   styles/         globals.css (Tailwind + @theme)
