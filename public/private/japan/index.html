@@ -410,6 +410,59 @@
     text-decoration: underline;
   }
 
+  /* Pin prev/next nav within a day (shown when a single day is filtered) */
+  .day-pin-nav {
+    margin-top: 24px;
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 8px;
+    align-items: stretch;
+    font-size: 12px;
+  }
+  .day-pin-nav .nav-btn {
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 10px;
+    color: var(--ink);
+    cursor: pointer;
+    text-align: left;
+    line-height: 1.3;
+    transition: background 0.12s, border-color 0.12s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .day-pin-nav .nav-btn:hover { background: var(--accent-bg); border-color: var(--accent); }
+  .day-pin-nav .nav-btn .label {
+    font-size: 10px;
+    color: var(--ink-fade);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  .day-pin-nav .nav-btn .title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .day-pin-nav .nav-btn.right { text-align: right; align-items: flex-end; }
+  .day-pin-nav .nav-btn[disabled] { opacity: 0.4; cursor: default; }
+  .day-pin-nav .nav-btn[disabled]:hover { background: var(--surface-alt); border-color: var(--border); }
+  .day-pin-nav .nav-pos {
+    align-self: center;
+    font-size: 11px;
+    color: var(--ink-fade);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
   .tags-row { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 5px; }
   .tag {
     font-size: 10px;
@@ -584,6 +637,33 @@
     gap: 8px;
     max-width: 1200px;
     margin: 0 auto;
+  }
+  .day-photos-section + .day-photos-section { margin-top: 24px; }
+  .day-photos-section-head {
+    max-width: 1200px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+    padding-bottom: 6px;
+  }
+  .day-photos-section-head .name {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  .day-photos-section-head .time {
+    color: rgba(255,255,255,0.6);
+    font-size: 12px;
+    margin-left: auto;
+    font-variant-numeric: tabular-nums;
+  }
+  .day-photos-section-head .type-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
   }
   .day-photos-item {
     position: relative;
@@ -844,6 +924,7 @@
       <button class="pill" data-filter="shop"><span class="dot" style="background:var(--t-shop);"></span>Shops <span class="count" id="ct-shop">0</span></button>
       <button class="pill" data-filter="transit"><span class="dot" style="background:var(--t-transit);"></span>Transit <span class="count" id="ct-transit">0</span></button>
       <button class="pill" id="route-toggle" aria-pressed="false" title="Toggle the dashed route line">Route line</button>
+      <button class="pill" id="surprise-me" title="Open a random pin">🎲 Surprise me</button>
     </div>
 
   </div>
@@ -867,9 +948,9 @@
     </div>
 
     <div class="empty-state" id="empty-state" role="status">
-      <h3>No pins match this filter</h3>
-      <p>Try a different type or day.</p>
-      <button id="reset-filters">Reset filters</button>
+      <h3>Nothing on the map right now</h3>
+      <p>Your current filter combination has no pins. Reset to see everything, or try a different day.</p>
+      <button id="reset-filters">Show all pins</button>
     </div>
 
     <aside class="detail" id="detail" aria-hidden="true" aria-label="Pin details">
@@ -1275,8 +1356,49 @@
           ${(pin.tags || []).length ? `
             <div class="tags-row">${pin.tags.map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join('')}</div>
           ` : ''}
+          ${dayPinNavHtml(pin)}
         </div>
       </div>
+    `;
+  }
+
+  // Chronologically ordered pins for a given day (by first photo's timestamp; fallback to first appearance).
+  function dayPinsOrdered(dayNum) {
+    const pins = state.pins.filter((p) => pinDays(p).includes(dayNum));
+    pins.forEach((p) => {
+      const first = (p.photos || [])[0];
+      p.__sortTime = first ? parsePhotoTime(first) : Number.MAX_SAFE_INTEGER;
+    });
+    pins.sort((a, b) => (a.__sortTime || 0) - (b.__sortTime || 0));
+    pins.forEach((p) => delete p.__sortTime);
+    return pins;
+  }
+
+  function dayPinNavHtml(pin) {
+    if (state.day === 'all') return '';
+    const dayNum = parseInt(state.day, 10);
+    if (!pinDays(pin).includes(dayNum)) return '';
+    const ordered = dayPinsOrdered(dayNum);
+    if (ordered.length < 2) return '';
+    const idx = ordered.findIndex((p) => p.id === pin.id);
+    const prev = idx > 0 ? ordered[idx - 1] : null;
+    const next = idx < ordered.length - 1 ? ordered[idx + 1] : null;
+    return `
+      <nav class="day-pin-nav" aria-label="Other pins on Day ${dayNum}">
+        ${prev ? `
+          <button class="nav-btn" data-pin-nav="${escapeAttr(prev.id)}" aria-label="Previous pin: ${escapeAttr(prev.title)}">
+            <span class="label">‹ Prev</span>
+            <span class="title">${escapeHtml(prev.title)}</span>
+          </button>
+        ` : `<button class="nav-btn" disabled><span class="label">‹ Prev</span><span class="title">First</span></button>`}
+        <span class="nav-pos">${idx + 1} / ${ordered.length}</span>
+        ${next ? `
+          <button class="nav-btn right" data-pin-nav="${escapeAttr(next.id)}" aria-label="Next pin: ${escapeAttr(next.title)}">
+            <span class="label">Next ›</span>
+            <span class="title">${escapeHtml(next.title)}</span>
+          </button>
+        ` : `<button class="nav-btn right" disabled><span class="label">Next ›</span><span class="title">Last</span></button>`}
+      </nav>
     `;
   }
 
@@ -1342,6 +1464,12 @@
       img.addEventListener('click', () => {
         const idx = parseInt(img.getAttribute('data-photo-idx'), 10);
         openLightbox(pin, idx);
+      });
+    });
+    els.detailContent.querySelectorAll('button[data-pin-nav]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-pin-nav');
+        if (targetId) openDetail(targetId);
       });
     });
   }
@@ -1426,6 +1554,16 @@
       refreshUI();
       buildMarkers();
     });
+
+    const surpriseBtn = document.getElementById('surprise-me');
+    if (surpriseBtn) {
+      surpriseBtn.addEventListener('click', () => {
+        const candidates = filteredPins().filter((p) => p.coords);
+        if (!candidates.length) return;
+        const pick = candidates[Math.floor(Math.random() * candidates.length)];
+        openDetail(pick.id);
+      });
+    }
   }
 
   function buildTimeline() {
@@ -1513,30 +1651,50 @@
     const title = d ? `Day ${d.day} · ${escapeHtml(d.title)}` : `Day ${dayNum}`;
     const sub = d ? escapeHtml(formatDate(d.date)) : '';
 
-    // Collect every photo from every pin assigned to this day, with context
-    const items = [];
+    // Build per-pin sections. Pins ordered by first photo timestamp;
+    // within each pin, photos are sorted by timestamp.
+    const sections = [];
+    let totalPhotos = 0;
     state.pins.forEach((p) => {
       if (!pinDays(p).includes(dayNum)) return;
-      (p.photos || []).forEach((ph, idx) => {
-        items.push({ pin: p, photo: ph, idx, time: parsePhotoTime(ph) });
-      });
+      const photos = (p.photos || []).map((ph, idx) => ({ ph, idx, time: parsePhotoTime(ph) }));
+      if (!photos.length) return;
+      photos.sort((a, b) => (a.time || 0) - (b.time || 0));
+      const firstTime = photos[0].time || Number.MAX_SAFE_INTEGER;
+      const lastTime = photos[photos.length - 1].time || firstTime;
+      sections.push({ pin: p, photos, firstTime, lastTime });
+      totalPhotos += photos.length;
     });
-    // Sort chronologically by filename timestamp
-    items.sort((a, b) => (a.time || 0) - (b.time || 0));
+    sections.sort((a, b) => a.firstTime - b.firstTime);
 
     const modal = document.getElementById('day-photos-modal');
     document.getElementById('day-photos-title').innerHTML = title;
-    document.getElementById('day-photos-sub').textContent = sub + (items.length ? ` · ${items.length} photos` : '');
+    document.getElementById('day-photos-sub').textContent = sub + (totalPhotos ? ` · ${totalPhotos} photos · ${sections.length} stops` : '');
     const body = document.getElementById('day-photos-body');
-    if (!items.length) {
+    if (!totalPhotos) {
       body.innerHTML = '<div class="day-photos-empty">No photos on this day yet.</div>';
     } else {
-      body.innerHTML = `<div class="day-photos-grid">${items.map((it) => `
-        <button class="day-photos-item" data-pin="${escapeAttr(it.pin.id)}" data-idx="${it.idx}" aria-label="Open photo from ${escapeAttr(it.pin.title)}">
-          <img src="photos/${escapeAttr(it.photo)}" alt="${escapeAttr(it.pin.title)} — ${formatHM(it.time)}" loading="lazy">
-          <div class="day-photos-item-label">${escapeHtml(it.pin.title || it.pin.id)}<br>${formatHM(it.time)}</div>
-        </button>
-      `).join('')}</div>`;
+      body.innerHTML = sections.map((sec) => {
+        const dotColor = TYPE_COLORS[sec.pin.type] || TYPE_COLORS.default;
+        const timeRange = sec.firstTime === sec.lastTime
+          ? formatHM(sec.firstTime)
+          : `${formatHM(sec.firstTime)}–${formatHM(sec.lastTime)}`;
+        return `
+          <section class="day-photos-section">
+            <header class="day-photos-section-head">
+              <span class="type-dot" style="background:${dotColor};"></span>
+              <span class="name">${escapeHtml(sec.pin.title || sec.pin.id)}</span>
+              <span class="time">${timeRange}</span>
+            </header>
+            <div class="day-photos-grid">${sec.photos.map((it) => `
+              <button class="day-photos-item" data-pin="${escapeAttr(sec.pin.id)}" data-idx="${it.idx}" aria-label="Open photo from ${escapeAttr(sec.pin.title)}">
+                <img src="photos/${escapeAttr(it.ph)}" alt="${escapeAttr(sec.pin.title)} — ${formatHM(it.time)}" loading="lazy">
+                <div class="day-photos-item-label">${escapeHtml(sec.pin.title || sec.pin.id)}<br>${formatHM(it.time)}</div>
+              </button>
+            `).join('')}</div>
+          </section>
+        `;
+      }).join('');
       body.querySelectorAll('button[data-pin]').forEach((btn) => {
         btn.addEventListener('click', () => {
           const pin = state.pins.find((p) => p.id === btn.dataset.pin);
@@ -1704,6 +1862,11 @@
       if (e.key === 'Escape') { e.preventDefault(); closeLightbox(); }
       if (e.key === 'ArrowLeft') { e.preventDefault(); lbNav(-1); }
       if (e.key === 'ArrowRight') { e.preventDefault(); lbNav(1); }
+      return;
+    }
+    const dayModal = document.getElementById('day-photos-modal');
+    if (dayModal && dayModal.classList.contains('open')) {
+      if (e.key === 'Escape') { e.preventDefault(); closeDayPhotos(); }
       return;
     }
     if (e.key === 'Escape' && els.detail.classList.contains('open')) closeDetail();
