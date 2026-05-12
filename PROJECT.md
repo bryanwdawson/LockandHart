@@ -49,7 +49,7 @@ Self-contained Japan recap pins. The recap is fully isolated at `public/private/
 **Optional rich-content fields** (added 2026-05):
 - `menu` — array of `{ name, note?, fact? }`. Renders as a labeled "Menu" list. Use when you have the actual menu or can confirm what was eaten.
 - `extra_cards` — array of `{ title, body, source? }`. Renders as bordered context cards below `facts`. Use for historical / cultural / personal blurbs that don't fit the existing fact keys. The `source` is rendered as a "Source ↗" link.
-- `videos` *(planned)* — array of `{ id, title }` for YouTube unlisted embeds. Renderer not built yet; will use `youtube-nocookie.com/embed/<id>` iframe below the photo grid. Wired when the first batch of links lands.
+- `videos` — array of `{ id, kind, title }` for YouTube unlisted embeds. `id` = YouTube video ID. `kind` = `"short"` (renders 9:16, max 280px) or `"standard"` (16:9, full width; default if `kind` is absent). Uses `youtube-nocookie.com/embed/<id>?rel=0` for privacy. Renders as a "Videos" section in the detail panel, below `menu` and above `extra_cards`.
 
 ### `public/private/japan/days.json`
 Day-by-day narrative. Self-contained alongside pins.json.

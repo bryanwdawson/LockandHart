@@ -385,6 +385,50 @@
   .narrative .menu-item .note { color: var(--ink-soft); }
   .narrative .menu-item .fact { color: var(--ink-soft); font-style: italic; display: block; margin-top: 2px; }
 
+  /* Video embeds — YouTube Shorts (9:16) + regular YouTube videos (16:9). */
+  .narrative .videos { display: flex; flex-direction: column; gap: 12px; }
+  .narrative .video-item {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: #000;
+  }
+  .narrative .video-item .iframe-wrap {
+    position: relative;
+    width: 100%;
+    background: #000;
+  }
+  .narrative .video-item.short .iframe-wrap {
+    aspect-ratio: 9/16;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .narrative .video-item.standard .iframe-wrap {
+    aspect-ratio: 16/9;
+  }
+  .narrative .video-item iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .narrative .video-item .caption {
+    font-size: 12px;
+    color: var(--ink-soft);
+    padding: 6px 10px;
+    background: var(--surface-alt);
+    border-top: 1px solid var(--border);
+  }
+  .narrative .videos-head {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
   /* Extra context cards — optional pin.extra_cards array. */
   .narrative .context-card {
     background: var(--surface-alt);
@@ -1351,6 +1395,7 @@
         <div class="narrative">
           ${factsHtml(pin.facts || {})}
           ${menuHtml(pin.menu)}
+          ${videosHtml(pin.videos)}
           ${extraCardsHtml(pin.extra_cards)}
           ${pin.wiki ? `<a class="wiki-link" href="${escapeAttr(pin.wiki)}" target="_blank" rel="noreferrer">Read on Wikipedia ↗</a>` : ''}
           ${(pin.tags || []).length ? `
@@ -1444,6 +1489,28 @@
       return `<div class="menu-item"><span class="dish">${escapeHtml(m.name || '')}</span><span class="note">${note}</span>${fact}</div>`;
     }).join('');
     return `<div><h3>Menu</h3><div class="menu">${items}</div></div>`;
+  }
+
+  // Videos: optional pin.videos = [{ id, kind, title }, ...]
+  // kind: "short" (9:16) or "standard" (16:9, default if absent)
+  function videosHtml(videos) {
+    if (!Array.isArray(videos) || !videos.length) return '';
+    const items = videos.map((v) => {
+      const id = v.id || '';
+      if (!id) return '';
+      const kind = v.kind === 'short' ? 'short' : 'standard';
+      const title = v.title || '';
+      const src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?rel=0`;
+      return `
+        <div class="video-item ${kind}">
+          <div class="iframe-wrap">
+            <iframe src="${src}" title="${escapeAttr(title)}" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          ${title ? `<div class="caption">${escapeHtml(title)}</div>` : ''}
+        </div>
+      `;
+    }).join('');
+    return `<div><h3 class="videos-head">Videos</h3><div class="videos">${items}</div></div>`;
   }
 
   // Extra context cards: optional pin.extra_cards = [{ title, body, source? }, ...]
