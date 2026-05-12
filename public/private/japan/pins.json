@@ -51,7 +51,9 @@
         "20260418_171006.jpg",
         "20260418_172505.jpg",
         "20260418_192533.jpg",
-        "20260420_210634.jpg"
+        "20260420_210634.jpg",
+        "20260423_075037.jpg",
+        "20260423_082811.jpg"
       ]
     },
     {
@@ -693,7 +695,7 @@
       "status": "confirmed",
       "facts": {
         "kid": "Tokyo's electronics + anime + manga district! Tons of stores stacked vertically.",
-        "tip": "Apr 21 dinner at IBREN restaurant â€” receipt confirmed Kanda-Sakumacho 3-38",
+        "tip": "Apr 21 dinner at IBREW restaurant â€” receipt confirmed Kanda-Sakumacho 3-38",
         "wow": "Until 1989 this was Tokyo's wholesale electronics PARTS district. Anime/manga took over only after 2000.",
         "local": "Multi-floor stores hide collector-only material on upper floors. Ground floor = casual; 5th floor = serious. Don't skip the elevator."
       },
@@ -706,7 +708,7 @@
     {
       "id": "ichigaya-mod",
       "type": "landmark",
-      "title": "Ministry of Defense (Ichigaya) â€” DIH Meeting",
+      "title": "Ministry of Defense (Ichigaya)",
       "city": "Tokyo",
       "neighborhood": "Ichigaya",
       "coords": [
@@ -717,7 +719,7 @@
       "visited": "2026-04-24",
       "status": "confirmed",
       "facts": {
-        "kid": "Japan's Ministry of Defense â€” like the Pentagon. Bryan met with the Defense Innovation Hub team here.",
+        "kid": "Japan's Ministry of Defense — like the Pentagon. Bryan met with the team here as part of the trip's government engagements.",
         "tip": "Apr 24 1:30 PM meeting â€” visitor badge + martial arts poster confirmed",
         "wow": "The MoD sits on the site of the old Imperial Army HQ - where Tojo (the WW2 PM) had his office.",
         "local": "The Ichigaya Memorial Hall on the grounds is where Mishima Yukio committed seppuku in 1970. Open by reservation only."
@@ -824,9 +826,9 @@
       ]
     },
     {
-      "id": "ibren-akihabara",
+      "id": "ibrew-akihabara",
       "type": "food",
-      "title": "IBREN restaurant (Akihabara)",
+      "title": "IBREW restaurant (Akihabara)",
       "city": "Tokyo",
       "neighborhood": "Kanda-Sakumacho",
       "coords": [
@@ -1419,8 +1421,16 @@
       ],
       "extra_cards": [
         {
-          "title": "Bryan's 'merc shrines' — the foxes of Inari",
-          "body": "Bryan called fox-statue shrines 'Merc shrines' for the mercenary look of the stone kitsune (foxes). They're not actually mercenaries — they're messengers of Inari Ōkami, the Shinto kami of rice, business, and prosperity. The fox often holds a key (to the rice granary) or a scroll (the prayer of the petitioner). Fushimi Inari is the head shrine of an Inari network of ~30,000 sub-shrines across Japan, which is why you see fox statues at small neighborhood shrines all over the country.",
+          "title": "Mercury in the fox statues",
+          "body": "Bryan called the fox-statue shrines 'Merc shrines.' Not for the look of them — for Mercury, his dog. The stone kitsune (foxes) at Inari shrines have a recognizable face: alert, watchful, broad-headed, slightly goofy. Bryan saw Mercury in every one. Kelly had spotted Mercury on a friend's social-media post months earlier; they acted on it and adopted him. What felt random became central. Walking past hundreds of these fox statues at the head shrine of all 30,000 Inari shrines in Japan, Bryan kept catching Mercury's face in them."
+        },
+        {
+          "title": "The prayer for Mercury",
+          "body": "At one of the fox-statue sub-shrines on the climb, Bryan stopped and did the ritual — coin, bow, two claps, prayer, bow — and the prayer was for Mercury. Gratitude that Kelly happened to see that post. Gratitude that they took action on a seemingly random thing. Gratitude that this big lug is in their life. He got emotional. The prayer closed with a request: that he be a good and responsible owner, and that Mercury live a long, fulfilled life. One of the off-trail emotional anchors of the entire Japan trip."
+        },
+        {
+          "title": "Why foxes at Inari shrines",
+          "body": "The fox (kitsune) is the messenger of Inari Ōkami, the Shinto kami of rice, business, and prosperity. Fox statues at Inari shrines often hold a key (to the rice granary) or a scroll (the prayer of the petitioner). Fushimi Inari Taisha is the head shrine of an Inari network of ~30,000 sub-shrines across Japan — which is why fox statues show up at small neighborhood shrines all over the country.",
           "source": "https://en.wikipedia.org/wiki/Inari_%C5%8Ckami"
         }
       ]
@@ -1912,8 +1922,6 @@
       "hero": "20260423_131933.jpg",
       "photos": [
         "20260423_131933.jpg",
-        "20260423_075037.jpg",
-        "20260423_082811.jpg",
         "20260423_093109.jpg",
         "20260423_093722.jpg",
         "20260423_095320.jpg"
