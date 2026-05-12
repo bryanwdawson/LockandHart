@@ -1,1827 +1,1956 @@
-﻿{
-    "version":  4,
-    "_doc":  "Evidence-based pins from 114 photos analyzed. Status: confirmed = direct visual proof; candidate = was in plan but no photo proof; downgraded = previously assumed but evidence contradicts.",
-    "trip":  {
-                 "id":  "japan-2026",
-                 "title":  "Japan â€” April 2026",
-                 "subtitle":  "Bryan\u0027s first time in Japan Â· 10 days Â· Tokyo + Kyoto",
-                 "dates":  [
-                               "2026-04-17",
-                               "2026-04-27"
-                           ],
-                 "traveler":  "Bryan Dawson",
-                 "team":  [
-                              "Doug",
-                              "Clair",
-                              "Saul",
-                              "Alex"
-                          ],
-                 "kyoto_companions":  "Kyoto weekend overlapped with colleagues"
-             },
-    "pins":  [
-                 {
-                     "id":  "ginza",
-                     "type":  "neighborhood",
-                     "title":  "Ginza / Hotel base",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Ginza-Tsukiji",
-                     "coords":  [
-                                    35.6717,
-                                    139.7649
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Ginza",
-                     "visited":  "2026-04-18 to 2026-04-27",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Tokyo\u0027s fanciest district â€” land here costs $1 million per square meter!",
-                                   "tip":  "Bryan\u0027s hotel: Mitsui Garden Hotel Ginza Tsukiji (10 nights)",
-                                   "wow":  "Ginza\u0027s main street closes to traffic every Sat/Sun afternoon, becoming a \u0027pedestrian paradise\u0027 (hokoten) since 1970.",
-                                   "local":  "Locals don\u0027t really shop here - they come for department-store basement food halls (depachika) and dinners."
-                               },
-                     "tags":  [
-                                  "neighborhood",
-                                  "tokyo",
-                                  "home-base"
-                              ],
-                     "hero":  "20260420_211230.jpg",
-                     "photos":  [
-                                    "20260420_211230.jpg",
-                                    "20260418_163437.jpg",
-                                    "20260418_170622.jpg",
-                                    "20260418_171006.jpg",
-                                    "20260418_172505.jpg",
-                                    "20260418_192533.jpg",
-                                    "20260420_210634.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "kabuki-za",
-                     "type":  "landmark",
-                     "title":  "Kabuki-za Theatre",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Higashi-Ginza",
-                     "coords":  [
-                                    35.6695,
-                                    139.7672
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Kabuki-za",
-                     "visited":  "2026-04-18",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Tokyo\u0027s most famous KABUKI theater â€” traditional Japanese drama with elaborate costumes \u0026 makeup, in a beautiful century-old building.",
-                                   "tip":  "You walked past it at 10 PM your first night â€” right next to your hotel",
-                                   "wow":  "Full shows can run 5-6 hours; locals buy \u0027one-act\u0027 tickets (~Y1,000) for just 30-60 min when they don\u0027t have all day.",
-                                   "local":  "The current building is the FIFTH on the same plot - earthquakes, fires, and WW2 bombing rebuilt it in 1925, 1951, and 2013."
-                               },
-                     "tags":  [
-                                  "landmark",
-                                  "tokyo",
-                                  "traditional",
-                                  "iconic"
-                              ],
-                     "hero":  "20260418_221644.jpg",
-                     "photos":  [
-                                    "20260418_221644.jpg",
-                                    "20260418_224434.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "tokyo-station",
-                     "type":  "transit",
-                     "title":  "Tokyo Station",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Marunouchi",
-                     "coords":  [
-                                    35.6812,
-                                    139.7671
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Tokyo_Station",
-                     "visited":  "2026-04-25, 2026-04-26",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A giant red-brick station that\u0027s 100+ years old. Where Bryan\u0027s shinkansen to Kyoto and back arrived/departed.",
-                                   "tip":  "Departed Apr 25 morning + Arrived Apr 26 17:15 from Kyoto on NOZOMI 28",
-                                   "wow":  "The red-brick Marunouchi facade is from 1914; it was bombed in WW2 and only fully restored to original spec in 2012.",
-                                   "local":  "Locals never just say \u0027Tokyo Station\u0027 - they specify \u0027Yaesu side\u0027 (east) or \u0027Marunouchi side\u0027 (west). The two sides feel like different cities."
-                               },
-                     "tags":  [
-                                  "transit",
-                                  "tokyo",
-                                  "shinkansen"
-                              ],
-                     "hero":  "20260426_172508.jpg",
-                     "photos":  [
-                                    "20260426_172508.jpg",
-                                    "20260425_083646.jpg",
-                                    "20260425_084707.jpg",
-                                    "20260425_091446.jpg",
-                                    "20260425_091526.jpg",
-                                    "20260425_091800.jpg",
-                                    "20260425_092500.jpg",
-                                    "20260425_094016.jpg",
-                                    "20260425_100847.jpg",
-                                    "20260426_171244.jpg",
-                                    "20260426_172230.jpg",
-                                    "20260426_172314.jpg",
-                                    "20260426_172959.jpg",
-                                    "20260426_173157.jpg",
-                                    "20260426_173239.jpg",
-                                    "20260426_173356.jpg",
-                                    "20260426_173445.jpg",
-                                    "20260426_173541.jpg",
-                                    "20260426_173800.jpg",
-                                    "20260426_173833.jpg",
-                                    "20260426_174243.jpg",
-                                    "20260426_175727.jpg",
-                                    "20260426_175943.jpg",
-                                    "20260426_180102.jpg",
-                                    "20260426_180419.jpg",
-                                    "20260426_180937.jpg",
-                                    "20260426_181127.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "marunouchi",
-                     "type":  "neighborhood",
-                     "title":  "Marunouchi",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Marunouchi",
-                     "coords":  [
-                                    35.6814,
-                                    139.7657
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Marunouchi",
-                     "visited":  "2026-04-22",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Tokyo\u0027s Wall Street â€” giant office buildings + MUJI mega-store + Imperial Palace next door.",
-                                   "tip":  "You walked here Apr 22 4:53 PM after the Cabinet Office (CAO) meeting",
-                                   "wow":  "About 90% of land here is owned by ONE landlord: Mitsubishi Estate, since 1894 - reportedly the highest-value real estate block on Earth.",
-                                   "local":  "This is salaryman lunch country. The 2nd-basement food courts in every office tower hide the best ramen and donburi shops."
-                               },
-                     "tags":  [
-                                  "neighborhood",
-                                  "tokyo",
-                                  "business"
-                              ],
-                     "hero":  "20260420_134908.jpg",
-                     "photos":  [
-                                    "20260420_134908.jpg",
-                                    "20260421_175305.jpg",
-                                    "20260421_182858.jpg",
-                                    "20260421_183134.jpg",
-                                    "20260421_183933.jpg",
-                                    "20260421_184130.jpg",
-                                    "20260422_161232.jpg",
-                                    "20260422_161806.jpg",
-                                    "20260422_162530.jpg",
-                                    "20260422_162657.jpg",
-                                    "20260422_163038.jpg",
-                                    "20260422_163120.jpg",
-                                    "20260422_163514.jpg",
-                                    "20260422_164043.jpg",
-                                    "20260422_164508.jpg",
-                                    "20260422_165208.jpg",
-                                    "20260422_165313.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "imperial-palace",
-                     "type":  "landmark",
-                     "title":  "Imperial Palace + Outer Moat",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Chiyoda",
-                     "coords":  [
-                                    35.6852,
-                                    139.7528
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Tokyo_Imperial_Palace",
-                     "visited":  "2026-04-19",
-                     "status":  "candidate",
-                     "facts":  {
-                                   "kid":  "Where the Emperor of Japan lives! Garden was the inner part of a giant samurai castle.",
-                                   "history":  "Built on Edo Castle, where shoguns ruled for 250 years.",
-                                   "tip":  "Apr 19 afternoon long stone-walled embankment photo could be here OR Hamarikyu",
-                                   "wow":  "At the 1989 peak, the land beneath the palace was reportedly valued at more than ALL real estate in California combined.",
-                                   "local":  "The 5 km inner-moat loop is Tokyo\u0027s most popular running route - any morning you\u0027ll pass dozens of runners."
-                               },
-                     "tags":  [
-                                  "landmark",
-                                  "garden",
-                                  "tokyo",
-                                  "free"
-                              ],
-                     "hero":  "20260419_142545.jpg",
-                     "photos":  [
-                                    "20260419_142545.jpg",
-                                    "20260419_143048.jpg",
-                                    "20260419_150728.jpg",
-                                    "20260419_153741.jpg",
-                                    "20260419_155323.jpg",
-                                    "20260419_155740.jpg",
-                                    "20260419_162124.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "hamarikyu",
-                     "type":  "landmark",
-                     "title":  "Hamarikyu Gardens",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Chuo",
-                     "coords":  [
-                                    35.6597,
-                                    139.7637
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Hama-rikyÅ«_Gardens",
-                     "visited":  "2026-04-19",
-                     "status":  "candidate",
-                     "facts":  {
-                                   "kid":  "An old Edo-era garden right on Tokyo Bay! Has a teahouse on a tiny island in a saltwater pond.",
-                                   "tip":  "Best fit for the Apr 19 2:23 PM pond photo (closest to Tsukiji hotel)",
-                                   "wow":  "The pond connects to Tokyo Bay so the water level rises and falls with the tides - one of only a few tidal saltwater garden ponds in Japan.",
-                                   "local":  "The 300-year-old pine near the entrance (sanbyaku-nen no matsu) was personally planted by a Tokugawa shogun."
-                               },
-                     "tags":  [
-                                  "landmark",
-                                  "garden",
-                                  "tokyo"
-                              ],
-                     "hero":  "20260419_142327.jpg",
-                     "photos":  [
-                                    "20260419_142327.jpg",
-                                    "20260419_135922.jpg",
-                                    "20260419_141216.jpg",
-                                    "20260419_141356.jpg",
-                                    "20260419_142139(0).jpg",
-                                    "20260419_142215.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "tsukiji-outer",
-                     "type":  "food",
-                     "title":  "Tsukiji Outer Market",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Tsukiji",
-                     "coords":  [
-                                    35.6655,
-                                    139.7707
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Tsukiji_fish_market",
-                     "visited":  "2026-04-19",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Used to be the BIGGEST fish market in the world. Sushi for breakfast!",
-                                   "tip":  "You walked here at 5:52 AM Apr 19 BEFORE it opened â€” sunrise market walk",
-                                   "wow":  "The famous tuna auction moved to Toyosu in 2018, but the OUTER market stayed - and it\u0027s busier than ever.",
-                                   "local":  "Tsukiji shop owners arrive at 3-4 AM. If you want the best stuff, be there by 8 - by 10 the tourists have it."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "market",
-                                  "tokyo"
-                              ],
-                     "hero":  "20260419_080257.jpg",
-                     "photos":  [
-                                    "20260419_080257.jpg",
-                                    "20260419_052352.jpg",
-                                    "20260419_052532.jpg",
-                                    "20260419_052623.jpg",
-                                    "20260419_053915.jpg",
-                                    "20260419_055201.jpg",
-                                    "20260419_055354.jpg",
-                                    "20260419_055556.jpg",
-                                    "20260419_055703.jpg",
-                                    "20260419_063357.jpg",
-                                    "20260419_063435.jpg",
-                                    "20260419_063733.jpg",
-                                    "20260419_072833.jpg",
-                                    "20260419_073826.jpg",
-                                    "20260419_074045.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "senso-ji",
-                     "type":  "shrine",
-                     "title":  "Senso-ji Temple",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Asakusa",
-                     "coords":  [
-                                    35.7148,
-                                    139.7967
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/SensÅ-ji",
-                     "visited":  "2026-04-19, 2026-04-27",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Tokyo\u0027s OLDEST temple â€” built in 645 AD! Bryan visited TWICE: Apr 19 daylight \u0026 Apr 27 sunrise. The whole trip was bookended by Senso-ji.",
-                                   "history":  "Founded when two fisherman brothers pulled a tiny golden statue of Kannon from the Sumida River.",
-                                   "deity":  "Kannon â€” Buddhist goddess of mercy",
-                                   "ritual":  "Wave incense smoke over yourself before entering for good health.",
-                                   "symbol":  "1,500-lb red lantern at Kaminarimon Gate (\u0027Thunder Gate\u0027).",
-                                   "wow":  "A typhoon ripped the giant Kaminarimon lantern in half in 2014. The temple replaces it every ~10 years and ceremonially burns the old one.",
-                                   "local":  "Skip the main path. Cut one block west to Denpoin-dori to see what Asakusa looked like a century ago."
-                               },
-                     "tags":  [
-                                  "shrine",
-                                  "buddhist",
-                                  "tokyo",
-                                  "asakusa",
-                                  "must-see",
-                                  "visited-twice"
-                              ],
-                     "hero":  "20260419_113116.jpg",
-                     "photos":  [
-                                    "20260419_113116.jpg",
-                                    "20260419_112509.jpg",
-                                    "20260419_114535.jpg",
-                                    "20260427_054107.jpg",
-                                    "20260427_084505.jpg",
-                                    "20260427_085227.jpg",
-                                    "20260427_092034.jpg",
-                                    "20260427_092150.jpg",
-                                    "20260427_092500.jpg",
-                                    "20260427_100452.jpg",
-                                    "20260427_101456.jpg",
-                                    "20260427_113415.jpg",
-                                    "20260427_115503.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "nakamise",
-                     "type":  "neighborhood",
-                     "title":  "Nakamise-dori",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Asakusa",
-                     "coords":  [
-                                    35.7129,
-                                    139.7967
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Nakamise-dÅri",
-                     "visited":  "2026-04-19, 2026-04-27",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Old shopping street with snacks, fans, toys. 250+ years old, ~90 little shops.",
-                                   "food":  "Try ningyo-yaki (doll-shaped cake), age-manju, senbei rice crackers.",
-                                   "wow":  "Many of the 250+ shops have hereditary licenses - same families running them for 6+ generations.",
-                                   "local":  "Last shop on the right before the gate (Funawa) does the best age-manju in Tokyo, fried while you wait."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "shopping",
-                                  "tokyo",
-                                  "asakusa"
-                              ],
-                     "hero":  "20260419_111002.jpg",
-                     "photos":  [
-                                    "20260419_111002.jpg",
-                                    "20260419_094447.jpg",
-                                    "20260419_094527.jpg",
-                                    "20260419_094632.jpg",
-                                    "20260419_094709(0).jpg",
-                                    "20260419_094949.jpg",
-                                    "20260419_095155.jpg",
-                                    "20260419_095326.jpg",
-                                    "20260419_095401.jpg",
-                                    "20260419_095449.jpg",
-                                    "20260419_095530.jpg",
-                                    "20260419_100022.jpg",
-                                    "20260419_101010.jpg",
-                                    "20260419_101238.jpg",
-                                    "20260419_101316.jpg",
-                                    "20260419_101400.jpg",
-                                    "20260419_101539.jpg",
-                                    "20260419_101613.jpg",
-                                    "20260419_102623.jpg",
-                                    "20260419_103022.jpg",
-                                    "20260419_103801.jpg",
-                                    "20260419_104054.jpg",
-                                    "20260419_104237.jpg",
-                                    "20260419_105949.jpg",
-                                    "20260419_110152.jpg",
-                                    "20260419_110340.jpg",
-                                    "20260419_110421.jpg",
-                                    "20260419_110608.jpg",
-                                    "20260419_111232.jpg",
-                                    "20260419_111445.jpg",
-                                    "20260419_111539.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "denpoin-dori",
-                     "type":  "neighborhood",
-                     "title":  "Denpoin-dori",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Asakusa",
-                     "coords":  [
-                                    35.7124,
-                                    139.7960
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Asakusa",
-                     "visited":  "2026-04-19",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A hidden Edo-era side street near Senso-ji that most tourists skip. You found it Apr 19 11:31 â€” kanji photo confirmed (ä¼æ³•é™¢é€š)",
-                                   "wow":  "Zero chain stores - strict preservation rules keep the whole street Edo-period in appearance.",
-                                   "local":  "The maneki-neko cat figurines on the rooftops aren\u0027t decoration - they\u0027re inviting business luck for each shop below."
-                               },
-                     "tags":  [
-                                  "neighborhood",
-                                  "tokyo",
-                                  "hidden-gem"
-                              ],
-                     "hero":  "20260419_113116.jpg",
-                     "photos":  [
-                                    "20260419_113116.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "sumida-river",
-                     "type":  "landmark",
-                     "title":  "Sumida River walk",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Asakusa",
-                     "coords":  [
-                                    35.7113,
-                                    139.8005
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Sumida_River",
-                     "visited":  "2026-04-19",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Tokyo\u0027s iconic river that runs through Asakusa â€” the river the Senso-ji statue legend started in!",
-                                   "tip":  "Walked here right after Senso-ji at 11:39 AM Apr 19",
-                                   "wow":  "Until 1888, sumo wrestlers actually fought on barges floating on this river.",
-                                   "local":  "From May the Suijo Bus runs Asakusa to Hamarikyu - same route Bryan walked, seen from the water."
-                               },
-                     "tags":  [
-                                  "landmark",
-                                  "tokyo",
-                                  "river"
-                              ],
-                     "hero":  "20260419_113948.jpg",
-                     "photos":  [
-                                    "20260419_113948.jpg",
-                                    "20260419_113940.jpg",
-                                    "20260419_113945.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "zojoji-tokyo-tower",
-                     "type":  "shrine",
-                     "title":  "Zojoji Temple + Tokyo Tower",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Minato",
-                     "coords":  [
-                                    35.6577,
-                                    139.7484
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/ZÅjÅ-ji",
-                     "visited":  "2026-04-24",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "An ancient Buddhist temple right next to TOKYO TOWER. The view of the temple\u0027s curved black roof with the red-and-white Tokyo Tower behind is one of Tokyo\u0027s most iconic photos.",
-                                   "history":  "Founded 1393. Family temple of the Tokugawa shoguns. Six shoguns are buried here.",
-                                   "deity":  "Buddha (Pure Land Buddhism / Jodo sect)",
-                                   "symbol":  "Hundreds of small Jizo statues with red bibs and pinwheels â€” memorials for unborn or deceased children",
-                                   "ritual":  "Pray for safe passage of children and family",
-                                   "wow":  "Tokyo Tower is 13m TALLER than the Eiffel Tower (333m vs 320m) and was built in 1958 specifically to top it.",
-                                   "local":  "The little Jizo statues with red bibs are memorials for unborn children. Parents change the bibs themselves, year after year."
-                               },
-                     "tags":  [
-                                  "shrine",
-                                  "buddhist",
-                                  "tokyo",
-                                  "iconic",
-                                  "tokyo-tower"
-                              ],
-                     "hero":  "20260424_103452.jpg",
-                     "photos":  [
-                                    "20260424_103452.jpg",
-                                    "20260424_072755.jpg",
-                                    "20260424_095934.jpg",
-                                    "20260424_100736.jpg",
-                                    "20260424_101242.jpg",
-                                    "20260424_101509.jpg",
-                                    "20260424_102413.jpg",
-                                    "20260424_102605.jpg",
-                                    "20260424_102829(0).jpg",
-                                    "20260424_102937.jpg",
-                                    "20260424_103352.jpg",
-                                    "20260424_103604.jpg",
-                                    "20260424_103719.jpg",
-                                    "20260424_103859.jpg",
-                                    "20260424_104054.jpg",
-                                    "20260424_104243.jpg",
-                                    "20260424_104453.jpg",
-                                    "20260424_104540.jpg",
-                                    "20260424_104645.jpg",
-                                    "20260424_104748.jpg",
-                                    "20260424_104959.jpg",
-                                    "20260424_110151.jpg",
-                                    "20260424_110313.jpg",
-                                    "20260424_110414.jpg",
-                                    "20260424_110631.jpg",
-                                    "20260424_110829.jpg",
-                                    "20260424_110939.jpg",
-                                    "20260424_111156.jpg",
-                                    "20260424_111251.jpg",
-                                    "20260424_111546.jpg",
-                                    "20260424_111829.jpg",
-                                    "20260424_112945.jpg",
-                                    "20260424_113204.jpg",
-                                    "20260424_113520.jpg",
-                                    "20260424_113650.jpg",
-                                    "20260424_124631.jpg",
-                                    "20260424_125139.jpg",
-                                    "20260424_125247.jpg",
-                                    "20260424_125321.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "meiji-shrine",
-                     "type":  "shrine",
-                     "title":  "Meiji Jingu",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Harajuku",
-                     "coords":  [
-                                    35.6764,
-                                    139.6993
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Meiji_Shrine",
-                     "visited":  "?",
-                     "status":  "candidate",
-                     "facts":  {
-                                   "kid":  "A huge forest shrine with 100,000 trees in Tokyo!",
-                                   "deity":  "Spirits of Emperor Meiji and Empress ShÅken",
-                                   "wow":  "The 100,000-tree forest was donated from every prefecture in 1920 - it\u0027s a fake \u0027old forest,\u0027 only a century old.",
-                                   "local":  "Saturday mornings you\u0027ll often see a full white-kimono wedding procession crossing the main path - locals plan around it."
-                               },
-                     "tags":  [
-                                  "shrine",
-                                  "shinto",
-                                  "tokyo"
-                              ],
-                     "hero":  "20260419_133839.jpg",
-                     "photos":  [
-                                    "20260419_133839.jpg",
-                                    "20260419_130706.jpg",
-                                    "20260419_130939.jpg",
-                                    "20260419_131019.jpg",
-                                    "20260419_131228.jpg",
-                                    "20260419_131521.jpg",
-                                    "20260419_132810(0).jpg",
-                                    "20260419_133352.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "shinjuku",
-                     "type":  "neighborhood",
-                     "title":  "Shinjuku",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Shinjuku",
-                     "coords":  [
-                                    35.6938,
-                                    139.7036
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Shinjuku",
-                     "visited":  "?",
-                     "status":  "candidate",
-                     "facts":  {
-                                   "kid":  "Shinjuku Station is the BUSIEST train station on Earth â€” 3.5M people daily!",
-                                   "wow":  "Shinjuku Station has 200+ exits - even Tokyoites routinely take the wrong one and end up 10+ min from where they meant to be.",
-                                   "local":  "Skip the west side (skyscrapers). The east side - Kabukicho, Golden Gai, Omoide Yokocho - is where Tokyo nightlife actually happens."
-                               },
-                     "tags":  [
-                                  "neighborhood",
-                                  "tokyo"
-                              ]
-                 },
-                 {
-                     "id":  "akihabara-kanda",
-                     "type":  "neighborhood",
-                     "title":  "Akihabara / Kanda-Sakumacho",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Akihabara",
-                     "coords":  [
-                                    35.6953,
-                                    139.7740
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Akihabara",
-                     "visited":  "2026-04-21",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Tokyo\u0027s electronics + anime + manga district! Tons of stores stacked vertically.",
-                                   "tip":  "Apr 21 dinner at IBREN restaurant â€” receipt confirmed Kanda-Sakumacho 3-38",
-                                   "wow":  "Until 1989 this was Tokyo\u0027s wholesale electronics PARTS district. Anime/manga took over only after 2000.",
-                                   "local":  "Multi-floor stores hide collector-only material on upper floors. Ground floor = casual; 5th floor = serious. Don\u0027t skip the elevator."
-                               },
-                     "tags":  [
-                                  "neighborhood",
-                                  "tokyo"
-                              ],
-                     "hero":  "20260421_213342.jpg",
-                     "photos":  [
-                                    "20260421_213342.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "ichigaya-mod",
-                     "type":  "landmark",
-                     "title":  "Ministry of Defense (Ichigaya) â€” DIH Meeting",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Ichigaya",
-                     "coords":  [
-                                    35.6912,
-                                    139.7350
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Ministry_of_Defense_(Japan)",
-                     "visited":  "2026-04-24",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Japan\u0027s Ministry of Defense â€” like the Pentagon. Bryan met with the Defense Innovation Hub team here.",
-                                   "tip":  "Apr 24 1:30 PM meeting â€” visitor badge + martial arts poster confirmed",
-                                   "wow":  "The MoD sits on the site of the old Imperial Army HQ - where Tojo (the WW2 PM) had his office.",
-                                   "local":  "The Ichigaya Memorial Hall on the grounds is where Mishima Yukio committed seppuku in 1970. Open by reservation only."
-                               },
-                     "tags":  [
-                                  "work",
-                                  "tokyo",
-                                  "government"
-                              ],
-                     "hero":  "20260421_161147.jpg",
-                     "photos":  [
-                                    "20260421_161147.jpg",
-                                    "20260421_154951.jpg",
-                                    "20260421_155910.jpg",
-                                    "20260421_160034.jpg",
-                                    "20260421_160953.jpg",
-                                    "20260424_154347.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "kasumigaseki",
-                     "type":  "landmark",
-                     "title":  "Cabinet Office â€” Kasumigaseki",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Kasumigaseki",
-                     "coords":  [
-                                    35.6750,
-                                    139.7546
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Kasumigaseki",
-                     "visited":  "2026-04-22",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Tokyo\u0027s government district â€” like Washington DC\u0027s federal buildings.",
-                                   "tip":  "Apr 22 2 PM CAO meeting",
-                                   "wow":  "Every Japanese ministry HQ sits on this 0.8 sq km - the most concentrated bureaucratic real estate on Earth.",
-                                   "local":  "Kasumigaseki salarymen work the latest hours in Japan. 11 PM and 80% of office lights are still on."
-                               },
-                     "tags":  [
-                                  "work",
-                                  "tokyo",
-                                  "government"
-                              ],
-                     "hero":  "20260422_143314.jpg",
-                     "photos":  [
-                                    "20260422_143314.jpg",
-                                    "20260422_134141.jpg",
-                                    "20260422_135206.jpg",
-                                    "20260422_143418.jpg",
-                                    "20260422_143826.jpg",
-                                    "20260422_144426.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "iyoshi-cola-izakaya",
-                     "type":  "food",
-                     "title":  "First-night izakaya (Iyoshi Cola)",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Ginza",
-                     "coords":  [
-                                    35.6720,
-                                    139.7670
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Izakaya",
-                     "visited":  "2026-04-18",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Your first dinner in Japan â€” a tablet-order Tokyo izakaya. You had Iyoshi Cola (Japan\u0027s craft cola).",
-                                   "tip":  "Apr 18 9:50 PM. Sober: cola + water.",
-                                   "wow":  "Iyoshi Cola was invented in 2018 by a fourth-generation Chinese-herb pharmacist - it\u0027s a literal craft cola from Tokyo.",
-                                   "local":  "Tablet-order izakaya only became normal post-2020. Older locals still find them rude."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "tokyo",
-                                  "first-night"
-                              ],
-                     "hero":  "20260418_215030.jpg",
-                     "photos":  [
-                                    "20260418_215030.jpg",
-                                    "20260418_204657.jpg",
-                                    "20260418_205037.jpg",
-                                    "20260418_205206.jpg",
-                                    "20260418_205323.jpg",
-                                    "20260418_205719.jpg",
-                                    "20260418_205759.jpg",
-                                    "20260418_210036.jpg",
-                                    "20260418_210110.jpg",
-                                    "20260418_211912.jpg",
-                                    "20260418_213332.jpg",
-                                    "20260418_215404.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "ibren-akihabara",
-                     "type":  "food",
-                     "title":  "IBREN restaurant (Akihabara)",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Kanda-Sakumacho",
-                     "coords":  [
-                                    35.6953,
-                                    139.7740
-                                ],
-                     "wiki":  "",
-                     "visited":  "2026-04-21",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A pub-style restaurant in Akihabara where Bryan had jasmine tea while co-workers had drinks.",
-                                   "tip":  "Receipt confirmed Apr 21 9:32 PM. Total Â¥8,514 (cash). Phone 03-58254520. Table C1.",
-                                   "wow":  "\u0027Izakaya\u0027 literally means \u0027stay-sake-shop\u0027 - originally sake shops that let you drink on-site instead of buying to go.",
-                                   "local":  "The \u0027free\u0027 otoshi appetizer that appears is NOT free - it\u0027s the table charge in food form, Y300-500/person."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "tokyo",
-                                  "team-dinner"
-                              ],
-                     "hero":  "20260421_214901.jpg",
-                     "photos":  [
-                                    "20260421_214901.jpg",
-                                    "20260421_202743.jpg",
-                                    "20260421_213342.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "yakitori-tokyo",
-                     "type":  "food",
-                     "title":  "Specialty yakitori dinner",
-                     "city":  "Tokyo",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.6750,
-                                    139.7600
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Yakitori",
-                     "visited":  "2026-04-22",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A traditional Japanese grilled-chicken-skewer place. Bryan saw exotic cuts on the menu â€” quail eggs, knee cartilage, the bit between heart and liver!",
-                                   "tip":  "Apr 22 8:07 PM. After the rainy Tokyo nightlife wander.",
-                                   "wow":  "Real yakitori specialists use 30+ DIFFERENT chicken parts - organs Western butchers throw away.",
-                                   "local":  "Order \u0027omakase\u0027 (chef\u0027s choice) for the full course. Picking individual skewers off the menu marks you as a tourist."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "tokyo",
-                                  "yakitori"
-                              ],
-                     "hero":  "20260422_193015.jpg",
-                     "photos":  [
-                                    "20260422_193015.jpg",
-                                    "20260420_185608.jpg",
-                                    "20260420_195010.jpg",
-                                    "20260420_195733.jpg",
-                                    "20260422_183419.jpg",
-                                    "20260422_183613.jpg",
-                                    "20260422_183810.jpg",
-                                    "20260422_184138.jpg",
-                                    "20260422_184735.jpg",
-                                    "20260422_185005.jpg",
-                                    "20260422_185155.jpg",
-                                    "20260422_185322.jpg",
-                                    "20260422_195836.jpg",
-                                    "20260422_200712.jpg",
-                                    "20260422_200821.jpg",
-                                    "20260422_200939.jpg",
-                                    "20260422_203750.jpg",
-                                    "20260422_203849.jpg",
-                                    "20260422_204756.jpg",
-                                    "20260422_205949.jpg",
-                                    "20260422_215855.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "nssol-kaiseki",
-                     "type":  "food",
-                     "title":  "NSSOL kaiseki dinner",
-                     "city":  "Tokyo",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.6800,
-                                    139.7650
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Kaiseki",
-                     "visited":  "2026-04-23",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A traditional multi-course Japanese dinner â€” sashimi, grilled fish, tiny artistic dishes â€” with the NSSOL business team.",
-                                   "tip":  "Apr 23 7:35-8:24 PM. Group photo at the zen-style restaurant with the NSSOL team.",
-                                   "wow":  "Kaiseki has 9-13 strict courses in fixed order (appetizer to sashimi to grilled to simmered to fried to vinegared to rice to soup to dessert) - same sequence since the 1500s.",
-                                   "local":  "Kaiseki etiquette: eat in the order served, don\u0027t mix courses; the chef plates each in sequence for a reason."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "tokyo",
-                                  "kaiseki",
-                                  "client-dinner"
-                              ],
-                     "hero":  "20260423_182124.jpg",
-                     "photos":  [
-                                    "20260423_182124.jpg",
-                                    "20260423_164800.jpg",
-                                    "20260423_175335.jpg",
-                                    "20260423_175741.jpg",
-                                    "20260423_175954.jpg",
-                                    "20260423_180248.jpg",
-                                    "20260423_181038.jpg",
-                                    "20260423_181255.jpg",
-                                    "20260423_181518.jpg",
-                                    "20260423_183314.jpg",
-                                    "20260423_184339.jpg",
-                                    "20260423_185219.jpg",
-                                    "20260423_190008.jpg",
-                                    "20260423_192518.jpg",
-                                    "20260423_193503.jpg",
-                                    "20260423_200212.jpg",
-                                    "20260423_200823.jpg",
-                                    "20260423_202434.jpg",
-                                    "20260423_221235.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "suimei-shabu",
-                     "type":  "food",
-                     "title":  "Suimei (æ°´æ˜Ž) â€” Shabu-Shabu",
-                     "city":  "Tokyo",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.6750,
-                                    139.7700
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Shabu-shabu",
-                     "visited":  "2026-04-24",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Where you had your \u0027best dinner ever\u0027 (your handwritten words!). Wagyu shabu-shabu â€” thinly sliced beef cooked in dashi broth at the table.",
-                                   "tip":  "Apr 24 7:38-10:23 PM. Signed menu from the table. WAGYU BURGER doodle.",
-                                   "wow":  "\u0027Shabu-shabu\u0027 is onomatopoeia - the SOUND of beef swishing in broth.",
-                                   "local":  "Wagyu shabu at this tier runs Y15-30K/person. A signed menu makes it a milestone meal in Tokyo."
-                               },
-                     "menu":  [
-                                  { "name": "Wagyu shabu-shabu", "note": "Thin slices swished in dashi at the table; dipped in goma (sesame) or ponzu" }
-                              ],
-                     "extra_cards":  [
-                                         { "title": "Origins of shabu-shabu", "body": "Introduced in Osaka in 1952 at a restaurant called Suehiro, adapted from a Mongolian instant-boiled mutton hot pot. The name imitates the swish-swish sound of meat moving through broth." }
-                                     ],
-                     "tags":  [
-                                  "food",
-                                  "tokyo",
-                                  "shabu",
-                                  "best-dinner-ever"
-                              ],
-                     "hero":  "20260424_222334.jpg",
-                     "photos":  [
-                                    "20260424_222334.jpg",
-                                    "20260424_173750.jpg",
-                                    "20260424_184807.jpg",
-                                    "20260424_191553.jpg",
-                                    "20260424_193824.jpg",
-                                    "20260424_194049.jpg",
-                                    "20260424_201601.jpg",
-                                    "20260424_224059.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "wagyu-restaurant",
-                     "type":  "food",
-                     "title":  "5th-gen Wagyu Restaurant",
-                     "city":  "Tokyo",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.6730,
-                                    139.7670
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Wagyu",
-                     "visited":  "2026-04-26",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A wagyu beef restaurant from a 5-generation family â€” the meat-merchant tradition started in 1962.",
-                                   "tip":  "Apr 26 10:08 PM. After Pokemon Center. Last Tokyo dinner.",
-                                   "wow":  "True A5 wagyu has 35%+ intramuscular fat (vs ~6% for top USDA Prime). That marbling is why it melts at body temperature.",
-                                   "local":  "Most \u00275-generation\u0027 meat shops are post-WW2 lineage. Japan\u0027s old wagyu trade was disrupted, then rebuilt from the 1950s onward."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "tokyo",
-                                  "wagyu",
-                                  "last-night"
-                              ],
-                     "hero":  "20260426_220813.jpg",
-                     "photos":  [
-                                    "20260426_220813.jpg",
-                                    "20260426_220622.jpg",
-                                    "20260426_220837.jpg",
-                                    "20260426_220844.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "tonkatsu-team-lunch",
-                     "type":  "food",
-                     "title":  "Tonkatsu team lunch",
-                     "city":  "Tokyo",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.6750,
-                                    139.7650
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Tonkatsu",
-                     "visited":  "2026-04-20",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A traditional fried-pork-cutlet lunch with shredded cabbage. Your first meal with the team.",
-                                   "tip":  "Apr 20 12:54 PM. 4 people: Bryan + 3 colleagues.",
-                                   "wow":  "Tonkatsu was invented in 1899 in Tokyo as a Western adaptation. \u0027Katsu\u0027 comes from the English word \u0027cutlet.\u0027",
-                                   "local":  "The shredded raw cabbage isn\u0027t garnish - it\u0027s served first, intentionally, to help digest the heavy pork. Pile it on; eat it first."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "tokyo",
-                                  "team",
-                                  "tonkatsu"
-                              ],
-                     "hero":  "20260420_125441.jpg",
-                     "photos":  [
-                                    "20260420_125441.jpg",
-                                    "20260420_101015.jpg",
-                                    "20260420_125421.jpg",
-                                    "20260420_125439.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "matsukiyo",
-                     "type":  "shop",
-                     "title":  "Matsumoto Kiyoshi Drugstore",
-                     "city":  "Tokyo",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.6700,
-                                    139.7700
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Matsumotokiyoshi",
-                     "visited":  "2026-04-20",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Japan\u0027s most famous yellow-and-black drugstore chain. Tourists come for skincare and snacks.",
-                                   "wow":  "Matsumoto Kiyoshi has 1,700+ stores. The yellow signs are designed to be visible from 200m away.",
-                                   "local":  "For real deals, hit a SUNDRUG or COSMOS - same products often 10-20% cheaper. Matsukiyo is the tourist default."
-                               },
-                     "tags":  [
-                                  "shop",
-                                  "tokyo"
-                              ],
-                     "hero":  "20260420_184828.jpg",
-                     "photos":  [
-                                    "20260420_184828.jpg",
-                                    "20260420_184345.jpg",
-                                    "20260420_185124.jpg",
-                                    "20260420_185129.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "donki",
-                     "type":  "shop",
-                     "title":  "Donki / Drugstore haul",
-                     "city":  "Tokyo",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.6760,
-                                    139.7700
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Don_Quijote_(store)",
-                     "visited":  "2026-04-19",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Don Quijote â€” chaotic Japanese discount store with EVERYTHING.",
-                                   "tip":  "Apr 19 evening â€” VT CICA Korean masks confirmed in haul",
-                                   "wow":  "Each Donki stocks ~50,000 items, intentionally chaotic to feel like a treasure hunt. The maze layout is BY DESIGN.",
-                                   "local":  "The Don Pen penguin mascot has its own Twitter account in 5 languages and posts memes daily."
-                               },
-                     "tags":  [
-                                  "shop",
-                                  "tokyo"
-                              ],
-                     "hero":  "20260419_182000.jpg",
-                     "photos":  [
-                                    "20260419_182000.jpg",
-                                    "20260419_183847.jpg",
-                                    "20260419_201708.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "pokemon-center",
-                     "type":  "shop",
-                     "title":  "Pokemon Center Tokyo",
-                     "city":  "Tokyo",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.6815,
-                                    139.7670
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/PokÃ©mon_Center",
-                     "visited":  "2026-04-26",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "ðŸŽ® A WHOLE STORE of nothing but Pokemon stuff â€” cards, plushies, T-shirts, even snacks!",
-                                   "tip":  "Apr 26 8:38-8:45 PM. 22 items, Â¥35,213 total. Charizard coin purse + cards in the haul.",
-                                   "wow":  "The Pokemon Company is a JOINT venture between Nintendo, Game Freak, and Creatures Inc. - not Nintendo alone, which surprises most fans.",
-                                   "local":  "Each Pokemon Center sells city-exclusive Pikachu plushies in local outfits - Tokyo Tower outfit, Kyoto kimono, etc. Collector bait."
-                               },
-                     "tags":  [
-                                  "shop",
-                                  "pokemon",
-                                  "tokyo",
-                                  "for-the-kids"
-                              ],
-                     "hero":  "20260426_195543.jpg",
-                     "photos":  [
-                                    "20260426_195543.jpg",
-                                    "20260426_192851.jpg",
-                                    "20260426_193100.jpg",
-                                    "20260426_193514.jpg",
-                                    "20260426_193900.jpg",
-                                    "20260426_194326.jpg",
-                                    "20260426_195051.jpg",
-                                    "20260426_195248.jpg",
-                                    "20260426_195448.jpg",
-                                    "20260426_203515.jpg",
-                                    "20260426_203723.jpg",
-                                    "20260426_203850.jpg",
-                                    "20260426_204138.jpg",
-                                    "20260426_204252.jpg",
-                                    "20260426_204626.jpg",
-                                    "20260426_205034.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "tokyo-cafe-coworking",
-                     "type":  "food",
-                     "title":  "Tokyo cafÃ© / co-working",
-                     "city":  "Tokyo",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.6750,
-                                    139.7650
-                                ],
-                     "wiki":  "",
-                     "visited":  "2026-04-22",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A modern cafÃ© with free WiFi where Bryan worked on his MacBook before the CAO meeting.",
-                                   "tip":  "Apr 22 9:22 AM. Cushioned seating, plants.",
-                                   "wow":  "Tokyo has 600+ dedicated coworking spaces - more than NYC - but most locals just work at chain cafes (Doutor, Komeda).",
-                                   "local":  "Cafe-as-office etiquette: order something every 90 min, or get politely asked to leave."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "tokyo",
-                                  "work"
-                              ],
-                     "hero":  "20260422_125751.jpg",
-                     "photos":  [
-                                    "20260422_125751.jpg",
-                                    "20260422_074740.jpg",
-                                    "20260422_092255.jpg",
-                                    "20260422_115423.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "hipster-breakfast",
-                     "type":  "food",
-                     "title":  "Hipster breakfast bowl spot",
-                     "city":  "Tokyo",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.6730,
-                                    139.7660
-                                ],
-                     "wiki":  "",
-                     "visited":  "2026-04-20",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A modern Tokyo cafÃ© with healthy grain bowls. Pink radish + tuna + herbs + coffee.",
-                                   "tip":  "Apr 20 7:17 AM. Pre-team-meeting breakfast.",
-                                   "wow":  "Hawaiian acai bowls hit Tokyo around 2014; now Shibuya/Daikanyama alone has dozens of variations.",
-                                   "local":  "A real Japanese breakfast is rice + miso + grilled fish + tsukemono. Bowl breakfasts are 100% imported and Instagram-driven."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "tokyo",
-                                  "breakfast"
-                              ],
-                     "hero":  "20260420_071751.jpg",
-                     "photos":  [
-                                    "20260420_071751.jpg",
-                                    "20260420_054150.jpg",
-                                    "20260420_054445.jpg",
-                                    "20260420_072322.jpg",
-                                    "20260420_092519.jpg",
-                                    "20260420_100148.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "kyoto-station",
-                     "type":  "transit",
-                     "title":  "Kyoto Station",
-                     "city":  "Kyoto",
-                     "neighborhood":  "ShimogyÅ",
-                     "coords":  [
-                                    34.9858,
-                                    135.7585
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Kyoto_Station",
-                     "visited":  "2026-04-25, 2026-04-26",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A futuristic metal-and-glass mega-station that looks like a spaceship â€” surprising in old Kyoto!",
-                                   "tip":  "Arrived from Tokyo Sat AM, departed back on NOZOMI 28 (15:01 Sun)",
-                                   "wow":  "Hiroshi Hara\u0027s 1997 design hides a 15-story \u0027Sky Garden\u0027 on the roof - a free public observation deck most tourists miss.",
-                                   "local":  "From the rooftop terrace you can see Higashi-Honganji, the Toji pagoda, AND the mountains Bryan hiked. Best free view in Kyoto."
-                               },
-                     "tags":  [
-                                  "transit",
-                                  "kyoto"
-                              ],
-                     "hero":  "20260426_145124.jpg",
-                     "photos":  [
-                                    "20260426_145124.jpg",
-                                    "20260425_181002.jpg",
-                                    "20260426_140654.jpg",
-                                    "20260426_145022.jpg",
-                                    "20260426_145223.jpg",
-                                    "20260426_145507.jpg",
-                                    "20260426_145648(0).jpg",
-                                    "20260426_150401.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "fushimi-inari",
-                     "type":  "shrine",
-                     "title":  "Fushimi Inari Taisha",
-                     "city":  "Kyoto",
-                     "neighborhood":  "Fushimi",
-                     "coords":  [
-                                    34.9671,
-                                    135.7727
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Fushimi_Inari-taisha",
-                     "visited":  "2026-04-25",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "10,000 bright orange torii gates climbing a mountain! Each donated by a family or business. You hiked deep into Mt. Inari with companions.",
-                                   "history":  "Founded 711 AD. Head shrine of 30,000 Inari shrines across Japan.",
-                                   "deity":  "Inari ÅŒkami â€” Shinto god/goddess of rice, foxes, and prosperity",
-                                   "ritual":  "Foxes (kitsune) are Inari\u0027s messengers â€” fox statues hold keys or scrolls.",
-                                   "symbol":  "Endless tunnel of vermilion torii gates.",
-                                   "wow":  "The \u002710,000 torii\u0027 is folk talk - real count is closer to 32,000 including miniatures, each paid for by an individual or business praying for prosperity.",
-                                   "local":  "Skip the famous Senbon Torii crowd-tunnel. The back trails above the Yotsutsuji intersection are nearly empty even at midday - exactly where Bryan went."
-                               },
-                     "tags":  [
-                                  "shrine",
-                                  "shinto",
-                                  "kyoto",
-                                  "must-see"
-                              ],
-                     "hero":  "20260425_161101.jpg",
-                     "photos":  [
-                                    "20260425_161101.jpg",
-                                    "20260425_125950.jpg",
-                                    "20260425_130201.jpg",
-                                    "20260425_130735.jpg",
-                                    "20260425_130857.jpg",
-                                    "20260425_132349.jpg",
-                                    "20260425_133834.jpg",
-                                    "20260425_134056.jpg",
-                                    "20260425_134147.jpg",
-                                    "20260425_135014.jpg",
-                                    "20260425_135050.jpg",
-                                    "20260425_135146.jpg",
-                                    "20260425_140007.jpg",
-                                    "20260425_140759.jpg",
-                                    "20260425_140905.jpg",
-                                    "20260425_141028.jpg",
-                                    "20260425_141333.jpg",
-                                    "20260425_141426.jpg",
-                                    "20260425_141526.jpg",
-                                    "20260425_142227.jpg",
-                                    "20260425_142437.jpg",
-                                    "20260425_142631.jpg",
-                                    "20260425_142828.jpg",
-                                    "20260425_143632.jpg",
-                                    "20260425_143730.jpg",
-                                    "20260425_143827.jpg",
-                                    "20260425_144004.jpg",
-                                    "20260425_144047.jpg",
-                                    "20260425_144220.jpg",
-                                    "20260425_144318.jpg",
-                                    "20260425_144528.jpg",
-                                    "20260425_144755.jpg",
-                                    "20260425_144850.jpg",
-                                    "20260425_144925.jpg",
-                                    "20260425_145255.jpg",
-                                    "20260425_145513.jpg",
-                                    "20260425_150100.jpg",
-                                    "20260425_150444.jpg",
-                                    "20260425_150709.jpg",
-                                    "20260425_150832.jpg",
-                                    "20260425_151120.jpg",
-                                    "20260425_151247.jpg",
-                                    "20260425_151613.jpg",
-                                    "20260425_151734.jpg",
-                                    "20260425_151915.jpg",
-                                    "20260425_152214.jpg",
-                                    "20260425_152259.jpg",
-                                    "20260425_152514.jpg",
-                                    "20260425_152647.jpg",
-                                    "20260425_152901.jpg",
-                                    "20260425_153147.jpg",
-                                    "20260425_153231.jpg",
-                                    "20260425_153609.jpg",
-                                    "20260425_153805.jpg",
-                                    "20260425_153911.jpg",
-                                    "20260425_154030.jpg",
-                                    "20260425_154340.jpg",
-                                    "20260425_154534.jpg",
-                                    "20260425_155330.jpg",
-                                    "20260425_155447.jpg",
-                                    "20260425_155703.jpg",
-                                    "20260425_155925.jpg",
-                                    "20260425_160119.jpg",
-                                    "20260425_160208.jpg",
-                                    "20260425_160617.jpg",
-                                    "20260425_160848.jpg",
-                                    "20260425_161021.jpg",
-                                    "20260425_161212.jpg",
-                                    "20260425_161445.jpg",
-                                    "20260425_161547.jpg",
-                                    "20260425_161651.jpg",
-                                    "20260425_161823.jpg",
-                                    "20260425_161913.jpg",
-                                    "20260425_162008.jpg",
-                                    "20260425_162157.jpg",
-                                    "20260425_162316.jpg",
-                                    "20260425_162554.jpg",
-                                    "20260425_162748.jpg",
-                                    "20260425_163432.jpg",
-                                    "20260425_163546.jpg",
-                                    "20260425_163619.jpg",
-                                    "20260425_163748.jpg",
-                                    "20260425_163830.jpg",
-                                    "20260425_164025.jpg",
-                                    "20260425_164103.jpg",
-                                    "20260425_164253.jpg",
-                                    "20260425_165022.jpg",
-                                    "20260425_165109.jpg",
-                                    "20260425_165241.jpg",
-                                    "20260425_165524.jpg",
-                                    "20260425_165806.jpg",
-                                    "20260425_170321.jpg",
-                                    "20260425_170453.jpg",
-                                    "20260425_170942.jpg",
-                                    "20260425_171041.jpg",
-                                    "20260425_171425.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "himukai-daijingu",
-                     "type":  "shrine",
-                     "title":  "Himukai Daijingu (Kyoto\u0027s Ise)",
-                     "city":  "Kyoto",
-                     "neighborhood":  "Higashiyama (north)",
-                     "coords":  [
-                                    35.0086,
-                                    135.7912
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Himukai-daijingÅ«",
-                     "visited":  "2026-04-26",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A small but historic Shinto shrine called \u0027Kyoto\u0027s Ise\u0027 because it\u0027s modeled after the famous Ise Grand Shrine. It has a sacred cave and a small spring.",
-                                   "history":  "Founded ~5th century AD according to legend â€” one of the OLDEST shrines in Kyoto.",
-                                   "deity":  "Amaterasu ÅŒmikami â€” Shinto sun goddess (and ancestor of the Imperial line)",
-                                   "ritual":  "Pass through the cave shrine of Amano-Iwato to symbolically rebirth",
-                                   "symbol":  "Inner shrine modeled after Ise + a sacred spring",
-                                   "wow":  "\u0027Daijingu\u0027 means \u0027great divine shrine\u0027 - only Ise-affiliated shrines may use the title. Himukai got it because legend says Amaterasu rested here.",
-                                   "local":  "The Amano-Iwato cave shrine reenacts the myth of the sun goddess hiding in a cave. Crawling through it = symbolic rebirth."
-                               },
-                     "tags":  [
-                                  "shrine",
-                                  "shinto",
-                                  "kyoto",
-                                  "hidden-gem"
-                              ],
-                     "hero":  "20260426_120058.jpg",
-                     "photos":  [
-                                    "20260426_120058.jpg",
-                                    "20260426_115613.jpg",
-                                    "20260426_115726.jpg",
-                                    "20260426_115934.jpg",
-                                    "20260426_120616.jpg",
-                                    "20260426_122310.jpg",
-                                    "20260426_122551.jpg",
-                                    "20260426_123129.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "kyoto-trail-higashiyama",
-                     "type":  "hike",
-                     "title":  "Kyoto Trail Â· Higashiyama",
-                     "city":  "Kyoto",
-                     "neighborhood":  "Higashiyama (north)",
-                     "coords":  [
-                                    35.0070,
-                                    135.7920
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Kyoto_Trail",
-                     "visited":  "2026-04-26",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "An 80+ KM official hiking trail that loops the mountains around Kyoto. You hiked the Higashiyama section â€” marker #37 photo proves it!",
-                                   "tip":  "Apr 26 11:43 AM trail marker. Led to Himukai Daijingu.",
-                                   "wow":  "The Higashiyama section links 9 World Heritage temples - including Kiyomizu, Ginkaku-ji, and Nanzen-ji.",
-                                   "local":  "Marker #37 sits north of Nanzen-ji, near the Philosopher\u0027s Path. Most Kyoto tourists never know the trail exists."
-                               },
-                     "tags":  [
-                                  "hike",
-                                  "nature",
-                                  "kyoto",
-                                  "accomplishment"
-                              ],
-                     "hero":  "20260426_114318.jpg",
-                     "photos":  [
-                                    "20260426_114318.jpg",
-                                    "20260426_082212.jpg",
-                                    "20260426_082657.jpg",
-                                    "20260426_084125.jpg",
-                                    "20260426_092758.jpg",
-                                    "20260426_093233.jpg",
-                                    "20260426_094705.jpg",
-                                    "20260426_094842.jpg",
-                                    "20260426_094923.jpg",
-                                    "20260426_095024.jpg",
-                                    "20260426_100032.jpg",
-                                    "20260426_100203.jpg",
-                                    "20260426_100427.jpg",
-                                    "20260426_100542.jpg",
-                                    "20260426_100802.jpg",
-                                    "20260426_101055.jpg",
-                                    "20260426_101132.jpg",
-                                    "20260426_101244.jpg",
-                                    "20260426_101425.jpg",
-                                    "20260426_101534.jpg",
-                                    "20260426_101631.jpg",
-                                    "20260426_101944.jpg",
-                                    "20260426_102110.jpg",
-                                    "20260426_102416.jpg",
-                                    "20260426_102458.jpg",
-                                    "20260426_102636(1).jpg",
-                                    "20260426_102758.jpg",
-                                    "20260426_103037.jpg",
-                                    "20260426_103108.jpg",
-                                    "20260426_103248.jpg",
-                                    "20260426_103353.jpg",
-                                    "20260426_103638.jpg",
-                                    "20260426_103805.jpg",
-                                    "20260426_103943.jpg",
-                                    "20260426_104340.jpg",
-                                    "20260426_104430.jpg",
-                                    "20260426_104809.jpg",
-                                    "20260426_105019.jpg",
-                                    "20260426_105121.jpg",
-                                    "20260426_105227.jpg",
-                                    "20260426_105521.jpg",
-                                    "20260426_105645.jpg",
-                                    "20260426_105834.jpg",
-                                    "20260426_105924.jpg",
-                                    "20260426_110242.jpg",
-                                    "20260426_110414.jpg",
-                                    "20260426_110527.jpg",
-                                    "20260426_110848.jpg",
-                                    "20260426_111058.jpg",
-                                    "20260426_111339.jpg",
-                                    "20260426_111754.jpg",
-                                    "20260426_112134.jpg",
-                                    "20260426_113856.jpg",
-                                    "20260426_114209.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "gion",
-                     "type":  "neighborhood",
-                     "title":  "Gion (Geisha District)",
-                     "city":  "Kyoto",
-                     "neighborhood":  "Gion",
-                     "coords":  [
-                                    35.0037,
-                                    135.7782
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Gion",
-                     "visited":  "2026-04-25, 2026-04-26",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Old neighborhood where you might still see GEISHA walking to work! Wooden machiya houses, lanterns, stone streets.",
-                                   "tip":  "Dusk walk Sat night + Sun morning with etiquette signs",
-                                   "wow":  "Real geiko (Kyoto\u0027s word for geisha) number around 80 active. Tourist photo-harassment got so bad some Gion private streets banned non-resident photography in 2024.",
-                                   "local":  "The geiko you might glimpse at dusk are heading TO work, not posing. Don\u0027t follow, don\u0027t photograph, don\u0027t touch."
-                               },
-                     "tags":  [
-                                  "neighborhood",
-                                  "kyoto",
-                                  "traditional"
-                              ],
-                     "hero":  "20260425_190027.jpg",
-                     "photos":  [
-                                    "20260425_190027.jpg",
-                                    "20260425_183155.jpg",
-                                    "20260425_183634.jpg",
-                                    "20260425_183711.jpg",
-                                    "20260425_184054.jpg",
-                                    "20260425_184221.jpg",
-                                    "20260425_184551.jpg",
-                                    "20260425_185014.jpg",
-                                    "20260425_185345.jpg",
-                                    "20260425_185424.jpg",
-                                    "20260425_185520.jpg",
-                                    "20260425_185843.jpg",
-                                    "20260425_190229.jpg",
-                                    "20260425_190315.jpg",
-                                    "20260425_190456.jpg",
-                                    "20260425_190751.jpg",
-                                    "20260425_190841.jpg",
-                                    "20260425_191014.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "kamogawa-river",
-                     "type":  "landmark",
-                     "title":  "Kamogawa River",
-                     "city":  "Kyoto",
-                     "neighborhood":  "Pontocho",
-                     "coords":  [
-                                    35.0031,
-                                    135.7717
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Kamo_River_(Yodo_River_system)",
-                     "visited":  "2026-04-25",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Kyoto\u0027s main river with stone embankments. At night, traditional restaurants light up along the banks.",
-                                   "tip":  "Apr 25 7:32 PM walk along the river â€” your first Kyoto evening",
-                                   "wow":  "In summer, restaurants extend wooden \u0027kawayuka\u0027 platforms over the river - Kyoto\u0027s only legal way to dine literally above moving water.",
-                                   "local":  "Couples on the riverbank sit at almost exactly equal spacing (~1.8m apart) - a Kyoto urban legend that turned out to be measurably true."
-                               },
-                     "tags":  [
-                                  "landmark",
-                                  "kyoto",
-                                  "river"
-                              ],
-                     "hero":  "20260425_193200.jpg",
-                     "photos":  [
-                                    "20260425_193200.jpg",
-                                    "20260425_192022.jpg",
-                                    "20260425_192123.jpg",
-                                    "20260425_192237.jpg",
-                                    "20260425_192506.jpg",
-                                    "20260425_193327.jpg",
-                                    "20260425_194013.jpg",
-                                    "20260425_194229.jpg",
-                                    "20260425_194351.jpg",
-                                    "20260425_194512.jpg",
-                                    "20260425_194634.jpg",
-                                    "20260425_200306.jpg",
-                                    "20260425_201224.jpg",
-                                    "20260425_202851.jpg",
-                                    "20260425_202949.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "komeda-pokemon",
-                     "type":  "food",
-                     "title":  "Komeda Coffee (Pokemon promo)",
-                     "city":  "Kyoto",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    35.0033,
-                                    135.7677
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Komeda%27s_Coffee",
-                     "visited":  "2026-04-25",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A Japanese coffee chain (Komeda\u0027s) with a Pokemon-themed promotion! You had the Kuro-neige baumkuchen dessert.",
-                                   "tip":  "Apr 25 5:41 PM, Kyoto.",
-                                   "wow":  "Komeda\u0027s Coffee was founded in Nagoya in 1968 and is now Japan\u0027s #1 indie chain (vs. Starbucks #1 foreign chain).",
-                                   "local":  "Their signature: free \u0027morning service\u0027 - order coffee 7-11 AM and get free toast + boiled egg."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "kyoto",
-                                  "pokemon",
-                                  "coffee"
-                              ],
-                     "hero":  "20260425_174148.jpg",
-                     "photos":  [
-                                    "20260425_174148.jpg",
-                                    "20260425_172537.jpg",
-                                    "20260425_172959.jpg",
-                                    "20260425_173605.jpg",
-                                    "20260425_173749.jpg",
-                                    "20260425_174349.jpg",
-                                    "20260425_174732.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "cacao-market",
-                     "type":  "food",
-                     "title":  "Cacao Market (chocolate)",
-                     "city":  "Kyoto",
-                     "neighborhood":  "Pontocho",
-                     "coords":  [
-                                    35.0050,
-                                    135.7720
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/PontochÅ",
-                     "visited":  "2026-04-26",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "Kyoto chocolate shop in a European-style building with a big clock.",
-                                   "food":  "Bean-to-bar craft chocolate.",
-                                   "wow":  "Japanese craft chocolate has won 100+ International Chocolate Awards in the last decade - punching well above its size.",
-                                   "local":  "Bean-to-bar shops cluster around Pontocho/Kiyamachi. Walking the river bank you\u0027ll pass 3 in 4 blocks."
-                               },
-                     "tags":  [
-                                  "food",
-                                  "chocolate",
-                                  "kyoto"
-                              ],
-                     "hero":  "20260426_124704.jpg",
-                     "photos":  [
-                                    "20260426_124704.jpg",
-                                    "20260426_125533.jpg",
-                                    "20260426_125618.jpg",
-                                    "20260426_130311.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "kyoto-hotel",
-                     "type":  "landmark",
-                     "title":  "Kyoto hotel (yukata-ryokan style)",
-                     "city":  "Kyoto",
-                     "neighborhood":  "TBD",
-                     "coords":  [
-                                    34.9900,
-                                    135.7600
-                                ],
-                     "wiki":  "",
-                     "visited":  "2026-04-25",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "kid":  "A traditional-style hotel that gave Bryan a yukata (cotton kimono robe) to wear in the room.",
-                                   "tip":  "Sat night Apr 25. Hotel breakfast Apr 26 morning.",
-                                   "wow":  "Yukata supplied by Kyoto hotels are meant for in-room only, not the street - though tourist hotels increasingly accept it both ways.",
-                                   "local":  "The \u0027no tattoos in public bath\u0027 rule is loosening at hotels that want foreign business, but stays rigid at traditional sento/onsen."
-                               },
-                     "tags":  [
-                                  "transit",
-                                  "kyoto",
-                                  "hotel",
-                                  "yukata"
-                              ],
-                     "hero":  "20260425_182946.jpg",
-                     "photos":  [
-                                    "20260425_182946.jpg",
-                                    "20260425_182109.jpg",
-                                    "20260425_205712.jpg",
-                                    "20260425_205843.jpg",
-                                    "20260425_210055.jpg",
-                                    "20260425_210532.jpg",
-                                    "20260425_210927.jpg",
-                                    "20260425_211033.jpg",
-                                    "20260425_211709.jpg",
-                                    "20260425_213955.jpg",
-                                    "20260425_214839.jpg",
-                                    "20260425_222046.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "kinkakuji",
-                     "type":  "shrine",
-                     "title":  "Kinkaku-ji (Golden Pavilion)",
-                     "city":  "Kyoto",
-                     "neighborhood":  "Kita",
-                     "coords":  [
-                                    35.0394,
-                                    135.7292
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Kinkaku-ji",
-                     "visited":  "?",
-                     "status":  "candidate",
-                     "facts":  {
-                                   "kid":  "Temple covered in REAL GOLD!",
-                                   "history":  "1397 shogun retirement. Burned by monk 1950, rebuilt 1955.",
-                                   "wow":  "Burned to the ground in 1950 by a young monk-arsonist. The current building is a 1955 replica; the gold leaf was upgraded in 1987 to 0.5 microns - 5x the original thickness.",
-                                   "local":  "Skip the main path crowds. The back garden, toward the teahouse, has the BEST gold-leaf reflection in the pond."
-                               },
-                     "tags":  [
-                                  "shrine",
-                                  "buddhist",
-                                  "kyoto"
-                              ]
-                 },
-                 {
-                     "id":  "arashiyama",
-                     "type":  "hike",
-                     "title":  "Arashiyama Bamboo",
-                     "city":  "Kyoto",
-                     "neighborhood":  "Arashiyama",
-                     "coords":  [
-                                    35.0170,
-                                    135.6717
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Arashiyama",
-                     "visited":  "?",
-                     "status":  "candidate",
-                     "facts":  {
-                                   "kid":  "Forest of GIANT bamboo â€” taller than a 4-story building.",
-                                   "wow":  "The Iwatayama Monkey Park on the same mountain has 120+ wild Japanese macaques. You feed them through a cage - humans inside, monkeys outside.",
-                                   "local":  "The bamboo grove is jammed 10 AM-3 PM. Locals go at 7 AM or after 4 PM - when it actually feels mystical."
-                               },
-                     "tags":  [
-                                  "hike",
-                                  "nature",
-                                  "kyoto"
-                              ]
-                 },
-                 {
-                     "id":  "yasaka",
-                     "type":  "shrine",
-                     "title":  "Yasaka Shrine",
-                     "city":  "Kyoto",
-                     "neighborhood":  "Gion",
-                     "coords":  [
-                                    35.0036,
-                                    135.7785
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Yasaka_Shrine",
-                     "visited":  "?",
-                     "status":  "candidate",
-                     "facts":  {
-                                   "kid":  "Bright orange shrine at the Gion entrance. Hundreds of stone lanterns light up at night.",
-                                   "wow":  "Hosts the Gion Matsuri every July - one of Japan\u0027s 3 biggest festivals, a whole month long.",
-                                   "local":  "At New Year ~1 million people visit in 3 days for hatsumode (first shrine visit). By far Kyoto\u0027s most crowded moment of the year."
-                               },
-                     "tags":  [
-                                  "shrine",
-                                  "shinto",
-                                  "kyoto"
-                              ]
-                 },
-                 {
-                     "id":  "kiyomizu-dera",
-                     "type":  "shrine",
-                     "title":  "Kiyomizu-dera (NOT confirmed)",
-                     "city":  "Kyoto",
-                     "neighborhood":  "Higashiyama (south)",
-                     "coords":  [
-                                    34.9949,
-                                    135.7850
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Kiyomizu-dera",
-                     "visited":  "?",
-                     "status":  "candidate",
-                     "facts":  {
-                                   "kid":  "A temple on a HUGE wooden stage. Famous for its 3-stream Otowa Waterfall.",
-                                   "tip":  "Earlier guess was wrong â€” the trail marker #37 is far north of Kiyomizu. Likely NOT visited.",
-                                   "wow":  "\u0027Kiyomizu\u0027 means \u0027pure water\u0027 - the 3 Otowa waterfall streams each grant a different wish: longevity, success, or love. You can drink only one.",
-                                   "local":  "The Edo-era idiom \u0027jumping off Kiyomizu\u0027s stage\u0027 (a leap of faith) comes from 234 recorded jumps off the 13m platform - 85% survived."
-                               },
-                     "tags":  [
-                                  "shrine",
-                                  "buddhist",
-                                  "kyoto"
-                              ]
-                 },
-                 {
-                     "id":  "jni-office",
-                     "type":  "landmark",
-                     "title":  "JNI Office (Kagurazaka)",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Kagurazaka",
-                     "coords":  [
-                                    35.7019,
-                                    139.7406
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Kagurazaka",
-                     "visited":  "2026-04-21",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "local":  "The shrine at the bottom of the main slope (Bishamonten Zenkokuji) is where Kagurazaka geisha have prayed for centuries.",
-                                   "history":  "JNI deep-dive meeting day in Kagurazaka — formal Visitor Temporary Pass at Ichigaya, then JNI office.",
-                                   "wow":  "Kagurazaka is a historic geisha district; today it\u0027s a quietly upscale neighborhood with French expats and traditional restaurants on cobblestone streets.",
-                                   "tip":  "Apr 21 morning. Lexus dashboard commute, External Visitor Temporary Pass photo."
-                               },
-                     "tags":  [
-                                  "work",
-                                  "tokyo",
-                                  "government"
-                              ],
-                     "hero":  "20260421_072949.jpg",
-                     "photos":  [
-                                    "20260421_072949.jpg",
-                                    "20260421_073000.jpg",
-                                    "20260421_090202.jpg",
-                                    "20260421_091129.jpg",
-                                    "20260421_091200.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "nssol-hq",
-                     "type":  "landmark",
-                     "title":  "NSSOL HQ — Tokyo Highrise",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Toyosu / Tokyo Bay area",
-                     "coords":  [
-                                    35.6557,
-                                    139.796
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Nippon_Steel_Solutions",
-                     "visited":  "2026-04-23",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "local":  "The Tokyo Bay business district (Toyosu / Shibaura) is where most Japanese conglomerate headquarters relocated when central Tokyo got too expensive.",
-                                   "history":  "Bryan\u0027s \u0027never thought I\u0027d conduct business in a Tokyo highrise\u0027 day. Full NSSOL deep-dive.",
-                                   "wow":  "Nippon Steel Solutions (NSSOL) is the IT arm of Nippon Steel — they run major systems for Japanese banking, government, and steel manufacturing.",
-                                   "tip":  "Apr 23. Dark suit hotel mirror selfie at 7:50 AM, NSSOL deep-dive ran 10:00 AM – 3:30 PM."
-                               },
-                     "tags":  [
-                                  "work",
-                                  "tokyo",
-                                  "client",
-                                  "highrise"
-                              ],
-                     "hero":  "20260423_131933.jpg",
-                     "photos":  [
-                                    "20260423_131933.jpg",
-                                    "20260423_075037.jpg",
-                                    "20260423_082811.jpg",
-                                    "20260423_093109.jpg",
-                                    "20260423_093722.jpg",
-                                    "20260423_095320.jpg"
-                                ]
-                 },
-                 {
-                     "id":  "hnd-haneda",
-                     "type":  "transit",
-                     "title":  "Haneda Airport (HND)",
-                     "city":  "Tokyo",
-                     "neighborhood":  "Ota",
-                     "coords":  [
-                                    35.5494,
-                                    139.7798
-                                ],
-                     "wiki":  "https://en.wikipedia.org/wiki/Haneda_Airport",
-                     "visited":  "2026-04-27",
-                     "status":  "confirmed",
-                     "facts":  {
-                                   "local":  "Locals always pick HND over NRT when they can — HND is 30 minutes from central Tokyo by train, NRT is 90+.",
-                                   "history":  "Return flight: UA804 HND -\u003e IAD, 15:45 departure. Bryan\u0027s last hours in Japan.",
-                                   "wow":  "Haneda was the world\u0027s busiest airport by passenger traffic for most of the 1980s — overtaken only when Narita opened the second Tokyo gateway.",
-                                   "tip":  "Apr 27. HND ramen for lunch before boarding."
-                               },
-                     "tags":  [
-                                  "transit",
-                                  "tokyo",
-                                  "airport",
-                                  "return"
-                              ],
-                     "hero":  "20260427_150328.jpg",
-                     "photos":  [
-                                    "20260427_150328.jpg",
-                                    "20260427_121514.jpg",
-                                    "20260427_122937.jpg",
-                                    "20260427_150806.jpg"
-                                ]
-                 }
-             ]
+{
+  "version": 4,
+  "_doc": "Evidence-based pins from 114 photos analyzed. Status: confirmed = direct visual proof; candidate = was in plan but no photo proof; downgraded = previously assumed but evidence contradicts.",
+  "trip": {
+    "id": "japan-2026",
+    "title": "Japan â€” April 2026",
+    "subtitle": "Bryan's first time in Japan Â· 10 days Â· Tokyo + Kyoto",
+    "dates": [
+      "2026-04-17",
+      "2026-04-27"
+    ],
+    "traveler": "Bryan Dawson",
+    "team": [
+      "Doug",
+      "Clair",
+      "Saul",
+      "Alex"
+    ],
+    "kyoto_companions": "Kyoto weekend overlapped with colleagues"
+  },
+  "pins": [
+    {
+      "id": "ginza",
+      "type": "neighborhood",
+      "title": "Ginza / Hotel base",
+      "city": "Tokyo",
+      "neighborhood": "Ginza-Tsukiji",
+      "coords": [
+        35.6717,
+        139.7649
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Ginza",
+      "visited": "2026-04-18 to 2026-04-27",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Tokyo's fanciest district â€” land here costs $1 million per square meter!",
+        "tip": "Bryan's hotel: Mitsui Garden Hotel Ginza Tsukiji (10 nights)",
+        "wow": "Ginza's main street closes to traffic every Sat/Sun afternoon, becoming a 'pedestrian paradise' (hokoten) since 1970.",
+        "local": "Locals don't really shop here - they come for department-store basement food halls (depachika) and dinners."
+      },
+      "tags": [
+        "neighborhood",
+        "tokyo",
+        "home-base"
+      ],
+      "hero": "20260420_211230.jpg",
+      "photos": [
+        "20260420_211230.jpg",
+        "20260418_163437.jpg",
+        "20260418_170622.jpg",
+        "20260418_171006.jpg",
+        "20260418_172505.jpg",
+        "20260418_192533.jpg",
+        "20260420_210634.jpg"
+      ]
+    },
+    {
+      "id": "hotel-bath",
+      "type": "landmark",
+      "title": "Hotel Public Bath — Mitsui Garden Hotel Ginza Tsukiji",
+      "city": "Tokyo",
+      "neighborhood": "Ginza-Tsukiji",
+      "coords": [
+        35.6668,
+        139.7711
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Sent%C5%8D",
+      "visited": "2026-04-18 to 2026-04-27",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Bryan's daily ritual all trip — the hotel's Large Public Bath, B1 floor of the Mitsui Garden Hotel Ginza Tsukiji. Fully nude, shower first, communal L-shaped tub. He went once or twice a day. End of day was the best.",
+        "ritual": "Shoes off at the door. Strip in the locker room. Shower thoroughly — every drop of soap and shampoo rinsed — BEFORE entering the bath. Then soak. No swimsuits, no towels in the water, no phones, no lotions.",
+        "wow": "Japan's public-bath tradition (sentō) traces to Buddhist temple ritual bathing in the 6th century. Communal nude bathing was — and in places still is — a daily social practice, not just hygiene.",
+        "local": "Hotel public-bath etiquette: if someone is already in, take the opposite end. Quiet is fine; conversation isn't expected. 20–30 minutes is a normal stay. Most Mitsui Garden hotels label their facility 'Daiyokujō' (大浴場, 'large public bath') — it's communal sentō-style, with heated municipal water rather than natural hot-spring water (which would be 'onsen')."
+      },
+      "extra_cards": [
+        {
+          "title": "Bryan's bath routine",
+          "body": "L-shaped hot tub, no chlorine smell, water hot as hell. He'd shampoo and shower clean as a whistle, then slide in. First time, another guy was already in — extra awkward, but 'this is the way,' so Bryan took the opposite end. 20–30 minutes most days. Twice on heavy walking days. Once he came in to two strangers; they left right as he entered. 'No chance I'd want to chat with a coworker in there, but strangers — nothing.'"
+        },
+        {
+          "title": "Onsen vs sentō vs daiyokujō",
+          "body": "Three Japanese bathing words with different precise meanings, often blurred in English. Onsen (温泉): natural hot spring; water heated by the earth, mineral-rich, often outdoors. Sentō (銭湯): traditional neighborhood public bath, heated municipal water, indoor, communal — a centuries-old social institution. Daiyokujō (大浴場): 'large public bath' inside a hotel, gym, or ryokan — sentō-style amenities, sometimes piped from a real onsen. The Mitsui Garden Hotel Ginza Tsukiji's bath is a daiyokujō: cave-like stonework, two rounded tubs, basement floor.",
+          "source": "https://www.gardenhotels.co.jp/ginza-tsukiji/eng/"
+        }
+      ],
+      "tags": [
+        "spa",
+        "bath",
+        "tokyo",
+        "ginza",
+        "ritual",
+        "daily"
+      ],
+      "photos": []
+    },
+    {
+      "id": "kabuki-za",
+      "type": "landmark",
+      "title": "Kabuki-za Theatre",
+      "city": "Tokyo",
+      "neighborhood": "Higashi-Ginza",
+      "coords": [
+        35.6695,
+        139.7672
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Kabuki-za",
+      "visited": "2026-04-18",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Tokyo's most famous KABUKI theater â€” traditional Japanese drama with elaborate costumes & makeup, in a beautiful century-old building.",
+        "tip": "You walked past it at 10 PM your first night â€” right next to your hotel",
+        "wow": "Full shows can run 5-6 hours; locals buy 'one-act' tickets (~Y1,000) for just 30-60 min when they don't have all day.",
+        "local": "The current building is the FIFTH on the same plot - earthquakes, fires, and WW2 bombing rebuilt it in 1925, 1951, and 2013."
+      },
+      "tags": [
+        "landmark",
+        "tokyo",
+        "traditional",
+        "iconic"
+      ],
+      "hero": "20260418_221644.jpg",
+      "photos": [
+        "20260418_221644.jpg",
+        "20260418_224434.jpg"
+      ]
+    },
+    {
+      "id": "tokyo-station",
+      "type": "transit",
+      "title": "Tokyo Station",
+      "city": "Tokyo",
+      "neighborhood": "Marunouchi",
+      "coords": [
+        35.6812,
+        139.7671
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Tokyo_Station",
+      "visited": "2026-04-25, 2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A giant red-brick station that's 100+ years old. Where Bryan's shinkansen to Kyoto and back arrived/departed.",
+        "tip": "Departed Apr 25 morning + Arrived Apr 26 17:15 from Kyoto on NOZOMI 28",
+        "wow": "The red-brick Marunouchi facade is from 1914; it was bombed in WW2 and only fully restored to original spec in 2012.",
+        "local": "Locals never just say 'Tokyo Station' - they specify 'Yaesu side' (east) or 'Marunouchi side' (west). The two sides feel like different cities."
+      },
+      "tags": [
+        "transit",
+        "tokyo",
+        "shinkansen"
+      ],
+      "hero": "20260426_172508.jpg",
+      "photos": [
+        "20260426_172508.jpg",
+        "20260425_083646.jpg",
+        "20260425_084707.jpg",
+        "20260425_091446.jpg",
+        "20260425_091526.jpg",
+        "20260425_091800.jpg",
+        "20260425_092500.jpg",
+        "20260425_094016.jpg",
+        "20260425_100847.jpg",
+        "20260426_171244.jpg",
+        "20260426_172230.jpg",
+        "20260426_172314.jpg",
+        "20260426_172959.jpg",
+        "20260426_173157.jpg",
+        "20260426_173239.jpg",
+        "20260426_173356.jpg",
+        "20260426_173445.jpg",
+        "20260426_173541.jpg",
+        "20260426_173800.jpg",
+        "20260426_173833.jpg",
+        "20260426_174243.jpg",
+        "20260426_175727.jpg",
+        "20260426_175943.jpg",
+        "20260426_180102.jpg",
+        "20260426_180419.jpg",
+        "20260426_180937.jpg",
+        "20260426_181127.jpg"
+      ]
+    },
+    {
+      "id": "marunouchi",
+      "type": "neighborhood",
+      "title": "Marunouchi",
+      "city": "Tokyo",
+      "neighborhood": "Marunouchi",
+      "coords": [
+        35.6814,
+        139.7657
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Marunouchi",
+      "visited": "2026-04-22",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Tokyo's Wall Street â€” giant office buildings + MUJI mega-store + Imperial Palace next door.",
+        "tip": "You walked here Apr 22 4:53 PM after the Cabinet Office (CAO) meeting",
+        "wow": "About 90% of land here is owned by ONE landlord: Mitsubishi Estate, since 1894 - reportedly the highest-value real estate block on Earth.",
+        "local": "This is salaryman lunch country. The 2nd-basement food courts in every office tower hide the best ramen and donburi shops."
+      },
+      "tags": [
+        "neighborhood",
+        "tokyo",
+        "business"
+      ],
+      "hero": "20260420_134908.jpg",
+      "photos": [
+        "20260420_134908.jpg",
+        "20260421_175305.jpg",
+        "20260421_182858.jpg",
+        "20260421_183134.jpg",
+        "20260421_183933.jpg",
+        "20260421_184130.jpg",
+        "20260422_161232.jpg",
+        "20260422_161806.jpg",
+        "20260422_162530.jpg",
+        "20260422_162657.jpg",
+        "20260422_163038.jpg",
+        "20260422_163120.jpg",
+        "20260422_163514.jpg",
+        "20260422_164043.jpg",
+        "20260422_164508.jpg",
+        "20260422_165208.jpg",
+        "20260422_165313.jpg"
+      ]
+    },
+    {
+      "id": "imperial-palace",
+      "type": "landmark",
+      "title": "Imperial Palace + Outer Moat",
+      "city": "Tokyo",
+      "neighborhood": "Chiyoda",
+      "coords": [
+        35.6852,
+        139.7528
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Tokyo_Imperial_Palace",
+      "visited": "2026-04-19",
+      "status": "candidate",
+      "facts": {
+        "kid": "Where the Emperor of Japan lives! Garden was the inner part of a giant samurai castle.",
+        "history": "Built on Edo Castle, where shoguns ruled for 250 years.",
+        "tip": "Apr 19 afternoon long stone-walled embankment photo could be here OR Hamarikyu",
+        "wow": "At the 1989 peak, the land beneath the palace was reportedly valued at more than ALL real estate in California combined.",
+        "local": "The 5 km inner-moat loop is Tokyo's most popular running route - any morning you'll pass dozens of runners."
+      },
+      "tags": [
+        "landmark",
+        "garden",
+        "tokyo",
+        "free"
+      ],
+      "hero": "20260419_142545.jpg",
+      "photos": [
+        "20260419_142545.jpg",
+        "20260419_143048.jpg",
+        "20260419_150728.jpg",
+        "20260419_153741.jpg",
+        "20260419_155323.jpg",
+        "20260419_155740.jpg",
+        "20260419_162124.jpg"
+      ]
+    },
+    {
+      "id": "hamarikyu",
+      "type": "landmark",
+      "title": "Hamarikyu Gardens",
+      "city": "Tokyo",
+      "neighborhood": "Chuo",
+      "coords": [
+        35.6597,
+        139.7637
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Hama-rikyÅ«_Gardens",
+      "visited": "2026-04-19",
+      "status": "candidate",
+      "facts": {
+        "kid": "An old Edo-era garden right on Tokyo Bay! Has a teahouse on a tiny island in a saltwater pond.",
+        "tip": "Best fit for the Apr 19 2:23 PM pond photo (closest to Tsukiji hotel)",
+        "wow": "The pond connects to Tokyo Bay so the water level rises and falls with the tides - one of only a few tidal saltwater garden ponds in Japan.",
+        "local": "The 300-year-old pine near the entrance (sanbyaku-nen no matsu) was personally planted by a Tokugawa shogun."
+      },
+      "tags": [
+        "landmark",
+        "garden",
+        "tokyo"
+      ],
+      "hero": "20260419_142327.jpg",
+      "photos": [
+        "20260419_142327.jpg",
+        "20260419_135922.jpg",
+        "20260419_141216.jpg",
+        "20260419_141356.jpg",
+        "20260419_142139(0).jpg",
+        "20260419_142215.jpg"
+      ]
+    },
+    {
+      "id": "tsukiji-outer",
+      "type": "food",
+      "title": "Tsukiji Outer Market",
+      "city": "Tokyo",
+      "neighborhood": "Tsukiji",
+      "coords": [
+        35.6655,
+        139.7707
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Tsukiji_fish_market",
+      "visited": "2026-04-19",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Used to be the BIGGEST fish market in the world. Sushi for breakfast!",
+        "tip": "You walked here at 5:52 AM Apr 19 BEFORE it opened â€” sunrise market walk",
+        "wow": "The famous tuna auction moved to Toyosu in 2018, but the OUTER market stayed - and it's busier than ever.",
+        "local": "Tsukiji shop owners arrive at 3-4 AM. If you want the best stuff, be there by 8 - by 10 the tourists have it."
+      },
+      "tags": [
+        "food",
+        "market",
+        "tokyo"
+      ],
+      "hero": "20260419_080257.jpg",
+      "photos": [
+        "20260419_080257.jpg",
+        "20260419_052352.jpg",
+        "20260419_052532.jpg",
+        "20260419_052623.jpg",
+        "20260419_053915.jpg",
+        "20260419_055201.jpg",
+        "20260419_055354.jpg",
+        "20260419_055556.jpg",
+        "20260419_055703.jpg",
+        "20260419_063357.jpg",
+        "20260419_063435.jpg",
+        "20260419_063733.jpg",
+        "20260419_072833.jpg",
+        "20260419_073826.jpg",
+        "20260419_074045.jpg"
+      ]
+    },
+    {
+      "id": "senso-ji",
+      "type": "shrine",
+      "title": "Senso-ji Temple",
+      "city": "Tokyo",
+      "neighborhood": "Asakusa",
+      "coords": [
+        35.7148,
+        139.7967
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/SensÅ-ji",
+      "visited": "2026-04-19, 2026-04-27",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Tokyo's OLDEST temple â€” built in 645 AD! Bryan visited TWICE: Apr 19 daylight & Apr 27 sunrise. The whole trip was bookended by Senso-ji.",
+        "history": "Founded when two fisherman brothers pulled a tiny golden statue of Kannon from the Sumida River.",
+        "deity": "Kannon â€” Buddhist goddess of mercy",
+        "ritual": "Wave incense smoke over yourself before entering for good health.",
+        "symbol": "1,500-lb red lantern at Kaminarimon Gate ('Thunder Gate').",
+        "wow": "A typhoon ripped the giant Kaminarimon lantern in half in 2014. The temple replaces it every ~10 years and ceremonially burns the old one.",
+        "local": "Skip the main path. Cut one block west to Denpoin-dori to see what Asakusa looked like a century ago."
+      },
+      "extra_cards": [
+        {
+          "title": "Bryan's first shrine ritual",
+          "body": "Threw in 100 yen (about 68 cents — the standard temple coin). One bow to acknowledge where you are. Two claps to wake the spirits — 'hello, I'm here.' Prayer — gratitude, never asking for anything specific. One more bow on the way out. Felt like an Episcopal service stripped of the teachings — tradition, faith, action, with no one trying to convert you. The ritual stayed the same all trip; the prayers and the feeling shifted from shrine to shrine."
+        },
+        {
+          "title": "THE LEAST FORTUNATE — Bryan's first omikuji",
+          "body": "Cylinder maybe a foot long, packed with numbered wooden rods. Drop a coin, shake, pull one rod. Number on the rod points to a metal drawer on the wall — yours is the slip inside. Drew #31. Pulled the slip. THE LEAST FORTUNATE. The lowest fortune in the box. The whole 'your time hasn't come, you won't get what you want, be patient' rebuke. First instinct: tie it to the post and walk away — bad omikuji are bundled and burned at day's end. Second instinct, after a beat: this is the most on-the-nose, perfectly absurd first-fortune anyone in Japan could possibly draw. Kept it. Still his favorite of the trip."
+        },
+        {
+          "title": "Buddhist, not Shinto — the difference Bryan was riding",
+          "body": "Senso-ji is a BUDDHIST temple (Pure Land sect), even though Bryan's ritual — coin, bow, two claps, prayer, bow — borrowed Shinto shrine etiquette. In practice most Japanese visitors blend the two: clap-style prayer at Shinto shrines (jinja), palms-pressed-together at Buddhist temples (otera). Bryan's prayer-by-instinct lined up just fine.",
+          "source": "https://en.wikipedia.org/wiki/Shinto"
+        },
+        {
+          "title": "Omikuji — the fortune-paper system",
+          "body": "The cylinder-and-rod fortune is called 'omikuji' (御御籤). Donate a coin, shake the cylinder, draw one numbered wooden stick, retrieve the matching paper from the numbered drawer. Senso-ji is famous for an unusually harsh distribution — about 30% of slips are 'kyō' (bad luck) or 'dai-kyō' (great bad luck), versus most temples that bias kinder. Bad fortunes get tied to a nearby rack of wire or pine — the temple bundles and ritually burns them. Bryan's THE LEAST FORTUNATE wasn't random odds; he picked one of the toughest omikuji boxes in Japan to start with.",
+          "source": "https://en.wikipedia.org/wiki/O-mikuji"
+        }
+      ],
+      "tags": [
+        "shrine",
+        "buddhist",
+        "tokyo",
+        "asakusa",
+        "must-see",
+        "visited-twice"
+      ],
+      "hero": "20260419_113116.jpg",
+      "photos": [
+        "20260419_113116.jpg",
+        "20260419_112509.jpg",
+        "20260419_114535.jpg",
+        "20260427_054107.jpg",
+        "20260427_084505.jpg",
+        "20260427_085227.jpg",
+        "20260427_092034.jpg",
+        "20260427_092150.jpg",
+        "20260427_092500.jpg",
+        "20260427_100452.jpg",
+        "20260427_101456.jpg",
+        "20260427_113415.jpg",
+        "20260427_115503.jpg"
+      ]
+    },
+    {
+      "id": "nakamise",
+      "type": "neighborhood",
+      "title": "Nakamise-dori",
+      "city": "Tokyo",
+      "neighborhood": "Asakusa",
+      "coords": [
+        35.7129,
+        139.7967
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Nakamise-dÅri",
+      "visited": "2026-04-19, 2026-04-27",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Old shopping street with snacks, fans, toys. 250+ years old, ~90 little shops.",
+        "food": "Try ningyo-yaki (doll-shaped cake), age-manju, senbei rice crackers.",
+        "wow": "Many of the 250+ shops have hereditary licenses - same families running them for 6+ generations.",
+        "local": "Last shop on the right before the gate (Funawa) does the best age-manju in Tokyo, fried while you wait."
+      },
+      "tags": [
+        "food",
+        "shopping",
+        "tokyo",
+        "asakusa"
+      ],
+      "hero": "20260419_111002.jpg",
+      "photos": [
+        "20260419_111002.jpg",
+        "20260419_094447.jpg",
+        "20260419_094527.jpg",
+        "20260419_094632.jpg",
+        "20260419_094709(0).jpg",
+        "20260419_094949.jpg",
+        "20260419_095155.jpg",
+        "20260419_095326.jpg",
+        "20260419_095401.jpg",
+        "20260419_095449.jpg",
+        "20260419_095530.jpg",
+        "20260419_100022.jpg",
+        "20260419_101010.jpg",
+        "20260419_101238.jpg",
+        "20260419_101316.jpg",
+        "20260419_101400.jpg",
+        "20260419_101539.jpg",
+        "20260419_101613.jpg",
+        "20260419_102623.jpg",
+        "20260419_103022.jpg",
+        "20260419_103801.jpg",
+        "20260419_104054.jpg",
+        "20260419_104237.jpg",
+        "20260419_105949.jpg",
+        "20260419_110152.jpg",
+        "20260419_110340.jpg",
+        "20260419_110421.jpg",
+        "20260419_110608.jpg",
+        "20260419_111232.jpg",
+        "20260419_111445.jpg",
+        "20260419_111539.jpg"
+      ]
+    },
+    {
+      "id": "denpoin-dori",
+      "type": "neighborhood",
+      "title": "Denpoin-dori",
+      "city": "Tokyo",
+      "neighborhood": "Asakusa",
+      "coords": [
+        35.7124,
+        139.796
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Asakusa",
+      "visited": "2026-04-19",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A hidden Edo-era side street near Senso-ji that most tourists skip. You found it Apr 19 11:31 â€” kanji photo confirmed (ä¼æ³•é™¢é€š)",
+        "wow": "Zero chain stores - strict preservation rules keep the whole street Edo-period in appearance.",
+        "local": "The maneki-neko cat figurines on the rooftops aren't decoration - they're inviting business luck for each shop below."
+      },
+      "tags": [
+        "neighborhood",
+        "tokyo",
+        "hidden-gem"
+      ],
+      "hero": "20260419_113116.jpg",
+      "photos": [
+        "20260419_113116.jpg"
+      ]
+    },
+    {
+      "id": "sumida-river",
+      "type": "landmark",
+      "title": "Sumida River walk",
+      "city": "Tokyo",
+      "neighborhood": "Asakusa",
+      "coords": [
+        35.7113,
+        139.8005
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Sumida_River",
+      "visited": "2026-04-19",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Tokyo's iconic river that runs through Asakusa â€” the river the Senso-ji statue legend started in!",
+        "tip": "Walked here right after Senso-ji at 11:39 AM Apr 19",
+        "wow": "Until 1888, sumo wrestlers actually fought on barges floating on this river.",
+        "local": "From May the Suijo Bus runs Asakusa to Hamarikyu - same route Bryan walked, seen from the water."
+      },
+      "tags": [
+        "landmark",
+        "tokyo",
+        "river"
+      ],
+      "hero": "20260419_113948.jpg",
+      "photos": [
+        "20260419_113948.jpg",
+        "20260419_113940.jpg",
+        "20260419_113945.jpg"
+      ]
+    },
+    {
+      "id": "zojoji-tokyo-tower",
+      "type": "shrine",
+      "title": "Zojoji Temple + Tokyo Tower",
+      "city": "Tokyo",
+      "neighborhood": "Minato",
+      "coords": [
+        35.6577,
+        139.7484
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/ZÅjÅ-ji",
+      "visited": "2026-04-24",
+      "status": "confirmed",
+      "facts": {
+        "kid": "An ancient Buddhist temple right next to TOKYO TOWER. The view of the temple's curved black roof with the red-and-white Tokyo Tower behind is one of Tokyo's most iconic photos.",
+        "history": "Founded 1393. Family temple of the Tokugawa shoguns. Six shoguns are buried here.",
+        "deity": "Buddha (Pure Land Buddhism / Jodo sect)",
+        "symbol": "Hundreds of small Jizo statues with red bibs and pinwheels â€” memorials for unborn or deceased children",
+        "ritual": "Pray for safe passage of children and family",
+        "wow": "Tokyo Tower is 13m TALLER than the Eiffel Tower (333m vs 320m) and was built in 1958 specifically to top it.",
+        "local": "The little Jizo statues with red bibs are memorials for unborn children. Parents change the bibs themselves, year after year."
+      },
+      "tags": [
+        "shrine",
+        "buddhist",
+        "tokyo",
+        "iconic",
+        "tokyo-tower"
+      ],
+      "hero": "20260424_103452.jpg",
+      "photos": [
+        "20260424_103452.jpg",
+        "20260424_072755.jpg",
+        "20260424_095934.jpg",
+        "20260424_100736.jpg",
+        "20260424_101242.jpg",
+        "20260424_101509.jpg",
+        "20260424_102413.jpg",
+        "20260424_102605.jpg",
+        "20260424_102829(0).jpg",
+        "20260424_102937.jpg",
+        "20260424_103352.jpg",
+        "20260424_103604.jpg",
+        "20260424_103719.jpg",
+        "20260424_103859.jpg",
+        "20260424_104054.jpg",
+        "20260424_104243.jpg",
+        "20260424_104453.jpg",
+        "20260424_104540.jpg",
+        "20260424_104645.jpg",
+        "20260424_104748.jpg",
+        "20260424_104959.jpg",
+        "20260424_110151.jpg",
+        "20260424_110313.jpg",
+        "20260424_110414.jpg",
+        "20260424_110631.jpg",
+        "20260424_110829.jpg",
+        "20260424_110939.jpg",
+        "20260424_111156.jpg",
+        "20260424_111251.jpg",
+        "20260424_111546.jpg",
+        "20260424_111829.jpg",
+        "20260424_112945.jpg",
+        "20260424_113204.jpg",
+        "20260424_113520.jpg",
+        "20260424_113650.jpg",
+        "20260424_124631.jpg",
+        "20260424_125139.jpg",
+        "20260424_125247.jpg",
+        "20260424_125321.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The Kuro-honzon — Ieyasu's blackened Amida",
+          "body": "Zojoji's most venerated object: the Kuro-honzon (黒本尊, 'Black Principal Image'), a ~1-meter Amida Buddha statue said to have been carved in the 11th century by the Tendai monk Eshin Sōzu Genshin. Tokugawa Ieyasu adopted it as his personal protective Buddha and reportedly carried it on his major military campaigns. It is credited with granting him victory — the kanji 勝運 (shōun / 'victory luck') is associated with it. Centuries of incense smoke and prayer blackened the statue, hence its name. It's displayed publicly only three times a year (January 15, May 15, September 15).",
+          "source": "https://en.wikipedia.org/wiki/Z%C5%8Dj%C5%8D-ji"
+        },
+        {
+          "title": "勝運 — the victory-luck talisman Bryan brought home",
+          "body": "Tucked into the scrapbook: a Zojoji talisman card with an eagle illustration and two kanji — 勝運 (victory luck) at top, 成就 (fulfillment / achievement) at bottom. These are Kuro-honzon themed talismans. Bryan also kept the Daihonzan Zojo-ji ofuda wrapper, a Tokugawa mitsuba-aoi (three-leaf hollyhock) crest insert, and the printed Kuro-honzon origin pamphlet. A real Tokugawa-temple artifact set, not generic merch."
+        }
+      ]
+    },
+    {
+      "id": "meiji-shrine",
+      "type": "shrine",
+      "title": "Meiji Jingu",
+      "city": "Tokyo",
+      "neighborhood": "Harajuku",
+      "coords": [
+        35.6764,
+        139.6993
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Meiji_Shrine",
+      "visited": "2026-04-19",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A huge forest shrine with 100,000 trees in Tokyo!",
+        "deity": "Spirits of Emperor Meiji and Empress ShÅken",
+        "wow": "The 100,000-tree forest was donated from every prefecture in 1920 - it's a fake 'old forest,' only a century old.",
+        "local": "Saturday mornings you'll often see a full white-kimono wedding procession crossing the main path - locals plan around it."
+      },
+      "extra_cards": [
+        {
+          "title": "Second omikuji — 'from the empress'",
+          "body": "Bryan drew a second fortune at Meiji Jingu — and this one wasn't a tier-graded slip at all. The shrine uses a waka mikuji system: instead of 'good' or 'bad' luck, you draw one of 30 specific poems by Emperor Meiji or Empress Shōken, and the poem is the guidance. Bryan drew #22, a poem by Empress Shōken on purity of heart. 'From the empress' was literal — see the dedicated card below for the full poem. He called it 'a cool one too.' But the Senso-ji THE LEAST FORTUNATE stays his favorite — you can't beat the on-the-nose perfection of drawing the worst fortune in the box on your first try in Japan."
+        },
+        {
+          "title": "The waka mikuji — Empress Shōken's poem #22",
+          "body": "Meiji Jingu's fortune system is unique. Most omikuji rank you on a tier (great-good → great-bad). Meiji Jingu's instead is a waka mikuji: one of 30 specific poems composed by Emperor Meiji or Empress Shōken, drawn at random — the poem itself is the guidance. No good or bad. Bryan drew #22, an Empress Shōken poem on purity of heart:\n\n朝ごとに  むかふ鏡の  くもりなく  あらまほしきは  心なりけり\n\nAsagotoni / Mukau kagami no / Kumori naku / Aramahoshiki wa / Kokoro narikeri\n\n'Every morning / we gaze into our mirrors / which are unblemished; / oh, that we could attain / such a purity of soul.'\n\nEmpress Shōken wrote ~30,000 waka in her lifetime. This is one of her most-cited.",
+          "source": "https://en.wikipedia.org/wiki/Empress_Sh%C5%8Dken"
+        }
+      ],
+      "tags": [
+        "shrine",
+        "shinto",
+        "tokyo"
+      ],
+      "hero": "20260419_133839.jpg",
+      "photos": [
+        "20260419_133839.jpg",
+        "20260419_130706.jpg",
+        "20260419_130939.jpg",
+        "20260419_131019.jpg",
+        "20260419_131228.jpg",
+        "20260419_131521.jpg",
+        "20260419_132810(0).jpg",
+        "20260419_133352.jpg"
+      ]
+    },
+    {
+      "id": "shinjuku",
+      "type": "neighborhood",
+      "title": "Shinjuku",
+      "city": "Tokyo",
+      "neighborhood": "Shinjuku",
+      "coords": [
+        35.6938,
+        139.7036
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Shinjuku",
+      "visited": "?",
+      "status": "candidate",
+      "facts": {
+        "kid": "Shinjuku Station is the BUSIEST train station on Earth â€” 3.5M people daily!",
+        "wow": "Shinjuku Station has 200+ exits - even Tokyoites routinely take the wrong one and end up 10+ min from where they meant to be.",
+        "local": "Skip the west side (skyscrapers). The east side - Kabukicho, Golden Gai, Omoide Yokocho - is where Tokyo nightlife actually happens."
+      },
+      "tags": [
+        "neighborhood",
+        "tokyo"
+      ]
+    },
+    {
+      "id": "akihabara-kanda",
+      "type": "neighborhood",
+      "title": "Akihabara / Kanda-Sakumacho",
+      "city": "Tokyo",
+      "neighborhood": "Akihabara",
+      "coords": [
+        35.6953,
+        139.774
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Akihabara",
+      "visited": "2026-04-21",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Tokyo's electronics + anime + manga district! Tons of stores stacked vertically.",
+        "tip": "Apr 21 dinner at IBREN restaurant â€” receipt confirmed Kanda-Sakumacho 3-38",
+        "wow": "Until 1989 this was Tokyo's wholesale electronics PARTS district. Anime/manga took over only after 2000.",
+        "local": "Multi-floor stores hide collector-only material on upper floors. Ground floor = casual; 5th floor = serious. Don't skip the elevator."
+      },
+      "tags": [
+        "neighborhood",
+        "tokyo"
+      ],
+      "photos": []
+    },
+    {
+      "id": "ichigaya-mod",
+      "type": "landmark",
+      "title": "Ministry of Defense (Ichigaya) â€” DIH Meeting",
+      "city": "Tokyo",
+      "neighborhood": "Ichigaya",
+      "coords": [
+        35.6912,
+        139.735
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Ministry_of_Defense_(Japan)",
+      "visited": "2026-04-24",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Japan's Ministry of Defense â€” like the Pentagon. Bryan met with the Defense Innovation Hub team here.",
+        "tip": "Apr 24 1:30 PM meeting â€” visitor badge + martial arts poster confirmed",
+        "wow": "The MoD sits on the site of the old Imperial Army HQ - where Tojo (the WW2 PM) had his office.",
+        "local": "The Ichigaya Memorial Hall on the grounds is where Mishima Yukio committed seppuku in 1970. Open by reservation only."
+      },
+      "tags": [
+        "work",
+        "tokyo",
+        "government"
+      ],
+      "hero": "20260421_161147.jpg",
+      "photos": [
+        "20260421_161147.jpg",
+        "20260421_155910.jpg",
+        "20260421_160034.jpg",
+        "20260421_160953.jpg",
+        "20260424_154347.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "What Bryan brought back from MoD HQ",
+          "body": "From the visit Bryan came home with a small set of genuine Japan-MoD artifacts in his Kichi-in-chō ('Base Stamp Book' — a JSDF-themed collector's book with an F-2 jet on the navy cover):\n\n• 防衛省来省記念 visit-commemoration stamp — Reiwa 8 fiscal year, with the paulownia government crest, the 任務遂行 ('Mission accomplished') seal, a Japan-flag stamp, and a serial-number stamp.\n• An embroidered MoD HQ patch (Ministry of Defense · Tokyo Japan) depicting the Ichigaya A-Building tower with antennas — the building Bryan met inside.\n• An embroidered Rising Sun flag (旭日旗 / Kyokujitsu-ki) patch — the official current ensign of the JMSDF.\n\nThese are uncommon items for a foreign visitor and a quiet badge of how seriously the visit was received."
+        }
+      ]
+    },
+    {
+      "id": "kasumigaseki",
+      "type": "landmark",
+      "title": "Cabinet Office â€” Kasumigaseki",
+      "city": "Tokyo",
+      "neighborhood": "Kasumigaseki",
+      "coords": [
+        35.675,
+        139.7546
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Kasumigaseki",
+      "visited": "2026-04-22",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Tokyo's government district â€” like Washington DC's federal buildings.",
+        "tip": "Apr 22 2 PM CAO meeting",
+        "wow": "Every Japanese ministry HQ sits on this 0.8 sq km - the most concentrated bureaucratic real estate on Earth.",
+        "local": "Kasumigaseki salarymen work the latest hours in Japan. 11 PM and 80% of office lights are still on."
+      },
+      "tags": [
+        "work",
+        "tokyo",
+        "government"
+      ],
+      "hero": "20260422_143314.jpg",
+      "photos": [
+        "20260422_143314.jpg",
+        "20260422_134141.jpg",
+        "20260422_135206.jpg",
+        "20260422_143418.jpg",
+        "20260422_143826.jpg",
+        "20260422_144426.jpg"
+      ]
+    },
+    {
+      "id": "iyoshi-cola-izakaya",
+      "type": "food",
+      "title": "First-night izakaya (Iyoshi Cola)",
+      "city": "Tokyo",
+      "neighborhood": "Ginza",
+      "coords": [
+        35.672,
+        139.767
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Izakaya",
+      "visited": "2026-04-18",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Your first dinner in Japan â€” a tablet-order Tokyo izakaya. You had Iyoshi Cola (Japan's craft cola).",
+        "tip": "Apr 18 9:50 PM. Sober: cola + water.",
+        "wow": "Iyoshi Cola was invented in 2018 by a fourth-generation Chinese-herb pharmacist - it's a literal craft cola from Tokyo.",
+        "local": "Tablet-order izakaya only became normal post-2020. Older locals still find them rude."
+      },
+      "tags": [
+        "food",
+        "tokyo",
+        "first-night"
+      ],
+      "hero": "20260418_215030.jpg",
+      "photos": [
+        "20260418_215030.jpg",
+        "20260418_204657.jpg",
+        "20260418_205037.jpg",
+        "20260418_205206.jpg",
+        "20260418_205323.jpg",
+        "20260418_205719.jpg",
+        "20260418_205759.jpg",
+        "20260418_210036.jpg",
+        "20260418_210110.jpg",
+        "20260418_211912.jpg",
+        "20260418_213332.jpg",
+        "20260418_215404.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Izakaya etiquette — the otoshi 'gift'",
+          "body": "Sit down at an izakaya and a small appetizer arrives unrequested — pickled vegetables, simmered tofu, a tiny salad. This is 'otoshi' (お通し), and it is NOT free. It's a soft cover charge in food form, usually ¥300–¥500 per person, that signals you're an actual customer not just stopping to use the bathroom. Refusing it is technically allowed but socially awkward and often won't save you the charge.",
+          "source": "https://en.wikipedia.org/wiki/Izakaya"
+        }
+      ]
+    },
+    {
+      "id": "ibren-akihabara",
+      "type": "food",
+      "title": "IBREN restaurant (Akihabara)",
+      "city": "Tokyo",
+      "neighborhood": "Kanda-Sakumacho",
+      "coords": [
+        35.6953,
+        139.774
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Izakaya",
+      "visited": "2026-04-21",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A pub-style restaurant in Akihabara where Bryan had jasmine tea while co-workers had drinks.",
+        "tip": "Receipt confirmed Apr 21 9:32 PM. Total Â¥8,514 (cash). Phone 03-58254520. Table C1.",
+        "wow": "'Izakaya' literally means 'stay-sake-shop' - originally sake shops that let you drink on-site instead of buying to go.",
+        "local": "The 'free' otoshi appetizer that appears is NOT free - it's the table charge in food form, Y300-500/person."
+      },
+      "tags": [
+        "food",
+        "tokyo",
+        "team-dinner"
+      ],
+      "hero": "20260421_214901.jpg",
+      "photos": [
+        "20260421_214901.jpg",
+        "20260421_202743.jpg"
+      ]
+    },
+    {
+      "id": "yakitori-tokyo",
+      "type": "food",
+      "title": "Specialty yakitori dinner",
+      "city": "Tokyo",
+      "neighborhood": "TBD",
+      "coords": [
+        35.675,
+        139.76
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Yakitori",
+      "visited": "2026-04-22",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A traditional Japanese grilled-chicken-skewer place. Bryan saw exotic cuts on the menu â€” quail eggs, knee cartilage, the bit between heart and liver!",
+        "tip": "Apr 22 8:07 PM. After the rainy Tokyo nightlife wander.",
+        "wow": "Real yakitori specialists use 30+ DIFFERENT chicken parts - organs Western butchers throw away.",
+        "local": "Order 'omakase' (chef's choice) for the full course. Picking individual skewers off the menu marks you as a tourist."
+      },
+      "tags": [
+        "food",
+        "tokyo",
+        "yakitori"
+      ],
+      "hero": "20260422_193015.jpg",
+      "photos": [
+        "20260422_193015.jpg",
+        "20260420_185608.jpg",
+        "20260420_195010.jpg",
+        "20260420_195733.jpg",
+        "20260422_183419.jpg",
+        "20260422_183613.jpg",
+        "20260422_183810.jpg",
+        "20260422_184138.jpg",
+        "20260422_184735.jpg",
+        "20260422_185005.jpg",
+        "20260422_185155.jpg",
+        "20260422_185322.jpg",
+        "20260422_195836.jpg",
+        "20260422_200712.jpg",
+        "20260422_200821.jpg",
+        "20260422_200939.jpg",
+        "20260422_203750.jpg",
+        "20260422_203849.jpg",
+        "20260422_204756.jpg",
+        "20260422_205949.jpg",
+        "20260422_215855.jpg"
+      ]
+    },
+    {
+      "id": "nssol-kaiseki",
+      "type": "food",
+      "title": "NSSOL kaiseki dinner",
+      "city": "Tokyo",
+      "neighborhood": "TBD",
+      "coords": [
+        35.68,
+        139.765
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Kaiseki",
+      "visited": "2026-04-23",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A traditional multi-course Japanese dinner â€” sashimi, grilled fish, tiny artistic dishes â€” with the NSSOL business team.",
+        "tip": "Apr 23 7:35-8:24 PM. Group photo at the zen-style restaurant with the NSSOL team.",
+        "wow": "Kaiseki has 9-13 strict courses in fixed order (appetizer to sashimi to grilled to simmered to fried to vinegared to rice to soup to dessert) - same sequence since the 1500s.",
+        "local": "Kaiseki etiquette: eat in the order served, don't mix courses; the chef plates each in sequence for a reason."
+      },
+      "tags": [
+        "food",
+        "tokyo",
+        "kaiseki",
+        "client-dinner"
+      ],
+      "hero": "20260423_182124.jpg",
+      "photos": [
+        "20260423_182124.jpg",
+        "20260423_164800.jpg",
+        "20260423_175335.jpg",
+        "20260423_175741.jpg",
+        "20260423_175954.jpg",
+        "20260423_180248.jpg",
+        "20260423_181038.jpg",
+        "20260423_181255.jpg",
+        "20260423_181518.jpg",
+        "20260423_183314.jpg",
+        "20260423_184339.jpg",
+        "20260423_185219.jpg",
+        "20260423_190008.jpg",
+        "20260423_192518.jpg",
+        "20260423_193503.jpg",
+        "20260423_200212.jpg",
+        "20260423_200823.jpg",
+        "20260423_202434.jpg",
+        "20260423_221235.jpg"
+      ]
+    },
+    {
+      "id": "suimei-shabu",
+      "type": "food",
+      "title": "Suimei (æ°´æ˜Ž) â€” Shabu-Shabu",
+      "city": "Tokyo",
+      "neighborhood": "TBD",
+      "coords": [
+        35.675,
+        139.77
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Shabu-shabu",
+      "visited": "2026-04-24",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Where you had your 'best dinner ever' (your handwritten words!). Wagyu shabu-shabu â€” thinly sliced beef cooked in dashi broth at the table.",
+        "tip": "Apr 24 7:38-10:23 PM. Signed menu from the table. WAGYU BURGER doodle.",
+        "wow": "'Shabu-shabu' is onomatopoeia - the SOUND of beef swishing in broth.",
+        "local": "Wagyu shabu at this tier runs Y15-30K/person. A signed menu makes it a milestone meal in Tokyo."
+      },
+      "menu": [
+        {
+          "name": "Wagyu shabu-shabu",
+          "note": "Thin slices swished in dashi at the table; dipped in goma (sesame) or ponzu"
+        }
+      ],
+      "extra_cards": [
+        {
+          "title": "Origins of shabu-shabu",
+          "body": "Introduced in Osaka in 1952 at a restaurant called Suehiro, adapted from a Mongolian instant-boiled mutton hot pot. The name imitates the swish-swish sound of meat moving through broth."
+        }
+      ],
+      "tags": [
+        "food",
+        "tokyo",
+        "shabu",
+        "best-dinner-ever"
+      ],
+      "hero": "20260424_222334.jpg",
+      "photos": [
+        "20260424_222334.jpg",
+        "20260424_173750.jpg",
+        "20260424_184807.jpg",
+        "20260424_191553.jpg",
+        "20260424_193824.jpg",
+        "20260424_194049.jpg",
+        "20260424_201601.jpg",
+        "20260424_224059.jpg"
+      ]
+    },
+    {
+      "id": "wagyu-restaurant",
+      "type": "food",
+      "title": "5th-gen Wagyu Restaurant",
+      "city": "Tokyo",
+      "neighborhood": "TBD",
+      "coords": [
+        35.673,
+        139.767
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Wagyu",
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A wagyu beef restaurant from a 5-generation family â€” the meat-merchant tradition started in 1962.",
+        "tip": "Apr 26 10:08 PM. After Pokemon Center. Last Tokyo dinner.",
+        "wow": "True A5 wagyu has 35%+ intramuscular fat (vs ~6% for top USDA Prime). That marbling is why it melts at body temperature.",
+        "local": "Most '5-generation' meat shops are post-WW2 lineage. Japan's old wagyu trade was disrupted, then rebuilt from the 1950s onward."
+      },
+      "tags": [
+        "food",
+        "tokyo",
+        "wagyu",
+        "last-night"
+      ],
+      "hero": "20260426_220813.jpg",
+      "photos": [
+        "20260426_220813.jpg",
+        "20260426_220622.jpg",
+        "20260426_220837.jpg",
+        "20260426_220844.jpg"
+      ]
+    },
+    {
+      "id": "tonkatsu-team-lunch",
+      "type": "food",
+      "title": "Tonkatsu team lunch",
+      "city": "Tokyo",
+      "neighborhood": "TBD",
+      "coords": [
+        35.675,
+        139.765
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Tonkatsu",
+      "visited": "2026-04-20",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A traditional fried-pork-cutlet lunch with shredded cabbage. Your first meal with the team.",
+        "tip": "Apr 20 12:54 PM. 4 people: Bryan + 3 colleagues.",
+        "wow": "Tonkatsu was invented in 1899 in Tokyo as a Western adaptation. 'Katsu' comes from the English word 'cutlet.'",
+        "local": "The shredded raw cabbage isn't garnish - it's served first, intentionally, to help digest the heavy pork. Pile it on; eat it first."
+      },
+      "tags": [
+        "food",
+        "tokyo",
+        "team",
+        "tonkatsu"
+      ],
+      "hero": "20260420_125441.jpg",
+      "photos": [
+        "20260420_125441.jpg",
+        "20260420_101015.jpg",
+        "20260420_125421.jpg",
+        "20260420_125439.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Tonkatsu — the Western dish that became Japanese",
+          "body": "Tonkatsu was invented in 1899 at a Western-style restaurant in Tokyo's Ginza. The original called it 'pork cutlet' (cutlet → 'katsu'), borrowed from French cotelette. Within a generation it was eaten with chopsticks over rice, dipped in tonkatsu sauce, and served with shredded raw cabbage on the side. Now it's read as quintessentially Japanese. Bryan's first team meal landed on one of the most successful immigrant dishes in Japan's food history.",
+          "source": "https://en.wikipedia.org/wiki/Tonkatsu"
+        }
+      ]
+    },
+    {
+      "id": "matsukiyo",
+      "type": "shop",
+      "title": "Matsumoto Kiyoshi Drugstore",
+      "city": "Tokyo",
+      "neighborhood": "TBD",
+      "coords": [
+        35.67,
+        139.77
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Matsumotokiyoshi",
+      "visited": "2026-04-20",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Japan's most famous yellow-and-black drugstore chain. Tourists come for skincare and snacks.",
+        "wow": "Matsumoto Kiyoshi has 1,700+ stores. The yellow signs are designed to be visible from 200m away.",
+        "local": "For real deals, hit a SUNDRUG or COSMOS - same products often 10-20% cheaper. Matsukiyo is the tourist default."
+      },
+      "tags": [
+        "shop",
+        "tokyo"
+      ],
+      "hero": "20260420_185124.jpg",
+      "photos": [
+        "20260420_184345.jpg",
+        "20260420_185124.jpg",
+        "20260420_185129.jpg"
+      ]
+    },
+    {
+      "id": "donki",
+      "type": "shop",
+      "title": "Donki / Drugstore haul",
+      "city": "Tokyo",
+      "neighborhood": "TBD",
+      "coords": [
+        35.676,
+        139.77
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Don_Quijote_(store)",
+      "visited": "2026-04-19",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Don Quijote â€” chaotic Japanese discount store with EVERYTHING.",
+        "tip": "Apr 19 evening â€” VT CICA Korean masks confirmed in haul",
+        "wow": "Each Donki stocks ~50,000 items, intentionally chaotic to feel like a treasure hunt. The maze layout is BY DESIGN.",
+        "local": "The Don Pen penguin mascot has its own Twitter account in 5 languages and posts memes daily."
+      },
+      "tags": [
+        "shop",
+        "tokyo"
+      ],
+      "hero": "20260419_182000.jpg",
+      "photos": [
+        "20260419_182000.jpg",
+        "20260419_183847.jpg",
+        "20260419_201708.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The Donki maze, explained",
+          "body": "Don Quijote stocks ~50,000 items per store and arranges them in a chaotic, narrow, multi-level maze on purpose — a strategy called 'compression display.' The clutter overwhelms visitors into impulse buys, and the deliberate disorientation extends time-in-store by ~40% vs. a conventional layout. Stores stay open late (often 24h), pump a repeating jingle ('Don Don Don Donki...'), and price-tag in handwritten yellow neon. It works: Donki is one of Japan's most profitable retailers per square meter.",
+          "source": "https://en.wikipedia.org/wiki/Don_Quijote_(store)"
+        }
+      ]
+    },
+    {
+      "id": "pokemon-center",
+      "type": "shop",
+      "title": "Pokemon Center Tokyo",
+      "city": "Tokyo",
+      "neighborhood": "TBD",
+      "coords": [
+        35.6815,
+        139.767
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/PokÃ©mon_Center",
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "ðŸŽ® A WHOLE STORE of nothing but Pokemon stuff â€” cards, plushies, T-shirts, even snacks!",
+        "tip": "Apr 26 8:38-8:45 PM. 22 items, Â¥35,213 total. Charizard coin purse + cards in the haul.",
+        "wow": "The Pokemon Company is a JOINT venture between Nintendo, Game Freak, and Creatures Inc. - not Nintendo alone, which surprises most fans.",
+        "local": "Each Pokemon Center sells city-exclusive Pikachu plushies in local outfits - Tokyo Tower outfit, Kyoto kimono, etc. Collector bait."
+      },
+      "tags": [
+        "shop",
+        "pokemon",
+        "tokyo",
+        "for-the-kids"
+      ],
+      "hero": "20260426_195543.jpg",
+      "photos": [
+        "20260426_195543.jpg",
+        "20260426_192851.jpg",
+        "20260426_193100.jpg",
+        "20260426_193514.jpg",
+        "20260426_193900.jpg",
+        "20260426_194326.jpg",
+        "20260426_195051.jpg",
+        "20260426_195248.jpg",
+        "20260426_195448.jpg",
+        "20260426_203515.jpg",
+        "20260426_203723.jpg",
+        "20260426_203850.jpg",
+        "20260426_204138.jpg",
+        "20260426_204252.jpg",
+        "20260426_204626.jpg",
+        "20260426_205034.jpg"
+      ]
+    },
+    {
+      "id": "tokyo-cafe-coworking",
+      "type": "food",
+      "title": "Tokyo cafÃ© / co-working",
+      "city": "Tokyo",
+      "neighborhood": "TBD",
+      "coords": [
+        35.675,
+        139.765
+      ],
+      "wiki": "",
+      "visited": "2026-04-22",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A modern cafÃ© with free WiFi where Bryan worked on his MacBook before the CAO meeting.",
+        "tip": "Apr 22 9:22 AM. Cushioned seating, plants.",
+        "wow": "Tokyo has 600+ dedicated coworking spaces - more than NYC - but most locals just work at chain cafes (Doutor, Komeda).",
+        "local": "Cafe-as-office etiquette: order something every 90 min, or get politely asked to leave."
+      },
+      "tags": [
+        "food",
+        "tokyo",
+        "work"
+      ],
+      "hero": "20260422_125751.jpg",
+      "photos": [
+        "20260422_125751.jpg",
+        "20260422_074740.jpg",
+        "20260422_092255.jpg",
+        "20260422_115423.jpg"
+      ]
+    },
+    {
+      "id": "hipster-breakfast",
+      "type": "food",
+      "title": "Hotel breakfast — Mitsui Garden Hotel 14F",
+      "city": "Tokyo",
+      "neighborhood": "Ginza-Tsukiji",
+      "coords": [
+        35.6668,
+        139.7711
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Japanese_breakfast",
+      "visited": "2026-04-20",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Bryan's daily breakfast spot — the Mitsui Garden Hotel Ginza Tsukiji's top-floor restaurant on the 14th floor. Cool city view, opens at 7. He was usually first in.",
+        "tip": "Hotel-issued gold coin tokens at check-in redeem for free coffee or beer at the lobby bar near the entrance — Mitsui Garden Hotel signature perk.",
+        "wow": "After two days of Japanese breakfasts (fish, salmon roe, miso) Bryan switched to greek yogurt + fruit + eggs + bread. Every other meal of the day was Japanese-heavy — fiber and lightness for breakfast made the rest of the day work.",
+        "local": "The hipster-looking egg + grain bowl most foreign guests photograph from this restaurant is actually a hybrid: Japanese ingredients (pickled veg, herbs, pink radish) on a Western base. Common in Tokyo hotel restaurants targeting overseas guests."
+      },
+      "tags": [
+        "food",
+        "tokyo",
+        "breakfast"
+      ],
+      "hero": "20260420_071751.jpg",
+      "photos": [
+        "20260420_071751.jpg",
+        "20260420_054150.jpg",
+        "20260420_054445.jpg",
+        "20260420_072322.jpg",
+        "20260420_092519.jpg",
+        "20260420_100148.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Bryan's morning routine — anchored here",
+          "body": "5 AM wake-up, 10-minute meditation, walk to a 7-Eleven/Lawson/Family Mart for a rice triangle and coffee, gym at 6, public bath after, breakfast at 7 — first in, gold coin pocketed. After Day 2 he dropped Japanese breakfasts (salmon roe is intense at 7 AM) and ran greek yogurt + fruit + eggs + bread instead. This was the anchor."
+        }
+      ]
+    },
+    {
+      "id": "kyoto-station",
+      "type": "transit",
+      "title": "Kyoto Station",
+      "city": "Kyoto",
+      "neighborhood": "ShimogyÅ",
+      "coords": [
+        34.9858,
+        135.7585
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Kyoto_Station",
+      "visited": "2026-04-25, 2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A futuristic metal-and-glass mega-station that looks like a spaceship â€” surprising in old Kyoto!",
+        "tip": "Arrived from Tokyo Sat AM, departed back on NOZOMI 28 (15:01 Sun)",
+        "wow": "Hiroshi Hara's 1997 design hides a 15-story 'Sky Garden' on the roof - a free public observation deck most tourists miss.",
+        "local": "From the rooftop terrace you can see Higashi-Honganji, the Toji pagoda, AND the mountains Bryan hiked. Best free view in Kyoto."
+      },
+      "tags": [
+        "transit",
+        "kyoto"
+      ],
+      "hero": "20260426_145124.jpg",
+      "photos": [
+        "20260426_145124.jpg",
+        "20260425_181002.jpg",
+        "20260426_140654.jpg",
+        "20260426_145022.jpg",
+        "20260426_145223.jpg",
+        "20260426_145507.jpg",
+        "20260426_145648(0).jpg",
+        "20260426_150401.jpg"
+      ]
+    },
+    {
+      "id": "fushimi-inari",
+      "type": "shrine",
+      "title": "Fushimi Inari Taisha",
+      "city": "Kyoto",
+      "neighborhood": "Fushimi",
+      "coords": [
+        34.9671,
+        135.7727
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Fushimi_Inari-taisha",
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "10,000 bright orange torii gates climbing a mountain! Each donated by a family or business. You hiked deep into Mt. Inari with companions.",
+        "history": "Founded 711 AD. Head shrine of 30,000 Inari shrines across Japan.",
+        "deity": "Inari ÅŒkami â€” Shinto god/goddess of rice, foxes, and prosperity",
+        "ritual": "Foxes (kitsune) are Inari's messengers â€” fox statues hold keys or scrolls.",
+        "symbol": "Endless tunnel of vermilion torii gates.",
+        "wow": "The '10,000 torii' is folk talk - real count is closer to 32,000 including miniatures, each paid for by an individual or business praying for prosperity.",
+        "local": "Skip the famous Senbon Torii crowd-tunnel. The back trails above the Yotsutsuji intersection are nearly empty even at midday - exactly where Bryan went."
+      },
+      "tags": [
+        "shrine",
+        "shinto",
+        "kyoto",
+        "must-see"
+      ],
+      "hero": "20260425_161101.jpg",
+      "photos": [
+        "20260425_161101.jpg",
+        "20260425_125950.jpg",
+        "20260425_130201.jpg",
+        "20260425_130735.jpg",
+        "20260425_130857.jpg",
+        "20260425_132349.jpg",
+        "20260425_133834.jpg",
+        "20260425_134056.jpg",
+        "20260425_134147.jpg",
+        "20260425_135014.jpg",
+        "20260425_135050.jpg",
+        "20260425_135146.jpg",
+        "20260425_140007.jpg",
+        "20260425_140759.jpg",
+        "20260425_140905.jpg",
+        "20260425_141028.jpg",
+        "20260425_141333.jpg",
+        "20260425_141426.jpg",
+        "20260425_141526.jpg",
+        "20260425_142227.jpg",
+        "20260425_142437.jpg",
+        "20260425_142631.jpg",
+        "20260425_142828.jpg",
+        "20260425_143632.jpg",
+        "20260425_143730.jpg",
+        "20260425_143827.jpg",
+        "20260425_144004.jpg",
+        "20260425_144047.jpg",
+        "20260425_144220.jpg",
+        "20260425_144318.jpg",
+        "20260425_144528.jpg",
+        "20260425_144755.jpg",
+        "20260425_144850.jpg",
+        "20260425_144925.jpg",
+        "20260425_145255.jpg",
+        "20260425_145513.jpg",
+        "20260425_150100.jpg",
+        "20260425_150444.jpg",
+        "20260425_150709.jpg",
+        "20260425_150832.jpg",
+        "20260425_151120.jpg",
+        "20260425_151247.jpg",
+        "20260425_151613.jpg",
+        "20260425_151734.jpg",
+        "20260425_151915.jpg",
+        "20260425_152214.jpg",
+        "20260425_152259.jpg",
+        "20260425_152514.jpg",
+        "20260425_152647.jpg",
+        "20260425_152901.jpg",
+        "20260425_153147.jpg",
+        "20260425_153231.jpg",
+        "20260425_153609.jpg",
+        "20260425_153805.jpg",
+        "20260425_153911.jpg",
+        "20260425_154030.jpg",
+        "20260425_154340.jpg",
+        "20260425_154534.jpg",
+        "20260425_155330.jpg",
+        "20260425_155447.jpg",
+        "20260425_155703.jpg",
+        "20260425_155925.jpg",
+        "20260425_160119.jpg",
+        "20260425_160208.jpg",
+        "20260425_160617.jpg",
+        "20260425_160848.jpg",
+        "20260425_161021.jpg",
+        "20260425_161212.jpg",
+        "20260425_161445.jpg",
+        "20260425_161547.jpg",
+        "20260425_161651.jpg",
+        "20260425_161823.jpg",
+        "20260425_161913.jpg",
+        "20260425_162008.jpg",
+        "20260425_162157.jpg",
+        "20260425_162316.jpg",
+        "20260425_162554.jpg",
+        "20260425_162748.jpg",
+        "20260425_163432.jpg",
+        "20260425_163546.jpg",
+        "20260425_163619.jpg",
+        "20260425_163748.jpg",
+        "20260425_163830.jpg",
+        "20260425_164025.jpg",
+        "20260425_164103.jpg",
+        "20260425_164253.jpg",
+        "20260425_165022.jpg",
+        "20260425_165109.jpg",
+        "20260425_165241.jpg",
+        "20260425_165524.jpg",
+        "20260425_165806.jpg",
+        "20260425_170321.jpg",
+        "20260425_170453.jpg",
+        "20260425_170942.jpg",
+        "20260425_171041.jpg",
+        "20260425_171425.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Bryan's 'merc shrines' — the foxes of Inari",
+          "body": "Bryan called fox-statue shrines 'Merc shrines' for the mercenary look of the stone kitsune (foxes). They're not actually mercenaries — they're messengers of Inari Ōkami, the Shinto kami of rice, business, and prosperity. The fox often holds a key (to the rice granary) or a scroll (the prayer of the petitioner). Fushimi Inari is the head shrine of an Inari network of ~30,000 sub-shrines across Japan, which is why you see fox statues at small neighborhood shrines all over the country.",
+          "source": "https://en.wikipedia.org/wiki/Inari_%C5%8Ckami"
+        }
+      ]
+    },
+    {
+      "id": "himukai-daijingu",
+      "type": "shrine",
+      "title": "Himukai Daijingu (Kyoto's Ise)",
+      "city": "Kyoto",
+      "neighborhood": "Higashiyama (north)",
+      "coords": [
+        35.0086,
+        135.7912
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Himukai-daijingÅ«",
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A small but historic Shinto shrine called 'Kyoto's Ise' because it's modeled after the famous Ise Grand Shrine. It has a sacred cave and a small spring.",
+        "history": "Founded ~5th century AD according to legend â€” one of the OLDEST shrines in Kyoto.",
+        "deity": "Amaterasu ÅŒmikami â€” Shinto sun goddess (and ancestor of the Imperial line)",
+        "ritual": "Pass through the cave shrine of Amano-Iwato to symbolically rebirth",
+        "symbol": "Inner shrine modeled after Ise + a sacred spring",
+        "wow": "'Daijingu' means 'great divine shrine' - only Ise-affiliated shrines may use the title. Himukai got it because legend says Amaterasu rested here.",
+        "local": "The Amano-Iwato cave shrine reenacts the myth of the sun goddess hiding in a cave. Crawling through it = symbolic rebirth."
+      },
+      "tags": [
+        "shrine",
+        "shinto",
+        "kyoto",
+        "hidden-gem"
+      ],
+      "hero": "20260426_120058.jpg",
+      "photos": [
+        "20260426_120058.jpg",
+        "20260426_115613.jpg",
+        "20260426_115726.jpg",
+        "20260426_115934.jpg",
+        "20260426_120616.jpg",
+        "20260426_122310.jpg",
+        "20260426_122551.jpg",
+        "20260426_123129.jpg"
+      ]
+    },
+    {
+      "id": "kyoto-trail-higashiyama",
+      "type": "hike",
+      "title": "Kyoto Trail Â· Higashiyama",
+      "city": "Kyoto",
+      "neighborhood": "Higashiyama (north)",
+      "coords": [
+        35.007,
+        135.792
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Kyoto_Trail",
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "An 80+ KM official hiking trail that loops the mountains around Kyoto. You hiked the Higashiyama section â€” marker #37 photo proves it!",
+        "tip": "Apr 26 11:43 AM trail marker. Led to Himukai Daijingu.",
+        "wow": "The Higashiyama section links 9 World Heritage temples - including Kiyomizu, Ginkaku-ji, and Nanzen-ji.",
+        "local": "Marker #37 sits north of Nanzen-ji, near the Philosopher's Path. Most Kyoto tourists never know the trail exists."
+      },
+      "tags": [
+        "hike",
+        "nature",
+        "kyoto",
+        "accomplishment"
+      ],
+      "hero": "20260426_114318.jpg",
+      "photos": [
+        "20260426_114318.jpg",
+        "20260426_082212.jpg",
+        "20260426_082657.jpg",
+        "20260426_084125.jpg",
+        "20260426_092758.jpg",
+        "20260426_093233.jpg",
+        "20260426_094705.jpg",
+        "20260426_094842.jpg",
+        "20260426_094923.jpg",
+        "20260426_095024.jpg",
+        "20260426_100032.jpg",
+        "20260426_100203.jpg",
+        "20260426_100427.jpg",
+        "20260426_100542.jpg",
+        "20260426_100802.jpg",
+        "20260426_101055.jpg",
+        "20260426_101132.jpg",
+        "20260426_101244.jpg",
+        "20260426_101425.jpg",
+        "20260426_101534.jpg",
+        "20260426_101631.jpg",
+        "20260426_101944.jpg",
+        "20260426_102110.jpg",
+        "20260426_102416.jpg",
+        "20260426_102458.jpg",
+        "20260426_102636(1).jpg",
+        "20260426_102758.jpg",
+        "20260426_103037.jpg",
+        "20260426_103108.jpg",
+        "20260426_103248.jpg",
+        "20260426_103353.jpg",
+        "20260426_103638.jpg",
+        "20260426_103805.jpg",
+        "20260426_103943.jpg",
+        "20260426_104340.jpg",
+        "20260426_104430.jpg",
+        "20260426_104809.jpg",
+        "20260426_105019.jpg",
+        "20260426_105121.jpg",
+        "20260426_105227.jpg",
+        "20260426_105521.jpg",
+        "20260426_105645.jpg",
+        "20260426_105834.jpg",
+        "20260426_105924.jpg",
+        "20260426_110242.jpg",
+        "20260426_110414.jpg",
+        "20260426_110527.jpg",
+        "20260426_110848.jpg",
+        "20260426_111058.jpg",
+        "20260426_111339.jpg",
+        "20260426_111754.jpg",
+        "20260426_112134.jpg",
+        "20260426_113856.jpg",
+        "20260426_114209.jpg"
+      ]
+    },
+    {
+      "id": "gion",
+      "type": "neighborhood",
+      "title": "Gion (Geisha District)",
+      "city": "Kyoto",
+      "neighborhood": "Gion",
+      "coords": [
+        35.0037,
+        135.7782
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Gion",
+      "visited": "2026-04-25, 2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Old neighborhood where you might still see GEISHA walking to work! Wooden machiya houses, lanterns, stone streets.",
+        "tip": "Dusk walk Sat night + Sun morning with etiquette signs",
+        "wow": "Real geiko (Kyoto's word for geisha) number around 80 active. Tourist photo-harassment got so bad some Gion private streets banned non-resident photography in 2024.",
+        "local": "The geiko you might glimpse at dusk are heading TO work, not posing. Don't follow, don't photograph, don't touch."
+      },
+      "tags": [
+        "neighborhood",
+        "kyoto",
+        "traditional"
+      ],
+      "hero": "20260425_190027.jpg",
+      "photos": [
+        "20260425_190027.jpg",
+        "20260425_183155.jpg",
+        "20260425_183634.jpg",
+        "20260425_183711.jpg",
+        "20260425_184054.jpg",
+        "20260425_184221.jpg",
+        "20260425_184551.jpg",
+        "20260425_185014.jpg",
+        "20260425_185345.jpg",
+        "20260425_185424.jpg",
+        "20260425_185520.jpg",
+        "20260425_185843.jpg",
+        "20260425_190229.jpg",
+        "20260425_190315.jpg",
+        "20260425_190456.jpg",
+        "20260425_190751.jpg",
+        "20260425_190841.jpg",
+        "20260425_191014.jpg"
+      ]
+    },
+    {
+      "id": "kamogawa-river",
+      "type": "landmark",
+      "title": "Kamogawa River",
+      "city": "Kyoto",
+      "neighborhood": "Pontocho",
+      "coords": [
+        35.0031,
+        135.7717
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Kamo_River_(Yodo_River_system)",
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Kyoto's main river with stone embankments. At night, traditional restaurants light up along the banks.",
+        "tip": "Apr 25 7:32 PM walk along the river â€” your first Kyoto evening",
+        "wow": "In summer, restaurants extend wooden 'kawayuka' platforms over the river - Kyoto's only legal way to dine literally above moving water.",
+        "local": "Couples on the riverbank sit at almost exactly equal spacing (~1.8m apart) - a Kyoto urban legend that turned out to be measurably true."
+      },
+      "tags": [
+        "landmark",
+        "kyoto",
+        "river"
+      ],
+      "hero": "20260425_193200.jpg",
+      "photos": [
+        "20260425_193200.jpg",
+        "20260425_192022.jpg",
+        "20260425_192123.jpg",
+        "20260425_192237.jpg",
+        "20260425_192506.jpg",
+        "20260425_193327.jpg",
+        "20260425_194013.jpg",
+        "20260425_194229.jpg",
+        "20260425_194351.jpg",
+        "20260425_194512.jpg",
+        "20260425_194634.jpg",
+        "20260425_200306.jpg",
+        "20260425_201224.jpg",
+        "20260425_202851.jpg",
+        "20260425_202949.jpg"
+      ]
+    },
+    {
+      "id": "komeda-pokemon",
+      "type": "food",
+      "title": "Komeda Coffee (Pokemon promo)",
+      "city": "Kyoto",
+      "neighborhood": "TBD",
+      "coords": [
+        35.0033,
+        135.7677
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Komeda%27s_Coffee",
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A Japanese coffee chain (Komeda's) with a Pokemon-themed promotion! You had the Kuro-neige baumkuchen dessert.",
+        "tip": "Apr 25 5:41 PM, Kyoto.",
+        "wow": "Komeda's Coffee was founded in Nagoya in 1968 and is now Japan's #1 indie chain (vs. Starbucks #1 foreign chain).",
+        "local": "Their signature: free 'morning service' - order coffee 7-11 AM and get free toast + boiled egg."
+      },
+      "tags": [
+        "food",
+        "kyoto",
+        "pokemon",
+        "coffee"
+      ],
+      "hero": "20260425_174148.jpg",
+      "photos": [
+        "20260425_174148.jpg",
+        "20260425_172537.jpg",
+        "20260425_172959.jpg",
+        "20260425_173605.jpg",
+        "20260425_173749.jpg",
+        "20260425_174349.jpg",
+        "20260425_174732.jpg"
+      ]
+    },
+    {
+      "id": "cacao-market",
+      "type": "food",
+      "title": "Cacao Market (chocolate)",
+      "city": "Kyoto",
+      "neighborhood": "Pontocho",
+      "coords": [
+        35.005,
+        135.772
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/PontochÅ",
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Kyoto chocolate shop in a European-style building with a big clock.",
+        "food": "Bean-to-bar craft chocolate.",
+        "wow": "Japanese craft chocolate has won 100+ International Chocolate Awards in the last decade - punching well above its size.",
+        "local": "Bean-to-bar shops cluster around Pontocho/Kiyamachi. Walking the river bank you'll pass 3 in 4 blocks."
+      },
+      "tags": [
+        "food",
+        "chocolate",
+        "kyoto"
+      ],
+      "hero": "20260426_124704.jpg",
+      "photos": [
+        "20260426_124704.jpg",
+        "20260426_125533.jpg",
+        "20260426_125618.jpg",
+        "20260426_130311.jpg"
+      ]
+    },
+    {
+      "id": "kyoto-hotel",
+      "type": "landmark",
+      "title": "Kyoto hotel (yukata-ryokan style)",
+      "city": "Kyoto",
+      "neighborhood": "TBD",
+      "coords": [
+        34.99,
+        135.76
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Yukata",
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A traditional-style hotel that gave Bryan a yukata (cotton kimono robe) to wear in the room.",
+        "tip": "Sat night Apr 25. Hotel breakfast Apr 26 morning.",
+        "wow": "Yukata supplied by Kyoto hotels are meant for in-room only, not the street - though tourist hotels increasingly accept it both ways.",
+        "local": "The 'no tattoos in public bath' rule is loosening at hotels that want foreign business, but stays rigid at traditional sento/onsen."
+      },
+      "tags": [
+        "transit",
+        "kyoto",
+        "hotel",
+        "yukata"
+      ],
+      "hero": "20260425_182946.jpg",
+      "photos": [
+        "20260425_182946.jpg",
+        "20260425_182109.jpg",
+        "20260425_205712.jpg",
+        "20260425_205843.jpg",
+        "20260425_210055.jpg",
+        "20260425_210532.jpg",
+        "20260425_210927.jpg",
+        "20260425_211033.jpg",
+        "20260425_211709.jpg",
+        "20260425_213955.jpg",
+        "20260425_214839.jpg",
+        "20260425_222046.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Yukata — the hotel-provided kimono",
+          "body": "A yukata is an unlined cotton kimono, the casual cousin of the silk formal version. Japanese hotels and ryokans typically provide one in every room. The wrap order matters: ALWAYS left side over right (right-over-left is reserved for dressing the dead). Tie with the provided obi sash. Sleeping in it is the intended use; walking the hallways is normal; going outside in it is fine at hot-spring resort towns but feels touristy in urban hotels.",
+          "source": "https://en.wikipedia.org/wiki/Yukata"
+        }
+      ]
+    },
+    {
+      "id": "kinkakuji",
+      "type": "shrine",
+      "title": "Kinkaku-ji (Golden Pavilion)",
+      "city": "Kyoto",
+      "neighborhood": "Kita",
+      "coords": [
+        35.0394,
+        135.7292
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Kinkaku-ji",
+      "visited": "?",
+      "status": "candidate",
+      "facts": {
+        "kid": "Temple covered in REAL GOLD!",
+        "history": "1397 shogun retirement. Burned by monk 1950, rebuilt 1955.",
+        "wow": "Burned to the ground in 1950 by a young monk-arsonist. The current building is a 1955 replica; the gold leaf was upgraded in 1987 to 0.5 microns - 5x the original thickness.",
+        "local": "Skip the main path crowds. The back garden, toward the teahouse, has the BEST gold-leaf reflection in the pond."
+      },
+      "tags": [
+        "shrine",
+        "buddhist",
+        "kyoto"
+      ]
+    },
+    {
+      "id": "arashiyama",
+      "type": "hike",
+      "title": "Arashiyama Bamboo",
+      "city": "Kyoto",
+      "neighborhood": "Arashiyama",
+      "coords": [
+        35.017,
+        135.6717
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Arashiyama",
+      "visited": "?",
+      "status": "candidate",
+      "facts": {
+        "kid": "Forest of GIANT bamboo â€” taller than a 4-story building.",
+        "wow": "The Iwatayama Monkey Park on the same mountain has 120+ wild Japanese macaques. You feed them through a cage - humans inside, monkeys outside.",
+        "local": "The bamboo grove is jammed 10 AM-3 PM. Locals go at 7 AM or after 4 PM - when it actually feels mystical."
+      },
+      "tags": [
+        "hike",
+        "nature",
+        "kyoto"
+      ]
+    },
+    {
+      "id": "yasaka",
+      "type": "shrine",
+      "title": "Yasaka Shrine",
+      "city": "Kyoto",
+      "neighborhood": "Gion",
+      "coords": [
+        35.0036,
+        135.7785
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Yasaka_Shrine",
+      "visited": "?",
+      "status": "candidate",
+      "facts": {
+        "kid": "Bright orange shrine at the Gion entrance. Hundreds of stone lanterns light up at night.",
+        "wow": "Hosts the Gion Matsuri every July - one of Japan's 3 biggest festivals, a whole month long.",
+        "local": "At New Year ~1 million people visit in 3 days for hatsumode (first shrine visit). By far Kyoto's most crowded moment of the year."
+      },
+      "tags": [
+        "shrine",
+        "shinto",
+        "kyoto"
+      ]
+    },
+    {
+      "id": "kiyomizu-dera",
+      "type": "shrine",
+      "title": "Kiyomizu-dera (NOT confirmed)",
+      "city": "Kyoto",
+      "neighborhood": "Higashiyama (south)",
+      "coords": [
+        34.9949,
+        135.785
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Kiyomizu-dera",
+      "visited": "?",
+      "status": "candidate",
+      "facts": {
+        "kid": "A temple on a HUGE wooden stage. Famous for its 3-stream Otowa Waterfall.",
+        "tip": "Earlier guess was wrong â€” the trail marker #37 is far north of Kiyomizu. Likely NOT visited.",
+        "wow": "'Kiyomizu' means 'pure water' - the 3 Otowa waterfall streams each grant a different wish: longevity, success, or love. You can drink only one.",
+        "local": "The Edo-era idiom 'jumping off Kiyomizu's stage' (a leap of faith) comes from 234 recorded jumps off the 13m platform - 85% survived."
+      },
+      "tags": [
+        "shrine",
+        "buddhist",
+        "kyoto"
+      ]
+    },
+    {
+      "id": "jni-office",
+      "type": "landmark",
+      "title": "JNI Office (Kagurazaka)",
+      "city": "Tokyo",
+      "neighborhood": "Kagurazaka",
+      "coords": [
+        35.7019,
+        139.7406
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Kagurazaka",
+      "visited": "2026-04-21",
+      "status": "confirmed",
+      "facts": {
+        "local": "The shrine at the bottom of the main slope (Bishamonten Zenkokuji) is where Kagurazaka geisha have prayed for centuries.",
+        "history": "JNI deep-dive meeting day in Kagurazaka — formal Visitor Temporary Pass at Ichigaya, then JNI office.",
+        "wow": "Kagurazaka is a historic geisha district; today it's a quietly upscale neighborhood with French expats and traditional restaurants on cobblestone streets.",
+        "tip": "Apr 21 morning. Lexus dashboard commute, External Visitor Temporary Pass photo."
+      },
+      "tags": [
+        "work",
+        "tokyo",
+        "government"
+      ],
+      "hero": "20260421_072949.jpg",
+      "photos": [
+        "20260421_072949.jpg",
+        "20260421_073000.jpg",
+        "20260421_090202.jpg",
+        "20260421_091129.jpg",
+        "20260421_091200.jpg"
+      ]
+    },
+    {
+      "id": "nssol-hq",
+      "type": "landmark",
+      "title": "NSSOL HQ — Tokyo Highrise",
+      "city": "Tokyo",
+      "neighborhood": "Toyosu / Tokyo Bay area",
+      "coords": [
+        35.6557,
+        139.796
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Nippon_Steel_Solutions",
+      "visited": "2026-04-23",
+      "status": "confirmed",
+      "facts": {
+        "local": "The Tokyo Bay business district (Toyosu / Shibaura) is where most Japanese conglomerate headquarters relocated when central Tokyo got too expensive.",
+        "history": "Bryan's 'never thought I'd conduct business in a Tokyo highrise' day. Full NSSOL deep-dive.",
+        "wow": "Nippon Steel Solutions (NSSOL) is the IT arm of Nippon Steel — they run major systems for Japanese banking, government, and steel manufacturing.",
+        "tip": "Apr 23. Dark suit hotel mirror selfie at 7:50 AM, NSSOL deep-dive ran 10:00 AM – 3:30 PM."
+      },
+      "tags": [
+        "work",
+        "tokyo",
+        "client",
+        "highrise"
+      ],
+      "hero": "20260423_131933.jpg",
+      "photos": [
+        "20260423_131933.jpg",
+        "20260423_075037.jpg",
+        "20260423_082811.jpg",
+        "20260423_093109.jpg",
+        "20260423_093722.jpg",
+        "20260423_095320.jpg"
+      ]
+    },
+    {
+      "id": "hnd-haneda",
+      "type": "transit",
+      "title": "Haneda Airport (HND)",
+      "city": "Tokyo",
+      "neighborhood": "Ota",
+      "coords": [
+        35.5494,
+        139.7798
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "visited": "2026-04-27",
+      "status": "confirmed",
+      "facts": {
+        "local": "Locals always pick HND over NRT when they can — HND is 30 minutes from central Tokyo by train, NRT is 90+.",
+        "history": "Return flight: UA804 HND -> IAD, 15:45 departure. Bryan's last hours in Japan.",
+        "wow": "Haneda was the world's busiest airport by passenger traffic for most of the 1980s — overtaken only when Narita opened the second Tokyo gateway.",
+        "tip": "Apr 27. HND ramen for lunch before boarding."
+      },
+      "tags": [
+        "transit",
+        "tokyo",
+        "airport",
+        "return"
+      ],
+      "hero": "20260427_150328.jpg",
+      "photos": [
+        "20260427_150328.jpg",
+        "20260427_121514.jpg",
+        "20260427_122937.jpg",
+        "20260427_150806.jpg"
+      ]
+    }
+  ]
 }
