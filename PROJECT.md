@@ -31,11 +31,41 @@ Ordered list of story sections. Each entry: `slug`, `title`, `layers[]` (DOC/TRA
 Product catalog. Each item: `slug`, `name`, `category`, `summary`, `status`, `tagline`. Status one of: `In development` / `Coming` / `Available`. Moves to Supabase when storefront activates.
 
 ### `public/private/japan/pins.json`
-Self-contained Japan recap pins. Beyond the core fields (`id`, `type`, `title`, `coords`, `visited`, `photos`, `hero`, `facts`, `tags`, `wiki`), each pin can optionally carry:
-- `menu` — array of `{ name, note?, fact? }`. Renders as a "Menu" list in the detail panel. Use when you have the actual menu / can confirm what was eaten.
-- `extra_cards` — array of `{ title, body, source? }`. Renders as bordered context cards below facts. Use for historical / contextual blurbs that don't fit the existing fact keys.
+Self-contained Japan recap pins. The recap is fully isolated at `public/private/japan/`; it does NOT share schema with the React app's `data/`. The renderer is `public/private/japan/index.html` (vanilla JS, no build step).
 
-The recap is self-contained at `public/private/japan/`; it does not share schema with the React app's `data/`.
+**Core fields** (required for a usable pin):
+- `id` — kebab-case unique. Used in URL hash (`#pin=foo`) so changing it breaks bookmarks.
+- `type` — `shrine` / `food` / `neighborhood` / `hike` / `landmark` / `shop` / `transit`. Drives marker color.
+- `title` — display name.
+- `coords` — `[lat, lon]`.
+- `visited` — ISO date `"2026-04-19"`, comma-separated for multiple `"2026-04-19, 2026-04-27"`, or `"?"` for unknown (then `status: "candidate"`).
+- `status` — `"confirmed"` or `"candidate"` (candidates render with dashed-border marker).
+- `photos` — array of filenames (relative to `photos/`). Order matters: first photo is fallback hero.
+- `hero` — single filename, used as the panel header image. Falls back to `photos[0]` if absent.
+- `tags` — array of short tags for grouping.
+- `facts` — dict with optional keys `kid` / `tip` / `wow` / `local` / `history` / `deity` / `ritual` / `symbol` / `food`. Each is a single string. Rendered as `<h3>` + `<p>` sections in a specific order. `tip` renders with accent-colored highlight.
+- `wiki` — single URL (typically Wikipedia). Rendered as a "Read on Wikipedia ↗" link.
+
+**Optional rich-content fields** (added 2026-05):
+- `menu` — array of `{ name, note?, fact? }`. Renders as a labeled "Menu" list. Use when you have the actual menu or can confirm what was eaten.
+- `extra_cards` — array of `{ title, body, source? }`. Renders as bordered context cards below `facts`. Use for historical / cultural / personal blurbs that don't fit the existing fact keys. The `source` is rendered as a "Source ↗" link.
+- `videos` *(planned)* — array of `{ id, title }` for YouTube unlisted embeds. Renderer not built yet; will use `youtube-nocookie.com/embed/<id>` iframe below the photo grid. Wired when the first batch of links lands.
+
+### `public/private/japan/days.json`
+Day-by-day narrative. Self-contained alongside pins.json.
+
+- `_doc` — schema docstring.
+- `trip` — *(optional)* trip-level meta narrative: `title`, `tagline`, `intro`, `team`, `stakes`, `discipline`, `routine`, `wandering`, `standing_out`, `this_is_the_way`, `food`, `team_rhythm`. Currently stashed as data — no UI surface yet. Future addition: an "About this trip" panel/page that renders these.
+- `days` — array of day objects, each: `day` (int 0–10), `date` (ISO), `title`, `opening_quote` (nullable string), `summary` (string), `moments` (array of strings), `themes` (array — `work`/`food`/`cultural`/`spiritual`/`comedy`).
+- `people` — array of `{ name, role, days[], notes }`. Names are pseudonyms (Doug, Clair, Saul, Alex, Vicky). Surfaces in the day-overview card as "person chips."
+
+### Renderer features
+
+- **Tile control** (top-right of map): JP (CartoDB Voyager labels-under) / EN (CartoDB Positron) / Off. Preference saved to `localStorage`.
+- **Lightbox**: photo viewer with prev/next chevrons, counter, swipe gesture (touch), and a first-visit hint. Tap outside or `✕` to close.
+- **Detail panel**: opens on pin click. Top bar has "← Back to map" text button + `✕`. Renders hero → photo grid → narrative (`facts`, `menu`, `extra_cards`) → tags.
+- **Day overview card**: opens on day-pill click. Shows day metadata + a "View day in photos" CTA that opens the **day photo-journey modal** — all photos from that day's pins, in chronological order, click to lightbox.
+- **Privacy**: page is behind the React-app `/private` password gate at the route level, but the static HTML at `public/private/japan/index.html` is served directly by Netlify. `<meta name="robots" content="noindex, nofollow">` keeps crawlers out. The gate is velvet rope, not a vault.
 
 ---
 

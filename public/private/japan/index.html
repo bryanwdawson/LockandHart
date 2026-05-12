@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A private interactive trip recap of Japan — April 2026.">
 <title>Japan — April 2026 · Bryan's Explorer</title>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -272,11 +273,28 @@
     backdrop-filter: blur(6px);
     border: none;
     width: 100%;
-    text-align: right;
     padding: 10px 16px;
     border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
   }
-  .detail-close button {
+  .detail-close .back-btn {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 6px 14px;
+    color: var(--accent-dark);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex; align-items: center;
+    gap: 6px;
+    transition: background 0.12s, border-color 0.12s;
+  }
+  .detail-close .back-btn:hover { background: var(--accent-bg); border-color: var(--accent); }
+  .detail-close .close-x {
     background: var(--surface-alt);
     border: 1px solid var(--border);
     border-radius: 999px;
@@ -285,7 +303,7 @@
     color: var(--ink-soft);
     font-size: 18px;
   }
-  .detail-close button:hover { background: var(--accent-bg); color: var(--accent-dark); }
+  .detail-close .close-x:hover { background: var(--accent-bg); color: var(--accent-dark); }
 
   .detail-hero {
     width: 100%;
@@ -467,28 +485,169 @@
   .lightbox-controls button {
     pointer-events: auto;
     position: absolute;
-    background: rgba(255,255,255,0.12);
+    background: rgba(0,0,0,0.55);
     color: #fff;
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.5);
     border-radius: 50%;
-    width: 44px; height: 44px;
-    font-size: 22px;
+    width: 48px; height: 48px;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 300;
     display: inline-flex; align-items: center; justify-content: center;
-    transition: background 0.15s;
+    transition: background 0.15s, transform 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   }
-  .lightbox-controls button:hover { background: rgba(255,255,255,0.22); }
+  .lightbox-controls button:hover { background: rgba(0,0,0,0.8); transform: scale(1.05); }
   .lightbox-close { top: 16px; right: 16px; }
-  .lightbox-prev { left: 16px; top: 50%; transform: translateY(-50%); }
-  .lightbox-next { right: 16px; top: 50%; transform: translateY(-50%); }
+  .lightbox-prev { left: 12px; top: 50%; transform: translateY(-50%); }
+  .lightbox-prev:hover { transform: translateY(-50%) scale(1.05); }
+  .lightbox-next { right: 12px; top: 50%; transform: translateY(-50%); }
+  .lightbox-next:hover { transform: translateY(-50%) scale(1.05); }
   .lightbox-counter {
     position: absolute;
     bottom: 16px; left: 50%;
     transform: translateX(-50%);
-    color: rgba(255,255,255,0.85);
+    color: rgba(255,255,255,0.95);
     font-size: 13px;
-    background: rgba(0,0,0,0.4);
-    padding: 4px 12px;
+    font-weight: 600;
+    background: rgba(0,0,0,0.6);
+    padding: 6px 14px;
     border-radius: 999px;
+    letter-spacing: 0.5px;
+  }
+  /* First-visit hint: shows for 3 seconds on first lightbox open per device */
+  .lightbox-hint {
+    position: absolute;
+    bottom: 60px; left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 13px;
+    background: rgba(0,0,0,0.65);
+    padding: 10px 18px;
+    border-radius: 999px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+    max-width: 92vw;
+    text-align: center;
+  }
+  .lightbox-hint.show { opacity: 1; }
+  /* Mobile-only sizing */
+  @media (max-width: 640px) {
+    .lightbox-controls button { width: 52px; height: 52px; font-size: 32px; }
+    .lightbox-prev { left: 8px; }
+    .lightbox-next { right: 8px; }
+    .lightbox { padding: 8px; }
+  }
+
+  /* Day photo-journey modal */
+  .day-photos-modal {
+    position: fixed; inset: 0;
+    background: rgba(20,14,10,0.96);
+    z-index: 8500;
+    display: none;
+    flex-direction: column;
+  }
+  .day-photos-modal.open { display: flex; }
+  .day-photos-head {
+    flex-shrink: 0;
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: #fff;
+    background: rgba(0,0,0,0.35);
+  }
+  .day-photos-head .title { font-size: 16px; font-weight: 600; }
+  .day-photos-head .sub { font-size: 12px; color: rgba(255,255,255,0.7); font-weight: 400; margin-top: 2px; }
+  .day-photos-head .close-x {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    border-radius: 50%;
+    width: 36px; height: 36px;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .day-photos-head .close-x:hover { background: rgba(255,255,255,0.22); }
+  .day-photos-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 14px;
+  }
+  .day-photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .day-photos-item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.04);
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .day-photos-item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+  .day-photos-item:hover img { transform: scale(1.04); }
+  .day-photos-item-label {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.78));
+    color: #fff;
+    padding: 22px 8px 6px;
+    font-size: 10px;
+    text-align: left;
+    line-height: 1.3;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+  .day-photos-item:hover .day-photos-item-label,
+  .day-photos-item:focus-visible .day-photos-item-label { opacity: 1; }
+  @media (max-width: 640px) {
+    .day-photos-grid { grid-template-columns: repeat(2, 1fr); gap: 4px; }
+    .day-photos-head .title { font-size: 14px; }
+    .day-photos-item-label { opacity: 1; font-size: 9px; }
+  }
+  .day-photos-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* "View day in photos" CTA inside the day-overview card */
+  .day-journey-cta {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.12s;
+  }
+  .day-journey-cta:hover { background: var(--accent-dark); }
+  .day-journey-cta .count {
+    background: rgba(255,255,255,0.22);
+    border-radius: 999px;
+    padding: 1px 8px;
+    font-size: 11px;
+    margin-left: 6px;
   }
 
   /* Day overview card */
@@ -696,6 +855,17 @@
 
     <div class="day-overview" id="day-overview" hidden role="region" aria-label="Day overview"></div>
 
+    <div class="day-photos-modal" id="day-photos-modal" role="dialog" aria-modal="true" aria-label="Day in photos" hidden>
+      <div class="day-photos-head">
+        <div>
+          <div class="title" id="day-photos-title">Day in photos</div>
+          <div class="sub" id="day-photos-sub"></div>
+        </div>
+        <button class="close-x" id="day-photos-close" aria-label="Close day photos">✕</button>
+      </div>
+      <div class="day-photos-body" id="day-photos-body"></div>
+    </div>
+
     <div class="empty-state" id="empty-state" role="status">
       <h3>No pins match this filter</h3>
       <p>Try a different type or day.</p>
@@ -704,7 +874,8 @@
 
     <aside class="detail" id="detail" aria-hidden="true" aria-label="Pin details">
       <div class="detail-close">
-        <button id="close-detail" aria-label="Close detail panel">✕</button>
+        <button class="back-btn" id="back-to-map" aria-label="Back to map">‹ Back to map</button>
+        <button class="close-x" id="close-detail" aria-label="Close detail panel">✕</button>
       </div>
       <div id="detail-content"></div>
     </aside>
@@ -731,6 +902,7 @@
     <button class="lightbox-next" id="lightbox-next" aria-label="Next photo">›</button>
   </div>
   <div class="lightbox-counter" id="lightbox-counter"></div>
+  <div class="lightbox-hint" id="lightbox-hint">Swipe ← → to browse · Tap outside to close</div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -833,6 +1005,8 @@
     timeline: $('#timeline'),
     routeToggle: $('#route-toggle'),
     closeDetail: $('#close-detail'),
+    backToMap: $('#back-to-map'),
+    lbHint: $('#lightbox-hint'),
     detail: $('#detail'),
     detailContent: $('#detail-content'),
     emptyState: $('#empty-state'),
@@ -1200,6 +1374,7 @@
     els.lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
     els.lbClose.focus();
+    if (lbState.photos.length > 1) maybeShowHint();
   }
   function closeLightbox() {
     els.lightbox.classList.remove('open');
@@ -1310,10 +1485,91 @@
         ${(d.themes || []).map((t) => `<span class="theme-chip">${escapeHtml(t)}</span>`).join('')}
         ${companions.map((p) => `<span class="person-chip" title="${escapeAttr(p.notes || p.role || '')}">${escapeHtml(p.name)}</span>`).join('')}
       </div>
+      ${dayPhotoCount(dayNum) ? `
+        <button class="day-journey-cta" data-day="${dayNum}">
+          View day in photos <span class="count">${dayPhotoCount(dayNum)}</span>
+        </button>
+      ` : ''}
     `;
     card.querySelector('.day-head-close').addEventListener('click', () => setDay('all'));
+    const cta = card.querySelector('.day-journey-cta');
+    if (cta) cta.addEventListener('click', () => openDayPhotos(dayNum));
     card.hidden = false;
     requestAnimationFrame(() => card.classList.add('show'));
+  }
+
+  // ---------- Day photo-journey modal ----------
+  function dayPhotoCount(dayNum) {
+    let n = 0;
+    state.pins.forEach((p) => {
+      if (pinDays(p).includes(dayNum)) n += (p.photos || []).length;
+    });
+    return n;
+  }
+
+  function openDayPhotos(dayNum) {
+    if (!daysData) return;
+    const d = daysData.days.find((x) => x.day === dayNum);
+    const title = d ? `Day ${d.day} · ${escapeHtml(d.title)}` : `Day ${dayNum}`;
+    const sub = d ? escapeHtml(formatDate(d.date)) : '';
+
+    // Collect every photo from every pin assigned to this day, with context
+    const items = [];
+    state.pins.forEach((p) => {
+      if (!pinDays(p).includes(dayNum)) return;
+      (p.photos || []).forEach((ph, idx) => {
+        items.push({ pin: p, photo: ph, idx, time: parsePhotoTime(ph) });
+      });
+    });
+    // Sort chronologically by filename timestamp
+    items.sort((a, b) => (a.time || 0) - (b.time || 0));
+
+    const modal = document.getElementById('day-photos-modal');
+    document.getElementById('day-photos-title').innerHTML = title;
+    document.getElementById('day-photos-sub').textContent = sub + (items.length ? ` · ${items.length} photos` : '');
+    const body = document.getElementById('day-photos-body');
+    if (!items.length) {
+      body.innerHTML = '<div class="day-photos-empty">No photos on this day yet.</div>';
+    } else {
+      body.innerHTML = `<div class="day-photos-grid">${items.map((it) => `
+        <button class="day-photos-item" data-pin="${escapeAttr(it.pin.id)}" data-idx="${it.idx}" aria-label="Open photo from ${escapeAttr(it.pin.title)}">
+          <img src="photos/${escapeAttr(it.photo)}" alt="${escapeAttr(it.pin.title)} — ${formatHM(it.time)}" loading="lazy">
+          <div class="day-photos-item-label">${escapeHtml(it.pin.title || it.pin.id)}<br>${formatHM(it.time)}</div>
+        </button>
+      `).join('')}</div>`;
+      body.querySelectorAll('button[data-pin]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const pin = state.pins.find((p) => p.id === btn.dataset.pin);
+          if (!pin) return;
+          closeDayPhotos();
+          openLightbox(pin, parseInt(btn.dataset.idx, 10));
+        });
+      });
+    }
+    modal.hidden = false;
+    requestAnimationFrame(() => modal.classList.add('open'));
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDayPhotos() {
+    const modal = document.getElementById('day-photos-modal');
+    modal.classList.remove('open');
+    setTimeout(() => { modal.hidden = true; }, 200);
+    if (!els.lightbox.classList.contains('open')) document.body.style.overflow = '';
+  }
+
+  function parsePhotoTime(fn) {
+    const m = /^(\d{8})_(\d{6})/.exec(fn);
+    if (!m) return 0;
+    const d = m[1], t = m[2];
+    return new Date(
+      `${d.slice(0,4)}-${d.slice(4,6)}-${d.slice(6,8)}T${t.slice(0,2)}:${t.slice(2,4)}:${t.slice(4,6)}`
+    ).getTime() || 0;
+  }
+  function formatHM(ts) {
+    if (!ts) return '';
+    const dt = new Date(ts);
+    return dt.toTimeString().slice(0,5);
   }
 
   function refreshUI() {
@@ -1454,10 +1710,46 @@
   });
 
   els.closeDetail.addEventListener('click', closeDetail);
+  els.backToMap.addEventListener('click', closeDetail);
   els.lbClose.addEventListener('click', closeLightbox);
   els.lbPrev.addEventListener('click', () => lbNav(-1));
   els.lbNext.addEventListener('click', () => lbNav(1));
   els.lightbox.addEventListener('click', (e) => { if (e.target === els.lightbox) closeLightbox(); });
+
+  // Day photo-journey modal handlers
+  document.getElementById('day-photos-close').addEventListener('click', closeDayPhotos);
+  document.getElementById('day-photos-modal').addEventListener('click', (e) => {
+    if (e.target.id === 'day-photos-modal') closeDayPhotos();
+  });
+
+  // Swipe gesture on the lightbox — horizontal swipe > 50px navigates between photos
+  let touchStartX = 0;
+  let touchStartY = 0;
+  els.lightbox.addEventListener('touchstart', (e) => {
+    if (e.touches.length !== 1) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  els.lightbox.addEventListener('touchend', (e) => {
+    if (!touchStartX) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - touchStartX;
+    const dy = t.clientY - touchStartY;
+    touchStartX = 0;
+    // Horizontal swipe with low vertical drift → navigate
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      lbNav(dx < 0 ? 1 : -1);
+    }
+  }, { passive: true });
+
+  // First-visit hint: show "Swipe ← → to browse" the first time the lightbox opens per device
+  const HINT_KEY = 'jp-lightbox-hint-seen';
+  function maybeShowHint() {
+    if (localStorage.getItem(HINT_KEY)) return;
+    els.lbHint.classList.add('show');
+    setTimeout(() => els.lbHint.classList.remove('show'), 3000);
+    localStorage.setItem(HINT_KEY, '1');
+  }
 
   window.addEventListener('hashchange', () => {
     const h = parseHash();
