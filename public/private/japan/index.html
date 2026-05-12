@@ -856,12 +856,12 @@
     worldCopyJump: false,
   });
 
-  // Voyager (JP): Japanese labels in Japan, clean water (no dashed maritime borders).
+  // Voyager labels-under (JP): Japanese labels rendered under roads — same realistic look as Voyager but less visually busy.
   // Positron (EN): Latin-script labels.
   // Off: tiles hidden — pins float on the cream map-wrap background.
   const TILE_SOURCES = {
     jp: {
-      url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+      url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png',
       opts: { maxZoom: 19, subdomains: 'abcd', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>' },
     },
     en: {
