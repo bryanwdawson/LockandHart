@@ -29,3 +29,7 @@ dist-ssr
 
 # Intermediate processing artifacts for Japan media pass
 public/private/japan/_*.json
+
+# Local-only working files (originals + inventory)
+Books/
+_japan-photo-inventory.md
