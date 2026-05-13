@@ -53,7 +53,9 @@
         "20260418_192533.jpg",
         "20260420_210634.jpg",
         "20260423_075037.jpg",
-        "20260423_082811.jpg"
+        "20260423_082811.jpg",
+        "20260425_083646.jpg",
+        "20260425_084707.jpg"
       ]
     },
     {
@@ -135,6 +137,49 @@
       ]
     },
     {
+      "id": "chirori-dog-park",
+      "type": "landmark",
+      "title": "Chirori the Therapy Dog — Tsukijigawa Ginza Park",
+      "city": "Tokyo",
+      "neighborhood": "Higashi-Ginza",
+      "coords": [35.6677, 139.7651],
+      "wiki": "https://www.atlasobscura.com/places/chirori-the-therapy-dog",
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A bronze statue honoring Chirori — Japan's very first certified therapy dog. Found abandoned with five puppies, she went on to become a national hero.",
+        "tip": "One minute from Higashi-Ginza station, right next to Kabuki-za. Bryan walked past this park almost every day of the trip.",
+        "wow": "Chirori's story directly changed Japanese law — her work with disabled and elderly patients led to a revision of Japan's Prevention of Cruelty to Animals Act.",
+        "local": "The park sits on the filled-in bed of the Tsukijigawa river, which ran through Edo-era Tokyo until the Meiji era. A park named for water where there's no longer any water."
+      },
+      "extra_cards": [
+        {
+          "title": "The dog who almost didn't make it",
+          "body": "Chirori was found abandoned with five puppies, all of them days from euthanasia. A handler saw something in her and pulled her from the list. She went on to become Japan's first certified therapy dog — visiting hospitals, elderly care facilities, and homes for disabled children across the country. Her story made national news and helped lawmakers understand that animals could offer healing that medicine alone couldn't. A bronze statue was erected in 2007, one year after her death. Bryan has a rescue dog of his own. That part wasn't lost on him.",
+          "source": "https://www.atlasobscura.com/places/chirori-the-therapy-dog"
+        },
+        {
+          "title": "A minute with the plaque",
+          "body": "Bryan walked past Tsukijigawa Ginza Park almost every day of the trip. He didn't stop the first time — he was moving fast, like he always was on these walks. But he slowed down long enough to read the plaque, and two things landed: an abandoned dog who nearly didn't make it, and the disabled children she went on to help. He came back to it most days. Not a long stop. A minute with the plaque. Something about the gap between where she started and what she became."
+        },
+        {
+          "title": "Calling the Moon",
+          "body": "At the edge of the park stands a second sculpture: 月を呼ぶ — 'Calling the Moon,' by sculptor 佛子泰夫. A tall figure stretching upward, arms reaching toward something just beyond reach. The park holds both in the same breath: a dog who healed people at ground level, and a figure straining toward the sky. Bryan didn't photograph it. But he walked past it."
+        }
+      ],
+      "tags": [
+        "landmark",
+        "tokyo",
+        "park",
+        "dogs",
+        "quiet"
+      ],
+      "hero": "20260425_091800.jpg",
+      "photos": [
+        "20260425_091800.jpg"
+      ]
+    },
+    {
       "id": "tokyo-station",
       "type": "transit",
       "title": "Tokyo Station",
@@ -161,32 +206,10 @@
       "hero": "20260426_172508.jpg",
       "photos": [
         "20260426_172508.jpg",
-        "20260425_083646.jpg",
-        "20260425_084707.jpg",
-        "20260425_091446.jpg",
-        "20260425_091526.jpg",
-        "20260425_091800.jpg",
-        "20260425_092500.jpg",
-        "20260425_094016.jpg",
-        "20260425_100847.jpg",
-        "20260426_171244.jpg",
         "20260426_172230.jpg",
         "20260426_172314.jpg",
-        "20260426_172959.jpg",
         "20260426_173157.jpg",
-        "20260426_173239.jpg",
-        "20260426_173356.jpg",
-        "20260426_173445.jpg",
-        "20260426_173541.jpg",
-        "20260426_173800.jpg",
-        "20260426_173833.jpg",
-        "20260426_174243.jpg",
-        "20260426_175727.jpg",
-        "20260426_175943.jpg",
-        "20260426_180102.jpg",
-        "20260426_180419.jpg",
-        "20260426_180937.jpg",
-        "20260426_181127.jpg"
+        "20260425_100847.jpg"
       ],
       "videos": [
         {
