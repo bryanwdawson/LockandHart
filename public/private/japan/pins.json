@@ -137,6 +137,40 @@
       ]
     },
     {
+      "id": "raw-egg-restaurant",
+      "type": "food",
+      "title": "The Raw Egg Restaurant",
+      "city": "Tokyo",
+      "neighborhood": "Higashi-Ginza",
+      "coords": [35.6690, 139.7710],
+      "wiki": null,
+      "visited": "2026-04-22",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A tiny solo lunch Bryan walked into off the street — individual stoves, mystery menu, and a dipping sauce that turned out to be raw egg.",
+        "tip": "No photos. Around 3 PM, starving after a long walk, just past Kabuki-za. The flyers from the theatre show came with him.",
+        "wow": "Raw egg as a dipping sauce (sukiyaki-style) has been common in Japan since the Meiji era. The egg tempers the heat and adds richness — a texture most Westerners need a beat to accept.",
+        "local": "Small Japanese restaurants with individual table stoves are often one-person operations. Pick any seat. No-frills regulars only."
+      },
+      "tags": ["food", "tokyo", "solo", "moment"],
+      "hero": "",
+      "photos": [],
+      "extra_cards": [
+        {
+          "title": "Starving and walking",
+          "body": "Bryan had been walking for hours. Hadn't eaten since morning. It was around 3 PM.\n\nHe'd just passed the Kabuki-za — people buzzing outside, flyers for a new traditional touring show, everyone excited in a way that made him wish he could stay longer. He stopped, took pictures, grabbed two of the flyers. Then hunger won.\n\nHe walked into a small restaurant that looked good — whatever that means when you're starving and can't read the menu. He was the only one inside. Individual little stoves at each table. He picked a seat and figured he'd give it a go."
+        },
+        {
+          "title": "You don't have to, but this is how",
+          "body": "The waitress was cool. Good energy, limited English, happy to talk. She found him a popular dish and brought everything out with a printed instruction sheet.\n\nThen there was a raw egg, still in its shell.\n\nHe asked. She explained in careful broken English: after cooking the meat, Japanese people dip the meat or vegetable into the raw egg like a dipping sauce. Then she said: 'You don't have to do it if you don't want to.'\n\nHe told her: I'm in Japan. Let's give it a go.\n\nHe had mental blockers. It was delicious."
+        },
+        {
+          "title": "She ran after him",
+          "body": "He paid, told her the food was great. They laughed. He walked out and started down the block toward the hotel.\n\nHe heard someone yelling behind him.\n\nThe waitress. Running out of the restaurant, carrying the two Kabuki-za flyers — they'd fallen out of his bag into the storage basket under the seat. She ran out to make sure he didn't lose them.\n\nAnother Japanese person who looked out for him. The trip was full of them."
+        }
+      ]
+    },
+    {
       "id": "chirori-dog-park",
       "type": "landmark",
       "title": "Chirori the Therapy Dog — Tsukijigawa Ginza Park",
@@ -160,7 +194,7 @@
         },
         {
           "title": "A minute with the plaque",
-          "body": "Bryan walked past Tsukijigawa Ginza Park almost every day of the trip. He didn't stop the first time — he was moving fast, like he always was on these walks. But he slowed down long enough to read the plaque, and two things landed: an abandoned dog who nearly didn't make it, and the disabled children she went on to help. He came back to it most days. Not a long stop. A minute with the plaque. Something about the gap between where she started and what she became."
+          "body": "Bryan walked past Tsukijigawa Ginza Park almost every day of the trip — it was on the route between his hotel and the theatre. He was taking pictures of everything. He stopped, took a picture, and paused to read the plaque.\n\nTwo things landed: an abandoned dog who nearly didn't make it, and the disabled children and elderly people she went on to help. He stood there for a minute. Something about the gap between where she started and what she became."
         },
         {
           "title": "Calling the Moon",
@@ -352,13 +386,49 @@
         "20260419_063733.jpg",
         "20260419_072833.jpg",
         "20260419_073826.jpg",
-        "20260419_074045.jpg"
+        "20260419_074045.jpg",
+        "20260425_091526.jpg",
+        "20260425_094016.jpg"
       ],
       "extra_cards": [
         {
           "title": "Tsukiji split in two",
           "body": "What most people call 'Tsukiji Market' today is actually just the OUTER market. The famous inner wholesale fish auction — where the giant tuna sold for record millions — moved to a new facility in Toyosu in October 2018, ending an 83-year run. The outer market (where locals and tourists buy retail fish, eat sushi breakfast, and shop for knives) stayed at the original Tsukiji site. Toyosu is more sterile and harder to access casually; Tsukiji outer is still the alive, walkable, eat-as-you-go food market.",
           "source": "https://en.wikipedia.org/wiki/Tsukiji_fish_market"
+        }
+      ]
+    },
+    {
+      "id": "last-morning-tsukiji",
+      "type": "landmark",
+      "title": "The Umbrella Lady — Last Morning in Tokyo",
+      "city": "Tokyo",
+      "neighborhood": "Tsukiji",
+      "coords": [35.6651, 139.7695],
+      "wiki": null,
+      "visited": "2026-04-27",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Bryan's last morning in Japan. 4 AM. Pouring rain. No umbrella. A tiny old Japanese woman tried to share hers with his very tall head.",
+        "tip": "No photos — it was 4 AM in the rain. The shrine Bryan was going to visit didn't happen. This moment was better.",
+        "wow": "In Japan, umbrellas are standard all-weather gear — carried for sun as much as rain. Sunglasses are culturally associated with gangs; umbrellas are the polite default. Bryan was the only person in Tokyo without one.",
+        "local": "The intersection is next to the old Tsukiji fish market site. At 4 AM it's quiet except for market workers heading in early. The crowd at the light was a mix of salarymen and vendors."
+      },
+      "tags": ["landmark", "tokyo", "moment", "quiet"],
+      "hero": "",
+      "photos": [],
+      "extra_cards": [
+        {
+          "title": "The sunrise walk that didn't happen",
+          "body": "It was his last morning in Japan. He'd gotten no sleep. Woke up around 4 AM, wide awake, wanting to mark it properly.\n\nThe plan: subway over early, walk one of the big nearby shrines in the morning glow. Sunrise in a quiet Shinto shrine. A proper send-off.\n\nWhen he woke up, it was pouring rain. He could not see the sky. He debated walking anyway. He decided it would be a waste — you couldn't see anything through the rain. So he went outside anyway, figuring he would explore the city one last time."
+        },
+        {
+          "title": "The only man in Tokyo without an umbrella",
+          "body": "He was literally the only person in Tokyo without one.\n\nEveryone carries umbrellas here. For rain, yes — but also for sun. Sunglasses are associated with gangs; an umbrella is the polite default. Bryan, already the tallest man alive on any given Tokyo street, was now also a dripping 6-foot-something anomaly at 4 AM in a downpour.\n\nHe got more stares in those few blocks than any other moment of the trip. He decided he'd buy one just to keep the eyes off him."
+        },
+        {
+          "title": "She tried",
+          "body": "Before he could get to a store, he was at a busy intersection next to the old fish market. Waiting with everyone else for the light.\n\nHe felt something on the back of his head. He swatted it away — thought it was a bird.\n\nIt was a tiny old Japanese woman, reaching up as high as she could to hold her umbrella over his head.\n\nHe thanked her. Tried to show her he was sorry for swatting — I thought it was a bird. He doesn't know if that came across. She held the umbrella over both of them until the light changed.\n\nWhen they started walking, she tried to keep holding it. She couldn't walk and hold it that high. She shook her head at him in apology and walked off.\n\nHe said arigato. He nodded. Better than a sunrise hike was a beautiful moment with a Japanese woman who tried to keep the tall ogre dry in the rain."
         }
       ]
     },
@@ -844,9 +914,6 @@
       "hero": "20260422_193015.jpg",
       "photos": [
         "20260422_193015.jpg",
-        "20260420_185608.jpg",
-        "20260420_195010.jpg",
-        "20260420_195733.jpg",
         "20260422_183419.jpg",
         "20260422_183613.jpg",
         "20260422_183810.jpg",
@@ -1189,6 +1256,7 @@
       "photos": [
         "20260426_145124.jpg",
         "20260425_181002.jpg",
+        "20260425_091446.jpg",
         "20260426_140654.jpg",
         "20260426_145022.jpg",
         "20260426_145223.jpg",
@@ -1685,6 +1753,17 @@
           "kind": "short",
           "title": "Kamogawa River — later evening · 20:12"
         }
+      ],
+      "extra_cards": [
+        {
+          "title": "The detour that took hours",
+          "body": "Bryan was already tired when he found it. He'd been walking across Kyoto toward his hotel — a walk that was already taking longer than expected. He'd taken videos along the way, called Kel at some point. The sun was going down.\n\nThen he saw the river.\n\nThe hotel was close-ish. But a river.\n\nHe turned off his route and went down random alleys until he found the embankment. Couples sat together at the edge, spaced evenly, the way couples do in Kyoto. It was romantic and calm. It reminded him of Amsterdam — the light, the water, the sense that a city knows how to rest.\n\nHe sat for a while. Rested. Missed Kel.\n\nEventually he decided he was actually tired and headed to the hotel. He didn't mention the detour to the front desk the next morning when she asked how many hours the walk took."
+        },
+        {
+          "title": "Equal spacing — measurably true",
+          "body": "The Kamogawa couple-spacing phenomenon is a real thing. Pairs sitting along the embankment appear to maintain near-identical distances between them — roughly 1.8 meters. It's been measured. Whether it's cultural, spatial, or coincidence has never been fully settled. Kyoto people treat it as obvious. Visitors from elsewhere stop and count.",
+          "source": "https://en.wikipedia.org/wiki/Kamo_River_(Yodo_River_system)"
+        }
       ]
     },
     {
@@ -1721,6 +1800,40 @@
         "20260425_173749.jpg",
         "20260425_174349.jpg",
         "20260425_174732.jpg"
+      ]
+    },
+    {
+      "id": "marriott-kyoto",
+      "type": "landmark",
+      "title": "Four Points Flex by Sheraton Kyoto Oike",
+      "city": "Kyoto",
+      "neighborhood": "Oike",
+      "coords": [35.0108, 135.7686],
+      "wiki": "https://en.wikipedia.org/wiki/Sheraton_Hotels_and_Resorts",
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Bryan's Kyoto base — booked same-day, no plan, walked there from across the city after a 2-hour detour along the river.",
+        "tip": "Breakfast photos exist. Marriott Bonvoy member — standard booking, easy choice, no mental energy spent.",
+        "wow": "Japanese Marriott properties sometimes provide yukata robes in rooms — a nod to traditional inn culture in a modern hotel.",
+        "local": "The front desk staff are sharp. Bryan asked how to walk to the shrines. She said take the subway. He said he preferred to walk. She said it was too far. He showed her where he'd walked the day before. She was shocked, said 'how many hours did it take?' — and then told him how to walk."
+      },
+      "tags": ["landmark", "kyoto", "hotel", "base"],
+      "hero": "",
+      "photos": [],
+      "extra_cards": [
+        {
+          "title": "No hotel. No plan.",
+          "body": "Bryan left Tokyo for Kyoto with no hotel booked. People thought he was crazy. Kel asked how he could travel to a city for a weekend with no idea where he was sleeping.\n\nHis thinking: he didn't know what he'd be doing or where he'd end up. Spending energy on a hotel decision felt like wasted mental space — he's not great at picking hotels and doesn't care that much. He's a Marriott member. It would sort itself out.\n\nIt was about 5 PM when he decided he should figure out where to sleep. He was at a coffee shop, had been wandering Kyoto's shrines and alleys since morning. He booked the Four Points Flex by Sheraton Kyoto Oike. Easy. Done. Back to wandering."
+        },
+        {
+          "title": "The river detour",
+          "body": "The hotel was a long walk from where he was. He figured he'd walk anyway — he'd been doing that all trip. He took videos for Kel along the way. Called her at some point.\n\nThen he saw a big river.\n\nHe was already hours into walking. The hotel was close-ish. But a river.\n\nHe detoured. Down random alleys, ended up on the riverbank walk. Couples sitting together at the edge. Calm. Quiet. The lights starting to come up as the sun went down. It reminded him of Amsterdam — beautiful in the same way.\n\nHe sat for a while. Rested. Took it in. Missed Kel.\n\nEventually he decided he was actually tired and pointed himself at the hotel."
+        },
+        {
+          "title": "The front desk lady",
+          "body": "Every morning Bryan would talk to the front desk. Same routine: tell them his game plan, get feedback, ask for anything cool to see or do. Then point himself in a direction and go.\n\nThe morning he left Kyoto, he told the front desk lady he wanted to walk all day and see shrines. She recommended the subway. He said he preferred to walk. She said it was too far. They went back and forth.\n\nHe pointed to the map — showed her the shrines he'd been to the day before. Told her he'd walked from there to the hotel yesterday.\n\nShe stared at him. 'How many hours did it take?'\n\nHe told her he had no idea. He didn't mention the river detour. Figured that would be too much to process.\n\nShe said 'ok ok' and told him how to walk there. He thanked her and started walking."
+        }
       ]
     },
     {
