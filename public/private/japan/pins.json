@@ -3,7 +3,7 @@
   "_doc": "Evidence-based pins from 114 photos analyzed. Status: confirmed = direct visual proof; candidate = was in plan but no photo proof; downgraded = previously assumed but evidence contradicts.",
   "trip": {
     "id": "japan-2026",
-    "title": "Japan â€” April 2026",
+    "title": "Japan — April 2026",
     "subtitle": "Bryan's first time in Japan Â· 10 days Â· Tokyo + Kyoto",
     "dates": [
       "2026-04-17",
@@ -33,7 +33,7 @@
       "visited": "2026-04-18 to 2026-04-27",
       "status": "confirmed",
       "facts": {
-        "kid": "Tokyo's fanciest district â€” land here costs $1 million per square meter!",
+        "kid": "Tokyo's fanciest district — land here costs $1 million per square meter!",
         "tip": "Bryan's hotel: Mitsui Garden Hotel Ginza Tsukiji (10 nights)",
         "wow": "Ginza's main street closes to traffic every Sat/Sun afternoon, becoming a 'pedestrian paradise' (hokoten) since 1970.",
         "local": "Locals don't really shop here - they come for department-store basement food halls (depachika) and dinners."
@@ -120,11 +120,11 @@
         139.7672
       ],
       "wiki": "https://en.wikipedia.org/wiki/Kabuki-za",
-      "visited": "2026-04-18",
+      "visited": "2026-04-18, 2026-04-19",
       "status": "confirmed",
       "facts": {
-        "kid": "Tokyo's most famous KABUKI theater â€” traditional Japanese drama with elaborate costumes & makeup, in a beautiful century-old building.",
-        "tip": "You walked past it at 10 PM your first night â€” right next to your hotel",
+        "kid": "Tokyo's most famous KABUKI theater — traditional Japanese drama with elaborate costumes & makeup, in a beautiful century-old building.",
+        "tip": "You walked past it at 10 PM your first night — right next to your hotel",
         "wow": "Full shows can run 5-6 hours; locals buy 'one-act' tickets (~Y1,000) for just 30-60 min when they don't have all day.",
         "local": "The current building is the FIFTH on the same plot - earthquakes, fires, and WW2 bombing rebuilt it in 1925, 1951, and 2013."
       },
@@ -137,7 +137,8 @@
       "hero": "20260418_221644.jpg",
       "photos": [
         "20260418_221644.jpg",
-        "20260418_224434.jpg"
+        "20260418_224434.jpg",
+        "20260419_155323.jpg"
       ],
       "extra_cards": [
         {
@@ -157,7 +158,10 @@
       "title": "The Raw Egg Restaurant",
       "city": "Tokyo",
       "neighborhood": "Higashi-Ginza",
-      "coords": [35.6690, 139.7710],
+      "coords": [
+        35.669,
+        139.771
+      ],
       "wiki": null,
       "visited": "2026-04-22",
       "status": "confirmed",
@@ -167,7 +171,12 @@
         "wow": "Raw egg as a dipping sauce (sukiyaki-style) has been common in Japan since the Meiji era. The egg tempers the heat and adds richness — a texture most Westerners need a beat to accept.",
         "local": "Small Japanese restaurants with individual table stoves are often one-person operations. Pick any seat. No-frills regulars only."
       },
-      "tags": ["food", "tokyo", "solo", "moment"],
+      "tags": [
+        "food",
+        "tokyo",
+        "solo",
+        "moment"
+      ],
       "hero": "",
       "photos": [],
       "extra_cards": [
@@ -191,9 +200,12 @@
       "title": "Chirori the Therapy Dog — Tsukijigawa Ginza Park",
       "city": "Tokyo",
       "neighborhood": "Higashi-Ginza",
-      "coords": [35.6677, 139.7651],
+      "coords": [
+        35.6677,
+        139.7651
+      ],
       "wiki": "https://www.atlasobscura.com/places/chirori-the-therapy-dog",
-      "visited": "2026-04-25",
+      "visited": "2026-04-19, 2026-04-25",
       "status": "confirmed",
       "facts": {
         "kid": "A bronze statue honoring Chirori — Japan's very first certified therapy dog. Found abandoned with five puppies, she went on to become a national hero.",
@@ -225,6 +237,7 @@
       ],
       "hero": "20260425_091800.jpg",
       "photos": [
+        "20260419_162124.jpg",
         "20260425_091800.jpg"
       ]
     },
@@ -292,7 +305,7 @@
       "visited": "2026-04-22",
       "status": "confirmed",
       "facts": {
-        "kid": "Tokyo's Wall Street â€” giant office buildings + MUJI mega-store + Imperial Palace next door.",
+        "kid": "Tokyo's Wall Street — giant office buildings + MUJI mega-store + Imperial Palace next door.",
         "tip": "You walked here Apr 22 4:53 PM after the Cabinet Office (CAO) meeting",
         "wow": "About 90% of land here is owned by ONE landlord: Mitsubishi Estate, since 1894 - reportedly the highest-value real estate block on Earth.",
         "local": "This is salaryman lunch country. The 2nd-basement food courts in every office tower hide the best ramen and donburi shops."
@@ -380,7 +393,7 @@
       "status": "confirmed",
       "facts": {
         "kid": "Used to be the BIGGEST fish market in the world. Sushi for breakfast!",
-        "tip": "You walked here at 5:52 AM Apr 19 BEFORE it opened â€” sunrise market walk",
+        "tip": "You walked here at 5:52 AM Apr 19 BEFORE it opened — sunrise market walk",
         "wow": "The famous tuna auction moved to Toyosu in 2018, but the OUTER market stayed - and it's busier than ever.",
         "local": "Tsukiji shop owners arrive at 3-4 AM. If you want the best stuff, be there by 8 - by 10 the tourists have it."
       },
@@ -427,7 +440,10 @@
       "title": "The Umbrella Lady — Last Morning in Tokyo",
       "city": "Tokyo",
       "neighborhood": "Tsukiji",
-      "coords": [35.6651, 139.7695],
+      "coords": [
+        35.6651,
+        139.7695
+      ],
       "wiki": null,
       "visited": "2026-04-27",
       "status": "confirmed",
@@ -437,7 +453,12 @@
         "wow": "In Japan, umbrellas are standard all-weather gear — carried for sun as much as rain. Sunglasses are culturally associated with gangs; umbrellas are the polite default. Bryan was the only person in Tokyo without one.",
         "local": "The intersection is next to the old Tsukiji fish market site. At 4 AM it's quiet except for market workers heading in early. The crowd at the light was a mix of salarymen and vendors."
       },
-      "tags": ["landmark", "tokyo", "moment", "quiet"],
+      "tags": [
+        "landmark",
+        "tokyo",
+        "moment",
+        "quiet"
+      ],
       "hero": "",
       "photos": [],
       "extra_cards": [
@@ -469,9 +490,9 @@
       "visited": "2026-04-19, 2026-04-27",
       "status": "confirmed",
       "facts": {
-        "kid": "Tokyo's OLDEST temple â€” built in 645 AD! Bryan visited TWICE: Apr 19 daylight & Apr 27 sunrise. The whole trip was bookended by Senso-ji.",
+        "kid": "Tokyo's OLDEST temple — built in 645 AD! Bryan visited TWICE: Apr 19 daylight & Apr 27 sunrise. The whole trip was bookended by Senso-ji.",
         "history": "Founded when two fisherman brothers pulled a tiny golden statue of Kannon from the Sumida River.",
-        "deity": "Kannon â€” Buddhist goddess of mercy",
+        "deity": "Kannon — Buddhist goddess of mercy",
         "ritual": "Wave incense smoke over yourself before entering for good health.",
         "symbol": "1,500-lb red lantern at Kaminarimon Gate ('Thunder Gate').",
         "wow": "A typhoon ripped the giant Kaminarimon lantern in half in 2014. The temple replaces it every ~10 years and ceremonially burns the old one.",
@@ -600,7 +621,7 @@
       "visited": "2026-04-19",
       "status": "confirmed",
       "facts": {
-        "kid": "A hidden Edo-era side street near Senso-ji that most tourists skip. You found it Apr 19 11:31 â€” kanji photo confirmed (ä¼æ³•é™¢é€š)",
+        "kid": "A hidden Edo-era side street near Senso-ji that most tourists skip. You found it Apr 19 11:31 — kanji photo confirmed (ä¼æ³•é™¢é€š)",
         "wow": "Zero chain stores - strict preservation rules keep the whole street Edo-period in appearance.",
         "local": "The maneki-neko cat figurines on the rooftops aren't decoration - they're inviting business luck for each shop below."
       },
@@ -628,7 +649,7 @@
       "visited": "2026-04-19",
       "status": "confirmed",
       "facts": {
-        "kid": "Tokyo's iconic river that runs through Asakusa â€” the river the Senso-ji statue legend started in!",
+        "kid": "Tokyo's iconic river that runs through Asakusa — the river the Senso-ji statue legend started in!",
         "tip": "Walked here right after Senso-ji at 11:39 AM Apr 19",
         "wow": "Until 1888, sumo wrestlers actually fought on barges floating on this river.",
         "local": "From May the Suijo Bus runs Asakusa to Hamarikyu - same route Bryan walked, seen from the water."
@@ -662,7 +683,7 @@
         "kid": "An ancient Buddhist temple right next to TOKYO TOWER. The view of the temple's curved black roof with the red-and-white Tokyo Tower behind is one of Tokyo's most iconic photos.",
         "history": "Founded 1393. Family temple of the Tokugawa shoguns. Six shoguns are buried here.",
         "deity": "Buddha (Pure Land Buddhism / Jodo sect)",
-        "symbol": "Hundreds of small Jizo statues with red bibs and pinwheels â€” memorials for unborn or deceased children",
+        "symbol": "Hundreds of small Jizo statues with red bibs and pinwheels — memorials for unborn or deceased children",
         "ritual": "Pray for safe passage of children and family",
         "wow": "Tokyo Tower is 13m TALLER than the Eiffel Tower (333m vs 320m) and was built in 1958 specifically to top it.",
         "local": "The little Jizo statues with red bibs are memorials for unborn children. Parents change the bibs themselves, year after year."
@@ -725,6 +746,10 @@
         {
           "title": "勝運 — the victory-luck talisman Bryan brought home",
           "body": "Tucked into the scrapbook: a Zojoji talisman card with an eagle illustration and two kanji — 勝運 (victory luck) at top, 成就 (fulfillment / achievement) at bottom. These are Kuro-honzon themed talismans. Bryan also kept the Daihonzan Zojo-ji ofuda wrapper, a Tokugawa mitsuba-aoi (three-leaf hollyhock) crest insert, and the printed Kuro-honzon origin pamphlet. A real Tokugawa-temple artifact set, not generic merch."
+        },
+        {
+          "title": "The Footprints",
+          "body": "Set into the stone at Zojoji: the Bussokuseki — the Buddha's Footprints. Carved into rock, larger than life, the outline of where the Buddha stood.\n\nBryan stepped onto it. Lined up his feet with the carved prints.\n\nHe prayed for God to direct his steps — all day, and all trip.\n\nA few hours later he was at the Ministry of Defense."
         }
       ]
     },
@@ -756,6 +781,10 @@
           "title": "The waka mikuji — Empress Shōken's poem #22",
           "body": "Meiji Jingu's fortune system is unique. Most omikuji rank you on a tier (great-good → great-bad). Meiji Jingu's instead is a waka mikuji: one of 30 specific poems composed by Emperor Meiji or Empress Shōken, drawn at random — the poem itself is the guidance. No good or bad. Bryan drew #22, an Empress Shōken poem on purity of heart:\n\n朝ごとに  むかふ鏡の  くもりなく  あらまほしきは  心なりけり\n\nAsagotoni / Mukau kagami no / Kumori naku / Aramahoshiki wa / Kokoro narikeri\n\n'Every morning / we gaze into our mirrors / which are unblemished; / oh, that we could attain / such a purity of soul.'\n\nEmpress Shōken wrote ~30,000 waka in her lifetime. This is one of her most-cited.",
           "source": "https://en.wikipedia.org/wiki/Empress_Sh%C5%8Dken"
+        },
+        {
+          "title": "The Inner Garden — iris beds and forest paths",
+          "body": "After the main shrine, Bryan kept walking deeper into the grounds. The Meiji Jingu Inner Garden (明治神宮内苑) is a separate area — bamboo-roped gravel paths, old-growth forest, an iris garden that blooms every late April and May. The garden was built in the Meiji era at the Empress's request; she loved irises.\n\nAt 14:59 he was still there. The Forest Terrace café inside the grounds: cold coffee, chocolate cake, Evian. He kept the receipt. He sat for a while.\n\nMeiji Jingu is the kind of place that takes longer than you plan for."
         }
       ],
       "tags": [
@@ -772,7 +801,10 @@
         "20260419_131228.jpg",
         "20260419_131521.jpg",
         "20260419_132810(0).jpg",
-        "20260419_133352.jpg"
+        "20260419_133352.jpg",
+        "20260419_142545.jpg",
+        "20260419_143048.jpg",
+        "20260419_150728.jpg"
       ]
     },
     {
@@ -789,7 +821,7 @@
       "visited": "?",
       "status": "confirmed",
       "facts": {
-        "kid": "Shinjuku Station is the BUSIEST train station on Earth â€” 3.5M people daily!",
+        "kid": "Shinjuku Station is the BUSIEST train station on Earth — 3.5M people daily!",
         "wow": "Shinjuku Station has 200+ exits - even Tokyoites routinely take the wrong one and end up 10+ min from where they meant to be.",
         "local": "Skip the west side (skyscrapers). The east side - Kabukicho, Golden Gai, Omoide Yokocho - is where Tokyo nightlife actually happens."
       },
@@ -851,7 +883,7 @@
       "visited": "2026-04-18",
       "status": "confirmed",
       "facts": {
-        "kid": "Your first dinner in Japan â€” a tablet-order Tokyo izakaya. You had Iyoshi Cola (Japan's craft cola).",
+        "kid": "Your first dinner in Japan — a tablet-order Tokyo izakaya. You had Iyoshi Cola (Japan's craft cola).",
         "tip": "Apr 18 9:50 PM. Sober: cola + water.",
         "wow": "Iyoshi Cola was invented in 2018 by a fourth-generation Chinese-herb pharmacist - it's a literal craft cola from Tokyo.",
         "local": "Tablet-order izakaya only became normal post-2020. Older locals still find them rude."
@@ -938,7 +970,7 @@
       "visited": "2026-04-22",
       "status": "confirmed",
       "facts": {
-        "kid": "A traditional Japanese grilled-chicken-skewer place. Bryan saw exotic cuts on the menu â€” quail eggs, knee cartilage, the bit between heart and liver!",
+        "kid": "A traditional Japanese grilled-chicken-skewer place. Bryan saw exotic cuts on the menu — quail eggs, knee cartilage, the bit between heart and liver!",
         "tip": "Apr 22 8:07 PM. After the rainy Tokyo nightlife wander.",
         "wow": "Real yakitori specialists use 30+ DIFFERENT chicken parts - organs Western butchers throw away.",
         "local": "Order 'omakase' (chef's choice) for the full course. Picking individual skewers off the menu marks you as a tourist."
@@ -960,6 +992,20 @@
         "20260422_204756.jpg",
         "20260422_205949.jpg",
         "20260422_215855.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Clair's list",
+          "body": "Clair had been planning her restaurants for weeks before the trip. Google Map pins, notes, ratings — she was the walking Yelp. Every evening was her pick. Some had long waits. Bryan hated just standing in line, but they talked and joked, and her places were always worth it.\n\nThis one was a specialty yakitori place she'd had circled. Organ cuts, cartilage, things that aren't on tourist menus. She knew exactly what to order."
+        },
+        {
+          "title": "What you actually eat at a real yakitori restaurant",
+          "body": "Yakitori means 'grilled chicken' — but at a place like this, that's barely the point. The menu goes deep.\n\nKnee cartilage: chewy, almost crunchy, charred at the edges. Tsunagi: the connecting tissue between the heart and the liver — earthy, rich, nothing like a standard skewer. Momotare: thigh with house tare sauce. Quail eggs, grilled whole on skewers.\n\nThe Japanese philosophy about offcuts is the opposite of most cuisines: the unusual parts are prized, not discarded. Bryan passed on the chicken hearts — stomach's limit — but everything else went down."
+        },
+        {
+          "title": "After the government rooms",
+          "body": "The afternoon had been the Cabinet Office meeting. Japan's government district. David led, Bryan and Clair supported. Big rooms, formal interpretation, topics that mattered.\n\nBy 8 PM they were at a yakitori counter, passing skewers. Nobody needed to talk about the meeting. The food did the transition."
+        }
       ]
     },
     {
@@ -976,7 +1022,7 @@
       "visited": "2026-04-23",
       "status": "confirmed",
       "facts": {
-        "kid": "A traditional multi-course Japanese dinner â€” sashimi, grilled fish, tiny artistic dishes â€” with the NSSOL business team.",
+        "kid": "A traditional multi-course Japanese dinner — sashimi, grilled fish, tiny artistic dishes — with the NSSOL business team.",
         "tip": "Apr 23 7:35-8:24 PM. Group photo at the zen-style restaurant with the NSSOL team.",
         "wow": "Kaiseki has 9-13 strict courses in fixed order (appetizer to sashimi to grilled to simmered to fried to vinegared to rice to soup to dessert) - same sequence since the 1500s.",
         "local": "Kaiseki etiquette: eat in the order served, don't mix courses; the chef plates each in sequence for a reason."
@@ -1018,7 +1064,7 @@
     {
       "id": "suimei-shabu",
       "type": "food",
-      "title": "Suimei (æ°´æ˜Ž) â€” Shabu-Shabu",
+      "title": "Suimei (æ°´æ˜Ž) — Shabu-Shabu",
       "city": "Tokyo",
       "neighborhood": "TBD",
       "coords": [
@@ -1029,7 +1075,7 @@
       "visited": "2026-04-24",
       "status": "confirmed",
       "facts": {
-        "kid": "Where you had your 'best dinner ever' (your handwritten words!). Wagyu shabu-shabu â€” thinly sliced beef cooked in dashi broth at the table.",
+        "kid": "Where you had your 'best dinner ever' (your handwritten words!). Wagyu shabu-shabu — thinly sliced beef cooked in dashi broth at the table.",
         "tip": "Apr 24 7:38-10:23 PM. Signed menu from the table. WAGYU BURGER doodle.",
         "wow": "'Shabu-shabu' is onomatopoeia - the SOUND of beef swishing in broth.",
         "local": "Wagyu shabu at this tier runs Y15-30K/person. A signed menu makes it a milestone meal in Tokyo."
@@ -1044,6 +1090,10 @@
         {
           "title": "Origins of shabu-shabu",
           "body": "Introduced in Osaka in 1952 at a restaurant called Suehiro, adapted from a Mongolian instant-boiled mutton hot pot. The name imitates the swish-swish sound of meat moving through broth."
+        },
+        {
+          "title": "The signed menu",
+          "body": "Darren's last night. He was flying out the next morning. Six people, six countries, one menu passed around the table.\n\nDavid wrote 'best dinner ever!' Clair drew a bald-head doodle of Bryan and added 'this is the best thing EVER' in her best annoying-little-sister energy. Darren drew something that gets blurred for the kids' version. Alessandro wrote something in Italian — translation still pending. Vette drew a wagyu burger.\n\nBryan signed his name.\n\nThe menu came home. It's in the scrapbook."
         }
       ],
       "tags": [
@@ -1076,7 +1126,7 @@
       "visited": "2026-04-26",
       "status": "confirmed",
       "facts": {
-        "kid": "A wagyu beef restaurant from a 5-generation family â€” the meat-merchant tradition started in 1962.",
+        "kid": "A wagyu beef restaurant from a 5-generation family — the meat-merchant tradition started in 1962.",
         "tip": "Apr 26 10:08 PM. After Pokemon Center. Last Tokyo dinner.",
         "wow": "True A5 wagyu has 35%+ intramuscular fat (vs ~6% for top USDA Prime). That marbling is why it melts at body temperature.",
         "local": "Most '5-generation' meat shops are post-WW2 lineage. Japan's old wagyu trade was disrupted, then rebuilt from the 1950s onward."
@@ -1093,6 +1143,20 @@
         "20260426_220622.jpg",
         "20260426_220837.jpg",
         "20260426_220844.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The team joke",
+          "body": "All week, Clair had been picking the restaurants. High-end Japanese places with perfect meat and delicate fish. Nobody complained — the food was always exceptional. But one running joke in the group: someone on the team just wanted a wagyu burger.\n\nMentioned it multiple times a day. Didn't happen.\n\nAfter everyone went their separate ways — some to the airport, some to other hotels — the group chat lit up with wagyu burger photos. Bryan was still in Tokyo. He hadn't had one either.\n\nTonight was the night."
+        },
+        {
+          "title": "An hour in line",
+          "body": "Google Maps. Highly rated. Sign out front promoting its rankings. And a line.\n\nBryan got in it. Caught up on texts, went through photos, stood there alone for about an hour. Not many parties of one.\n\nWhen he finally reached the front, the host wouldn't seat him. Told him to get back in line. Bryan asked why — he was next. The host moved past him to the family of four behind him and said it would be a few minutes.\n\nHe had no idea what was happening. He was starving. It was late. He asked again, clearly: he'd been waiting in line, when would he be seated? The host said he needed to wait.\n\nThe family behind him — tourists, Middle East or South Asia — heard the whole thing. When the host came back out, they spoke up. He's been waiting. He's in front of us.\n\nThe host had thought Bryan cut the line. Once it was sorted, Bryan was seated."
+        },
+        {
+          "title": "The menu, the story, the flame",
+          "body": "The menu told the story before the food arrived. The history of the cows. The specific breed, what makes wagyu different — the fat marbling, the grading, the way the cattle are raised. The owner's search for the right source.\n\nThis is what people rave about Japanese food. The level of care. Making the best possible version of the thing, not just the thing. A burger is a burger. A wagyu burger at a place like this is the result of someone's life's work.\n\nThey brought it out and put a flame to it. The fat crisped at the edge. Bryan was starving. He's also pretty sure it was the best burger he's ever had.\n\nHe called Kel. Got some sleep. Sunrise hike in the morning."
+        }
       ]
     },
     {
@@ -1148,7 +1212,7 @@
       "visited": "2026-04-26",
       "status": "confirmed",
       "facts": {
-        "kid": "ðŸŽ® A WHOLE STORE of nothing but Pokemon stuff â€” cards, plushies, T-shirts, even snacks!",
+        "kid": "ðŸŽ® A WHOLE STORE of nothing but Pokemon stuff — cards, plushies, T-shirts, even snacks!",
         "tip": "Apr 26 8:38-8:45 PM. 22 items, Â¥35,213 total. Charizard coin purse + cards in the haul.",
         "wow": "The Pokemon Company is a JOINT venture between Nintendo, Game Freak, and Creatures Inc. - not Nintendo alone, which surprises most fans.",
         "local": "Each Pokemon Center sells city-exclusive Pikachu plushies in local outfits - Tokyo Tower outfit, Kyoto kimono, etc. Collector bait."
@@ -1290,7 +1354,7 @@
       "visited": "2026-04-25, 2026-04-26",
       "status": "confirmed",
       "facts": {
-        "kid": "A futuristic metal-and-glass mega-station that looks like a spaceship â€” surprising in old Kyoto!",
+        "kid": "A futuristic metal-and-glass mega-station that looks like a spaceship — surprising in old Kyoto!",
         "tip": "Arrived from Tokyo Sat AM, departed back on NOZOMI 28 (15:01 Sun)",
         "wow": "Hiroshi Hara's 1997 design hides a 15-story 'Sky Garden' on the roof - a free public observation deck most tourists miss.",
         "local": "From the rooftop terrace you can see Higashi-Honganji, the Toji pagoda, AND the mountains Bryan hiked. Best free view in Kyoto."
@@ -1350,8 +1414,8 @@
       "facts": {
         "kid": "10,000 bright orange torii gates climbing a mountain! Each donated by a family or business. You hiked deep into Mt. Inari with companions.",
         "history": "Founded 711 AD. Head shrine of 30,000 Inari shrines across Japan.",
-        "deity": "Inari ÅŒkami â€” Shinto god/goddess of rice, foxes, and prosperity",
-        "ritual": "Foxes (kitsune) are Inari's messengers â€” fox statues hold keys or scrolls.",
+        "deity": "Inari ÅŒkami — Shinto god/goddess of rice, foxes, and prosperity",
+        "ritual": "Foxes (kitsune) are Inari's messengers — fox statues hold keys or scrolls.",
         "symbol": "Endless tunnel of vermilion torii gates.",
         "wow": "The '10,000 torii' is folk talk - real count is closer to 32,000 including miniatures, each paid for by an individual or business praying for prosperity.",
         "local": "Skip the famous Senbon Torii crowd-tunnel. The back trails above the Yotsutsuji intersection are nearly empty even at midday - exactly where Bryan went."
@@ -1583,8 +1647,8 @@
       "status": "confirmed",
       "facts": {
         "kid": "A small but historic Shinto shrine called 'Kyoto's Ise' because it's modeled after the famous Ise Grand Shrine. It has a sacred cave and a small spring.",
-        "history": "Founded ~5th century AD according to legend â€” one of the OLDEST shrines in Kyoto.",
-        "deity": "Amaterasu ÅŒmikami â€” Shinto sun goddess (and ancestor of the Imperial line)",
+        "history": "Founded ~5th century AD according to legend — one of the OLDEST shrines in Kyoto.",
+        "deity": "Amaterasu ÅŒmikami — Shinto sun goddess (and ancestor of the Imperial line)",
         "ritual": "Pass through the cave shrine of Amano-Iwato to symbolically rebirth",
         "symbol": "Inner shrine modeled after Ise + a sacred spring",
         "wow": "'Daijingu' means 'great divine shrine' - only Ise-affiliated shrines may use the title. Himukai got it because legend says Amaterasu rested here.",
@@ -1643,7 +1707,7 @@
       "visited": "2026-04-26",
       "status": "confirmed",
       "facts": {
-        "kid": "An 80+ KM official hiking trail that loops the mountains around Kyoto. You hiked the Higashiyama section â€” marker #37 photo proves it!",
+        "kid": "An 80+ KM official hiking trail that loops the mountains around Kyoto. You hiked the Higashiyama section — marker #37 photo proves it!",
         "tip": "Apr 26 11:43 AM trail marker. Led to Himukai Daijingu.",
         "wow": "The Higashiyama section links 9 World Heritage temples - including Kiyomizu, Ginkaku-ji, and Nanzen-ji.",
         "local": "Marker #37 sits north of Nanzen-ji, near the Philosopher's Path. Most Kyoto tourists never know the trail exists."
@@ -1803,7 +1867,7 @@
       "status": "confirmed",
       "facts": {
         "kid": "Kyoto's main river with stone embankments. At night, traditional restaurants light up along the banks.",
-        "tip": "Apr 25 7:32 PM walk along the river â€” your first Kyoto evening",
+        "tip": "Apr 25 7:32 PM walk along the river — your first Kyoto evening",
         "wow": "In summer, restaurants extend wooden 'kawayuka' platforms over the river - Kyoto's only legal way to dine literally above moving water.",
         "local": "Couples on the riverbank sit at almost exactly equal spacing (~1.8m apart) - a Kyoto urban legend that turned out to be measurably true."
       },
@@ -1907,7 +1971,10 @@
       "title": "Four Points Flex by Sheraton Kyoto Oike",
       "city": "Kyoto",
       "neighborhood": "Oike",
-      "coords": [35.0108, 135.7686],
+      "coords": [
+        35.0108,
+        135.7686
+      ],
       "wiki": "https://en.wikipedia.org/wiki/Sheraton_Hotels_and_Resorts",
       "visited": "2026-04-25",
       "status": "confirmed",
@@ -1917,7 +1984,12 @@
         "wow": "Japanese Marriott properties sometimes provide yukata robes in rooms — a nod to traditional inn culture in a modern hotel.",
         "local": "The front desk staff are sharp. Bryan asked how to walk to the shrines. She said take the subway. He said he preferred to walk. She said it was too far. He showed her where he'd walked the day before. She was shocked, said 'how many hours did it take?' — and then told him how to walk."
       },
-      "tags": ["landmark", "kyoto", "hotel", "base"],
+      "tags": [
+        "landmark",
+        "kyoto",
+        "hotel",
+        "base"
+      ],
       "hero": "",
       "photos": [],
       "extra_cards": [
@@ -1993,7 +2065,7 @@
       "visited": "?",
       "status": "confirmed",
       "facts": {
-        "kid": "Forest of GIANT bamboo â€” taller than a 4-story building.",
+        "kid": "Forest of GIANT bamboo — taller than a 4-story building.",
         "wow": "The Iwatayama Monkey Park on the same mountain has 120+ wild Japanese macaques. You feed them through a cage - humans inside, monkeys outside.",
         "local": "The bamboo grove is jammed 10 AM-3 PM. Locals go at 7 AM or after 4 PM - when it actually feels mystical."
       },
@@ -2161,6 +2233,218 @@
         "20260427_121514.jpg",
         "20260427_122937.jpg",
         "20260427_150806.jpg"
+      ]
+    },
+    {
+      "id": "tsukiji-dawn",
+      "type": "street",
+      "title": "Tsukiji at Dawn — Honganji Crossing",
+      "city": "Tokyo",
+      "neighborhood": "Tsukiji",
+      "coords": [
+        35.6654,
+        139.7707
+      ],
+      "visited": "2026-04-20",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Bryan walked the empty streets near his hotel at 5:41 AM and caught Tsukiji Hongan-ji Temple's stone dome in the early morning light.",
+        "wow": "Tsukiji Hongan-ji (築地本願寺, built 1934) is designed by architect Ito Chuta in an ancient Indian style — stone columns, a dome, and lotus-cap ornament that look nothing like a typical Japanese temple. Ito argued Buddhism's origins traced back through China to South Asia, so the temple should look the part.",
+        "local": "At 5 AM the market vendors are deep in work. The commercial streets are empty. The red lights change for no cars.",
+        "tip": "Bryan walked this route several mornings. By end of trip it felt like his street."
+      },
+      "tags": [
+        "street",
+        "tokyo",
+        "walk",
+        "tsukiji",
+        "morning"
+      ],
+      "hero": "20260420_054150.jpg",
+      "photos": [
+        "20260420_054150.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Tokyo at 5:41 AM",
+          "body": "The city was empty. Not Tsukiji-market empty — the outer market had been awake since 3 AM. This was the commercial streets empty. Red light, no cars. A motorbike crosses the wide intersection. The early sky is that particular Tokyo morning color: pale gold and grey.\n\nThe temple dome to the right — stone, domed, unmistakably not Japanese at first glance. He'd passed it a half-dozen times before he looked up the name.\n\nBy the last day, this crossing felt like his."
+        }
+      ]
+    },
+    {
+      "id": "marunouchi-walk",
+      "type": "street",
+      "title": "Marunouchi Naka-dori",
+      "city": "Tokyo",
+      "neighborhood": "Marunouchi",
+      "coords": [
+        35.6795,
+        139.7656
+      ],
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "The famous tree-lined boulevard between Tokyo Station and Yurakucho — zelkova trees, Japan Post red mailboxes, and glass towers on both sides.",
+        "wow": "Marunouchi (丸の内, 'inside the circle') was the outer ring of the original Edo Castle moat. Today it holds the densest concentration of corporate headquarters in Japan.",
+        "local": "In winter the zelkova trees are lit up for the Marunouchi Illumination — 3M+ visitors, Nov–Feb. In April they're just leafing out green.",
+        "tip": "Bryan walked south from Tokyo Station at 17:32 on Day 9 — his last evening walk in Tokyo before flying home."
+      },
+      "tags": [
+        "street",
+        "tokyo",
+        "walk",
+        "marunouchi"
+      ],
+      "hero": "20260426_173356.jpg",
+      "photos": [
+        "20260426_172959.jpg",
+        "20260426_173239.jpg",
+        "20260426_173356.jpg",
+        "20260426_173445.jpg"
+      ]
+    },
+    {
+      "id": "yurakucho-yaesu",
+      "type": "street",
+      "title": "Yurakucho & Yaesu",
+      "city": "Tokyo",
+      "neighborhood": "Chiyoda",
+      "coords": [
+        35.6745,
+        139.7626
+      ],
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "The lively commercial zone just south of Tokyo Station — pawn shops, gaming arcades, and one of Tokyo's hidden peace monuments.",
+        "wow": "The Peace Bell monument on Yaesu Avenue has 26 bells imported from the Netherlands — built in 1989 to mark Chuo Ward's Peace City Declaration. It rings on the hour.",
+        "local": "Under the elevated JR tracks around Yurakucho station sit some of the best cheap yakitori in Tokyo — izakayas that have operated since the 1940s, unchanged.",
+        "tip": "Bryan photographed the 高価買取 (high-value buyback) pawn shop at 17:35 — and the Peace Bell at 17:42."
+      },
+      "tags": [
+        "street",
+        "tokyo",
+        "walk",
+        "yurakucho"
+      ],
+      "hero": "20260426_173541.jpg",
+      "photos": [
+        "20260426_173541.jpg",
+        "20260426_173800.jpg",
+        "20260426_173833.jpg",
+        "20260426_174243.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The Dutch bells",
+          "body": "Yaesu Avenue median — 7 meters tall, 26 bells from the Netherlands. Installed 1989. First anniversary of Chuo Ward's Peace City Declaration.\n\nBryan walked past it alone on his last evening, returning from Kyoto. He'd spent the week with Doug — his Dutch colleague — walking Tokyo streets together. The bells were Dutch. The week had been Dutch.\n\nThe Netherlands kept showing up on this trip."
+        }
+      ]
+    },
+    {
+      "id": "ginza-evening",
+      "type": "street",
+      "title": "Ginza — Evening Walk",
+      "city": "Tokyo",
+      "neighborhood": "Ginza",
+      "coords": [
+        35.6717,
+        139.7652
+      ],
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "The most famous luxury shopping district in Japan — at dusk, with the stores lit up and the backstreets busy.",
+        "wow": "Ginza land values are the highest in Japan — over ¥32M per square meter at the 4-chome crossing. A parking space in Ginza can cost more than a house in rural Japan.",
+        "local": "On weekends, Ginza's main avenues go car-free (歩行者天国 — 'Pedestrian Paradise'). Weekday evening, cars are back and the pace is different — more purposeful, less tourist.",
+        "tip": "17:57–18:04 on Day 9. Hotel was close. Last walk of the last full day."
+      },
+      "tags": [
+        "street",
+        "tokyo",
+        "walk",
+        "ginza"
+      ],
+      "hero": "20260426_175727.jpg",
+      "photos": [
+        "20260426_175727.jpg",
+        "20260426_175943.jpg",
+        "20260426_180102.jpg",
+        "20260426_180419.jpg"
+      ]
+    },
+    {
+      "id": "tsukiji-carillon",
+      "type": "street",
+      "title": "Tsukiji Eto Building — Carillon",
+      "city": "Tokyo",
+      "neighborhood": "Tsukiji",
+      "coords": [
+        35.665,
+        139.771
+      ],
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A metal sculpture outside the Tsukiji Zodiac Building (Eto Building) — whale-fin shapes rising from a granite base with a compass rose inlaid in the pavement below.",
+        "wow": "Tsukiji means 'land built on the sea' (築地) — the entire neighborhood is Edo-period reclaimed land, dredged from Tokyo Bay.",
+        "local": "The Eto (干支) refers to the Japanese zodiac cycle — the 12 animals that name years. The building's public art program weaves all 12 through its design.",
+        "tip": "Bryan photographed this at 18:11 on Day 9 — the last photo of his last evening walk. The hotel was two blocks away."
+      },
+      "tags": [
+        "street",
+        "tokyo",
+        "walk",
+        "tsukiji"
+      ],
+      "hero": "20260426_181127.jpg",
+      "photos": [
+        "20260426_180937.jpg",
+        "20260426_181127.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The walk ends here",
+          "body": "Day 9. Bryan had flown back from Kyoto that morning, dropped his bag at the hotel, and walked out the door again. Tokyo Station to Marunouchi, south through Yurakucho, into Ginza, then all the way back to the hotel neighborhood.\n\nHe found the carillon by walking past it. The compass rose in the pavement. The metal whale-fins of the sculpture. He stopped and took the photo.\n\n18:11 PM. The hotel was two blocks away. Dinner somewhere close. Last night in Japan."
+        }
+      ]
+    },
+    {
+      "id": "hokuto-sukiyaki",
+      "type": "landmark",
+      "title": "Hokuto — Sukiyaki at the Ginza Corridor",
+      "city": "Tokyo",
+      "neighborhood": "Ginza",
+      "coords": [
+        35.6712,
+        139.7638
+      ],
+      "visited": "2026-04-19",
+      "status": "confirmed",
+      "facts": [
+        "Taishu Sukiyaki Hokuto, Ginza Corridor Branch",
+        "Yamashita Building 2F, 6-2 Ginza, Chuo-ku",
+        "Kyoto-origin chain — first Tokyo location opened April 17, 2026",
+        "A4–A5 Japanese black wagyu at accessible prices"
+      ],
+      "extra_cards": [
+        {
+          "title": "Two days after opening",
+          "body": "Hokuto's first Tokyo location opened April 17, 2026 — the day Bryan landed. He walked in on April 19. The Ginza Corridor branch of a Kyoto institution, serving wagyu sukiyaki at prices that don't require a special occasion.\n\nThe restaurant is in the Ginza Corridor, the covered dining street that runs under the elevated rail tracks between Ginza and Yurakucho. Bryan had just come from Kabuki-za, two blocks south."
+        },
+        {
+          "title": "How to eat sukiyaki",
+          "body": "Sukiyaki is cooked at the table in a shallow iron pan. Thinly sliced wagyu goes in first, seared in a mix of soy sauce, sugar, and mirin — the sauce is called warishita. Tofu, noodles, and vegetables follow.\n\nThe Japanese way: crack a raw egg into a small bowl, beat it lightly, and dip each piece of beef as you pull it from the pan. The egg cools the meat and adds richness. You don't have to — but this is how it's done."
+        }
+      ],
+      "tags": [
+        "food",
+        "wagyu",
+        "hot-pot",
+        "ginza"
+      ],
+      "photos": [
+        "20260419_155740.jpg"
       ]
     }
   ]
