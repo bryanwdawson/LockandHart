@@ -25,7 +25,9 @@
         "UA803 IAD to HND departure",
         "Crossed international date line"
       ],
-      "themes": ["work"]
+      "themes": [
+        "work"
+      ]
     },
     {
       "day": 1,
@@ -46,7 +48,10 @@
         "Walked past Mikimoto Ginza and ZARA",
         "Discovered Kabuki-za Theatre at 22:16"
       ],
-      "themes": ["cultural", "food"]
+      "themes": [
+        "cultural",
+        "food"
+      ]
     },
     {
       "day": 2,
@@ -69,7 +74,10 @@
         "Imperial Palace outer moat",
         "VT CICA mask drugstore haul"
       ],
-      "themes": ["spiritual", "cultural"]
+      "themes": [
+        "spiritual",
+        "cultural"
+      ]
     },
     {
       "day": 3,
@@ -86,7 +94,10 @@
         "Matsumoto Kiyoshi run with a coworker",
         "Traditional izakaya team dinner, fried mushrooms"
       ],
-      "themes": ["work", "food"]
+      "themes": [
+        "work",
+        "food"
+      ]
     },
     {
       "day": 4,
@@ -101,23 +112,30 @@
         "Twilight Marunouchi skyline",
         "IBREW Akihabara dinner, jasmine tea sober"
       ],
-      "themes": ["work", "food"]
+      "themes": [
+        "work",
+        "food"
+      ]
     },
     {
       "day": 5,
       "date": "2026-04-22",
-      "title": "CAO Cabinet Office + yakitori",
+      "title": "MoD afternoon + yakitori",
       "opening_quote": null,
-      "summary": "Daily 5 AM gym + onsen routine, hotel-coworking morning, then the trip's biggest government engagement at the Cabinet Office in Kasumigaseki, capped by a deep-cut yakitori dinner.",
+      "summary": "Daily 5 AM gym + bath routine, hotel-coworking morning, then an afternoon meeting at the Ministry of Defense in Ichigaya — car ride and team prep en route are their own quiet moments. Capped by a deep-cut yakitori dinner.",
       "moments": [
         "5 AM hotel gym + public spa daily",
         "MacBook open at hotel coworking 09:22",
-        "Cabinet Office meeting in Kasumigaseki",
-        "Marunouchi MUJI + tower post-CAO",
+        "Meeting at the Ministry of Defense, Ichigaya (afternoon)",
+        "Meeting at the Ministry of Defense, Ichigaya (afternoon)",
         "Rainy S.RIDE taxi nightlife wander",
         "Yakitori specialty cuts: knee cartilage, tsunagi, momotare, quail eggs"
       ],
-      "themes": ["work", "food", "cultural"]
+      "themes": [
+        "work",
+        "food",
+        "cultural"
+      ]
     },
     {
       "day": 6,
@@ -131,7 +149,10 @@
         "Kaiseki sashimi + iced tea courses",
         "NSSOL group photo at zen restaurant"
       ],
-      "themes": ["work", "food"]
+      "themes": [
+        "work",
+        "food"
+      ]
     },
     {
       "day": 7,
@@ -147,7 +168,12 @@
         "Suimei wagyu shabu-shabu, Doug's send-off",
         "Signed menu with six nationalities, Clair's bald-Bryan doodle"
       ],
-      "themes": ["spiritual", "work", "food", "comedy"]
+      "themes": [
+        "spiritual",
+        "work",
+        "food",
+        "comedy"
+      ]
     },
     {
       "day": 8,
@@ -164,7 +190,10 @@
         "Kamogawa River first Kyoto night walk",
         "Wore yukata at the Kyoto hotel"
       ],
-      "themes": ["spiritual", "cultural"]
+      "themes": [
+        "spiritual",
+        "cultural"
+      ]
     },
     {
       "day": 9,
@@ -180,7 +209,11 @@
         "Nozomi 28 Kyoto to Tokyo",
         "Late wagyu dinner at a 5th-gen merchant restaurant"
       ],
-      "themes": ["spiritual", "cultural", "food"]
+      "themes": [
+        "spiritual",
+        "cultural",
+        "food"
+      ]
     },
     {
       "day": 10,
@@ -196,14 +229,72 @@
         "HND airport ramen",
         "UA804 HND to IAD"
       ],
-      "themes": ["spiritual", "cultural"]
+      "themes": [
+        "spiritual",
+        "cultural"
+      ]
     }
   ],
   "people": [
-    { "name": "Doug", "role": "Bryan's manager", "days": [3, 4, 5, 6, 7], "notes": "Suimei send-off dinner" },
-    { "name": "Clair", "role": "Director of Product", "days": [3, 4, 5, 6, 7, 8], "notes": "Trip food guide; drew the bald-Bryan doodle on the Suimei menu" },
-    { "name": "Saul", "role": "Customer Success Manager", "days": [4, 5, 6, 7, 8, 9], "notes": "Wrote 'best dinner ever!' on the Suimei menu" },
-    { "name": "Alex", "role": "Chief Researcher", "days": [2, 3, 4, 5, 6, 7, 8], "notes": "Back-to-back goofing at the NSSOL dinner" },
-    { "name": "Vicky", "role": "Doug's wife", "days": [7], "notes": "At Suimei send-off; drew the wagyu burger doodle" }
+    {
+      "name": "Doug",
+      "role": "Bryan's manager",
+      "days": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "notes": "Suimei send-off dinner"
+    },
+    {
+      "name": "Clair",
+      "role": "Director of Product",
+      "days": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "notes": "Trip food guide; drew the bald-Bryan doodle on the Suimei menu"
+    },
+    {
+      "name": "Saul",
+      "role": "Customer Success Manager",
+      "days": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "notes": "Wrote 'best dinner ever!' on the Suimei menu"
+    },
+    {
+      "name": "Alex",
+      "role": "Chief Researcher",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "notes": "Back-to-back goofing at the NSSOL dinner"
+    },
+    {
+      "name": "Vicky",
+      "role": "Doug's wife",
+      "days": [
+        7
+      ],
+      "notes": "At Suimei send-off; drew the wagyu burger doodle"
+    }
   ]
 }
