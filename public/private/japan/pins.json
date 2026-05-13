@@ -249,50 +249,6 @@
       ]
     },
     {
-      "id": "imperial-palace",
-      "type": "landmark",
-      "title": "Imperial Palace + Outer Moat",
-      "city": "Tokyo",
-      "neighborhood": "Chiyoda",
-      "coords": [
-        35.6852,
-        139.7528
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Tokyo_Imperial_Palace",
-      "visited": "2026-04-19",
-      "status": "candidate",
-      "facts": {
-        "kid": "Where the Emperor of Japan lives! Garden was the inner part of a giant samurai castle.",
-        "history": "Built on Edo Castle, where shoguns ruled for 250 years.",
-        "tip": "Apr 19 afternoon long stone-walled embankment photo could be here OR Hamarikyu",
-        "wow": "At the 1989 peak, the land beneath the palace was reportedly valued at more than ALL real estate in California combined.",
-        "local": "The 5 km inner-moat loop is Tokyo's most popular running route - any morning you'll pass dozens of runners."
-      },
-      "tags": [
-        "landmark",
-        "garden",
-        "tokyo",
-        "free"
-      ],
-      "hero": "20260419_142545.jpg",
-      "photos": [
-        "20260419_142545.jpg",
-        "20260419_143048.jpg",
-        "20260419_150728.jpg",
-        "20260419_153741.jpg",
-        "20260419_155323.jpg",
-        "20260419_155740.jpg",
-        "20260419_162124.jpg"
-      ],
-      "extra_cards": [
-        {
-          "title": "Edo Castle, still standing (sort of)",
-          "body": "The Imperial Palace grounds ARE the grounds of Edo Castle — the seat of the Tokugawa shogunate from 1603 to 1868. When the Meiji Restoration ended the shogunate, the emperor moved from Kyoto into the castle complex and it became the Imperial residence. The original wooden castle keep burned in 1657 and was never rebuilt; the moat walls, gates, and stone foundations are what remains. The current Emperor and family live in the inner grounds (closed to the public). The East Gardens are free to walk; the outer moat circuit is one of Tokyo's classic running routes.",
-          "source": "https://en.wikipedia.org/wiki/Tokyo_Imperial_Palace"
-        }
-      ]
-    },
-    {
       "id": "hamarikyu",
       "type": "landmark",
       "title": "Hamarikyu Gardens",
@@ -304,7 +260,7 @@
       ],
       "wiki": "https://en.wikipedia.org/wiki/Hama-rikyÅ«_Gardens",
       "visited": "2026-04-19",
-      "status": "candidate",
+      "status": "confirmed",
       "facts": {
         "kid": "An old Edo-era garden right on Tokyo Bay! Has a teahouse on a tiny island in a saltwater pond.",
         "tip": "Best fit for the Apr 19 2:23 PM pond photo (closest to Tsukiji hotel)",
@@ -711,7 +667,7 @@
       ],
       "wiki": "https://en.wikipedia.org/wiki/Shinjuku",
       "visited": "?",
-      "status": "candidate",
+      "status": "confirmed",
       "facts": {
         "kid": "Shinjuku Station is the BUSIEST train station on Earth â€” 3.5M people daily!",
         "wow": "Shinjuku Station has 200+ exits - even Tokyoites routinely take the wrong one and end up 10+ min from where they meant to be.",
@@ -721,31 +677,6 @@
         "neighborhood",
         "tokyo"
       ]
-    },
-    {
-      "id": "akihabara-kanda",
-      "type": "neighborhood",
-      "title": "Akihabara / Kanda-Sakumacho",
-      "city": "Tokyo",
-      "neighborhood": "Akihabara",
-      "coords": [
-        35.6953,
-        139.774
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Akihabara",
-      "visited": "2026-04-21",
-      "status": "confirmed",
-      "facts": {
-        "kid": "Tokyo's electronics + anime + manga district! Tons of stores stacked vertically.",
-        "tip": "Apr 21 dinner at IBREW restaurant â€” receipt confirmed Kanda-Sakumacho 3-38",
-        "wow": "Until 1989 this was Tokyo's wholesale electronics PARTS district. Anime/manga took over only after 2000.",
-        "local": "Multi-floor stores hide collector-only material on upper floors. Ground floor = casual; 5th floor = serious. Don't skip the elevator."
-      },
-      "tags": [
-        "neighborhood",
-        "tokyo"
-      ],
-      "photos": []
     },
     {
       "id": "ichigaya-mod",
@@ -783,47 +714,6 @@
         {
           "title": "What Bryan brought back from MoD HQ",
           "body": "From the visit Bryan came home with a small set of genuine Japan-MoD artifacts in his Kichi-in-chō ('Base Stamp Book' — a JSDF-themed collector's book with an F-2 jet on the navy cover):\n\n• 防衛省来省記念 visit-commemoration stamp — Reiwa 8 fiscal year, with the paulownia government crest, the 任務遂行 ('Mission accomplished') seal, a Japan-flag stamp, and a serial-number stamp.\n• An embroidered MoD HQ patch (Ministry of Defense · Tokyo Japan) depicting the Ichigaya A-Building tower with antennas — the building Bryan met inside.\n• An embroidered Rising Sun flag (旭日旗 / Kyokujitsu-ki) patch — the official current ensign of the JMSDF.\n\nThese are uncommon items for a foreign visitor and a quiet badge of how seriously the visit was received."
-        }
-      ]
-    },
-    {
-      "id": "kasumigaseki",
-      "type": "landmark",
-      "title": "Cabinet Office â€” Kasumigaseki",
-      "city": "Tokyo",
-      "neighborhood": "Kasumigaseki",
-      "coords": [
-        35.675,
-        139.7546
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Kasumigaseki",
-      "visited": "2026-04-22",
-      "status": "confirmed",
-      "facts": {
-        "kid": "Tokyo's government district â€” like Washington DC's federal buildings.",
-        "tip": "Apr 22 2 PM CAO meeting",
-        "wow": "Every Japanese ministry HQ sits on this 0.8 sq km - the most concentrated bureaucratic real estate on Earth.",
-        "local": "Kasumigaseki salarymen work the latest hours in Japan. 11 PM and 80% of office lights are still on."
-      },
-      "tags": [
-        "work",
-        "tokyo",
-        "government"
-      ],
-      "hero": "20260422_143314.jpg",
-      "photos": [
-        "20260422_143314.jpg",
-        "20260422_134141.jpg",
-        "20260422_135206.jpg",
-        "20260422_143418.jpg",
-        "20260422_143826.jpg",
-        "20260422_144426.jpg"
-      ],
-      "extra_cards": [
-        {
-          "title": "Japan's K Street",
-          "body": "Kasumigaseki is the government district — almost every Japanese ministry has its HQ within a few blocks. The Cabinet Office, Ministry of Foreign Affairs, Ministry of Finance, Ministry of Justice, Ministry of Education, Ministry of Economy Trade and Industry (METI), Ministry of Defense's central office, the Supreme Court, the National Diet Building (Japan's parliament). It's walking distance from Marunouchi, served by multiple subway lines. Like Washington D.C.'s K Street, it empties at 5 PM — the local restaurants are oriented to bureaucrat lunch hours, and many close for dinner.",
-          "source": "https://en.wikipedia.org/wiki/Kasumigaseki"
         }
       ]
     },
@@ -1120,73 +1010,6 @@
           "title": "Tonkatsu — the Western dish that became Japanese",
           "body": "Tonkatsu was invented in 1899 at a Western-style restaurant in Tokyo's Ginza. The original called it 'pork cutlet' (cutlet → 'katsu'), borrowed from French cotelette. Within a generation it was eaten with chopsticks over rice, dipped in tonkatsu sauce, and served with shredded raw cabbage on the side. Now it's read as quintessentially Japanese. Bryan's first team meal landed on one of the most successful immigrant dishes in Japan's food history.",
           "source": "https://en.wikipedia.org/wiki/Tonkatsu"
-        }
-      ]
-    },
-    {
-      "id": "matsukiyo",
-      "type": "shop",
-      "title": "Matsumoto Kiyoshi Drugstore",
-      "city": "Tokyo",
-      "neighborhood": "TBD",
-      "coords": [
-        35.67,
-        139.77
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Matsumotokiyoshi",
-      "visited": "2026-04-20",
-      "status": "confirmed",
-      "facts": {
-        "kid": "Japan's most famous yellow-and-black drugstore chain. Tourists come for skincare and snacks.",
-        "wow": "Matsumoto Kiyoshi has 1,700+ stores. The yellow signs are designed to be visible from 200m away.",
-        "local": "For real deals, hit a SUNDRUG or COSMOS - same products often 10-20% cheaper. Matsukiyo is the tourist default."
-      },
-      "tags": [
-        "shop",
-        "tokyo"
-      ],
-      "hero": "20260420_185124.jpg",
-      "photos": [
-        "20260420_184345.jpg",
-        "20260420_185124.jpg",
-        "20260420_185129.jpg"
-      ]
-    },
-    {
-      "id": "donki",
-      "type": "shop",
-      "title": "Donki / Drugstore haul",
-      "city": "Tokyo",
-      "neighborhood": "TBD",
-      "coords": [
-        35.676,
-        139.77
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Don_Quijote_(store)",
-      "visited": "2026-04-19",
-      "status": "confirmed",
-      "facts": {
-        "kid": "Don Quijote â€” chaotic Japanese discount store with EVERYTHING.",
-        "tip": "Apr 19 evening â€” VT CICA Korean masks confirmed in haul",
-        "wow": "Each Donki stocks ~50,000 items, intentionally chaotic to feel like a treasure hunt. The maze layout is BY DESIGN.",
-        "local": "The Don Pen penguin mascot has its own Twitter account in 5 languages and posts memes daily."
-      },
-      "tags": [
-        "shop",
-        "tokyo"
-      ],
-      "hero": "20260419_182000.jpg",
-      "photos": [
-        "20260419_182000.jpg",
-        "20260419_183847.jpg",
-        "20260419_201708.jpg",
-        "20260427_192154.jpg"
-      ],
-      "extra_cards": [
-        {
-          "title": "The Donki maze, explained",
-          "body": "Don Quijote stocks ~50,000 items per store and arranges them in a chaotic, narrow, multi-level maze on purpose — a strategy called 'compression display.' The clutter overwhelms visitors into impulse buys, and the deliberate disorientation extends time-in-store by ~40% vs. a conventional layout. Stores stay open late (often 24h), pump a repeating jingle ('Don Don Don Donki...'), and price-tag in handwritten yellow neon. It works: Donki is one of Japan's most profitable retailers per square meter.",
-          "source": "https://en.wikipedia.org/wiki/Don_Quijote_(store)"
         }
       ]
     },
@@ -1623,6 +1446,12 @@
         "20260426_122310.jpg",
         "20260426_122551.jpg",
         "20260426_123129.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "End of the journey, the old man at the cave",
+          "body": "Bryan's favorite shrine of the entire trip. End of his long solo Kyoto day — the deepest he hiked into the back mountain. By the time he reached it the shrine felt nearly private; a 'no tourist' sign at the entrance set the tone. At the mouth of the cave shrine of Amano-Iwato, an old Japanese man told him to watch his head as he went in. A small piece of human kindness right before the symbolic rebirth crawl. (Bryan plans to expand this story later.)"
+        }
       ]
     },
     {
@@ -1890,86 +1719,6 @@
       ]
     },
     {
-      "id": "kyoto-hotel",
-      "type": "landmark",
-      "title": "Kyoto hotel (yukata-ryokan style)",
-      "city": "Kyoto",
-      "neighborhood": "TBD",
-      "coords": [
-        34.99,
-        135.76
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Yukata",
-      "visited": "2026-04-25",
-      "status": "confirmed",
-      "facts": {
-        "kid": "A traditional-style hotel that gave Bryan a yukata (cotton kimono robe) to wear in the room.",
-        "tip": "Sat night Apr 25. Hotel breakfast Apr 26 morning.",
-        "wow": "Yukata supplied by Kyoto hotels are meant for in-room only, not the street - though tourist hotels increasingly accept it both ways.",
-        "local": "The 'no tattoos in public bath' rule is loosening at hotels that want foreign business, but stays rigid at traditional sento/onsen."
-      },
-      "tags": [
-        "transit",
-        "kyoto",
-        "hotel",
-        "yukata"
-      ],
-      "hero": "20260425_182946.jpg",
-      "photos": [
-        "20260425_182946.jpg",
-        "20260425_182109.jpg",
-        "20260425_205712.jpg",
-        "20260425_205843.jpg",
-        "20260425_210055.jpg",
-        "20260425_210532.jpg",
-        "20260425_210927.jpg",
-        "20260425_211033.jpg",
-        "20260425_211709.jpg",
-        "20260425_213955.jpg",
-        "20260425_214839.jpg",
-        "20260425_222046.jpg"
-      ],
-      "extra_cards": [
-        {
-          "title": "Yukata — the hotel-provided kimono",
-          "body": "A yukata is an unlined cotton kimono, the casual cousin of the silk formal version. Japanese hotels and ryokans typically provide one in every room. The wrap order matters: ALWAYS left side over right (right-over-left is reserved for dressing the dead). Tie with the provided obi sash. Sleeping in it is the intended use; walking the hallways is normal; going outside in it is fine at hot-spring resort towns but feels touristy in urban hotels.",
-          "source": "https://en.wikipedia.org/wiki/Yukata"
-        }
-      ],
-      "videos": [
-        {
-          "id": "JeciRqRhuXw",
-          "kind": "short",
-          "title": "Yukata at the Kyoto hotel · 18:23"
-        }
-      ]
-    },
-    {
-      "id": "kinkakuji",
-      "type": "shrine",
-      "title": "Kinkaku-ji (Golden Pavilion)",
-      "city": "Kyoto",
-      "neighborhood": "Kita",
-      "coords": [
-        35.0394,
-        135.7292
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Kinkaku-ji",
-      "visited": "?",
-      "status": "candidate",
-      "facts": {
-        "kid": "Temple covered in REAL GOLD!",
-        "history": "1397 shogun retirement. Burned by monk 1950, rebuilt 1955.",
-        "wow": "Burned to the ground in 1950 by a young monk-arsonist. The current building is a 1955 replica; the gold leaf was upgraded in 1987 to 0.5 microns - 5x the original thickness.",
-        "local": "Skip the main path crowds. The back garden, toward the teahouse, has the BEST gold-leaf reflection in the pond."
-      },
-      "tags": [
-        "shrine",
-        "buddhist",
-        "kyoto"
-      ]
-    },
-    {
       "id": "arashiyama",
       "type": "hike",
       "title": "Arashiyama Bamboo",
@@ -1981,7 +1730,7 @@
       ],
       "wiki": "https://en.wikipedia.org/wiki/Arashiyama",
       "visited": "?",
-      "status": "candidate",
+      "status": "confirmed",
       "facts": {
         "kid": "Forest of GIANT bamboo â€” taller than a 4-story building.",
         "wow": "The Iwatayama Monkey Park on the same mountain has 120+ wild Japanese macaques. You feed them through a cage - humans inside, monkeys outside.",
@@ -1990,55 +1739,6 @@
       "tags": [
         "hike",
         "nature",
-        "kyoto"
-      ]
-    },
-    {
-      "id": "yasaka",
-      "type": "shrine",
-      "title": "Yasaka Shrine",
-      "city": "Kyoto",
-      "neighborhood": "Gion",
-      "coords": [
-        35.0036,
-        135.7785
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Yasaka_Shrine",
-      "visited": "?",
-      "status": "candidate",
-      "facts": {
-        "kid": "Bright orange shrine at the Gion entrance. Hundreds of stone lanterns light up at night.",
-        "wow": "Hosts the Gion Matsuri every July - one of Japan's 3 biggest festivals, a whole month long.",
-        "local": "At New Year ~1 million people visit in 3 days for hatsumode (first shrine visit). By far Kyoto's most crowded moment of the year."
-      },
-      "tags": [
-        "shrine",
-        "shinto",
-        "kyoto"
-      ]
-    },
-    {
-      "id": "kiyomizu-dera",
-      "type": "shrine",
-      "title": "Kiyomizu-dera (NOT confirmed)",
-      "city": "Kyoto",
-      "neighborhood": "Higashiyama (south)",
-      "coords": [
-        34.9949,
-        135.785
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Kiyomizu-dera",
-      "visited": "?",
-      "status": "candidate",
-      "facts": {
-        "kid": "A temple on a HUGE wooden stage. Famous for its 3-stream Otowa Waterfall.",
-        "tip": "Earlier guess was wrong â€” the trail marker #37 is far north of Kiyomizu. Likely NOT visited.",
-        "wow": "'Kiyomizu' means 'pure water' - the 3 Otowa waterfall streams each grant a different wish: longevity, success, or love. You can drink only one.",
-        "local": "The Edo-era idiom 'jumping off Kiyomizu's stage' (a leap of faith) comes from 234 recorded jumps off the 13m platform - 85% survived."
-      },
-      "tags": [
-        "shrine",
-        "buddhist",
         "kyoto"
       ]
     },
