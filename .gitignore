@@ -26,6 +26,16 @@ dist-ssr
 # One-shot bat helpers (contain personal info, regenerated as needed)
 *.bat
 
+# One-shot scratch scripts from the Japan media pass (regenerated as needed)
+add_sukiyaki_pin.py
+build_cards.py
+build_wagyu.py
+check_kaiseki.py
+check_pins.py
+fix_pins.py
+fix_quotes.py
+commit_msg.txt
+preview-japan.js
 
 # Intermediate processing artifacts for Japan media pass
 public/private/japan/_*.json
