@@ -4,7 +4,7 @@
   "trip": {
     "id": "japan-2026",
     "title": "Japan — April 2026",
-    "subtitle": "Bryan's first time in Japan Â· 10 days Â· Tokyo + Kyoto",
+    "subtitle": "Bryan's first time in Japan · 10 days · Tokyo + Kyoto",
     "dates": [
       "2026-04-17",
       "2026-04-27"
@@ -26,8 +26,8 @@
       "city": "Tokyo",
       "neighborhood": "Ginza-Tsukiji",
       "coords": [
-        35.6717,
-        139.7649
+        35.6679,
+        139.7705
       ],
       "wiki": "https://en.wikipedia.org/wiki/Ginza",
       "visited": "2026-04-18 to 2026-04-27",
@@ -47,12 +47,14 @@
       "photos": [
         "20260420_211230.jpg",
         "20260418_163437.jpg",
-        "20260418_170622.jpg",
         "20260418_171006.jpg",
         "20260418_172505.jpg",
         "20260418_192533.jpg",
         "20260420_210634.jpg",
-        "20260423_082811.jpg"
+        "20260423_082811.jpg",
+        "20260427_054107.jpg",
+        "20260427_084505.jpg",
+        "20260427_113415.jpg"
       ],
       "extra_cards": [
         {
@@ -76,8 +78,8 @@
       "city": "Tokyo",
       "neighborhood": "Ginza-Tsukiji",
       "coords": [
-        35.6668,
-        139.7711
+        35.6677,
+        139.7707
       ],
       "wiki": "https://en.wikipedia.org/wiki/Sent%C5%8D",
       "visited": "2026-04-18 to 2026-04-27",
@@ -107,7 +109,10 @@
         "ritual",
         "daily"
       ],
-      "photos": []
+      "hero": "20260420_211230.jpg",
+      "photos": [
+        "20260420_211230.jpg"
+      ]
     },
     {
       "id": "kabuki-za",
@@ -155,31 +160,39 @@
     {
       "id": "raw-egg-restaurant",
       "type": "food",
-      "title": "The Raw Egg Restaurant",
+      "title": "Hokuto Sukiyaki — The Raw Egg Restaurant",
       "city": "Tokyo",
-      "neighborhood": "Higashi-Ginza",
+      "neighborhood": "Ginza",
       "coords": [
-        35.669,
-        139.771
+        35.6712,
+        139.7638
       ],
       "wiki": null,
-      "visited": "2026-04-22",
+      "visited": "2026-04-19",
       "status": "confirmed",
       "facts": {
-        "kid": "A tiny solo lunch Bryan walked into off the street — individual stoves, mystery menu, and a dipping sauce that turned out to be raw egg.",
-        "tip": "No photos. Around 3 PM, starving after a long walk, just past Kabuki-za. The flyers from the theatre show came with him.",
+        "kid": "A tiny solo lunch Bryan walked into off the street — individual table stoves, a mystery menu, and a dipping sauce that turned out to be raw egg. It's Hokuto, a Kyoto sukiyaki house whose first Tokyo branch had opened two days earlier.",
+        "tip": "Around 3 PM, Apr 19, starving after a long walk, just past Kabuki-za. The Ginza Corridor — the covered dining street under the rail tracks. Yamashita Building 2F, 6-2 Ginza, Chuo-ku.",
         "wow": "Raw egg as a dipping sauce (sukiyaki-style) has been common in Japan since the Meiji era. The egg tempers the heat and adds richness — a texture most Westerners need a beat to accept.",
-        "local": "Small Japanese restaurants with individual table stoves are often one-person operations. Pick any seat. No-frills regulars only."
+        "local": "Sukiyaki is cooked at the table in a shallow iron pan — wagyu seared first in warishita (soy, sugar, mirin), then tofu, noodles, vegetables. Crack a raw egg into a bowl, beat it lightly, and dip each piece as you pull it from the pan."
       },
       "tags": [
         "food",
         "tokyo",
+        "ginza",
+        "wagyu",
         "solo",
         "moment"
       ],
-      "hero": "",
-      "photos": [],
+      "hero": "20260419_155740.jpg",
+      "photos": [
+        "20260419_155740.jpg"
+      ],
       "extra_cards": [
+        {
+          "title": "Two days after opening",
+          "body": "The place was Hokuto — a Kyoto sukiyaki institution. Its first Tokyo location had opened on April 17, the day Bryan landed; he walked in on the 19th, two days later, with no idea any of that was true. He just knew it looked good, and he was starving."
+        },
         {
           "title": "Starving and walking",
           "body": "Bryan had been walking for hours. Hadn't eaten since morning. It was around 3 PM.\n\nHe'd just passed the Kabuki-za — people buzzing outside, flyers for a new traditional touring show, everyone excited in a way that made him wish he could stay longer. He stopped, took pictures, grabbed two of the flyers. Then hunger won.\n\nHe walked into a small restaurant that looked good — whatever that means when you're starving and can't read the menu. He was the only one inside. Individual little stoves at each table. He picked a seat and figured he'd give it a go."
@@ -306,7 +319,7 @@
       "status": "confirmed",
       "facts": {
         "kid": "Tokyo's Wall Street — giant office buildings + MUJI mega-store + Imperial Palace next door.",
-        "tip": "You walked here Apr 22 4:53 PM after the Cabinet Office (CAO) meeting",
+        "tip": "You walked here Apr 22 4:53 PM after the MoD meeting",
         "wow": "About 90% of land here is owned by ONE landlord: Mitsubishi Estate, since 1894 - reportedly the highest-value real estate block on Earth.",
         "local": "This is salaryman lunch country. The 2nd-basement food courts in every office tower hide the best ramen and donburi shops."
       },
@@ -340,21 +353,21 @@
     {
       "id": "hamarikyu",
       "type": "landmark",
-      "title": "Hamarikyu Gardens",
+      "title": "Meiji Jingu Inner Garden (Gyoen)",
       "city": "Tokyo",
-      "neighborhood": "Chuo",
+      "neighborhood": "Shibuya",
       "coords": [
-        35.6597,
-        139.7637
+        35.6745,
+        139.6995
       ],
-      "wiki": "https://en.wikipedia.org/wiki/Hama-rikyÅ«_Gardens",
+      "wiki": "https://en.wikipedia.org/wiki/Meiji_Shrine",
       "visited": "2026-04-19",
       "status": "confirmed",
       "facts": {
-        "kid": "An old Edo-era garden right on Tokyo Bay! Has a teahouse on a tiny island in a saltwater pond.",
-        "tip": "Best fit for the Apr 19 2:23 PM pond photo (closest to Tsukiji hotel)",
-        "wow": "The pond connects to Tokyo Bay so the water level rises and falls with the tides - one of only a few tidal saltwater garden ponds in Japan.",
-        "local": "The 300-year-old pine near the entrance (sanbyaku-nen no matsu) was personally planted by a Tokugawa shogun."
+        "kid": "The quiet, paid inner garden tucked inside the Meiji Jingu grounds — winding paths, an iris field, and a still pond with water lilies.",
+        "tip": "Apr 19 afternoon. Bryan kept walking deeper into the Meiji Jingu grounds and ended up here, then sat a while at the Forest Terrace cafe.",
+        "wow": "The Inner Garden (Gyoen) was laid out in the Meiji era at Empress Shoken's request — she loved irises. Its iris field blooms every late April and May, exactly when Bryan was there.",
+        "local": "Most visitors rush past the Gyoen entrance to reach the main shrine. The small admission fee keeps it quiet — the iris beds and the lily pond are the reward."
       },
       "tags": [
         "landmark",
@@ -420,7 +433,21 @@
         "20260419_073826.jpg",
         "20260419_074045.jpg",
         "20260425_091526.jpg",
-        "20260425_094016.jpg"
+        "20260425_094016.jpg",
+        "20260427_092034.jpg",
+        "20260427_092150.jpg",
+        "20260427_092500.jpg",
+        "20260427_100452.jpg",
+        "20260427_101456.jpg",
+        "20260424_111829.jpg",
+        "20260424_112945.jpg",
+        "20260424_113204.jpg",
+        "20260424_113520.jpg",
+        "20260424_113650.jpg",
+        "20260424_124631.jpg",
+        "20260424_125139.jpg",
+        "20260424_125247.jpg",
+        "20260424_125321.jpg"
       ],
       "extra_cards": [
         {
@@ -431,6 +458,14 @@
         {
           "title": "Bryan came back on the last morning",
           "body": "The market visited Apr 19 for the sunrise walk. He came back Apr 27 — last morning in Japan, rain, no umbrella, Senso-ji postponed. He ended up at a nearby intersection in the rain and had a moment with a stranger. That story is on its own pin: The Umbrella Lady."
+        },
+        {
+          "title": "Team lunch before the meeting",
+          "body": "Apr 24, midday. Bryan, Doug, Alex and Clair walked into the old fish market for a team lunch before an afternoon meeting. They ended up with rice bowls — the kind with a raw egg cracked on top. Good food, good crew, an easy hour before walking into a hard room. One of the trip's better team meals."
+        },
+        {
+          "title": "Check your behavior",
+          "body": "Bryan kept photographing the etiquette signage all over Japan — the polite, illustrated 'please don't do this' notices aimed at tourists. In the taxi to lunch, another one: a 'STOP! Harassment' card on the seatback, six little panels covering everything from loud voices to unauthorized recording. Not scolding — just clear. He collected these the way other people collect magnets."
         }
       ]
     },
@@ -459,8 +494,10 @@
         "moment",
         "quiet"
       ],
-      "hero": "",
-      "photos": [],
+      "hero": "20260427_092500.jpg",
+      "photos": [
+        "20260427_092500.jpg"
+      ],
       "extra_cards": [
         {
           "title": "The sunrise walk that didn't happen",
@@ -535,16 +572,8 @@
         "20260419_113116.jpg",
         "20260419_112509.jpg",
         "20260419_114535.jpg",
-        "20260427_054107.jpg",
-        "20260427_084505.jpg",
-        "20260427_085227.jpg",
-        "20260427_092034.jpg",
-        "20260427_092150.jpg",
-        "20260427_092500.jpg",
-        "20260427_100452.jpg",
-        "20260427_101456.jpg",
-        "20260427_113415.jpg",
-        "20260427_115503.jpg"
+        "20260511_204923.jpg",
+        "20260511_204929.jpg"
       ]
     },
     {
@@ -698,14 +727,6 @@
       "hero": "20260424_103452.jpg",
       "photos": [
         "20260424_103452.jpg",
-        "20260424_072755.jpg",
-        "20260424_095934.jpg",
-        "20260424_100736.jpg",
-        "20260424_101242.jpg",
-        "20260424_101509.jpg",
-        "20260424_102413.jpg",
-        "20260424_102605.jpg",
-        "20260424_102829(0).jpg",
         "20260424_102937.jpg",
         "20260424_103352.jpg",
         "20260424_103604.jpg",
@@ -718,24 +739,12 @@
         "20260424_104645.jpg",
         "20260424_104748.jpg",
         "20260424_104959.jpg",
-        "20260424_110151.jpg",
         "20260424_110313.jpg",
         "20260424_110414.jpg",
-        "20260424_110631.jpg",
         "20260424_110829.jpg",
-        "20260424_110939.jpg",
-        "20260424_111156.jpg",
-        "20260424_111251.jpg",
-        "20260424_111546.jpg",
-        "20260424_111829.jpg",
-        "20260424_112945.jpg",
-        "20260424_113204.jpg",
-        "20260424_113520.jpg",
-        "20260424_113650.jpg",
-        "20260424_124631.jpg",
-        "20260424_125139.jpg",
-        "20260424_125247.jpg",
-        "20260424_125321.jpg"
+        "20260511_204838.jpg",
+        "20260511_204854.jpg",
+        "20260511_204857.jpg"
       ],
       "extra_cards": [
         {
@@ -746,11 +755,128 @@
         {
           "title": "勝運 — the victory-luck talisman Bryan brought home",
           "body": "Tucked into the scrapbook: a Zojoji talisman card with an eagle illustration and two kanji — 勝運 (victory luck) at top, 成就 (fulfillment / achievement) at bottom. These are Kuro-honzon themed talismans. Bryan also kept the Daihonzan Zojo-ji ofuda wrapper, a Tokugawa mitsuba-aoi (three-leaf hollyhock) crest insert, and the printed Kuro-honzon origin pamphlet. A real Tokugawa-temple artifact set, not generic merch."
+        }
+      ]
+    },
+    {
+      "id": "kumano-crow-shrine",
+      "type": "shrine",
+      "title": "Kumano Jinja — the Crow Shrine",
+      "city": "Tokyo",
+      "neighborhood": "Minato",
+      "coords": [
+        35.658,
+        139.7489
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Yatagarasu",
+      "visited": "2026-04-24",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A small Shinto shrine tucked on the Zojoji grounds — a torii, a water basin, a stone stele. Bryan walked it without knowing it was a crow shrine.",
+        "wow": "The Kumano messenger is the Yatagarasu — a three-legged crow that, in legend, guided a lost emperor through the mountains. A guide-crow, on the same trip Bryan kept praying for his steps to be guided.",
+        "local": "Crows in Japanese culture are messengers and wise truth-tellers. The three-legged crow fits a culture where trust is built slowly, community is supportive, and wisdom passes down the generations."
+      },
+      "tags": [
+        "shrine",
+        "shinto",
+        "tokyo",
+        "crows"
+      ],
+      "hero": "20260424_110939.jpg",
+      "photos": [
+        "20260424_110939.jpg",
+        "20260424_111156.jpg",
+        "20260424_111251.jpg",
+        "20260424_111546.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The crow shrine on the grounds",
+          "body": "Bryan walked it without knowing what it was: a small Shinto shrine tucked on the Zojoji grounds — torii, chōzuya water basin, a stone stele. It's a Kumano shrine, and the Kumano messenger is the Yatagarasu, the three-legged crow that guided a lost emperor through the mountains. He didn't learn until later that he'd stood at a crow shrine — on the same trip he kept praying for his steps to be guided."
         },
         {
-          "title": "The Footprints",
-          "body": "Set into the stone at Zojoji: the Bussokuseki — the Buddha's Footprints. Carved into rock, larger than life, the outline of where the Buddha stood.\n\nBryan stepped onto it. Lined up his feet with the carved prints.\n\nHe prayed for God to direct his steps — all day, and all trip.\n\nA few hours later he was at the Ministry of Defense."
+          "title": "Why Bryan loves crows",
+          "body": "In high school, Bryan was assigned Edgar Allan Poe — the first 'adult' writer he fell in love with. Dark and insightful. He read it the way he read everything: last minute. 11:30 PM, the house quiet, the story climaxing on a haunted house — and the grandfather clock rang. He jumped through the ceiling.\n\nCrows fit the same pull. Intimidating, scary-looking — and the more he learned, the more fascinated he got. They solve puzzles. They use tools. They recognize human faces — there are accounts of crows escorting a girl to her school bus and throwing stones at the kids who bothered her. Protective, loyal. They bring gifts — shiny things, left for people they like. Befriending a crow is on Bryan's bucket list. He's tried: nuts and fruit left out when crows are near. It takes time to build their trust. He hasn't yet. But he will."
+        },
+        {
+          "title": "Crows as messengers",
+          "body": "Bryan loves crows in folklore. Like most folklore, it takes a real characteristic and exaggerates it — and he likes that, because it's how he communicates: truth through exaggeration. It's why legends and myths land harder for him — you get a bigger meaning folded in with the exaggerated truth. Crows as messengers. Wise truth-tellers. Japan has the three-legged crow. A culture where trust takes time, where community is supportive, where wisdom passes down generations. The crow seems exactly right here."
+        },
+        {
+          "title": "Beware of Crows",
+          "body": "Down the street from the shrine, a cafe (Le Pain Quotidien) had set out a hand-laminated sign — カラス注意 / 'Beware of Crows' — next to a plastic owl decoy guarding the outdoor tables. Bryan kept the photo. A crow shrine on one end of the block, a 'beware of crows' sign on the other. The same bird, held two ways: messenger and nuisance, sacred and ordinary. It seemed exactly appropriate."
         }
+      ]
+    },
+    {
+      "id": "sentai-kosodate-jizo",
+      "type": "shrine",
+      "title": "Sentai Kosodate Jizo — the Children's Shrine",
+      "city": "Tokyo",
+      "neighborhood": "Minato",
+      "coords": [
+        35.6573,
+        139.7479
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Jiz%C5%8D",
+      "visited": "2026-04-24",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Rows and rows of small stone statues on the Zojoji grounds — each one a memorial for a child, often dressed by the family in a knit hat and a red bib.",
+        "wow": "Jizo is the Buddhist guardian of children and travelers. The Sentai Kosodate Jizo at Zojoji are tended by parents, who change the little hats and bibs year after year.",
+        "local": "The fabric and the small additions look simple but carry everything — like a lot of things in Japan: simple and effective."
+      },
+      "tags": [
+        "shrine",
+        "buddhist",
+        "tokyo",
+        "heavy"
+      ],
+      "hero": "20260424_110151.jpg",
+      "photos": [
+        "20260424_110151.jpg",
+        "20260424_110631.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Rows of little statues",
+          "body": "It's breathtaking before you even read about it. Rows of little statues, all looking the same — like the fox shrines, a dedicated theme repeated, all similar with minor differences. Sometimes the only difference is the fabric a family has put on a statue to give it a personality. The fabric, the small additions — so simple, and they carry so much. Bryan found himself getting lost in the similarity, then drawn into the details. Who put this hat on? Why this color? Why this pattern? A personal choice, or a cultural one?"
+        },
+        {
+          "title": "A prayer for each family",
+          "body": "There are two powerful but different feelings — seeing a graveyard versus seeing a single grave. Bryan tried to pause and reflect here, the way he did at every shrine. His biggest takeaway was the personal pain tied to each individual statue. He paused, and said a prayer for each of the families represented. There's a video of this one — it's that kind of place."
+        }
+      ]
+    },
+    {
+      "id": "minato-walk-zojoji",
+      "type": "street",
+      "title": "Minato Streets — Walk to Zojoji",
+      "city": "Tokyo",
+      "neighborhood": "Minato",
+      "coords": [
+        35.6588,
+        139.7497
+      ],
+      "visited": "2026-04-24",
+      "status": "confirmed",
+      "facts": {
+        "kid": "The ordinary streets between the station and Zojoji Temple — quiet sidewalks, low buildings, a city going about its morning.",
+        "wow": "Minato ward holds both the oldest and the newest Tokyo: Edo-era temple grounds like Zojoji sit a block from glass corporate towers and embassies.",
+        "local": "Tokyo's residential side streets are nearly silent even mid-morning — no honking, no street noise, just footsteps and bicycle bells.",
+        "tip": "Photographed around 10:25 on Day 7, on the approach to Zojoji."
+      },
+      "tags": [
+        "street",
+        "tokyo",
+        "walk",
+        "minato"
+      ],
+      "hero": "20260424_102413.jpg",
+      "photos": [
+        "20260424_102413.jpg",
+        "20260424_102605.jpg",
+        "20260424_102829(0).jpg"
       ]
     },
     {
@@ -804,30 +930,12 @@
         "20260419_133352.jpg",
         "20260419_142545.jpg",
         "20260419_143048.jpg",
-        "20260419_150728.jpg"
-      ]
-    },
-    {
-      "id": "shinjuku",
-      "type": "neighborhood",
-      "title": "Shinjuku",
-      "city": "Tokyo",
-      "neighborhood": "Shinjuku",
-      "coords": [
-        35.6938,
-        139.7036
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Shinjuku",
-      "visited": "?",
-      "status": "confirmed",
-      "facts": {
-        "kid": "Shinjuku Station is the BUSIEST train station on Earth — 3.5M people daily!",
-        "wow": "Shinjuku Station has 200+ exits - even Tokyoites routinely take the wrong one and end up 10+ min from where they meant to be.",
-        "local": "Skip the west side (skyscrapers). The east side - Kabukicho, Golden Gai, Omoide Yokocho - is where Tokyo nightlife actually happens."
-      },
-      "tags": [
-        "neighborhood",
-        "tokyo"
+        "20260419_150728.jpg",
+        "20260511_204749.jpg",
+        "20260511_204756.jpg",
+        "20260511_204823.jpg",
+        "20260511_204830.jpg",
+        "20260511_210201.jpg"
       ]
     },
     {
@@ -857,15 +965,21 @@
       "hero": "20260421_161147.jpg",
       "photos": [
         "20260421_161147.jpg",
-        "20260421_155910.jpg",
         "20260421_160034.jpg",
         "20260421_160953.jpg",
-        "20260424_154347.jpg"
+        "20260424_095934.jpg",
+        "20260424_100736.jpg",
+        "20260424_101242.jpg",
+        "20260424_101509.jpg",
+        "20260424_154347.jpg",
+        "20260511_204817.jpg",
+        "20260511_204820.jpg",
+        "20260511_204904.jpg"
       ],
       "extra_cards": [
         {
           "title": "What Bryan brought back from MoD HQ",
-          "body": "From the visit Bryan came home with a small set of genuine Japan-MoD artifacts in his Kichi-in-chō ('Base Stamp Book' — a JSDF-themed collector's book with an F-2 jet on the navy cover):\n\n• 防衛省来省記念 visit-commemoration stamp — Reiwa 8 fiscal year, with the paulownia government crest, the 任務遂行 ('Mission accomplished') seal, a Japan-flag stamp, and a serial-number stamp.\n• An embroidered MoD HQ patch (Ministry of Defense · Tokyo Japan) depicting the Ichigaya A-Building tower with antennas — the building Bryan met inside.\n• An embroidered Rising Sun flag (旭日旗 / Kyokujitsu-ki) patch — the official current ensign of the JMSDF.\n\nThese are uncommon items for a foreign visitor and a quiet badge of how seriously the visit was received."
+          "body": "From the visit Bryan came home with a small set of genuine Japan-MoD artifacts in his Kichi-in-chō ('Base Stamp Book' — a JSDF-themed collector's book with an F-2 jet on the navy cover):\n\n• 防衛省来省記念 visit-commemoration stamp — Reiwa 8 fiscal year, with the paulownia government crest, the 任務遂行 ('Mission accomplished') seal, a Japan-flag stamp, and a serial-number stamp.\n• An embroidered MoD HQ patch (Ministry of Defense · Tokyo Japan) depicting the Ichigaya A-Building tower with antennas — the building Bryan met inside.\n• An embroidered Rising Sun flag (旭日旗 / Kyokujitsu-ki) patch — Japan's naval ensign.\n\nThese are uncommon items for a foreign visitor and a quiet badge of how seriously the visit was received."
         }
       ]
     },
@@ -931,7 +1045,7 @@
       "status": "confirmed",
       "facts": {
         "kid": "A pub-style restaurant in Akihabara where Bryan had jasmine tea while co-workers had drinks.",
-        "tip": "Receipt confirmed Apr 21 9:32 PM. Total Â¥8,514 (cash). Phone 03-58254520. Table C1.",
+        "tip": "Receipt confirmed Apr 21 9:32 PM. Total ¥8,514 (cash). Phone 03-58254520. Table C1.",
         "wow": "'Izakaya' literally means 'stay-sake-shop' - originally sake shops that let you drink on-site instead of buying to go.",
         "local": "The 'free' otoshi appetizer that appears is NOT free - it's the table charge in food form, Y300-500/person."
       },
@@ -1004,7 +1118,7 @@
         },
         {
           "title": "After the government rooms",
-          "body": "The afternoon had been the Cabinet Office meeting. Japan's government district. David led, Bryan and Clair supported. Big rooms, formal interpretation, topics that mattered.\n\nBy 8 PM they were at a yakitori counter, passing skewers. Nobody needed to talk about the meeting. The food did the transition."
+          "body": "The afternoon had been the first MoD meeting — the team's first real performance together. Japan's government district. Big rooms, formal interpretation, topics that mattered.\n\nBy 8 PM they were at a yakitori counter, passing skewers. Nobody needed to talk about the meeting. The food did the transition."
         }
       ]
     },
@@ -1093,7 +1207,7 @@
         },
         {
           "title": "The signed menu",
-          "body": "Darren's last night. He was flying out the next morning. Six people, six countries, one menu passed around the table.\n\nDavid wrote 'best dinner ever!' Clair drew a bald-head doodle of Bryan and added 'this is the best thing EVER' in her best annoying-little-sister energy. Darren drew something that gets blurred for the kids' version. Alessandro wrote something in Italian — translation still pending. Vette drew a wagyu burger.\n\nBryan signed his name.\n\nThe menu came home. It's in the scrapbook."
+          "body": "Doug's last night. He was flying out the next morning. Six people, six countries, one menu passed around the table.\n\nSaul wrote 'best dinner ever!' Clair drew a bald-head doodle of Bryan and added 'this is the best thing EVER' in her best annoying-little-sister energy. Doug drew something that gets blurred for the kids' version. Alex wrote something in Italian — translation still pending. Vicky drew a wagyu burger.\n\nBryan signed his name.\n\nThe menu came home. It's in the scrapbook."
         }
       ],
       "tags": [
@@ -1155,7 +1269,7 @@
         },
         {
           "title": "The menu, the story, the flame",
-          "body": "The menu told the story before the food arrived. The history of the cows. The specific breed, what makes wagyu different — the fat marbling, the grading, the way the cattle are raised. The owner's search for the right source.\n\nThis is what people rave about Japanese food. The level of care. Making the best possible version of the thing, not just the thing. A burger is a burger. A wagyu burger at a place like this is the result of someone's life's work.\n\nThey brought it out and put a flame to it. The fat crisped at the edge. Bryan was starving. He's also pretty sure it was the best burger he's ever had.\n\nHe called Kel. Got some sleep. Sunrise hike in the morning."
+          "body": "The menu told the story before the food arrived. The history of the cows. The specific breed, what makes wagyu different — the fat marbling, the grading, the way the cattle are raised. The owner's search for the right source.\n\nThis is what people rave about Japanese food. The level of care. Making the best possible version of the thing, not just the thing. A burger is a burger. A wagyu burger at a place like this is the result of someone's life's work.\n\nThey brought it out and put a flame to it. The fat crisped at the edge. Bryan was starving. He's also pretty sure it was the best burger he's ever had.\n\nHe called Kel. Got some sleep. One last morning in Tokyo, then the long flight home."
         }
       ]
     },
@@ -1208,12 +1322,12 @@
         35.6815,
         139.767
       ],
-      "wiki": "https://en.wikipedia.org/wiki/PokÃ©mon_Center",
+      "wiki": "https://en.wikipedia.org/wiki/Pokémon_Center",
       "visited": "2026-04-26",
       "status": "confirmed",
       "facts": {
-        "kid": "ðŸŽ® A WHOLE STORE of nothing but Pokemon stuff — cards, plushies, T-shirts, even snacks!",
-        "tip": "Apr 26 8:38-8:45 PM. 22 items, Â¥35,213 total. Charizard coin purse + cards in the haul.",
+        "kid": "🎮 A WHOLE STORE of nothing but Pokemon stuff — cards, plushies, T-shirts, even snacks!",
+        "tip": "Apr 26, ~8:35-8:46 PM. 38 items, ¥48,083 total. Charizard coin purse + cards in the haul.",
         "wow": "The Pokemon Company is a JOINT venture between Nintendo, Game Freak, and Creatures Inc. - not Nintendo alone, which surprises most fans.",
         "local": "Each Pokemon Center sells city-exclusive Pikachu plushies in local outfits - Tokyo Tower outfit, Kyoto kimono, etc. Collector bait."
       },
@@ -1235,7 +1349,8 @@
         "20260426_204138.jpg",
         "20260426_204252.jpg",
         "20260426_204626.jpg",
-        "20260426_205034.jpg"
+        "20260426_205034.jpg",
+        "20260427_085227.jpg"
       ],
       "extra_cards": [
         {
@@ -1274,7 +1389,7 @@
     {
       "id": "tokyo-cafe-coworking",
       "type": "food",
-      "title": "Tokyo cafÃ© / co-working",
+      "title": "Tokyo café / co-working",
       "city": "Tokyo",
       "neighborhood": "TBD",
       "coords": [
@@ -1285,7 +1400,7 @@
       "visited": "2026-04-22",
       "status": "confirmed",
       "facts": {
-        "kid": "A modern cafÃ© with free WiFi where Bryan worked on his MacBook before the CAO meeting.",
+        "kid": "A modern café with free WiFi where Bryan worked on his MacBook before the MoD meeting.",
         "tip": "Apr 22 9:22 AM. Cushioned seating, plants.",
         "wow": "Tokyo has 600+ dedicated coworking spaces - more than NYC - but most locals just work at chain cafes (Doutor, Komeda).",
         "local": "Cafe-as-office etiquette: order something every 90 min, or get politely asked to leave."
@@ -1330,6 +1445,7 @@
       "photos": [
         "20260420_071751.jpg",
         "20260420_072322.jpg",
+        "20260424_072755.jpg",
         "20260420_092519.jpg",
         "20260420_100148.jpg"
       ],
@@ -1412,7 +1528,7 @@
       "visited": "2026-04-25",
       "status": "confirmed",
       "facts": {
-        "kid": "10,000 bright orange torii gates climbing a mountain! Each donated by a family or business. You hiked deep into Mt. Inari with companions.",
+        "kid": "10,000 bright orange torii gates climbing a mountain! Each donated by a family or business. Bryan climbed Mt. Inari solo — a four-hour off-trail wander to the summit and back.",
         "history": "Founded 711 AD. Head shrine of 30,000 Inari shrines across Japan.",
         "deity": "Inari ÅŒkami — Shinto god/goddess of rice, foxes, and prosperity",
         "ritual": "Foxes (kitsune) are Inari's messengers — fox statues hold keys or scrolls.",
@@ -1426,13 +1542,8 @@
         "kyoto",
         "must-see"
       ],
-      "hero": "20260425_161101.jpg",
+      "hero": "20260425_134147.jpg",
       "photos": [
-        "20260425_161101.jpg",
-        "20260425_125950.jpg",
-        "20260425_130201.jpg",
-        "20260425_130735.jpg",
-        "20260425_130857.jpg",
         "20260425_132349.jpg",
         "20260425_133834.jpg",
         "20260425_134056.jpg",
@@ -1447,106 +1558,20 @@
         "20260425_141333.jpg",
         "20260425_141426.jpg",
         "20260425_141526.jpg",
-        "20260425_142227.jpg",
-        "20260425_142437.jpg",
-        "20260425_142631.jpg",
-        "20260425_142828.jpg",
-        "20260425_143632.jpg",
-        "20260425_143730.jpg",
-        "20260425_143827.jpg",
-        "20260425_144004.jpg",
-        "20260425_144047.jpg",
-        "20260425_144220.jpg",
-        "20260425_144318.jpg",
-        "20260425_144528.jpg",
-        "20260425_144755.jpg",
-        "20260425_144850.jpg",
-        "20260425_144925.jpg",
-        "20260425_145255.jpg",
-        "20260425_145513.jpg",
-        "20260425_150100.jpg",
-        "20260425_150444.jpg",
-        "20260425_150709.jpg",
-        "20260425_150832.jpg",
-        "20260425_151120.jpg",
-        "20260425_151247.jpg",
-        "20260425_151613.jpg",
-        "20260425_151734.jpg",
-        "20260425_151915.jpg",
-        "20260425_152214.jpg",
-        "20260425_152259.jpg",
-        "20260425_152514.jpg",
-        "20260425_152647.jpg",
-        "20260425_152901.jpg",
-        "20260425_153147.jpg",
-        "20260425_153231.jpg",
-        "20260425_153609.jpg",
-        "20260425_153805.jpg",
-        "20260425_153911.jpg",
-        "20260425_154030.jpg",
-        "20260425_154340.jpg",
-        "20260425_154534.jpg",
-        "20260425_155330.jpg",
-        "20260425_155447.jpg",
-        "20260425_155703.jpg",
-        "20260425_155925.jpg",
-        "20260425_160119.jpg",
-        "20260425_160208.jpg",
-        "20260425_160617.jpg",
-        "20260425_160848.jpg",
-        "20260425_161021.jpg",
-        "20260425_161212.jpg",
-        "20260425_161445.jpg",
-        "20260425_161547.jpg",
-        "20260425_161651.jpg",
-        "20260425_161823.jpg",
-        "20260425_161913.jpg",
-        "20260425_162008.jpg",
-        "20260425_162157.jpg",
-        "20260425_162316.jpg",
-        "20260425_162554.jpg",
-        "20260425_162748.jpg",
-        "20260425_163432.jpg",
-        "20260425_163546.jpg",
-        "20260425_163619.jpg",
-        "20260425_163748.jpg",
-        "20260425_163830.jpg",
-        "20260425_164025.jpg",
-        "20260425_164103.jpg",
-        "20260425_164253.jpg",
-        "20260425_165022.jpg",
-        "20260425_165109.jpg",
-        "20260425_165241.jpg",
-        "20260425_165524.jpg",
-        "20260425_165806.jpg",
-        "20260425_170321.jpg",
-        "20260425_170453.jpg",
-        "20260425_170942.jpg",
-        "20260425_171041.jpg",
-        "20260425_171425.jpg",
-        "20260427_203242.jpg"
+        "20260511_204833.jpg",
+        "20260511_204843.jpg",
+        "20260511_212632.jpg",
+        "20260511_212652.jpg"
       ],
       "extra_cards": [
         {
-          "title": "Mercury in the fox statues",
-          "body": "Bryan called the fox-statue shrines 'Merc shrines.' Not for the look of them — for Mercury, his dog. The stone kitsune (foxes) at Inari shrines have a recognizable face: alert, watchful, broad-headed, slightly goofy. Bryan saw Mercury in every one. Kelly had spotted Mercury on a friend's social-media post months earlier; they acted on it and adopted him. What felt random became central. Walking past hundreds of these fox statues at the head shrine of all 30,000 Inari shrines in Japan, Bryan kept catching Mercury's face in them."
-        },
-        {
-          "title": "The prayer for Mercury",
-          "body": "At one of the fox-statue sub-shrines on the climb, Bryan stopped and did the ritual — coin, bow, two claps, prayer, bow — and the prayer was for Mercury. Gratitude that Kelly happened to see that post. Gratitude that they took action on a seemingly random thing. Gratitude that this big lug is in their life. He got emotional. The prayer closed with a request: that he be a good and responsible owner, and that Mercury live a long, fulfilled life. One of the off-trail emotional anchors of the entire Japan trip."
+          "title": "The main shrine and the start of the torii",
+          "body": "Bryan came off the bullet train with no plan and no hotel, walked up through the shop-lined streets, and arrived at the main hall of Fushimi Inari — the head shrine of some 30,000 Inari shrines across Japan. He did his ritual — coin, bow, two claps, prayer, bow — then stepped into the Senbon Torii, the famous tunnel of thousands of vermilion gates, each one donated and inscribed. The gate corridor is where most visitors stop. Bryan kept going — four hours, off-trail, all the way to the summit and back."
         },
         {
           "title": "Why foxes at Inari shrines",
           "body": "The fox (kitsune) is the messenger of Inari Ōkami, the Shinto kami of rice, business, and prosperity. Fox statues at Inari shrines often hold a key (to the rice granary) or a scroll (the prayer of the petitioner). Fushimi Inari Taisha is the head shrine of an Inari network of ~30,000 sub-shrines across Japan — which is why fox statues show up at small neighborhood shrines all over the country.",
           "source": "https://en.wikipedia.org/wiki/Inari_%C5%8Ckami"
-        },
-        {
-          "title": "The Merc good luck charm",
-          "body": "Among the things Bryan brought back from Fushimi Inari was a small wallet-sized metal card with the kitsune (foxes) etched on it — a pocket shrine, blessed as a good-luck charm. He claimed it on the spot as his 'Merc good luck charm' — the same Mercury thread that ran through the fox sub-shrines on Mt. Inari. Then he and Kelly used Google Translate to read what it actually said. The shock: it's only good for ONE YEAR. The only charm in the haul with an expiration date. They laughed about that for a while. The plan: keep it for the year of luck, then gift it to someone else to carry for their year. Pass-the-Merc as a rolling tradition."
-        },
-        {
-          "title": "Sorting night — back home in Virginia",
-          "body": "The night of arrival back in Virginia, Bryan and Kelly spread the whole haul out on a table and went through it piece by piece — fortunes, shrine cards, omamori, the snacks, the plushies, the goshuin book. Google Translate was open for hours. Some items went into the keep pile for the house, some into stacks for friends and family. Most of the discoveries were small ones: which charm did what, what category of fortune Bryan actually drew, which snack to keep for which kid. The trip ended in a shared kitchen-table laugh."
         }
       ],
       "videos": [
@@ -1633,6 +1658,282 @@
       ]
     },
     {
+      "id": "fushimi-approach",
+      "type": "street",
+      "title": "Fushimi Inari — the approach",
+      "city": "Kyoto",
+      "neighborhood": "Fushimi",
+      "coords": [
+        34.9685,
+        135.7715
+      ],
+      "wiki": null,
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "The packed, shop-lined street that leads up to the shrine gates — food stalls, fox-shaped everything, and a coffee stop before the climb.",
+        "tip": "Bryan came straight off the bullet train with a bare-bones backpack, no hotel booked, no plan past 'go to Fushimi.'",
+        "local": "The approach is cash-country. Bryan kept hitting cash-only counters and regretting not carrying a coin wallet — a running theme of the whole trip."
+      },
+      "tags": [
+        "street",
+        "kyoto",
+        "food",
+        "approach"
+      ],
+      "hero": "20260425_130201.jpg",
+      "photos": [
+        "20260425_125950.jpg",
+        "20260425_130201.jpg",
+        "20260425_130735.jpg",
+        "20260425_130857.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Coffee, an egg sandwich, and no coins",
+          "body": "Off the train, into the crowd, up the shop-lined approach. Bryan stopped for a coffee and an egg sandwich before the climb — and hit the cash-only wall again. Everywhere on this street wanted coins, and he never did get a coin wallet. He ate, shouldered the little backpack, and turned for the gates."
+        }
+      ]
+    },
+    {
+      "id": "fushimi-bamboo-merc",
+      "type": "shrine",
+      "title": "Fushimi Inari — bamboo & the Merc shrines",
+      "city": "Kyoto",
+      "neighborhood": "Fushimi",
+      "coords": [
+        34.9655,
+        135.7748
+      ],
+      "wiki": null,
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Past the Yotsutsuji crossroads the crowds thin out — bamboo, quiet trail, and dozens of little fox-statue sub-shrines climbing the mountain.",
+        "tip": "Bryan called these the 'Merc shrines' — the stone foxes all looked like Mercury, his dog.",
+        "local": "Above the Senbon Torii, the path branches into back trails most tourists never take. This is where the climb stops being a photo op and becomes a walk."
+      },
+      "tags": [
+        "shrine",
+        "shinto",
+        "kyoto",
+        "hike"
+      ],
+      "hero": "20260425_143632.jpg",
+      "photos": [
+        "20260425_142227.jpg",
+        "20260425_142437.jpg",
+        "20260425_142631.jpg",
+        "20260425_142828.jpg",
+        "20260425_143632.jpg",
+        "20260425_143730.jpg",
+        "20260425_143827.jpg",
+        "20260425_144004.jpg",
+        "20260425_144047.jpg",
+        "20260425_144220.jpg",
+        "20260425_144318.jpg",
+        "20260425_144528.jpg",
+        "20260425_144755.jpg",
+        "20260425_144850.jpg",
+        "20260425_144925.jpg",
+        "20260425_145255.jpg",
+        "20260425_145513.jpg",
+        "20260425_150100.jpg",
+        "20260425_150444.jpg",
+        "20260425_150709.jpg",
+        "20260425_150832.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The bamboo and the 'guide me' meditation",
+          "body": "The trail ran through bamboo — it reminded Bryan of the icicle room at teamLab, the one quiet beat repeating. He walked it turning the same thought over: guide my steps. The same prayer from the Buddha's-footprints stone. Carved-up bamboo he could have done without, but mostly it was green, still, and his."
+        },
+        {
+          "title": "Mercury in the fox statues",
+          "body": "Bryan called the fox-statue shrines 'Merc shrines.' Not for the look of them — for Mercury, his dog. The stone kitsune at Inari shrines have a recognizable face: alert, watchful, broad-headed, slightly goofy. Bryan saw Mercury in every one. Kelly had spotted Mercury on a friend's social-media post months earlier; they acted on it and adopted him. What felt random became central."
+        },
+        {
+          "title": "The prayer for Mercury",
+          "body": "At one of the fox-statue sub-shrines on the climb, Bryan stopped and did the ritual — coin, bow, two claps, prayer, bow — and the prayer was for Mercury. Gratitude that Kelly happened to see that post. Gratitude that they took action on a seemingly random thing. He got emotional. The prayer closed with a request: that he be a good and responsible owner, and that Mercury live a long, full life. One of the off-trail emotional anchors of the whole trip."
+        },
+        {
+          "title": "The Merc good luck charm",
+          "body": "Among the things Bryan brought back from Fushimi Inari was a small wallet-sized metal card with the kitsune etched on it — a pocket shrine, blessed as a good-luck charm. He claimed it on the spot as his 'Merc good luck charm.' Then he and Kelly used Google Translate on it: it's only good for ONE YEAR — the only charm in the haul with an expiration date. The plan: keep it for the year of luck, then pass it to someone else for theirs. Pass-the-Merc as a rolling tradition."
+        }
+      ]
+    },
+    {
+      "id": "fushimi-stairs-hidden",
+      "type": "hike",
+      "title": "Fushimi Inari — the back road & the endless stairs",
+      "city": "Kyoto",
+      "neighborhood": "Fushimi",
+      "coords": [
+        34.9625,
+        135.7768
+      ],
+      "wiki": null,
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A back-country stretch off the main mountain — a woodshop, a quiet local shrine, a hand-written sign, and a set of stairs that went straight up.",
+        "tip": "Bryan's legs nearly gave out on these stairs. The vending machines along the way felt like a gift.",
+        "local": "There was no one on this part of the climb. The hidden cluster of shrines off the road — foxes, waterfalls behind curtains — Bryan called the best shrine visit of the whole trip."
+      },
+      "tags": [
+        "hike",
+        "shrine",
+        "kyoto",
+        "quiet"
+      ],
+      "hero": "20260425_153609.jpg",
+      "photos": [
+        "20260425_151120.jpg",
+        "20260425_151247.jpg",
+        "20260425_151613.jpg",
+        "20260425_151734.jpg",
+        "20260425_151915.jpg",
+        "20260425_152214.jpg",
+        "20260425_152259.jpg",
+        "20260425_152514.jpg",
+        "20260425_152647.jpg",
+        "20260425_152901.jpg",
+        "20260425_153147.jpg",
+        "20260425_153231.jpg",
+        "20260425_153609.jpg",
+        "20260425_153805.jpg",
+        "20260425_153911.jpg",
+        "20260425_154030.jpg",
+        "20260425_154340.jpg",
+        "20260425_154534.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The forgotten cluster — the best shrine visit yet",
+          "body": "Just off the road, before the path turned up the mountain, Bryan found a cluster of shrines — so many of them, no one around. Identical little shrines side by side. Stairs that were killer. Little shrines with waterfalls behind curtains. He could walk and explore and have the moments entirely to himself. Maybe the best shrine visit of the trip."
+        },
+        {
+          "title": "The endless stairs",
+          "body": "Past a woodshop where a couple was cleaning up, past a local community shrine, there was a hand-written sign with the mountain's name and then stairs — straight up, no end in sight. Bryan's legs almost fell off. Then, near the top, a line of vending machines. 'The Lord answers prayers.' He bought water and kept climbing."
+        }
+      ]
+    },
+    {
+      "id": "fushimi-summit",
+      "type": "shrine",
+      "title": "Fushimi Inari — the summit",
+      "city": "Kyoto",
+      "neighborhood": "Fushimi",
+      "coords": [
+        34.9572,
+        135.779
+      ],
+      "wiki": null,
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "The shrine at the top of Mt. Inari — reached after a long, tired climb. Bryan said it felt like the movies.",
+        "tip": "Tiny personalized torii gates cover the summit shrine — people carry their own up the mountain and leave them.",
+        "local": "There's a charm shop and a place to light candles at the peak. Bryan lit one at a big shrine and bought a few candles to bring home."
+      },
+      "tags": [
+        "shrine",
+        "shinto",
+        "kyoto",
+        "summit"
+      ],
+      "hero": "20260425_161101.jpg",
+      "photos": [
+        "20260425_155330.jpg",
+        "20260425_155447.jpg",
+        "20260425_155703.jpg",
+        "20260425_155925.jpg",
+        "20260425_160119.jpg",
+        "20260425_160208.jpg",
+        "20260425_160617.jpg",
+        "20260425_160848.jpg",
+        "20260425_161021.jpg",
+        "20260425_161101.jpg",
+        "20260425_161212.jpg",
+        "20260425_161445.jpg",
+        "20260425_161547.jpg",
+        "20260425_161651.jpg",
+        "20260425_161823.jpg",
+        "20260425_161913.jpg",
+        "20260425_162008.jpg",
+        "20260425_162157.jpg",
+        "20260425_162316.jpg",
+        "20260425_162554.jpg",
+        "20260425_162748.jpg",
+        "20260425_163432.jpg",
+        "20260425_163546.jpg",
+        "20260425_163619.jpg",
+        "20260425_163748.jpg",
+        "20260425_163830.jpg",
+        "20260425_164025.jpg",
+        "20260425_164103.jpg",
+        "20260425_164253.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Felt like the movies",
+          "body": "Bryan bowed at the gate, exhausted, and walked up. He started hearing voices. He saw the shrine — the top of the mountain shrine. It felt like the movies: the long, tired journey, and now an old man with a long beard would tell him his destiny. Turns out it was a shrine and some tourists. Still cool though."
+        },
+        {
+          "title": "Little asks and big prayers",
+          "body": "All over the summit shrine were tiny personalized torii gates — people had carried them up the mountain and left them. Bryan had read up on Fushimi before going, but nowhere had he read about bringing your own gate. He'd have done it. He stood looking at other people's gates — a tourist wanting an experience, maybe someone with a sick kid trying everything — and figured it was full of little asks and big prayers, like everywhere people go looking for guidance. He made his own. Little asks and big prayers."
+        }
+      ]
+    },
+    {
+      "id": "fushimi-descent",
+      "type": "hike",
+      "title": "Fushimi Inari — the descent & the rescue",
+      "city": "Kyoto",
+      "neighborhood": "Fushimi",
+      "coords": [
+        34.9618,
+        135.7735
+      ],
+      "wiki": null,
+      "visited": "2026-04-25",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Coming down the mountain, Bryan helped two lost travelers from Singapore find their way off Mt. Inari and down to the train station.",
+        "tip": "On the way down he realized the famous tourist gate-tunnels have normal stairs the whole way up — he'd taken the hard way without knowing.",
+        "local": "The descent runs through a quiet residential area at the base of the mountain — big houses, no one outside, weirdly still."
+      },
+      "tags": [
+        "hike",
+        "kyoto",
+        "people",
+        "moment"
+      ],
+      "hero": "20260425_170321.jpg",
+      "photos": [
+        "20260425_165022.jpg",
+        "20260425_165109.jpg",
+        "20260425_165241.jpg",
+        "20260425_165524.jpg",
+        "20260425_165806.jpg",
+        "20260425_170321.jpg",
+        "20260425_170453.jpg",
+        "20260425_170942.jpg",
+        "20260425_171041.jpg",
+        "20260425_171425.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The descent epiphany",
+          "body": "Somewhere on the way down, Bryan realized it: the famous gate tunnels — the ones tourists travel miles for — go all the way up, with normal stairs the whole way. He'd taken the insane, get-lost-on-the-mountain stairs without knowing there was an easy path. He laughed, and the obvious epiphany flooded in. Guided steps, or me wandering? The path less traveled? The journey is the actual destination. All of them, as he passed through the gorgeous gates on the walk down."
+        },
+        {
+          "title": "The rescue — the two Singaporean women",
+          "body": "Down near the boulder shrines, Bryan heard two women shouting. They were from Singapore — they'd wanted adventure, picked Japan, and this mountain was way too much adventure. No signs, steep road, and they were over it. Bryan's one real skill: mountain directions. Boy Scout since forever — you either go up or you go down, find the path. He explained his reasoning; they said whatever, we'll follow you. He helped them down the steep parts, and they walked out together through a quiet residential neighborhood to the train station. Then they asked if he'd ever been to America — no, they said, they'd never go, they hear it's too dangerous. He couldn't stop thinking about that for the rest of the trip."
+        }
+      ]
+    },
+    {
       "id": "himukai-daijingu",
       "type": "shrine",
       "title": "Himukai Daijingu (Kyoto's Ise)",
@@ -1669,7 +1970,8 @@
         "20260426_120616.jpg",
         "20260426_122310.jpg",
         "20260426_122551.jpg",
-        "20260426_123129.jpg"
+        "20260426_123129.jpg",
+        "20260511_204752.jpg"
       ],
       "extra_cards": [
         {
@@ -1696,7 +1998,7 @@
     {
       "id": "kyoto-trail-higashiyama",
       "type": "hike",
-      "title": "Kyoto Trail Â· Higashiyama",
+      "title": "Kyoto Trail · Higashiyama",
       "city": "Kyoto",
       "neighborhood": "Higashiyama (north)",
       "coords": [
@@ -1721,53 +2023,6 @@
       "hero": "20260426_114318.jpg",
       "photos": [
         "20260426_114318.jpg",
-        "20260426_082212.jpg",
-        "20260426_082657.jpg",
-        "20260426_084125.jpg",
-        "20260426_092758.jpg",
-        "20260426_093233.jpg",
-        "20260426_094705.jpg",
-        "20260426_094842.jpg",
-        "20260426_094923.jpg",
-        "20260426_095024.jpg",
-        "20260426_100032.jpg",
-        "20260426_100203.jpg",
-        "20260426_100427.jpg",
-        "20260426_100542.jpg",
-        "20260426_100802.jpg",
-        "20260426_101055.jpg",
-        "20260426_101132.jpg",
-        "20260426_101244.jpg",
-        "20260426_101425.jpg",
-        "20260426_101534.jpg",
-        "20260426_101631.jpg",
-        "20260426_101944.jpg",
-        "20260426_102110.jpg",
-        "20260426_102416.jpg",
-        "20260426_102458.jpg",
-        "20260426_102636(1).jpg",
-        "20260426_102758.jpg",
-        "20260426_103037.jpg",
-        "20260426_103108.jpg",
-        "20260426_103248.jpg",
-        "20260426_103353.jpg",
-        "20260426_103638.jpg",
-        "20260426_103805.jpg",
-        "20260426_103943.jpg",
-        "20260426_104340.jpg",
-        "20260426_104430.jpg",
-        "20260426_104809.jpg",
-        "20260426_105019.jpg",
-        "20260426_105121.jpg",
-        "20260426_105227.jpg",
-        "20260426_105521.jpg",
-        "20260426_105645.jpg",
-        "20260426_105834.jpg",
-        "20260426_105924.jpg",
-        "20260426_110242.jpg",
-        "20260426_110414.jpg",
-        "20260426_110527.jpg",
-        "20260426_110848.jpg",
         "20260426_111058.jpg",
         "20260426_111339.jpg",
         "20260426_111754.jpg",
@@ -1796,6 +2051,114 @@
           "id": "Yi4SLf6se4Y",
           "kind": "short",
           "title": "Upper trail — deeper into the mountain · 10:55"
+        }
+      ]
+    },
+    {
+      "id": "kyoto-okazaki-walk",
+      "type": "street",
+      "title": "Okazaki — the walk to the trailhead",
+      "city": "Kyoto",
+      "neighborhood": "Okazaki / Higashiyama",
+      "coords": [
+        35.0125,
+        135.783
+      ],
+      "wiki": null,
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "The long morning wander from the hotel toward the mountain — a Kyoto neighborhood packed with little temples, shrines, stone monuments, and a memorial or two on nearly every block.",
+        "tip": "Bryan walked this whole stretch on foot, no plan past 'head for the trail.' It passes Kyoto City Zoo in Okazaki.",
+        "local": "Okazaki and north Higashiyama are layered with history — most of it the kind tour buses never stop for. The walk is the point."
+      },
+      "tags": [
+        "street",
+        "kyoto",
+        "wander",
+        "temples"
+      ],
+      "hero": "20260426_102758.jpg",
+      "photos": [
+        "20260426_092758.jpg",
+        "20260426_093233.jpg",
+        "20260426_094705.jpg",
+        "20260426_094842.jpg",
+        "20260426_094923.jpg",
+        "20260426_095024.jpg",
+        "20260426_100032.jpg",
+        "20260426_100427.jpg",
+        "20260426_100542.jpg",
+        "20260426_100802.jpg",
+        "20260426_101055.jpg",
+        "20260426_101132.jpg",
+        "20260426_101244.jpg",
+        "20260426_101425.jpg",
+        "20260426_102110.jpg",
+        "20260426_102416.jpg",
+        "20260426_102458.jpg",
+        "20260426_102636(1).jpg",
+        "20260426_102758.jpg",
+        "20260426_103037.jpg",
+        "20260426_103108.jpg",
+        "20260426_103248.jpg",
+        "20260426_103353.jpg",
+        "20260426_103638.jpg",
+        "20260426_103805.jpg",
+        "20260426_103943.jpg",
+        "20260426_104340.jpg",
+        "20260426_104430.jpg",
+        "20260426_104809.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "Layered history, block by block",
+          "body": "The walk from the Marriott toward the Kyoto Round Trail ran through Okazaki — a neighborhood where stone steles, war memorials, bronze statues, and small temple compounds sit between ordinary houses. Bryan stopped to read a real-estate listings board, wondering what it costs to live here. It's the stretch that holds Daiko-ji and its Buddha's Footprints stone. He passed Kyoto City Zoo on the way. The walk to the trailhead was its own small pilgrimage."
+        }
+      ]
+    },
+    {
+      "id": "nanzen-ji",
+      "type": "shrine",
+      "title": "Nanzen-ji & the Aqueduct",
+      "city": "Kyoto",
+      "neighborhood": "Higashiyama (north)",
+      "coords": [
+        35.0114,
+        135.7944
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Nanzen-ji",
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A major Zen temple with a giant red-brick aqueduct running right through the grounds — built in the 1800s, still carrying water today.",
+        "tip": "The Kyoto Round Trail routes straight through Nanzen-ji. Bryan reached it as a waypoint on the climb, not a destination.",
+        "wow": "Nanzen-ji was founded in 1291 and ranks above all other Rinzai Zen temples in Japan. The Suirokaku aqueduct that cuts through it is part of the Lake Biwa Canal, finished in 1890.",
+        "local": "Most visitors photograph the aqueduct arches and leave. The moss gardens and the trail behind it are quiet even at midday."
+      },
+      "tags": [
+        "shrine",
+        "buddhist",
+        "kyoto"
+      ],
+      "hero": "20260426_110527.jpg",
+      "photos": [
+        "20260426_105019.jpg",
+        "20260426_105121.jpg",
+        "20260426_105227.jpg",
+        "20260426_105521.jpg",
+        "20260426_105645.jpg",
+        "20260426_105834.jpg",
+        "20260426_105924.jpg",
+        "20260426_110242.jpg",
+        "20260426_110414.jpg",
+        "20260426_110527.jpg",
+        "20260426_110848.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The aqueduct in the temple",
+          "body": "Modern infrastructure threaded through an ancient Zen temple: the Suirokaku, a red-brick Roman-style aqueduct, runs right through the Nanzen-ji grounds. Bryan came up on it as a waypoint — the Kyoto Round Trail passes straight through here — moss gardens, stone lanterns, the brick arches, and then the path kept climbing into the forest."
         }
       ]
     },
@@ -1990,8 +2353,11 @@
         "hotel",
         "base"
       ],
-      "hero": "",
-      "photos": [],
+      "hero": "20260426_082212.jpg",
+      "photos": [
+        "20260426_082212.jpg",
+        "20260426_084125.jpg"
+      ],
       "extra_cards": [
         {
           "title": "No hotel. No plan.",
@@ -2049,30 +2415,6 @@
           "kind": "short",
           "title": "Cacao Market Kyoto — inside · 12:44"
         }
-      ]
-    },
-    {
-      "id": "arashiyama",
-      "type": "hike",
-      "title": "Arashiyama Bamboo",
-      "city": "Kyoto",
-      "neighborhood": "Arashiyama",
-      "coords": [
-        35.017,
-        135.6717
-      ],
-      "wiki": "https://en.wikipedia.org/wiki/Arashiyama",
-      "visited": "?",
-      "status": "confirmed",
-      "facts": {
-        "kid": "Forest of GIANT bamboo — taller than a 4-story building.",
-        "wow": "The Iwatayama Monkey Park on the same mountain has 120+ wild Japanese macaques. You feed them through a cage - humans inside, monkeys outside.",
-        "local": "The bamboo grove is jammed 10 AM-3 PM. Locals go at 7 AM or after 4 PM - when it actually feels mystical."
-      },
-      "tags": [
-        "hike",
-        "nature",
-        "kyoto"
       ]
     },
     {
@@ -2178,8 +2520,8 @@
         139.743
       ],
       "wiki": "https://en.wikipedia.org/wiki/TeamLab",
-      "visited": "?",
-      "status": "candidate",
+      "visited": "2026-04-22",
+      "status": "confirmed",
       "facts": {
         "kid": "Tokyo's famous immersive digital-art museum. Pitch-dark rooms where light, lasers, and mirrors create infinite illusions you can walk through. The team-building outing.",
         "tip": "The icicle-room Bryan remembers is 'Crystal Universe' — hanging strands of LEDs reflected in mirrored walls and floor, looks infinite in every direction.",
@@ -2189,7 +2531,15 @@
       "extra_cards": [
         {
           "title": "The team outing",
-          "body": "A team building / fun outing during the trip — the whole crew went together. Bryan remembers a room with wall installations whose lights told a story or carried a theme. And an icicle-like room with hanging lights and mirrors that was the standout. The mall context (Azabudai Hills) is the tell — teamLab Borderless lives inside the Mori Building shopping complex, distinct from teamLab Planets in Toyosu."
+          "body": "Wednesday's team-building. After the first MoD meeting, the crew walked to a part of Tokyo Bryan had never seen — less fancy than Ginza, more corporate, big-city. The place turned out to be a futuristic museum: room after room, each one a different immersive world across every wall."
+        },
+        {
+          "title": "The rooms Bryan remembers",
+          "body": "The water-floor room — the lines on the floor followed you like you were walking on water.\n\nThe sunflower room — 3D sunflowers moving across every surface, overwhelming. Bryan thought of Kel, who loves sunflowers and is smothering in the good and annoying ways. He felt smothered by sunflowers. He missed her.\n\nThe wave room — a small room with a bench, walls of strong, active water. 'I sat in that room for a while to get washed.'\n\nThe icicle room — Crystal Universe: hanging LED strands mirrored into infinity."
+        },
+        {
+          "title": "Hurry up sweetheart and take that pic",
+          "body": "Selfies everywhere. Bryan got it — it's a cool place. But after a while: places to be. Older-brother energy, the whole trip."
         }
       ],
       "tags": [
@@ -2199,8 +2549,13 @@
         "immersive",
         "azabudai"
       ],
-      "hero": null,
-      "photos": []
+      "hero": "20260422_165313.jpg",
+      "photos": [
+        "20260422_165313.jpg",
+        "20260422_165208.jpg",
+        "20260422_183419.jpg",
+        "20260422_183810.jpg"
+      ]
     },
     {
       "id": "hnd-haneda",
@@ -2232,7 +2587,9 @@
         "20260427_150328.jpg",
         "20260427_121514.jpg",
         "20260427_122937.jpg",
-        "20260427_150806.jpg"
+        "20260427_150806.jpg",
+        "20260427_115503.jpg",
+        "20260418_170622.jpg"
       ]
     },
     {
@@ -2410,41 +2767,147 @@
       ]
     },
     {
-      "id": "hokuto-sukiyaki",
-      "type": "landmark",
-      "title": "Hokuto — Sukiyaki at the Ginza Corridor",
+      "id": "tsukiji-hongwanji",
+      "type": "shrine",
+      "title": "Tsukiji Hongwanji",
       "city": "Tokyo",
-      "neighborhood": "Ginza",
+      "neighborhood": "Ginza-Tsukiji",
       "coords": [
-        35.6712,
-        139.7638
+        35.6664,
+        139.7711
       ],
-      "visited": "2026-04-19",
+      "wiki": "https://en.wikipedia.org/wiki/Tsukiji_Hongan-ji",
+      "visited": "2026-04-18 to 2026-04-27",
       "status": "confirmed",
-      "facts": [
-        "Taishu Sukiyaki Hokuto, Ginza Corridor Branch",
-        "Yamashita Building 2F, 6-2 Ginza, Chuo-ku",
-        "Kyoto-origin chain — first Tokyo location opened April 17, 2026",
-        "A4–A5 Japanese black wagyu at accessible prices"
+      "facts": {
+        "kid": "The big domed temple near Bryan's hotel — he walked past it nearly every day. It looks like an ancient Indian temple, not a Japanese one.",
+        "tip": "About a 3-minute walk from the Mitsui Garden Hotel Ginza Tsukiji. Photographed at dawn and again across the trip.",
+        "wow": "The whole neighborhood is named after this temple. 築地 'Tsukiji' literally means 'reclaimed land' — after the temple burned in the Great Fire of 1657, its followers reclaimed wetland from the river by hand to rebuild it. The famous fish market came centuries later.",
+        "local": "Jodo Shinshu (True Pure Land) Buddhism, a branch of Kyoto's Nishi Honganji. Stained glass, carved animals, and a pipe organ inside — almost unheard-of in a Buddhist temple. Not a 'fortune' temple; that's Senso-ji."
+      },
+      "tags": [
+        "shrine",
+        "buddhist",
+        "tokyo",
+        "tsukiji"
+      ],
+      "hero": "20260420_054150.jpg",
+      "photos": [
+        "20260420_054150.jpg"
       ],
       "extra_cards": [
         {
-          "title": "Two days after opening",
-          "body": "Hokuto's first Tokyo location opened April 17, 2026 — the day Bryan landed. He walked in on April 19. The Ginza Corridor branch of a Kyoto institution, serving wagyu sukiyaki at prices that don't require a special occasion.\n\nThe restaurant is in the Ginza Corridor, the covered dining street that runs under the elevated rail tracks between Ginza and Yurakucho. Bryan had just come from Kabuki-za, two blocks south."
+          "title": "Hidden in plain sight",
+          "body": "Bryan walked past it a hundred times — the great domed temple a few minutes from the hotel — and only later learned it was the origin point of the entire neighborhood.\n\nFounded in 1617. Burned in the Great Fire of 1657. There was no land to rebuild on, so its followers reclaimed wetland from the Sumida River by hand. That reclaimed ground is what 'Tsukiji' means. Burned again after the 1923 earthquake. Rebuilt, in 1934, in the ancient-Indian style it wears now.\n\nA temple that burned down twice and was rebuilt twice — the second time on ground that had to be made before it could be built on. Things that survive."
+        }
+      ]
+    },
+    {
+      "id": "daiko-ji",
+      "type": "shrine",
+      "title": "Daiko-ji — the Buddha's Footprints",
+      "city": "Kyoto",
+      "neighborhood": "Okazaki / Higashiyama",
+      "coords": [
+        35.0118,
+        135.7855
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Buddhapada",
+      "visited": "2026-04-26",
+      "status": "confirmed",
+      "facts": {
+        "kid": "A small Kyoto temple where Bryan found the Bussokuseki — the Buddha's Footprints, carved into stone, larger than life.",
+        "tip": "Day 9 morning, on the walk from the Marriott toward the Kyoto Round Trail. This was the FIRST footprints stone Bryan found — around 10:02 — and the one where he prayed. He photographed others as he came across them through the day.",
+        "wow": "Bussokuseki — 'Buddha's Footprints stones' — are among the oldest objects of Buddhist veneration, older than Buddha statues. They mark where the Buddha is said to have stood.",
+        "local": "Found by wandering — a quiet neighborhood temple, not a tour-bus stop. The kind of place you only reach on foot."
+      },
+      "tags": [
+        "shrine",
+        "buddhist",
+        "kyoto",
+        "spiritual"
+      ],
+      "hero": "20260426_100203.jpg",
+      "photos": [
+        "20260426_100203.jpg",
+        "20260426_101631.jpg",
+        "20260426_101534.jpg",
+        "20260426_101944.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "The first footprints stone",
+          "body": "The first one Bryan found. He'd photograph others as he came across them through the day, but this was the first — a Bussokuseki, the Buddha's footprints carved into stone, larger than life. He stepped onto it, lined his feet up with the carved prints, and stared down with all his questions and no answers. Then he prayed for God to guide his path — today and forever. That's how he started the day's journey."
         },
         {
-          "title": "How to eat sukiyaki",
-          "body": "Sukiyaki is cooked at the table in a shallow iron pan. Thinly sliced wagyu goes in first, seared in a mix of soy sauce, sugar, and mirin — the sauce is called warishita. Tofu, noodles, and vegetables follow.\n\nThe Japanese way: crack a raw egg into a small bowl, beat it lightly, and dip each piece of beef as you pull it from the pan. The egg cools the meat and adds richness. You don't have to — but this is how it's done."
+          "title": "Guided steps",
+          "body": "People pray for their steps and actions to be guided. Does that mean predetermined? Is it a push or a pull? Something you realize you're in at the time, or only later? How do you align yourself with the guided path — and what's required of you to move along it?\n\nBryan's honest answer: no idea. He just knows that when he looks back on his life — the moments he let go of control and followed the path — he usually finds ways to be useful to other people, and picks up some good stories along the way. Enjoying his steps as they lead him to serve. That's the goal. He just needs to know where to go.\n\n'The fear of the Lord is the beginning of wisdom.' Humility is always the first step. His prayer at this stone, and at every temple after it, started the same way: humbly admitting he doesn't know, asking for guidance — and then start moving."
         }
+      ]
+    },
+    {
+      "id": "goshuin-scrapbook",
+      "type": "landmark",
+      "title": "Goshuin Book & Scrapbook",
+      "city": "Tokyo",
+      "neighborhood": "Ginza-Tsukiji",
+      "coords": [
+        35.67,
+        139.7665
       ],
+      "wiki": "https://en.wikipedia.org/wiki/Goshuin",
+      "visited": "2026-04-18 to 2026-04-27",
+      "status": "confirmed",
+      "facts": {
+        "kid": "Bryan's favorite souvenir: a purple silk book filled with hand-brushed shrine stamps, plus a navy military stamp book, plus charms and fortunes tucked between the pages.",
+        "tip": "Two books came home. Book 1: the purple goshuin book — Meiji Jingu, Zojo-ji, Fushimi Inari, and Himukai Daijingu. Book 2: a navy 'Kichi-in-cho' base-stamp book with the Ministry of Defense visit stamp.",
+        "wow": "A goshuin (御朱印, 'honorable red seal') is proof of pilgrimage — the site name in brush calligraphy, a red seal, and the date. Each one is unique because it is hand-calligraphed the specific day you were there.",
+        "local": "Some shrines hand-write the goshuin live; high-traffic ones issue pre-printed slips. Bryan's book holds both, plus pamphlets, omamori envelopes, and talisman cards — a scrapbook as much as a stamp book."
+      },
       "tags": [
-        "food",
-        "wagyu",
-        "hot-pot",
-        "ginza"
+        "souvenir",
+        "spiritual",
+        "scrapbook",
+        "tokyo"
       ],
+      "hero": "20260511_204737.jpg",
       "photos": [
-        "20260419_155740.jpg"
+        "20260511_204737.jpg",
+        "20260511_204752.jpg",
+        "20260511_204801.jpg",
+        "20260511_204803.jpg",
+        "20260511_212632.jpg",
+        "20260511_204923.jpg",
+        "20260511_204830.jpg",
+        "20260511_210201.jpg",
+        "20260511_204838.jpg",
+        "20260511_204835.jpg",
+        "20260511_204823.jpg",
+        "20260511_204817.jpg",
+        "20260511_204820.jpg",
+        "20260511_204904.jpg",
+        "20260511_204852.jpg",
+        "20260511_204854.jpg",
+        "20260511_204857.jpg",
+        "20260427_203242.jpg"
+      ],
+      "extra_cards": [
+        {
+          "title": "A witness, not a souvenir",
+          "body": "Each goshuin is hand-calligraphed the specific day you stand there — the site name in brush ink, the red seal, the date. It isn't bought; it's received, at the shrine office, after you've visited. Bryan's purple book holds Meiji Jingu, Zojo-ji's bold single-character 本堂 ('Main Hall') drawn by a priest, Fushimi Inari, and Himukai Daijingu — the Kyoto cave shrine that became his favorite of the trip. Less a stamp collection than a record of where he stood."
+        },
+        {
+          "title": "THE LEAST FORTUNATE",
+          "body": "Senso-ji omikuji #31. The official tier is 末小吉 — 'ending small fortune' — and the English on the slip reads 'FINAL, THE LEAST FORTUNATE.'\n\nThe poem underneath is the kun-fish from Zhuangzi: the giant fish that has not yet transformed into the great bird. 'A chance doesn't come yet... stand still on the shoreline, waiting.' Then the wind and clouds rise, and the fish crosses the heavens.\n\nBryan kept it. The lowest fortune in Japan, and obviously the best one he could have drawn — latent potential, waiting for its catalyst, in a year he was rebuilding himself."
+        },
+        {
+          "title": "From the empress",
+          "body": "At Meiji Jingu, Bryan drew a second fortune 'from the empress.' He meant it literally. Meiji Jingu doesn't grade its fortunes — it gives you a waka poem written by Emperor Meiji or Empress Shoken herself.\n\nPoem #22, by Empress Shoken:\n\n'Every morning / We gaze into our mirrors / Which are unblemished; / Oh, that we could attain / Such a purity of soul.'\n\nTucked in the same sleeve: an ink drawing of a leaping hare and a fox — lifted straight from the Choju-giga, the 12th-century scrolls considered the oldest manga in Japan."
+        },
+        {
+          "title": "The victory-luck eagle",
+          "body": "From Zojo-ji, the Tokugawa family temple: a talisman card with a white-headed hawk and two characters — 勝運 (victory luck) and 成就 (fulfillment). First you win, then you finish.\n\nThe hawk is no accident. Tokugawa Ieyasu was a lifelong falconer; the card is a line straight to the Kuro-honzon, the blackened Amida Buddha he carried into every battle. The card itself is printed: 'A GOOD-LUCK CHARM · Zojoji temple, since 1393 · TOKYO JAPAN.'"
+        }
       ]
     }
   ]
