@@ -15,10 +15,13 @@
   .chip { display: inline-block; padding: 1px 7px; border-radius: 999px; font-weight: 700; font-size: 11px; }
   .heavy { background: #fde0da; color: #b83a25; }
   .light { background: #faecc9; color: #9a6c12; }
-  table { border-collapse: collapse; width: 100%; background: #fff; box-shadow: 0 2px 10px rgba(42,31,23,0.07); border-radius: 8px; overflow: hidden; }
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 8px; box-shadow: 0 2px 10px rgba(42,31,23,0.07); background: #fff; }
+  table { border-collapse: collapse; width: 100%; background: #fff; border-radius: 8px; overflow: hidden; }
   th, td { text-align: left; padding: 7px 14px; border-bottom: 1px solid #f0e3cc; font-size: 13px; }
-  th { cursor: pointer; user-select: none; background: #fff8ec; position: sticky; top: 0; font-size: 12px; letter-spacing: .3px; }
+  th { cursor: pointer; user-select: none; background: #fff8ec; position: sticky; top: 0; font-size: 12px; letter-spacing: .3px; white-space: nowrap; }
   th:hover { background: #fde8c8; }
+  td { white-space: nowrap; }
+  td a { white-space: normal; }
   tr:last-child td { border-bottom: none; }
   tr:hover td { background: #fff8ec; }
   a { color: #b83a25; text-decoration: none; font-weight: 600; }
@@ -26,6 +29,13 @@
   .num { text-align: right; font-variant-numeric: tabular-nums; width: 60px; }
   .muted { color: #a89a85; }
   .id { color: #6e5a44; font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
+  @media (max-width: 640px) {
+    body { padding: 14px 10px; }
+    h1 { font-size: 17px; }
+    .sub { font-size: 12px; }
+    th, td { padding: 6px 10px; font-size: 12px; }
+    .id { font-size: 11px; }
+  }
 </style>
 </head>
 <body>
@@ -36,6 +46,7 @@
   <span class="chip light">light</span> under 3 photos
 </div>
 <input id="search" type="search" placeholder="Search by id or title…" autofocus>
+<div class="table-wrap">
 <table>
   <thead><tr>
     <th data-k="photos">PHOTOS</th>
@@ -46,6 +57,7 @@
   </tr></thead>
   <tbody id="rows"></tbody>
 </table>
+</div>
 <script>
   let pins = [], sortKey = 'photos', sortDir = -1;
   fetch('pins.json')

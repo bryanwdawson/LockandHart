@@ -261,6 +261,8 @@
     transition: transform 0.28s cubic-bezier(0.22, 0.61, 0.36, 1);
     z-index: 500;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     display: flex;
     flex-direction: column;
   }
@@ -313,7 +315,7 @@
     background: var(--surface-alt);
     display: block;
   }
-  .detail-body { padding: 16px 20px 24px; }
+  .detail-body { padding: 16px 20px 24px; padding-bottom: max(24px, env(safe-area-inset-bottom, 24px)); }
   .detail-meta-row {
     display: flex;
     gap: 6px;
@@ -673,7 +675,10 @@
   .day-photos-body {
     flex: 1;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     padding: 14px;
+    padding-bottom: max(14px, env(safe-area-inset-bottom, 14px));
   }
   .day-photos-grid {
     display: grid;
@@ -791,6 +796,10 @@
     z-index: 450;
     transform: translateY(-110%);
     transition: transform 0.28s cubic-bezier(0.22, 0.61, 0.36, 1);
+    max-height: calc(100% - 24px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
   .day-overview.show { transform: translateY(0); }
   .day-overview[hidden] { display: none; }
@@ -837,7 +846,11 @@
     font-weight: 500;
   }
   @media (max-width: 720px) {
-    .day-overview { left: 8px; right: 8px; top: 8px; padding: 12px 14px; }
+    .day-overview {
+      left: 8px; right: 8px; top: 8px;
+      padding: 12px 14px;
+      max-height: calc(100% - 16px);
+    }
     .day-overview h3 { font-size: 15px; }
     .day-summary, .day-quote { font-size: 12px; }
   }
