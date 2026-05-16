@@ -563,7 +563,7 @@
   .lightbox {
     position: fixed; inset: 0;
     background: rgba(20, 14, 10, 0.94);
-    z-index: 9000;
+    z-index: 9999;
     display: none;
     align-items: center;
     justify-content: center;
@@ -643,7 +643,7 @@
   .day-photos-modal {
     position: fixed; inset: 0;
     background: rgba(20,14,10,0.96);
-    z-index: 8500;
+    z-index: 9500;
     display: none;
     flex-direction: column;
   }
@@ -822,6 +822,7 @@
     font-size: 16px; color: var(--ink-soft); line-height: 1; padding: 0;
   }
   .day-head-close:hover { background: var(--accent-bg); color: var(--accent-dark); }
+  .day-overview { overflow-wrap: break-word; word-wrap: break-word; }
   .day-overview h3 { font-size: 17px; font-weight: 700; margin: 0 0 4px; line-height: 1.25; }
   .day-summary { font-size: 13px; line-height: 1.55; margin: 0 0 10px; color: var(--ink); }
   .day-quote {
@@ -850,16 +851,25 @@
     font-weight: 500;
   }
   @media (max-width: 720px) {
+    /* Full-screen takeover on mobile — escape the map-wrap bounds. */
     .day-overview {
-      left: 8px; right: 8px; top: 8px;
-      padding: 12px 14px;
-      max-height: calc(100% - 16px);
+      position: fixed;
+      inset: 0;
+      left: 0; right: 0; top: 0;
+      max-width: none;
+      max-height: none;
+      margin: 0;
+      border-radius: 0;
+      padding: 14px 16px;
+      padding-top: max(14px, env(safe-area-inset-top, 14px));
+      padding-bottom: max(14px, env(safe-area-inset-bottom, 14px));
+      z-index: 9000;
       /* Allow vertical scroll inside the card; horizontal swipe is dismiss gesture */
       touch-action: pan-y;
     }
-    .day-overview h3 { font-size: 15px; }
-    .day-summary, .day-quote { font-size: 12px; }
-    .day-head-close { width: 40px; height: 40px; font-size: 22px; }
+    .day-overview h3 { font-size: 18px; }
+    .day-summary, .day-quote { font-size: 13px; }
+    .day-head-close { width: 44px; height: 44px; font-size: 24px; }
   }
 
   /* Empty state */
@@ -936,7 +946,15 @@
     .row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px; }
     .row::-webkit-scrollbar { display: none; }
     .pill { padding: 6px 10px; font-size: 11px; min-height: 36px; }
-    .detail { left: 0; right: 0; width: auto; max-width: none; }
+    /* Full-screen takeover on mobile — escape the map-wrap bounds so the header,
+       controls, and timeline are all covered by the detail panel. */
+    .detail {
+      position: fixed;
+      inset: 0;
+      width: auto;
+      max-width: none;
+      z-index: 9000;
+    }
     .day-pill { min-width: 56px; padding: 5px 8px; }
   }
 </style>
