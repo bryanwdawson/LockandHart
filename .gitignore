@@ -46,3 +46,6 @@ Videos/
 _japan-photo-inventory.md
 _japan-cleanup-sheet.md
 _japan-video-mapping.md
+
+# Netlify CLI auth — Personal Access Token for the Drop site deploy. Local only.
+.netlify-token

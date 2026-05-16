@@ -118,6 +118,26 @@ public/           static assets, /japan drop-in
 
 ---
 
+## Deploys
+
+Two live URLs for the Japan explorer, two paths:
+
+| URL | How to deploy | Notes |
+|---|---|---|
+| `lockandhart.netlify.app/private/japan/` (gated, password `2026`) | Double-click `RUN-ME-deploy-lockandhart.bat`. Builds, commits, pushes to GitHub. Netlify auto-builds on push. | The real home. Connected to repo. |
+| `dawson-japan-2026.netlify.app` (no gate) | Double-click `RUN-ME-deploy-drop.bat`. Uses Netlify CLI + PAT from `.netlify-token`. Site UUID `8d3c3fe5-7e69-432d-b3f8-f1f9bc84591f`. | **NOT git-connected** — must deploy manually after every push. |
+
+Diagnostic: `RUN-ME-list-sites.bat` lists every Netlify site + UUID the token can access.
+
+**One-time setup for Drop deploy:**
+1. `npm install -g netlify-cli` (in a regular terminal, not via the BAT — Norton flags `npm install -g` from inside .ps1)
+2. Generate a Personal Access Token at https://app.netlify.com/user/applications
+3. Save it: `'YOUR_TOKEN' | Out-File -FilePath '.\.netlify-token' -Encoding ASCII -NoNewline`
+
+`.netlify-token` is gitignored.
+
+---
+
 ## Working agreement
 
 - Terse, structured, action-first. State what was found, done, next.
