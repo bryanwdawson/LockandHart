@@ -1,0 +1,26 @@
+﻿{
+  "_doc": "Real walking paths extracted from photo EXIF GPS. Mt. Inari and Higashiyama Trail.",
+  "_generated": "2026-05-16",
+  "paths": [
+    {
+      "id": "mt-inari-climb",
+      "name": "Mt. Inari climb",
+      "label": "Apr 25 - Up the mountain through the torii",
+      "category": "walking",
+      "style": { "color": "#c0392b", "weight": 3, "dashArray": "5 3", "opacity": 0.85 },
+      "path": [],
+      "evidence": "No EXIF GPS data found in photos on 2026-04-25. Phone may have had location off.",
+      "stats": { "points": 0, "distance_km": 0, "elevation_gain_m": 0 }
+    },
+    {
+      "id": "higashiyama-trail",
+      "name": "Higashiyama Trail",
+      "label": "Apr 26 - Kyoto eastern hills, met Max",
+      "category": "walking",
+      "style": { "color": "#8e44ad", "weight": 3, "dashArray": "5 3", "opacity": 0.85 },
+      "path": [],
+      "evidence": "No EXIF GPS data found in photos on 2026-04-26. Phone may have had location off.",
+      "stats": { "points": 0, "distance_km": 0, "elevation_gain_m": 0 }
+    }
+  ]
+}

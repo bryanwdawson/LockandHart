@@ -1,0 +1,65 @@
+{
+  "_doc": "Confirmed travel routes for Japan April 2026. Evidence sources noted. Drawn on the v2 map as toggleable layers.",
+  "routes": [
+    {
+      "id": "shinkansen",
+      "name": "Tokaido Shinkansen — Nozomi",
+      "label": "Nozomi 28 · Kyoto → Tokyo · 2h 14m",
+      "category": "rail",
+      "evidence": "Apr 26 return ticket photographed (20260426_145124.jpg): Kyoto 15:01 → Tokyo 17:15, Car 2 Seat 6-C, ¥14,170",
+      "style": { "color": "#005bac", "weight": 4, "dashArray": "12 6", "opacity": 0.85 },
+      "path": [
+        [35.6812, 139.7671],
+        [35.4437, 139.6380],
+        [35.1815, 138.9099],
+        [34.9858, 135.7588]
+      ],
+      "endpoints": [
+        { "coords": [35.6812, 139.7671], "label": "Tokyo Station" },
+        { "coords": [34.9858, 135.7588], "label": "Kyoto Station" }
+      ]
+    },
+    {
+      "id": "ginza-line",
+      "name": "Ginza Line (G) — Tokyo Metro",
+      "label": "Bryan's daily line · Ginza ↔ Asakusa",
+      "category": "subway",
+      "evidence": "Apr 19 09:44 in Ginza → 09:53 at Senso-ji = Ginza Line end-to-end. Used most days for Asakusa, Ueno, Mitsukoshimae.",
+      "style": { "color": "#f39700", "weight": 3, "opacity": 0.9 },
+      "path": [
+        [35.6717, 139.7641],
+        [35.6760, 139.7706],
+        [35.6814, 139.7741],
+        [35.6850, 139.7741],
+        [35.6920, 139.7708],
+        [35.7022, 139.7720],
+        [35.7115, 139.7770],
+        [35.7117, 139.7836],
+        [35.7104, 139.7895],
+        [35.7115, 139.7964]
+      ],
+      "endpoints": [
+        { "coords": [35.6717, 139.7641], "label": "Ginza" },
+        { "coords": [35.7115, 139.7964], "label": "Asakusa" }
+      ]
+    },
+    {
+      "id": "keikyu-arrival",
+      "name": "Keikyu + Asakusa Line",
+      "label": "Apr 18 arrival · Haneda → city",
+      "category": "rail",
+      "evidence": "Station signage at Haneda Apr 18 (20260418_171006.jpg, 20260418_172505.jpg route map)",
+      "style": { "color": "#e60012", "weight": 2, "opacity": 0.7 },
+      "path": [
+        [35.5494, 139.7798],
+        [35.5708, 139.7411],
+        [35.6090, 139.7440],
+        [35.6679, 139.7705]
+      ],
+      "endpoints": [
+        { "coords": [35.5494, 139.7798], "label": "Haneda Airport" },
+        { "coords": [35.6679, 139.7705], "label": "Ginza hotel" }
+      ]
+    }
+  ]
+}

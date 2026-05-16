@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Japan — April 2026 · Bryan's first time in Japan. Interactive map, photos, stories, facts.">
+<title>Japan — April 2026 · Lock & Hart</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+
+<style>
+  :root {
+    --bg: #f7f2e9;
+    --ink: #1f1a14;
+    --ink-soft: #4a4035;
+    --ink-fade: #8a8275;
+    --surface: #ffffff;
+    --surface-alt: #f4eee0;
+    --surface-elev: #fbf7ee;
+    --border: #e5dac6;
+    --accent: #e84d3d;
+    --accent-light: #f06e5e;
+    --accent-dark: #c33823;
+    --accent-bg: #fde8e3;
+
+    --t-shrine: #c0392b;
+    --t-food: #e67e22;
+    --t-neighborhood: #2980b9;
+    --t-hike: #27ae60;
+    --t-landmark: #8e44ad;
+    --t-shop: #e91e63;
+    --t-transit: #34495e;
+    --t-default: #6e5a44;
+
+    --header-h: 48px;
+    --bottom-h: 92px;
+    --drawer-peek: 296px;
+
+    --shadow: 0 4px 14px rgba(31,26,20,0.08);
+    --shadow-lg: 0 -16px 36px rgba(31,26,20,0.18);
+    color-scheme: light;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; overscroll-behavior: none; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  button { font: inherit; cursor: pointer; touch-action: manipulation; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+  a { color: var(--accent-dark); }
+
+  /* --- App shell --- */
+  .app {
+    display: grid;
+    grid-template-rows: var(--header-h) 1fr auto;
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  /* --- Top bar --- */
+  .topbar {
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    padding-left: max(14px, env(safe-area-inset-left));
+    padding-right: max(14px, env(safe-area-inset-right));
+    padding-top: env(safe-area-inset-top);
+    background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 70%, var(--accent-dark) 100%);
+    color: #fff;
+    gap: 10px;
+    flex-shrink: 0;
+    z-index: 500;
+    box-shadow: 0 2px 8px rgba(232, 77, 61, 0.18);
+  }
+  .topbar h1 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.2px;
+  }
+  .topbar .dates {
+    font-size: 12px;
+    opacity: 0.88;
+    font-weight: 500;
+  }
+  .topbar .spacer { flex: 1; }
+  .topbar .icon-btn {
+    width: 36px;
+    height: 36px;
+    border: 0;
+    background: rgba(255,255,255,0.16);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background 0.15s;
+  }
+  .topbar .icon-btn:hover { background: rgba(255,255,255,0.28); }
+
+  /* --- Map area --- */
+  #map-area {
+    position: relative;
+    overflow: hidden;
+    background: #dde2cb;
+  }
+  #map { position: absolute; inset: 0; }
+  .leaflet-container { font-family: inherit; background: #dde2cb; }
+  .leaflet-popup-content { margin: 10px 12px; font-size: 13px; }
+  .leaflet-control-attribution { font-size: 10px; }
+
+  .pin-dot {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.25);
+  }
+  .marker-cluster div {
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    font-family: inherit;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+  .marker-cluster { background: rgba(216,83,59,0.25); }
+
+  .route-label {
+    background: rgba(255,255,255,0.95);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 11px;
+    color: var(--ink-soft);
+    box-shadow: var(--shadow);
+  }
+
+  /* Map control buttons (custom — reset view) */
+  .map-ctrl {
+    position: absolute;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.18);
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    cursor: pointer;
+    z-index: 400;
+    color: var(--ink);
+    font-size: 16px;
+    padding: 0;
+  }
+  .map-ctrl:hover { background: var(--surface-alt); }
+  .map-ctrl-reset { top: 84px; left: 10px; }
+  .map-ctrl-reset::before {
+    content: '⌂';
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  /* Route legend */
+  .route-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .route-legend-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 13px;
+  }
+  .route-legend-swatch {
+    flex-shrink: 0;
+    width: 28px;
+    height: 4px;
+    border-radius: 2px;
+  }
+  .route-legend-swatch.dashed {
+    background: repeating-linear-gradient(to right, currentColor 0, currentColor 6px, transparent 6px, transparent 10px);
+    height: 4px;
+  }
+  .route-legend-text {
+    flex: 1;
+    line-height: 1.3;
+  }
+  .route-legend-name { font-weight: 600; color: var(--ink); }
+  .route-legend-sub { font-size: 11px; color: var(--ink-fade); }
+
+  /* --- Bottom bar (day pills + meta) --- */
+  .bottom-bar {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 5px 10px 6px;
+    padding-bottom: max(6px, env(safe-area-inset-bottom));
+    flex-shrink: 0;
+    z-index: 400;
+  }
+  .trip-meta {
+    font-size: 10px;
+    color: var(--ink-fade);
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 1px 0 4px;
+  }
+  .day-pills-wrap {
+    position: relative;
+  }
+  .day-pills-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    width: 24px;
+    pointer-events: none;
+    background: linear-gradient(to right, transparent, var(--surface));
+  }
+  .day-pills {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 12px 4px 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    touch-action: pan-x;
+    scroll-padding-right: 24px;
+  }
+  .day-pills::-webkit-scrollbar { height: 6px; }
+  .day-pills::-webkit-scrollbar-track { background: transparent; }
+  .day-pills::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    opacity: 0.4;
+    border-radius: 3px;
+  }
+  .day-pills::-webkit-scrollbar-thumb:hover { background: var(--accent-dark); }
+  .day-pill {
+    flex-shrink: 0;
+    min-width: 60px;
+    padding: 6px 9px;
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--ink);
+    transition: background 0.15s, border-color 0.15s, transform 0.15s;
+    line-height: 1.2;
+  }
+  .day-pill .day-num { display: block; font-weight: 700; font-size: 12px; }
+  .day-pill .day-date { display: block; font-size: 10px; color: var(--ink-fade); margin-top: 1px; }
+  .day-pill.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent-dark);
+  }
+  .day-pill.active .day-date { color: rgba(255,255,255,0.88); }
+
+  /* --- Drawer --- */
+  .drawer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--surface);
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    box-shadow: var(--shadow-lg);
+    max-height: 92dvh;
+    z-index: 9000;
+    transform: translateY(100%);
+    transition: transform 0.32s cubic-bezier(0.22, 0.61, 0.36, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    touch-action: pan-y;
+    visibility: hidden;
+  }
+  .drawer.peek,
+  .drawer.full { visibility: visible; }
+  .drawer.peek { transform: translateY(calc(100% - var(--drawer-peek))); }
+  .drawer.full {
+    transform: translateY(0);
+    height: 92dvh;
+  }
+
+  .drawer-handle {
+    height: 26px;
+    background: transparent;
+    border: 0;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .drawer-handle::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+  }
+
+  .drawer-body {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    flex: 1;
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+  }
+
+  /* Pin / Day hero */
+  .drawer-hero {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+    background: var(--surface-alt);
+  }
+  .drawer-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .drawer-hero .close-x {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .drawer-hero.no-photo {
+    aspect-ratio: auto;
+    min-height: 60px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: #fff;
+  }
+
+  .pin-meta {
+    padding: 14px 18px 4px;
+  }
+  .pin-meta h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    letter-spacing: -0.01em;
+    line-height: 1.22;
+  }
+  .pin-meta .place {
+    color: var(--ink-soft);
+    font-size: 13px;
+    margin: 0 0 10px;
+  }
+  .pin-chips {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    margin-bottom: 14px;
+  }
+  .chip {
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px 9px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--ink-soft);
+  }
+  .chip .dot { width: 7px; height: 7px; border-radius: 50%; }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    padding: 0 18px 14px;
+  }
+  .photo-grid img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 6px;
+    background: var(--surface-alt);
+    cursor: zoom-in;
+  }
+
+  /* Layered content (details/summary) */
+  details.layer {
+    border-top: 1px solid var(--border);
+  }
+  details.layer:last-of-type { border-bottom: 1px solid var(--border); }
+  details.layer summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--ink);
+    user-select: none;
+  }
+  details.layer summary::-webkit-details-marker { display: none; }
+  details.layer summary::after {
+    content: '+';
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--ink-fade);
+    line-height: 1;
+  }
+  details.layer[open] summary::after { content: '−'; }
+  details.layer .layer-body {
+    padding: 0 18px 16px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  details.layer .layer-body > * + * { margin-top: 10px; }
+  details.layer.personal { background: var(--surface-alt); }
+  details.layer.personal summary { color: var(--accent-dark); }
+
+  /* Fact + extra cards */
+  .fact-cards {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .fact-card {
+    background: var(--surface-elev);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .fact-card.fact-kid { border-left-color: #2980b9; }
+  .fact-card.fact-wow { border-left-color: #e67e22; }
+  .fact-card.fact-local { border-left-color: #27ae60; }
+  .fact-card .fact-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--ink-fade);
+    margin-bottom: 4px;
+  }
+  .fact-card .fact-body {
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .extra-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .extra-card h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    color: var(--ink);
+  }
+  .extra-card p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .extra-card p .line {
+    display: block;
+  }
+  .extra-card p .line + .line { margin-top: 8px; }
+  .extra-card .source-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--accent-dark);
+    text-decoration: none;
+  }
+  .extra-card .source-link:hover { text-decoration: underline; }
+
+  .personal-locked {
+    padding: 18px;
+    text-align: center;
+    color: var(--ink-fade);
+    font-size: 13px;
+  }
+  .personal-locked button {
+    margin-top: 10px;
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* Day-mode specific */
+  .day-summary {
+    padding: 0 18px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .day-quote {
+    margin: 0 18px 12px;
+    padding: 0 0 0 12px;
+    border-left: 3px solid var(--accent);
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+  .day-moments {
+    list-style: none;
+    padding: 0 18px 8px;
+    margin: 0;
+    font-size: 13px;
+  }
+  .day-moments li {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--ink-soft);
+  }
+  .day-moments li:last-child { border-bottom: 0; }
+  .day-pin-list {
+    padding: 8px 18px 0;
+  }
+  .day-pin-card {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    width: 100%;
+    text-align: left;
+  }
+  .day-pin-card:last-child { border-bottom: 0; }
+  .day-pin-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: var(--surface-alt);
+    flex-shrink: 0;
+  }
+  .day-pin-card .info { flex: 1; min-width: 0; }
+  .day-pin-card .info .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0 0 2px;
+  }
+  .day-pin-card .info .sub {
+    font-size: 12px;
+    color: var(--ink-fade);
+  }
+
+  /* Bottom CTA */
+  .drawer-cta {
+    margin: 14px 18px 4px;
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    padding: 12px;
+    border-radius: 10px;
+    width: calc(100% - 36px);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* --- Settings sheet --- */
+  .sheet {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--surface);
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    box-shadow: var(--shadow-lg);
+    max-height: 80dvh;
+    z-index: 9500;
+    transform: translateY(100%);
+    transition: transform 0.28s cubic-bezier(0.22, 0.61, 0.36, 1);
+    visibility: hidden;
+  }
+  .sheet.open { transform: translateY(0); visibility: visible; }
+  .sheet-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.32);
+    z-index: 9400;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.28s;
+  }
+  .sheet-backdrop.show { opacity: 1; pointer-events: auto; }
+  .sheet-header {
+    padding: 18px 18px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+  .sheet-header h3 { margin: 0; font-size: 16px; font-weight: 700; }
+  .sheet-body { padding: 16px 18px 24px; padding-bottom: max(24px, env(safe-area-inset-bottom)); }
+  .sheet-section + .sheet-section { margin-top: 22px; }
+  .sheet-section h4 {
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink-fade);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .toggle-row:last-child { border-bottom: 0; }
+  .toggle-row .label .name { font-weight: 600; }
+  .toggle-row .label .sub { font-size: 12px; color: var(--ink-fade); margin-top: 2px; }
+  .switch {
+    position: relative;
+    width: 44px;
+    height: 26px;
+    background: var(--border);
+    border-radius: 999px;
+    border: 0;
+    padding: 0;
+    transition: background 0.18s;
+    flex-shrink: 0;
+  }
+  .switch::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.18s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  }
+  .switch.on { background: var(--accent); }
+  .switch.on::before { transform: translateX(18px); }
+
+  .lens-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .lens-btn {
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--ink);
+  }
+  .lens-btn .lens-sub {
+    display: block;
+    font-size: 11px;
+    color: var(--ink-fade);
+    font-weight: 400;
+    margin-top: 2px;
+  }
+  .lens-btn.active {
+    background: var(--accent-bg);
+    border-color: var(--accent);
+    color: var(--accent-dark);
+  }
+
+  /* --- Lightbox --- */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(20,14,10,0.94);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .lightbox-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 22px;
+    backdrop-filter: blur(6px);
+  }
+  .lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 24px;
+    backdrop-filter: blur(6px);
+  }
+  .lightbox-prev { left: 12px; }
+  .lightbox-next { right: 12px; }
+
+  /* --- Loading state --- */
+  .loading {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9990;
+    transition: opacity 0.3s;
+  }
+  .loading.hide { opacity: 0; pointer-events: none; }
+  .spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* --- Intro panel (shows when no pin/day selected) --- */
+  .intro-panel {
+    padding: 22px 18px 24px;
+  }
+  .intro-panel h2 {
+    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .intro-panel .intro-lead {
+    margin: 0 0 14px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  .intro-panel .intro-quote {
+    margin: 0 0 18px;
+    padding: 0 0 0 12px;
+    border-left: 3px solid var(--accent);
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .pick-section {
+    background: var(--surface-elev);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 12px 14px;
+    margin-bottom: 16px;
+  }
+  .pick-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--ink-fade);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .pick-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+  }
+  .pick-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 8px;
+    text-align: center;
+    color: var(--ink);
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, transform 0.1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .pick-btn:hover {
+    background: var(--accent-bg);
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+  .pick-icon {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+    margin-bottom: 2px;
+  }
+  .pick-title {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .pick-sub {
+    display: block;
+    font-size: 10px;
+    color: var(--ink-fade);
+    line-height: 1.1;
+  }
+  .intro-hint {
+    font-size: 12px;
+    color: var(--ink-fade);
+    text-align: center;
+    margin: 8px 0 0;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  .intro-hint.top {
+    margin: 4px 0 12px;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  /* --- Desktop adaptations --- */
+  @media (min-width: 900px) {
+    .app {
+      grid-template-rows: var(--header-h) 1fr auto;
+      grid-template-columns: 1fr 420px;
+    }
+    .topbar { grid-column: 1 / -1; grid-row: 1; }
+    #map-area { grid-column: 1; grid-row: 2; }
+    .bottom-bar {
+      grid-column: 1;
+      grid-row: 3;
+      border-top: 1px solid var(--border);
+    }
+    /* Drawer stays position:fixed but anchors to the right sidebar
+       (the empty 420px column we reserved above). Stays outside the grid
+       so it doesn't depend on being a grid child. */
+    .drawer {
+      position: fixed;
+      top: var(--header-h);
+      right: 0;
+      bottom: 0;
+      left: auto;
+      width: 420px;
+      transform: none !important;
+      visibility: visible !important;
+      max-height: none;
+      height: auto;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-left: 1px solid var(--border);
+      box-shadow: none;
+    }
+    .drawer-handle { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="loading" id="loading"><div class="spinner" aria-label="Loading"></div></div>
+
+<div class="app">
+  <header class="topbar">
+    <h1>Japan</h1>
+    <span class="dates">April 2026</span>
+    <span class="spacer"></span>
+    <button class="icon-btn" id="settings-btn" aria-label="Settings">≡</button>
+  </header>
+
+  <main id="map-area">
+    <div id="map" role="application" aria-label="Map of Japan trip"></div>
+    <button class="map-ctrl map-ctrl-reset" id="reset-view" aria-label="Reset map view" title="Reset view"></button>
+  </main>
+
+  <nav class="bottom-bar" aria-label="Trip navigation">
+    <div class="trip-meta" id="trip-meta">10 days · 58 places · 528 photos</div>
+    <div class="day-pills-wrap">
+      <div class="day-pills" id="day-pills" aria-label="Day timeline">
+        <!-- injected -->
+      </div>
+    </div>
+  </nav>
+</div>
+
+<aside class="drawer empty-state" id="drawer" aria-hidden="true" aria-label="Place or day details">
+  <button class="drawer-handle" id="drawer-handle" aria-label="Drag to expand"></button>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+
+<div class="sheet-backdrop" id="sheet-backdrop"></div>
+<aside class="sheet" id="settings-sheet" aria-hidden="true" aria-label="Settings">
+  <div class="sheet-header">
+    <h3>Map & view</h3>
+    <button class="icon-btn" id="settings-close" aria-label="Close" style="background:var(--surface-alt); color: var(--ink);">×</button>
+  </div>
+  <div class="sheet-body">
+
+    <div class="sheet-section">
+      <h4>Story lens</h4>
+      <div class="lens-options" id="lens-options">
+        <button class="lens-btn active" data-lens="default">Default <span class="lens-sub">All pins, balanced</span></button>
+        <button class="lens-btn" data-lens="work">Work <span class="lens-sub">Meetings, dinners, signed menus</span></button>
+        <button class="lens-btn" data-lens="spiritual">Spiritual <span class="lens-sub">Shrines, prayer, mountain</span></button>
+        <button class="lens-btn" data-lens="cultural">Cultural <span class="lens-sub">Traditional Japan moments</span></button>
+      </div>
+    </div>
+
+    <div class="sheet-section">
+      <h4>Map layers</h4>
+      <div id="layers-list">
+        <!-- injected route toggles -->
+      </div>
+    </div>
+
+  </div>
+</aside>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
+  <img id="lightbox-img" alt="">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">‹</button>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">›</button>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+<script>
+(function () {
+  'use strict';
+
+  const TYPE_COLORS = {
+    shrine: '#c0392b', food: '#e67e22', neighborhood: '#2980b9',
+    hike: '#27ae60', landmark: '#8e44ad', shop: '#e91e63',
+    transit: '#34495e', default: '#6e5a44',
+  };
+  const TYPE_LABELS = {
+    shrine: 'Shrine', food: 'Food', neighborhood: 'Area',
+    hike: 'Hike', landmark: 'Landmark', shop: 'Shop', transit: 'Transit',
+  };
+
+  const PHOTOS_BASE = '../japan/photos/';
+
+  const state = {
+    pins: [], days: [], routes: [], trip: {}, daysMeta: null,
+    pinLenses: {},
+    selectedPin: null, selectedDay: 'all',
+    drawerMode: null, drawerState: 'closed',
+    lens: 'default',
+    layersOn: { shinkansen: true, 'ginza-line': true, 'keikyu-arrival': true },
+  };
+
+  let map, clusterGroup, routeLayer = L.layerGroup();
+  const markerIndex = new Map();
+
+  // ============ Utilities ============
+  const $ = (s) => document.querySelector(s);
+  const $$ = (s) => Array.from(document.querySelectorAll(s));
+  const escapeHtml = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const pinDays = (pin) => {
+    if (!pin.visited) return [];
+    const vs = pin.visited.includes(' to ') ? pin.visited.split(' to ') : pin.visited.split(',').map(s => s.trim());
+    return vs.map(d => dateToDayNum(d)).filter(n => n !== null);
+  };
+  function dateToDayNum(iso) {
+    if (!state.daysMeta) return null;
+    const d = state.daysMeta.find(x => x.date === iso);
+    return d ? d.day : null;
+  }
+  function humanDate(iso) {
+    const d = new Date(iso + 'T00:00:00');
+    return isNaN(d) ? iso : d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+
+  // ============ Init ============
+  async function init() {
+    try {
+      const fetchJson = async (url, fallback) => {
+        try {
+          const r = await fetch(url);
+          if (!r.ok) throw new Error(url + ' returned ' + r.status);
+          return await r.json();
+        } catch (e) {
+          if (fallback !== undefined) {
+            console.warn('Optional file missing, using fallback:', url, e.message);
+            return fallback;
+          }
+          throw e;
+        }
+      };
+
+      const [pinsData, daysData, routesData, lensData] = await Promise.all([
+        fetchJson('../japan/pins.json'),
+        fetchJson('../japan/days.json'),
+        fetchJson('./routes.json'),
+        fetchJson('./lens-map.json', { pin_lenses: {} }),
+      ]);
+
+      if (!pinsData?.pins) throw new Error('pins.json missing .pins array');
+      if (!daysData?.days) throw new Error('days.json missing .days array');
+      if (!routesData?.routes) throw new Error('routes.json missing .routes array');
+
+      state.pins = pinsData.pins.filter(p => p.coords);
+      state.days = daysData.days;
+      state.daysMeta = daysData.days;
+      state.trip = pinsData.trip;
+      state.routes = routesData.routes;
+      state.pinLenses = lensData.pin_lenses || {};
+
+    } catch (err) {
+      console.error('[init] data load failed', err);
+      showFatalError(err);
+      return;
+    }
+
+    try {
+      setupMap();
+      renderDayPills();
+      renderTripMeta();
+      renderLayersList();
+      renderIntro();
+      bindHandlers();
+      setTimeout(() => {
+        $('#loading').classList.add('hide');
+        // Leaflet needs invalidateSize after final grid layout settles.
+        if (map) map.invalidateSize();
+      }, 200);
+    } catch (err) {
+      console.error('[init] setup failed', err);
+      showFatalError(err);
+    }
+  }
+
+  function showFatalError(err) {
+    const el = document.createElement('div');
+    el.style.cssText = 'position:fixed;inset:0;background:#fff;color:#222;padding:24px;font:14px/1.5 -apple-system,system-ui,sans-serif;z-index:99999;overflow:auto;';
+    el.innerHTML = `
+      <h2 style="color:#c33823;margin:0 0 12px;">Initialization error</h2>
+      <p style="margin:0 0 12px;">Send Bryan this:</p>
+      <pre style="background:#f4eee0;padding:12px;border-radius:6px;white-space:pre-wrap;font-size:12px;">${(err && (err.stack || err.message || String(err)))?.replace(/[<>]/g, c => ({'<':'&lt;','>':'&gt;'}[c]))}</pre>
+    `;
+    document.body.appendChild(el);
+    document.getElementById('loading')?.classList.add('hide');
+  }
+
+  // ============ Map ============
+  function setupMap() {
+    map = L.map('map', { zoomControl: true, attributionControl: true })
+           .setView([35.5, 137.5], 6);  // temporary; fitBounds() runs below
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
+      maxZoom: 19,
+      subdomains: 'abcd',
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    }).addTo(map);
+
+    clusterGroup = L.markerClusterGroup({
+      showCoverageOnHover: false,
+      spiderfyOnMaxZoom: true,
+      disableClusteringAtZoom: 14,
+      maxClusterRadius: 45,
+    });
+
+    state.pins.forEach(pin => {
+      const color = TYPE_COLORS[pin.type] || TYPE_COLORS.default;
+      const icon = L.divIcon({
+        className: 'pin-marker',
+        html: `<div class="pin-dot" style="background:${color}"></div>`,
+        iconSize: [24, 24],
+        iconAnchor: [12, 12],
+      });
+      const m = L.marker(pin.coords, { icon, title: pin.title, alt: pin.title });
+      m.bindTooltip(pin.title, { direction: 'top', offset: [0, -8] });
+      m.on('click', () => openPin(pin.id));
+      clusterGroup.addLayer(m);
+      markerIndex.set(pin.id, m);
+    });
+    map.addLayer(clusterGroup);
+
+    routeLayer.addTo(map);
+    drawRoutes();
+
+    // Fit all pins with padding so initial view works on any viewport (mobile + desktop).
+    fitToAllPins();
+  }
+
+  function fitToAllPins() {
+    const coords = state.pins.map(p => p.coords).filter(Boolean);
+    if (coords.length === 0) return;
+    const bounds = L.latLngBounds(coords);
+    // Generous padding so pins aren't right at the edge, plus a max zoom so we
+    // don't zoom in too far if all pins are clustered tight.
+    map.fitBounds(bounds, {
+      padding: [50, 50],
+      maxZoom: 9,
+    });
+  }
+
+  function drawRoutes() {
+    routeLayer.clearLayers();
+    state.routes.forEach(r => {
+      if (!state.layersOn[r.id]) return;
+      const line = L.polyline(r.path, r.style).addTo(routeLayer);
+      line.bindTooltip(r.label, { sticky: true, className: 'route-label' });
+      (r.endpoints || []).forEach(ep => {
+        L.circleMarker(ep.coords, {
+          radius: 5, color: r.style.color, fillColor: '#fff', fillOpacity: 1, weight: 2,
+        }).addTo(routeLayer).bindTooltip(ep.label, { direction: 'top' });
+      });
+    });
+  }
+
+  // ============ Day pills ============
+  function renderDayPills() {
+    const wrap = $('#day-pills');
+    wrap.innerHTML = '';
+
+    const allBtn = document.createElement('button');
+    allBtn.className = 'day-pill active';
+    allBtn.dataset.day = 'all';
+    allBtn.innerHTML = `<span class="day-num">All</span><span class="day-date">${state.days.length} days</span>`;
+    wrap.appendChild(allBtn);
+
+    state.days.filter(d => d.day > 0).forEach(d => {
+      const btn = document.createElement('button');
+      btn.className = 'day-pill';
+      btn.dataset.day = String(d.day);
+      btn.innerHTML = `<span class="day-num">Day ${d.day}</span><span class="day-date">${humanDate(d.date)}</span>`;
+      btn.addEventListener('click', () => openDay(d.day));
+      wrap.appendChild(btn);
+    });
+    allBtn.addEventListener('click', () => setDay('all'));
+
+    enableHorizontalScroll(wrap);
+  }
+
+  // Make a horizontally-overflowing container scroll with:
+  //  - real touch swipe (already works via CSS touch-action)
+  //  - mouse wheel → horizontal (DevTools Device Mode + desktop)
+  //  - click-and-drag mouse (desktop power users)
+  function enableHorizontalScroll(el) {
+    // Vertical wheel becomes horizontal scroll.
+    el.addEventListener('wheel', (e) => {
+      const dx = Math.abs(e.deltaX);
+      const dy = Math.abs(e.deltaY);
+      // If user is already scrolling horizontally (trackpad), let it through.
+      if (dx > dy) return;
+      if (dy === 0) return;
+      e.preventDefault();
+      el.scrollLeft += e.deltaY;
+    }, { passive: false });
+
+    // Click-and-drag scrolling for mouse users.
+    let dragging = false, startX = 0, startScroll = 0, moved = false;
+    el.addEventListener('mousedown', (e) => {
+      // Ignore clicks on a pill — let those fire normally.
+      if (e.target.closest('.day-pill')) return;
+      dragging = true;
+      moved = false;
+      startX = e.clientX;
+      startScroll = el.scrollLeft;
+      el.style.cursor = 'grabbing';
+    });
+    window.addEventListener('mousemove', (e) => {
+      if (!dragging) return;
+      const dx = e.clientX - startX;
+      if (Math.abs(dx) > 3) moved = true;
+      el.scrollLeft = startScroll - dx;
+    });
+    window.addEventListener('mouseup', () => {
+      if (!dragging) return;
+      dragging = false;
+      el.style.cursor = '';
+    });
+  }
+
+  function renderTripMeta() {
+    const totalPhotos = state.pins.reduce((n, p) => n + (p.photos?.length || 0), 0);
+    const days = state.days.filter(d => d.day > 0).length;
+    $('#trip-meta').textContent = `${days} days · ${state.pins.length} places · ${totalPhotos} photos`;
+  }
+
+  function setDay(day) {
+    state.selectedDay = day;
+    $$('.day-pill').forEach(b => b.classList.toggle('active', b.dataset.day === String(day)));
+    // Scroll the active pill into view (helps when the timeline is wider than viewport).
+    const activeBtn = $('.day-pill.active');
+    if (activeBtn && activeBtn.scrollIntoView) {
+      activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+    if (day === 'all' && state.drawerMode === 'day') closeDrawer();
+    applyLensFilter();
+  }
+
+  // ============ Drawer ============
+  function openPin(pinId) {
+    const pin = state.pins.find(p => p.id === pinId);
+    if (!pin) return;
+    state.selectedPin = pinId;
+    state.drawerMode = 'pin';
+    try {
+      renderPinDrawer(pin);
+    } catch (e) {
+      console.error('[openPin] renderPinDrawer threw:', e);
+      $('#drawer-body').innerHTML = `<div style="padding:20px;color:#c33823;"><strong>Render error:</strong><br><pre style="white-space:pre-wrap;font-size:11px;">${e.stack || e.message}</pre></div>`;
+    }
+    setDrawerState('full');
+    // Zoom to neighborhood level so the pin is centered with its neighbors visible.
+    // Threshold 14 is where marker clusters break apart (disableClusteringAtZoom).
+    if (pin.coords) {
+      const targetZoom = Math.max(map.getZoom(), 14);
+      map.flyTo(pin.coords, targetZoom, { animate: true, duration: 0.8 });
+    }
+  }
+
+  function openDay(dayNum) {
+    setDay(String(dayNum));
+    const d = state.days.find(x => x.day === dayNum);
+    if (!d) return;
+    state.drawerMode = 'day';
+    renderDayDrawer(d);
+    setDrawerState('full');
+  }
+
+  function closeDrawer() {
+    state.selectedPin = null;
+    state.drawerMode = null;
+    setDrawerState('closed');
+    $('#drawer').classList.add('empty-state');
+    renderIntro();
+  }
+
+  function renderIntro() {
+    const body = $('#drawer-body');
+    if (!body) return;
+    const totalPhotos = state.pins.reduce((n, p) => n + (p.photos?.length || 0), 0);
+    const days = state.days.filter(d => d.day > 0).length;
+    body.innerHTML = `
+      <div class="intro-panel">
+        <h2>Japan — April 2026</h2>
+        <p class="intro-lead">${days} days · ${state.pins.length} places · ${totalPhotos} photos. ${escapeHtml(state.trip?.subtitle || '')}</p>
+        ${state.trip?.tagline ? `<p class="intro-quote">"${escapeHtml(state.trip.tagline)}"</p>` : ''}
+        <p class="intro-hint top">Tap a pin on the map · pick a day below · or:</p>
+        <div class="pick-section">
+          <div class="pick-label">Pick one for me</div>
+          <div class="pick-grid">
+            <button class="pick-btn" data-pick="food">
+              <span class="pick-icon" style="background:var(--t-food);"></span>
+              <span class="pick-title">Restaurant</span>
+              <span class="pick-sub" id="pick-count-food">— places</span>
+            </button>
+            <button class="pick-btn" data-pick="shrine">
+              <span class="pick-icon" style="background:var(--t-shrine);"></span>
+              <span class="pick-title">Shrine</span>
+              <span class="pick-sub" id="pick-count-shrine">— places</span>
+            </button>
+            <button class="pick-btn" data-pick="cultural">
+              <span class="pick-icon" style="background:#8e44ad;"></span>
+              <span class="pick-title">Cultural</span>
+              <span class="pick-sub" id="pick-count-cultural">— places</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+    // Fill counts
+    const counts = {
+      food: state.pins.filter(p => p.type === 'food').length,
+      shrine: state.pins.filter(p => p.type === 'shrine').length,
+      cultural: state.pins.filter(p => (state.pinLenses[p.id] || []).includes('cultural')).length,
+    };
+    Object.entries(counts).forEach(([k, n]) => {
+      const el = document.getElementById('pick-count-' + k);
+      if (el) el.textContent = `${n} place${n === 1 ? '' : 's'}`;
+    });
+    body.querySelectorAll('.pick-btn').forEach(btn => {
+      btn.addEventListener('click', () => pickRandom(btn.dataset.pick));
+    });
+  }
+
+  function pickRandom(category) {
+    let pool;
+    if (category === 'cultural') {
+      pool = state.pins.filter(p => (state.pinLenses[p.id] || []).includes('cultural'));
+    } else {
+      pool = state.pins.filter(p => p.type === category);
+    }
+    if (pool.length === 0) return;
+    // Reset day filter so the picked pin is guaranteed visible on the map.
+    if (state.selectedDay !== 'all') setDay('all');
+    const pick = pool[Math.floor(Math.random() * pool.length)];
+    openPin(pick.id);
+  }
+
+  function setDrawerState(s) {
+    state.drawerState = s;
+    const d = $('#drawer');
+    d.classList.remove('peek', 'full');
+    if (s !== 'closed') {
+      d.classList.add(s);
+      d.classList.remove('empty-state');
+    }
+    d.setAttribute('aria-hidden', s === 'closed' ? 'true' : 'false');
+  }
+
+  function renderPinDrawer(pin) {
+    const body = $('#drawer-body');
+    const hero = pin.hero || (pin.photos || [])[0];
+    const photos = (pin.photos || []);
+    const type = pin.type || 'default';
+    const days = pinDays(pin);
+
+    body.innerHTML = `
+      ${hero ? `
+        <div class="drawer-hero">
+          <img src="${PHOTOS_BASE}${escapeHtml(hero)}" alt="${escapeHtml(pin.title)}" data-photo-idx="${photos.indexOf(hero)}">
+          <button class="close-x" aria-label="Close">×</button>
+        </div>
+      ` : `
+        <div class="drawer-hero no-photo">
+          <button class="close-x" aria-label="Close" style="background:rgba(255,255,255,0.18);">×</button>
+        </div>
+      `}
+      <div class="pin-meta">
+        <h2>${escapeHtml(pin.title)}</h2>
+        <p class="place">${escapeHtml(pin.city || '')}${pin.neighborhood && pin.neighborhood !== 'TBD' ? ' · ' + escapeHtml(pin.neighborhood) : ''}</p>
+        <div class="pin-chips">
+          <span class="chip"><span class="dot" style="background:${TYPE_COLORS[type]}"></span>${TYPE_LABELS[type] || type}</span>
+          ${days.length ? `<span class="chip">Day ${days.join(', ')}</span>` : ''}
+          ${pin.visited ? `<span class="chip">${escapeHtml(humanVisited(pin.visited))}</span>` : ''}
+        </div>
+      </div>
+      ${photos.length > 1 ? `
+        <div class="photo-grid">
+          ${photos.slice(0, 9).map((p, i) => `<img src="${PHOTOS_BASE}${escapeHtml(p)}" alt="${escapeHtml(pin.title)} photo ${i+1}" data-photo-idx="${i}" loading="lazy">`).join('')}
+        </div>
+      ` : ''}
+      ${storyLayer(pin)}
+      ${factsLayer(pin)}
+    `;
+
+    body.querySelector('.close-x')?.addEventListener('click', closeDrawer);
+    body.querySelectorAll('img[data-photo-idx]').forEach(img => {
+      img.addEventListener('click', () => openLightbox(pin, parseInt(img.dataset.photoIdx, 10)));
+    });
+    // Reset scroll to top so the new pin starts at the hero, not wherever
+    // the previous pin's scroll was.
+    body.scrollTop = 0;
+  }
+
+  function humanVisited(s) {
+    if (s.includes(' to ')) return s.split(' to ').map(humanDate).join(' → ');
+    return s.split(',').map(d => humanDate(d.trim())).join(' · ');
+  }
+
+  function storyLayer(pin) {
+    const tip = pin.facts?.tip;
+    const intro = pin.extra_cards?.[0]?.body || '';
+    if (!tip && !intro) return '';
+    return `
+      <details class="layer" open>
+        <summary>The story</summary>
+        <div class="layer-body">
+          ${tip ? `<p><strong>Bryan's note:</strong> ${escapeHtml(tip)}</p>` : ''}
+          ${intro ? `<p>${escapeHtml(intro)}</p>` : ''}
+        </div>
+      </details>
+    `;
+  }
+
+  function factsLayer(pin) {
+    const facts = pin.facts || {};
+    const extras = (pin.extra_cards || []).slice(intro_offset(pin));
+    const factCards = [];
+    if (facts.kid) factCards.push({ label: 'Did you know', body: facts.kid, kind: 'kid' });
+    if (facts.wow) factCards.push({ label: 'Wow', body: facts.wow, kind: 'wow' });
+    if (facts.local) factCards.push({ label: 'Local insight', body: facts.local, kind: 'local' });
+    if (factCards.length === 0 && extras.length === 0) return '';
+    return `
+      <details class="layer" open>
+        <summary>Facts &amp; context</summary>
+        <div class="layer-body">
+          ${factCards.length ? `
+            <div class="fact-cards">
+              ${factCards.map(f => `
+                <article class="fact-card fact-${f.kind}">
+                  <div class="fact-label">${escapeHtml(f.label)}</div>
+                  <div class="fact-body">${escapeHtml(f.body)}</div>
+                </article>
+              `).join('')}
+            </div>
+          ` : ''}
+          ${extras.map(c => `
+            <article class="extra-card">
+              <h4>${escapeHtml(c.title)}</h4>
+              <p>${escapeHtml(c.body).split('\n\n').map(line => `<span class="line">${line}</span>`).join('')}</p>
+              ${c.source ? `<a class="source-link" href="${escapeHtml(c.source)}" target="_blank" rel="noreferrer">Source ↗</a>` : ''}
+            </article>
+          `).join('')}
+        </div>
+      </details>
+    `;
+  }
+  function intro_offset(pin) {
+    // If extra_cards[0] was used as story intro, skip it in facts layer
+    return (pin.extra_cards?.[0]?.body) ? 1 : 0;
+  }
+
+  function renderDayDrawer(d) {
+    const body = $('#drawer-body');
+    const dayNum = d.day;
+    const pinsOnDay = state.pins.filter(p => pinDays(p).includes(dayNum));
+
+    // Hero photo: take first pin's hero
+    const heroPin = pinsOnDay.find(p => p.hero || p.photos?.length);
+    const hero = heroPin ? (heroPin.hero || heroPin.photos[0]) : null;
+
+    body.innerHTML = `
+      ${hero ? `
+        <div class="drawer-hero">
+          <img src="${PHOTOS_BASE}${escapeHtml(hero)}" alt="Day ${dayNum}">
+          <button class="close-x" aria-label="Close">×</button>
+        </div>
+      ` : `
+        <div class="drawer-hero no-photo">
+          <button class="close-x" aria-label="Close" style="background:rgba(255,255,255,0.18);">×</button>
+        </div>
+      `}
+      <div class="pin-meta">
+        <h2>Day ${dayNum} — ${escapeHtml(d.title)}</h2>
+        <p class="place">${escapeHtml(humanDate(d.date))} · ${pinsOnDay.length} place${pinsOnDay.length === 1 ? '' : 's'}</p>
+      </div>
+      ${d.opening_quote ? `<p class="day-quote">"${escapeHtml(d.opening_quote)}"</p>` : ''}
+      ${d.summary ? `<div class="day-summary">${escapeHtml(d.summary).split('\n\n').map(p => `<p>${p}</p>`).join('')}</div>` : ''}
+      ${d.moments?.length ? `
+        <details class="layer" open style="margin-top: 14px;">
+          <summary>Key moments</summary>
+          <div class="layer-body">
+            <ul class="day-moments">
+              ${d.moments.map(m => `<li>${escapeHtml(m)}</li>`).join('')}
+            </ul>
+          </div>
+        </details>
+      ` : ''}
+      <details class="layer" open>
+        <summary>Places on this day (${pinsOnDay.length})</summary>
+        <div class="day-pin-list">
+          ${pinsOnDay.map(p => `
+            <button class="day-pin-card" data-pin="${escapeHtml(p.id)}">
+              ${p.hero || p.photos?.[0] ? `<img src="${PHOTOS_BASE}${escapeHtml(p.hero || p.photos[0])}" alt="">` : `<div style="width:60px;height:60px;background:var(--surface-alt);border-radius:8px;flex-shrink:0;"></div>`}
+              <div class="info">
+                <div class="title">${escapeHtml(p.title)}</div>
+                <div class="sub">${escapeHtml(p.city || '')}${p.neighborhood && p.neighborhood !== 'TBD' ? ' · ' + escapeHtml(p.neighborhood) : ''}</div>
+              </div>
+            </button>
+          `).join('')}
+        </div>
+      </details>
+    `;
+
+    body.querySelector('.close-x')?.addEventListener('click', closeDrawer);
+    body.querySelectorAll('.day-pin-card').forEach(btn => {
+      btn.addEventListener('click', () => openPin(btn.dataset.pin));
+    });
+    body.scrollTop = 0;
+  }
+
+  // ============ Lightbox ============
+  let lbState = { pin: null, idx: 0 };
+  function openLightbox(pin, idx) {
+    lbState.pin = pin;
+    lbState.idx = idx;
+    renderLightbox();
+    $('#lightbox').classList.add('open');
+  }
+  function closeLightbox() {
+    $('#lightbox').classList.remove('open');
+  }
+  function renderLightbox() {
+    const photos = lbState.pin.photos || [];
+    if (!photos.length) return;
+    lbState.idx = (lbState.idx + photos.length) % photos.length;
+    $('#lightbox-img').src = PHOTOS_BASE + photos[lbState.idx];
+    $('#lightbox-img').alt = `${lbState.pin.title} — photo ${lbState.idx + 1} of ${photos.length}`;
+  }
+
+  // ============ Settings sheet ============
+  function openSettings() {
+    $('#settings-sheet').classList.add('open');
+    $('#sheet-backdrop').classList.add('show');
+  }
+  function closeSettings() {
+    $('#settings-sheet').classList.remove('open');
+    $('#sheet-backdrop').classList.remove('show');
+  }
+
+  function renderLayersList() {
+    const wrap = $('#layers-list');
+    wrap.innerHTML = `
+      <div class="route-legend">
+        ${state.routes.map(r => {
+          const dashed = !!r.style.dashArray;
+          return `
+            <div class="route-legend-row">
+              <span class="route-legend-swatch${dashed ? ' dashed' : ''}" style="color:${r.style.color}; background:${dashed ? '' : r.style.color};"></span>
+              <span class="route-legend-text">
+                <span class="route-legend-name">${escapeHtml(r.name)}</span>
+                <span class="route-legend-sub">${escapeHtml(r.label)}</span>
+              </span>
+              <button class="switch ${state.layersOn[r.id] ? 'on' : ''}" data-route="${r.id}" aria-label="Toggle ${escapeHtml(r.name)}"></button>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+    wrap.querySelectorAll('.switch').forEach(sw => {
+      sw.addEventListener('click', () => {
+        const id = sw.dataset.route;
+        state.layersOn[id] = !state.layersOn[id];
+        sw.classList.toggle('on', state.layersOn[id]);
+        drawRoutes();
+      });
+    });
+  }
+
+  function resetView() {
+    const coords = state.pins.map(p => p.coords).filter(Boolean);
+    if (coords.length === 0) {
+      map.flyTo([35.5, 137.5], 6, { animate: true, duration: 0.8 });
+      return;
+    }
+    map.flyToBounds(L.latLngBounds(coords), {
+      padding: [50, 50],
+      maxZoom: 9,
+      animate: true,
+      duration: 0.8,
+    });
+  }
+
+  function pinMatchesLens(pin) {
+    if (state.lens === 'default') return true;
+    const lenses = state.pinLenses[pin.id] || [];
+    return lenses.includes(state.lens);
+  }
+
+  function applyLensFilter() {
+    state.pins.forEach(pin => {
+      const m = markerIndex.get(pin.id);
+      if (!m) return;
+      const matches = pinMatchesLens(pin);
+      const dayMatches = state.selectedDay === 'all' || pinDays(pin).includes(parseInt(state.selectedDay, 10));
+      const shouldShow = matches && dayMatches;
+      if (shouldShow && !clusterGroup.hasLayer(m)) clusterGroup.addLayer(m);
+      else if (!shouldShow && clusterGroup.hasLayer(m)) clusterGroup.removeLayer(m);
+    });
+    const visiblePins = state.pins.filter(p => pinMatchesLens(p) && (state.selectedDay === 'all' || pinDays(p).includes(parseInt(state.selectedDay, 10))));
+    const ct = visiblePins.length;
+    const photos = visiblePins.reduce((n, p) => n + (p.photos?.length || 0), 0);
+    const meta = $('#trip-meta');
+    const parts = [];
+    if (state.selectedDay !== 'all') {
+      const d = state.days.find(x => x.day === parseInt(state.selectedDay, 10));
+      if (d) parts.push(`Day ${d.day}`);
+    }
+    if (state.lens !== 'default') parts.push(`${prettyLens(state.lens)} lens`);
+    if (parts.length === 0) {
+      // Default state — full trip totals
+      const days = state.days.filter(d => d.day > 0).length;
+      meta.textContent = `${days} days · ${state.pins.length} places · ${photos} photos`;
+    } else {
+      parts.push(`${ct} place${ct === 1 ? '' : 's'}`);
+      parts.push(`${photos} photo${photos === 1 ? '' : 's'}`);
+      meta.textContent = parts.join(' · ');
+    }
+  }
+
+  function prettyLens(l) {
+    return { work: 'Work', spiritual: 'Spiritual', cultural: 'Cultural' }[l] || l;
+  }
+
+  // ============ Drawer drag ============
+  function bindDrawerDrag() {
+    const drawer = $('#drawer');
+    const handle = $('#drawer-handle');
+    let startY = 0, startTransform = 0, dragging = false;
+
+    function getTranslate() {
+      const m = window.getComputedStyle(drawer).transform;
+      if (m === 'none') return 0;
+      const parts = m.match(/matrix.*\((.+)\)/)?.[1]?.split(', ');
+      return parts ? parseFloat(parts[5]) : 0;
+    }
+
+    function start(y) {
+      if (state.drawerState === 'closed') return;
+      startY = y;
+      startTransform = getTranslate();
+      dragging = true;
+      drawer.style.transition = 'none';
+    }
+    function move(y) {
+      if (!dragging) return;
+      const dy = y - startY;
+      const newTransform = Math.max(0, startTransform + dy);
+      drawer.style.transform = `translateY(${newTransform}px)`;
+    }
+    function end(y) {
+      if (!dragging) return;
+      dragging = false;
+      drawer.style.transition = '';
+      drawer.style.transform = '';
+      const dy = y - startY;
+      if (dy < -60) setDrawerState('full');
+      else if (dy > 80) {
+        if (state.drawerState === 'full') setDrawerState('peek');
+        else closeDrawer();
+      } else {
+        // snap back
+        setDrawerState(state.drawerState);
+      }
+    }
+
+    handle.addEventListener('touchstart', e => start(e.touches[0].clientY), { passive: true });
+    handle.addEventListener('touchmove', e => move(e.touches[0].clientY), { passive: true });
+    handle.addEventListener('touchend', e => end(e.changedTouches[0].clientY), { passive: true });
+    handle.addEventListener('mousedown', e => start(e.clientY));
+    window.addEventListener('mousemove', e => move(e.clientY));
+    window.addEventListener('mouseup', e => end(e.clientY));
+    handle.addEventListener('click', () => {
+      if (state.drawerState === 'peek') setDrawerState('full');
+      else if (state.drawerState === 'full') setDrawerState('peek');
+    });
+  }
+
+  // ============ Handlers ============
+  function bindHandlers() {
+    $('#settings-btn').addEventListener('click', openSettings);
+    $('#settings-close').addEventListener('click', closeSettings);
+    $('#sheet-backdrop').addEventListener('click', closeSettings);
+    $('#reset-view').addEventListener('click', resetView);
+
+    $$('.lens-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.lens = btn.dataset.lens;
+        $$('.lens-btn').forEach(b => b.classList.toggle('active', b === btn));
+        applyLensFilter();
+      });
+    });
+
+    $('#lightbox-close').addEventListener('click', closeLightbox);
+    $('#lightbox-prev').addEventListener('click', () => { lbState.idx--; renderLightbox(); });
+    $('#lightbox-next').addEventListener('click', () => { lbState.idx++; renderLightbox(); });
+    $('#lightbox').addEventListener('click', (e) => { if (e.target.id === 'lightbox') closeLightbox(); });
+
+    document.addEventListener('keydown', e => {
+      if ($('#lightbox').classList.contains('open')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') { lbState.idx--; renderLightbox(); }
+        if (e.key === 'ArrowRight') { lbState.idx++; renderLightbox(); }
+        return;
+      }
+      if ($('#settings-sheet').classList.contains('open')) {
+        if (e.key === 'Escape') closeSettings();
+        return;
+      }
+      if (e.key === 'Escape' && state.drawerState !== 'closed') closeDrawer();
+    });
+
+    bindDrawerDrag();
+
+    // Map resize handling — DevTools toggle, window resize, orientation change.
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (map) map.invalidateSize();
+      }, 120);
+    });
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>

@@ -20,7 +20,9 @@ Set-Location $scriptDir
 
 $siteName = "dawson-japan-2026"
 $siteId = "8d3c3fe5-7e69-432d-b3f8-f1f9bc84591f"
-$publishDir = "public/private/japan"
+# Publish public/private/ so BOTH japan/ (v1) and japan-v2/ are reachable.
+# The minimal index.html at public/private/ redirects the bare URL to v2.
+$publishDir = "public/private"
 $tokenFile = Join-Path $scriptDir ".netlify-token"
 
 function Fail($msg) {
@@ -83,9 +85,10 @@ if ($deployExit -ne 0) {
 Write-Host ""
 Write-Host "-------------------------------------------" -ForegroundColor Green
 Write-Host "DEPLOYED. Live in ~5-10 seconds at:" -ForegroundColor Green
-Write-Host "  https://$siteName.netlify.app/" -ForegroundColor Green
+Write-Host "  v2 (new): https://$siteName.netlify.app/japan-v2/" -ForegroundColor Green
+Write-Host "  v1 (old): https://$siteName.netlify.app/japan/" -ForegroundColor Green
 $bust = Get-Date -Format "yyyyMMddHHmm"
-Write-Host "Hard-refresh phone, or use ?v=$bust to bust cache." -ForegroundColor Green
+Write-Host "Bare URL auto-redirects to v2. Hard-refresh phone, or use ?v=$bust to bust cache." -ForegroundColor Green
 Write-Host "-------------------------------------------" -ForegroundColor Green
 Write-Host ""
 Read-Host "Press Enter to close"
