@@ -536,8 +536,16 @@
     display: flex;
     gap: 6px;
     overflow-x: auto;
+    overflow-y: hidden;
     align-items: center;
+    /* iOS Safari + body{overflow:hidden} parent: explicit pan-x lets the
+       horizontal touch-scroll actually reach this child. Without it the
+       day strip stops scrolling around day 5 on mobile. */
+    touch-action: pan-x;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
   }
+  .day-pill { scroll-snap-align: start; }
   .timeline::-webkit-scrollbar { height: 6px; }
   .timeline::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
   .timeline .row-label { white-space: nowrap; }
@@ -1422,16 +1430,21 @@
     bindDetailEvents(pin);
 
     // Pan (and zoom when coming from a direct link) to the pin.
-    // On mobile the detail panel covers the screen — panning is just disorienting,
-    // so we only pan/zoom on direct-link loads (fromHash). On desktop, offset the
-    // pan so the pin sits to the left of the 420px detail panel.
+    // On mobile the detail panel covers the full screen — the pan happens
+    // behind the panel so when the user closes the detail, the pin is centered
+    // and ready for the next interaction. On desktop, offset the pan so the
+    // pin sits to the left of the 420px detail panel.
     const isMobile = window.innerWidth <= 720;
-    if (pin.coords && !opts.skipPan && (!isMobile || opts.fromHash)) {
+    if (pin.coords && !opts.skipPan) {
       const offset = isMobile ? 0 : -210;
       if (opts.fromHash) {
         const zoom = Math.max(map.getZoom(), 14);
         const target = map.project(pin.coords, zoom).add([offset, 0]);
         map.flyTo(map.unproject(target, zoom), zoom, { animate: true, duration: 0.8 });
+      } else if (isMobile) {
+        // Panel covers the screen; skip the animation since it's invisible.
+        const target = map.project(pin.coords).add([offset, 0]);
+        map.panTo(map.unproject(target), { animate: false });
       } else {
         const target = map.project(pin.coords).add([offset, 0]);
         map.panTo(map.unproject(target), { animate: true });
