@@ -147,6 +147,20 @@ Diagnostic: `RUN-ME-list-sites.bat` lists every Netlify site + UUID the token ca
 - Update Notion **directly during the session** when project decisions are made — don't batch.
 - "Save and end" / "let's pause" → write memory, update Notion, brief recap, close.
 
+### Pre-flight for bug fixes (added 2026-05-17 after a satellite-file regression)
+
+Before designing or applying a fix:
+
+1. **Mount this repo first** — `C:\Users\Dawson\projects\lockandhart-com`. Other "Japan Trip" / "Lock & Hart" workspaces are satellites; only this repo is what deploys.
+2. **Open the actual deployed file** and read 50-100 lines around the bug area. Confirm the architecture (Leaflet vs. SVG, React component vs. static HTML) before writing the fix. Architecture-mismatched fixes have to be redone.
+3. **Trust documented paths.** If `CLAUDE.md` or `SESSION-KICKOFF.md` already names the canonical file, mount and proceed. Don't surface "which file?" as a multiple-choice question — that's the regression itself.
+
+### Japan Explorer file locations (the trap)
+
+- **Canonical (this repo):** `public/private/japan/index.html` — Leaflet map, the file that deploys
+- **Preview (this repo):** `public/private/japan-v2/index.html` — drawer-based rebuild, also Leaflet
+- **Satellite (DO NOT edit for production):** `C:\Users\Dawson\Documents\Claude\Projects\Japan Trip\web\index.html` — superseded SVG-map bundle
+
 ---
 
 ## Pre-launch checklist (do NOT ship without)
